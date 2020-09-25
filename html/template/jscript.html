@@ -1,0 +1,18 @@
+<script type="text/javascript">
+
+    var previous_div;
+
+    function show_div(div_id) {
+        var elm = document.getElementById(div_id);
+        if (elm != null) {
+            if (elm.style.display == "none") {
+                if (previous_div != null) {
+                    previous_div.style.display = "none";
+                }
+                elm.style.display = "block";
+                previous_div = elm;
+            }
+        }
+    }
+
+</script>

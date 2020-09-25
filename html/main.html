@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>metasearch based on duckduckgo !bang commands</title>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="template/github-markdown.css">
+  </head>
+
+
+<body class="markdown-body">
+
+<script type="text/javascript">
+	var eventMethod = window.addEventListener
+			? "addEventListener"
+			: "attachEvent";
+	var eventer = window[eventMethod];
+	var messageEvent = eventMethod === "attachEvent"
+		? "onmessage"
+		: "message";
+
+	eventer(messageEvent, function (e) {
+		
+        var obj = JSON.parse(e.data);
+        if (obj.cmd == 'set-bang') {
+            var d_frame = document.getElementById('search_d'); 
+            d_frame.focus();
+            d_frame.contentWindow.postMessage(obj.bang, '*')
+        }   
+
+        if (obj.cmd == 'query') {
+            document.location = 'https://duckduckgo.com/?q=' + obj.query;
+        }
+
+        if (obj.cmd == 'top') {
+            var d_frame = document.getElementById('second');
+            d_frame.contentWindow.location = "all_cats.html#top"; 
+        }
+	});
+</script>
+
+<div class="parent-div">
+    <div class="first_row">
+        <!--
+        <iframe id="search_d" class="iframe_duck" src="https://duckduckgo.com/search.html?prefill=Search DuckDuckGo" style="" frameborder="0"></iframe>
+        //-->
+        <iframe id="search_d" class="iframe_duck" src="search.html" style="" frameborder="0"></iframe>
+ 
+    </div>
+    <div class="second_row">
+      <iframe id="second" class="iframe-big"  src="all_cats.html"></iframe>
+    </div>
+</div>
+

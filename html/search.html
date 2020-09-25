@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>metasearch based on duckduckgo !bang commands</title>
+    <link rel="stylesheet" href="template/github-markdown.css">
+  </head>
+
+<script type="text/javascript">
+	var eventMethod = window.addEventListener
+			? "addEventListener"
+			: "attachEvent";
+	var eventer = window[eventMethod];
+	var messageEvent = eventMethod === "attachEvent"
+		? "onmessage"
+		: "message";
+
+	eventer(messageEvent, function (e) {
+        var ed = document.getElementById('textin');
+        ed.value = "!" + e.data + " ";
+        ed.focus();
+
+	});
+
+    function go() {
+         var bangText = document.getElementById('textin').value;
+         window.parent.postMessage( '{ "cmd": "query", "query": "' + bangText + '"}', '*')
+     }
+
+    function onTop() {
+         window.parent.postMessage( '{ "cmd": "top" }', '*')
+     
+    }
+</script>
+
+
+<body class="markdown-body">
+
+    <table border="0" width="100%">
+        <tr>
+            <td>
+
+    <form onSubmit="go()">
+        <input id="textin" type-"text" size="50"></a> <input type="submit" value="Go!"/>
+    </form>
+            </td>
+            <td>
+    <a href="javascript:onTop()">[Top]"</a>
+            </td>
+        </tr>
+</table>
