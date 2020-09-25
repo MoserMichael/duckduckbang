@@ -8,11 +8,11 @@ The html page [in action](https://mosermichael.github.io/duckduckbang/html/main.
 
 # script that builds the page
 
-The [build-cats.ph](https://github.com/MoserMichael/duckduckbang/blob/master/build-cats.py) script that generates the search page works as follows: 
+The [build-cats.py](https://github.com/MoserMichael/duckduckbang/blob/master/build-cats.py) script that generates the search page works as follows: 
 
-1. It load the following url [https://duckduckgo.com/bang.js](https://duckduckgo.com/bang.js) this json file contains and entry for each bang! search operators and which category that it belongs to
-2. builds the category/subcategory breakup that is used to display the [bang page](https://duckduckgo.com/bang.js). It brings together all of of the bang! search operarators on one page. 
-3. format the page that contains all of the !bang operators.
+1. It load the following url [https://duckduckgo.com/bang.js](https://duckduckgo.com/bang.js) this json file contains and entry for each bang! search operators; it also inludes the classification of each operator in the official [bang page](https://duckduckgo.com/bang).
+2. builds the category/subcategory breakup that is used to display the [bang page](https://duckduckgo.com/bang).  
+3. format an html page that contains all of the !bang operators into one page (maintain categories displayed in the official bang page)
 
 The tool utilizes [duckduck go bang! operators](https://duckduckgo.com/bang)
 
