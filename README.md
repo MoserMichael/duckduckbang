@@ -25,7 +25,7 @@ Now general purpose search engines like google and bing have a hard time to give
 # today i learned
 
 The abbreviation of Categories is cat; [here](https://writingexplained.org/english-abbreviations/category)
-So are cats capable of categorization?  Really clever animals they are.
+Are cats capable of categorization? No idea, I like them. 
 
 
 
