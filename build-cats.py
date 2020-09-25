@@ -179,7 +179,7 @@ class DuckStuff:
                         if pos % num_columns == 0:
                             f.write("</tr><tr>")
                         f.write("<td>")
-                        f.write("<span align=\"left\"><a title=\"{}\" href=\"javascript:onBang('{}')\">{}</a></span> <span align=\"right\">!<a title=\"{}\" href=\"javascript:onBang('{}')\">{}</a></span> &nbsp;".format(bang[2], bang[0], bang[1], bang[2], bang[0], bang[0]))
+                        f.write("<span align=\"left\"><a title=\"{}\" href=\"javascript:onBang('{}')\">{}</a></span> <span style=\"float: right\">!<a title=\"{}\" href=\"javascript:onBang('{}')\">{}</a></span> &nbsp;".format(bang[2], bang[0], bang[1], bang[2], bang[0], bang[0]))
                         f.write("</td>")
                         pos = pos + 1
 
