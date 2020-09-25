@@ -31,12 +31,19 @@
          window.parent.postMessage( '{ "cmd": "top" }', '*')
      
     }
+
+    /*
+    window.addEventListener('DOMContentLoaded', function(e) {
+        var tblObj = document.getElementById( 'stbl' );
+         window.parent.postMessage( '{ "cmd": "resize", "size": "' + tblObj.offsetHeight + '"}', '*')
+     } );
+     */
 </script>
 
 
 <body class="markdown-body">
 
-    <table border="0" width="100%">
+    <table id="stbl" border="0" width="100%">
         <tr>
             <td>
 

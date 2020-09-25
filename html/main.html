@@ -36,16 +36,24 @@
             var d_frame = document.getElementById('second');
             d_frame.contentWindow.location = "all_cats.html#top"; 
         }
+
+        /*
+        if (obj.cmd == 'resize') {
+            console.log("resize-cmd: " + obj.size);
+            var d_frame = document.getElementById('first_row');
+            d_frame.style.height = obj.size;
+        }
+        */
+	
+
 	});
+
 </script>
 
+
 <div class="parent-div">
-    <div class="first_row">
-        <!--
-        <iframe id="search_d" class="iframe_duck" src="https://duckduckgo.com/search.html?prefill=Search DuckDuckGo" style="" frameborder="0"></iframe>
-        //-->
+    <div class="first_row" id="first_row">
         <iframe id="search_d" class="iframe_duck" src="search.html" style="" frameborder="0"></iframe>
- 
     </div>
     <div class="second_row">
       <iframe id="second" class="iframe-big"  src="all_cats.html"></iframe>
