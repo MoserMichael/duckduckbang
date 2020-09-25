@@ -3,14 +3,17 @@ import http.client as client
 import ssl
 import json
 from pprint import pprint
+from datetime import datetime
 #from bs4 import BeautifulSoup, SoupStrainer
+
+
+class Global:
+   trace_on = False
 
 #
 # get soup over tls 1.2
 #
 class BSoup:
-
-    TraceIt = True
 
     def __init__(self):
         self.map_host_to_conn = {}
@@ -29,7 +32,7 @@ class BSoup:
 
         data = resp.read()
 
-        if BSoup.TraceIt:
+        if Global.trace_on:
             print("host={} path={} data={}\n".format(host, path, data))
 
         return data
@@ -41,7 +44,7 @@ class BSoup:
 
         json_rep = json.loads(data)
 
-        if BSoup.TraceIt:
+        if Global.trace_on:
             pprint(json_rep)
 
         return json_rep
@@ -84,7 +87,7 @@ class DuckStuff:
                 sub_cat_obj.append( entry )
 
 
-        if BSoup.TraceIt:
+        if Global.trace_on:
             pprint(all_bangs)
 
         return all_bangs
@@ -142,7 +145,6 @@ class DuckStuff:
 <body class="markdown-body">
 <a id="top"/>
 
-
 """)
 
             f.write("<table><tr><th>Category</th><th>Sub categories</th></tr>\n")
@@ -189,6 +191,8 @@ class DuckStuff:
 
                     f.write("</tr></table>")
                     
+            f.write("<br/><br/><br/>Generated on {} <br/>".format(datetime.now()))
+
   
 #---
 
