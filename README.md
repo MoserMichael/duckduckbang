@@ -10,7 +10,7 @@ The html page [in action](https://mosermichael.github.io/duckduckbang/html/main.
 
 The [build-cats.py](https://github.com/MoserMichael/duckduckbang/blob/master/build-cats.py) script that generates the search page works as follows: 
 
-1. It load the following url [https://duckduckgo.com/bang.js](https://duckduckgo.com/bang.js) this json file contains and entry for each bang! search operators; it also inludes the classification of each operator in the official [bang page](https://duckduckgo.com/bang).
+1. It load the following url [https://duckduckgo.com/bang.js](https://duckduckgo.com/bang.js) this json file contains an entry for each bang! search operator it also includes the classification of each operator in the official [bang page](https://duckduckgo.com/bang).
 2. builds the category/subcategory breakup that is used to display the [bang page](https://duckduckgo.com/bang).  
 3. format an html page that contains all of the !bang operators into one page (maintain categories displayed in the official bang page)
 
