@@ -11,11 +11,16 @@ stat /all_cats.html
 git clone https://github.com/MoserMichael/duckduckbang.git duck
 pushd duck
 git checkout gh-pages
-git branch
-ls -al
 
-cp ../all_cats.html html/all_cats.html
-if [[ $(git diff) != "" ]]; then
+#cp ../all_cats.html html/all_cats.html
+#if [[ $(git diff) != "" ]]; then
+
+
+CHANGED=$(diff -U 0 ../all_cats.html html/all_cats.html | grep -v "Generated on"  | wc -l)
+
+if [[ $CHANGED != "3" ]]; then
+    cp ../all_cats.html html/all_cats.html
+
     echo "*** pushing changed file ***"
  
     git config --global user.email "a@gmail.com"
@@ -31,5 +36,6 @@ if [[ $(git diff) != "" ]]; then
 else
     echo "*** the file didn't change ***"
 fi
+
 popd
 
