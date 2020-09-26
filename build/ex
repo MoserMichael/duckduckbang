@@ -1,0 +1,17 @@
+spawn  git push 
+match_max 100000
+
+
+expect "*?sername*"
+send -- "MoserMichael\r"
+
+
+
+expect "*?assword*"
+send -- "$env(GITHUB_TOKEN)\r"
+
+# send blank line (\r) to make sure we get back to gui
+send -- "\r"
+
+expect eof
+
