@@ -191,7 +191,7 @@ class DuckStuff:
 
                     f.write("</tr></table>")
                     
-            f.write("\n<br/><br/><br/>Generated on {} <br/>".format(datetime.now()))
+            f.write("\n<br/><br/><br/>Generated on {} <br/>\n".format(datetime.now()))
 
   
 #---
