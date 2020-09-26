@@ -36,26 +36,19 @@
             d_frame.contentWindow.location = "all_cats.html#top"; 
           }
 
-        /*
-        if (obj.cmd == 'resize') {
-            console.log("resize-cmd: " + obj.size);
+        
+        if (obj.cmd == 'search-load') {
             var d_frame = document.getElementById('first_row');
-            d_frame.style.height = obj.size;
+            d_frame.style.height = obj.height + 'px';
         }
-        */
 	
 
 	});
 
-    function loadFinished() {
-            var d_frame = document.getElementById('search_d'); 
-            d_frame.focus();
-            d_frame.contentWindow.postMessage("", '*')
-    }
- 
+
 </script>
 
-<body class="markdown-body" onload="loadFinished()">
+<body class="markdown-body">
 
 <div class="parent-div">
     <div class="first_row" id="first_row">

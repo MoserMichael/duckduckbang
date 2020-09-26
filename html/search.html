@@ -31,19 +31,23 @@
 
     function onTop() {
          window.parent.postMessage( '{ "cmd": "top" }', '*')
-     
+    }
+
+    function onLoad() {
+         //document.getElementById("body").style.margin =  "0px 0px 0px 0px";
+         window.parent.postMessage( '{ "cmd": "search-load", "height": "' + document.body.offsetHeight + '" }', '*')
     }
 
     /*
     window.addEventListener('DOMContentLoaded', function(e) {
         var tblObj = document.getElementById( 'stbl' );
-         window.parent.postMessage( '{ "cmd": "resize", "size": "' + tblObj.offsetHeight + '"}', '*')
+         window.parent.postMessage( '{ "cmd": "resize", "size": "' + tblObj.offsetHeight + '"; }', '*')
      } );
      */
 </script>
 
 
-<body class="markdown-body">
+<body class="markdown-body" id="body" style="margin-top: 0px; margin-left: 0px; margin-right: 0px; margin-left: 0px;" onLoad="onLoad()">
 
     <table id="stbl" border="0" width="100%">
         <tr>
