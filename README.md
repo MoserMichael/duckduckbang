@@ -4,7 +4,7 @@ This script builds the html pages for a little meta-search tool;
 
 The resulting meta-search tool [in action](https://mosermichael.github.io/duckduckbang/html/main.html) that makes use of the duckduckgo [bang!](https://duckduckgo.com/bang) search commands.
 
-You can select a duckduckgo  bang! search operator, the operator then appears in the seach input box, where you can add your query; A search query is sent to duckduckgo that includes the selected bang! operator, once you press enter press the Go! button (or enter ; duckducko then redirects the query to a search engine specified by the operator.
+You can select a duckduckgo  bang! search operator, the operator then appears in the seach input box, where you can add your query; A search query that includes the selected bang! operator is sent to https://duckduckgo - once you press enter press or the Go! button; duckducko then redirects the query to a search engine specified by the operator.
 
 A web search on duckduckgo that includes a bang! search command is redirected to a specialized search engine (the most famous bang operator is g! - a web search is redirected to google search if the term g! is added to the query text); now duckduckgo maintains a directory of these bang! search commands, each of these commands stands for a different search engine that takes over the web search.
 
@@ -37,6 +37,7 @@ The tool utilizes [duckduck go bang! operators](https://duckduckgo.com/bang)
 The abbreviation of Categories is cat; [here](https://writingexplained.org/english-abbreviations/category)
 Are cats capable of categorization? No idea, I like them. 
 
+And I still don't know if the correct spelling is metasearch, meta-search or meta search. Bother!
 
 
 
