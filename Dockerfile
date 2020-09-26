@@ -1,6 +1,6 @@
 FROM alpine:3.12 
 
-ARG GITHUB_TOKEN="blabla"
+ARG GITHUB_TOKEN=""
 
 RUN apk add bash python3 git expect
 
