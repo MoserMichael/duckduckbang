@@ -2,7 +2,7 @@
 
 This script builds the html pages for a little meta-search tool;
 
-The html page [in action](https://mosermichael.github.io/duckduckbang/html/main.html) 
+The resulting meta-search tool [in action](https://mosermichael.github.io/duckduckbang/html/main.html) 
 
 The page is kept up to date by a nightly build process (runs courtesy of [github workflows/actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions) )
 
