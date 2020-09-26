@@ -8,8 +8,6 @@
   </head>
 
 
-<body class="markdown-body">
-
 <script type="text/javascript">
 	var eventMethod = window.addEventListener
 			? "addEventListener"
@@ -34,8 +32,9 @@
 
         if (obj.cmd == 'top') {
             var d_frame = document.getElementById('second');
+            d_frame.focus();
             d_frame.contentWindow.location = "all_cats.html#top"; 
-        }
+          }
 
         /*
         if (obj.cmd == 'resize') {
@@ -48,8 +47,15 @@
 
 	});
 
+    function loadFinished() {
+            var d_frame = document.getElementById('search_d'); 
+            d_frame.focus();
+            d_frame.contentWindow.postMessage("", '*')
+    }
+ 
 </script>
 
+<body class="markdown-body" onload="loadFinished()">
 
 <div class="parent-div">
     <div class="first_row" id="first_row">
