@@ -156,9 +156,14 @@ class DuckStuff:
             for cat in all_bangs_keys:
                 entryLinks = ""
 
+                isFirst = True
                 for catentry in list(all_bangs[cat]):
-                                    entryLinks = entryLinks +  "<a href=\"#{}\">{}</a>&nbsp;".format(link_num, catentry)
-                                    link_num = link_num + 1
+                    if not isFirst:
+                       entryLinks = entryLinks + ","
+                    entryLinks = entryLinks + "&nbsp;"
+                    isFirst = False
+                    entryLinks = entryLinks +  "<a href=\"#{}\">{}</a>".format(link_num, catentry)
+                    link_num = link_num + 1
                 f.write("<tr><td>{}</td><td>{}</td>\n".format(cat, entryLinks))
             f.write("</table>\n")
 
