@@ -1,13 +1,13 @@
-# meta search engine builder
+# Meta search tool builder
 
 This script builds the html pages for a little meta-search tool;
 
 The resulting meta-search tool [in action](https://mosermichael.github.io/duckduckbang/html/main.html) 
-The tool has the advantage of having all duckduckgo bang! search operators in one page. I think that makes it easier to use the stuff.
+The tool has the advantage of having all duckduckgo [bang!](https://duckduckgo.com/bang) search operators in one page, it uses the same catalog of operators. I think that makes it easier to use the stuff.
 
 The page is kept up to date by a nightly build process (runs courtesy of [github workflows/actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions) )
 
-# script that builds the page
+# Script that builds the page
 
 The [build-cats.py](https://github.com/MoserMichael/duckduckbang/blob/master/build-cats.py) script that generates the search page works as follows: 
 
@@ -27,7 +27,7 @@ Specialized search engines have it much easier - they don't have to work hard to
 
 These specialized search engines will also tend to respect your privacy as they won't have the resources and data of the big players.
 
-# today i learned
+# Today i learned
 
 The abbreviation of Categories is cat; [here](https://writingexplained.org/english-abbreviations/category)
 Are cats capable of categorization? No idea, I like them. 
