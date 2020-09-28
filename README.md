@@ -12,6 +12,8 @@ The meta-search tool has the advantage of having all duckduckgo bang! search com
 
 The page is kept up to date by a nightly build process (runs courtesy of [github workflows/actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions) ) Any new bang! operator should therefore appear in the search tool.
 
+Update: This tutorial also made it to the Hacker News front page! [link](https://news.ycombinator.com/item?id=24618447); I really learned quite a bit from the comments section. Thanks for the feedback. Thanks!
+
 # Motivation for the search tool 
 
 Lately I have been increasingly using specialised search engines; for example when searching for code examples it is possible to find quite a lot with [github search](https://github.com/search/advanced) (the search operators are explained [here](https://docs.github.com/en/free-pro-team@latest/github/searching-for-information-on-github/searching-code) and [here](https://docs.github.com/en/github/searching-for-information-on-github/understanding-the-search-syntax). I have not been able to get the same quality results in any of the big search engines.
