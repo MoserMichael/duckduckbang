@@ -85,10 +85,10 @@ class DuckStuff:
                     cat_obj[sub_cat] = list()
                     sub_cat_obj = cat_obj.get(sub_cat)
 
-                entry = (entry.get("t"), entry.get("s"), entry.get("d"))
-                sub_cat_obj.append(entry)
-                num_entries = num_entries + 1
-                set_of_bangs[entry[0]] = 1
+            entry = (entry.get("t"), entry.get("s"), entry.get("d"))
+            sub_cat_obj.append(entry)
+            num_entries = num_entries + 1
+            set_of_bangs[entry[0]] = 1
 
 
         if Global.trace_on:
