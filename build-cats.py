@@ -5,6 +5,12 @@ from pprint import pprint
 from datetime import datetime
 #from bs4 import BeautifulSoup, SoupStrainer
 
+import sys
+
+# sys.setdefaultencoding() does not exist, here!
+reload(sys)  # Reload does the trick!
+sys.setdefaultencoding('UTF8')
+
 
 class Global:
     trace_on = False
@@ -199,7 +205,7 @@ class DuckStuff:
 
                     out_file.write("</tr></table>")
 
-            out_file.write("<hr/>Generated on {}; number of entries {} unique bangs! {}<br/>\n".format(datetime.now(), num_entries, unique_bangs))
+            out_file.write("<table width='100%'><tr><td>Generated on {}; number of entries {} unique bangs! {}</td></tr></table>\n".format(datetime.now(), num_entries, unique_bangs))
 
 
 
