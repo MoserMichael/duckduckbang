@@ -206,7 +206,7 @@ class DuckStuff:
 
                     out_file.write("</tr></table>")
 
-            out_file.write("\n<table width='100%'><tr><td>Generated on {}; number of entries {} unique bangs! {}</td></tr></table>\n".format(datetime.now(), num_entries, unique_bangs))
+            out_file.write("\n<table width='100%'><tr><td>Generated on {}; number of entries {} unique bangs! {}</td></tr></table></br>eof\n".format(datetime.now(), num_entries, unique_bangs))
 
 
 
