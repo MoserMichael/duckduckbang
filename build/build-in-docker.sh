@@ -34,6 +34,15 @@ if [[ $CHANGED != "3" ]]; then
     git add html/all_cats.html
     git commit -m "automatic build $(date)"
     expect -f /ex
+
+    # generate some action in the main repository, so that the CI job will not get disabled.
+    git checkout master
+    date >> ci-runs.txt
+    git add ci-runs.txt
+    git commit -m "automatic build $(date)"
+    expect -f /ex
+
+
 else
     echo "*** the file didn't change ***"
 fi
