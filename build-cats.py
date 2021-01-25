@@ -12,6 +12,7 @@ import sys
 #sys.setdefaultencoding('UTF8')
 
 
+
 class Global:
     trace_on = False
 
