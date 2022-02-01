@@ -5,8 +5,6 @@ from pprint import pprint
 from datetime import datetime
 #from bs4 import BeautifulSoup, SoupStrainer
 
-import sys
-
 # sys.setdefaultencoding() does not exist, here!
 #reload(sys)  # Reload does the trick!
 #sys.setdefaultencoding('UTF8')
@@ -167,7 +165,11 @@ class DuckStuff:
                 entry_links = ""
 
                 is_first = True
-                for catentry in list(all_bangs[cat]):
+
+                all_bangs_cat = list(all_bangs[cat])
+                all_bangs_cat.sort()
+
+                for catentry in all_bangs_cat:
                     if not is_first:
                         entry_links = entry_links + ","
                     entry_links = entry_links + "&nbsp;"
@@ -181,7 +183,12 @@ class DuckStuff:
             num_columns = 3
 
             for cat in all_bangs_keys:
-                for catentry in list(all_bangs[cat]):
+
+                all_bangs_cat = list(all_bangs[cat])
+                all_bangs_cat.sort()
+
+
+                for catentry in all_bangs_cat:
                     out_file.write("<hr/><p/><a id=\"{}\"/>\n".format(link_num))
                     link_num += 1
 
@@ -190,7 +197,9 @@ class DuckStuff:
                     pos = 0
                     out_file.write("<table width=\"100%\"><tr>\n")
 
-                    for bang in all_bangs[cat][catentry]:
+                    cat_content = sorted(all_bangs[cat][catentry], key=lambda entry : entry[1])
+
+                    for bang in cat_content:
                         if pos % num_columns == 0:
                             out_file.write("</tr><tr>")
                         out_file.write("<td>")
