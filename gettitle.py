@@ -70,22 +70,30 @@ def get_meta_descr_impl2(url, soup_builder):
                     check_tag(meta, prop)
 
     if len(titles) > 0:
-        descr = max(titles,key=len)
+        the_title = max(titles,key=len)
     else:
-        descr = ""
+        the_title = ""
+
+    descr = the_title
+
+    if len(title_tags) != 0:
+        title = max(title_tags,key=len)
+        if title != "" and title != the_title:
+            if descr != "":
+                descr += "\n"
+            descr += title
+    else:
+        title = ""
 
     if len(descriptions) > 0:
         cont = max(descriptions,key=len)
     else:
         cont = ""
 
-    if cont != "":
-        descr += "\n" + cont
-
-    # last effort: if no meta tags were present, try to use the title tag
-    if descr == "":
-        if len(title_tags) != 0:
-            descr = max(title_tags,key=len)
+    if cont != "" and cont != the_title:
+        if descr != "":
+            descr += "\n"
+        descr += cont
 
     if len(keywords) > 0:
         if descr != "":
