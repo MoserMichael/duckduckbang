@@ -1,79 +1,71 @@
-import http.client as client
-import ssl
+#!/usr/bin/env python3
 import json
+import os
 from pprint import pprint
 from datetime import datetime
-#from bs4 import BeautifulSoup, SoupStrainer
+import gettitle
+from comm import *
 
 # sys.setdefaultencoding() does not exist, here!
 #reload(sys)  # Reload does the trick!
 #sys.setdefaultencoding('UTF8')
 
-
-
-class Global:
-    trace_on = False
-
-#
-# get soup over tls 1.2
-#
-class BSoup:
+class DescriptionCache:
+    description_cache_file = 'description_cache.json'
+    ignore_set = {"www.accuweather.com", "www.adidas.fr", "aitopics.org", "www.appannie.com", "www.appannie.com"}
 
     def __init__(self):
-        self.map_host_to_conn = {}
-        self.context = ssl.SSLContext(ssl.PROTOCOL_TLSv1_2)
+        self.map_url_to_descr = {}
+        self.map_url_to_descr_changed = False
 
-    def get_data(self, host, path, port=443):
-        conn = self.map_host_to_conn.get(host)
+    def read_description_cache(self):
+        if os.path.isfile(DescriptionCache.description_cache_file):
+            with open(DescriptionCache.description_cache_file, 'r') as cache_file:
+                self.map_url_to_descr = json.load(cache_file)
 
-        if conn is None:
-            conn = client.HTTPSConnection(host, context=self.context)
-            self.map_host_to_conn[host] = conn
-
-        conn.request("GET", path)
-
-        resp = conn.getresponse()
-
-        data = resp.read()
-
-        if Global.trace_on:
-            print("host={} path={} data={}\n".format(host, path, data))
-
-        return data
+    def write_description_cache(self):
+        if self.map_url_to_descr_changed:
+            with open(DescriptionCache.description_cache_file, 'w') as cache_file:
+                json.dump( self.map_url_to_descr, cache_file )
+            self.map_url_to_descr_changed = False
 
 
-    def get_json(self, host, path, port=443):
+    def cache_lookup(self, url):
 
-        data = self.get_data(host, path, port)
-
-        json_rep = json.loads(data)
-
-        if Global.trace_on:
-            pprint(json_rep)
-
-        return json_rep
-
-#    def get_soup(self, host, path, port=443):
-#
-#        data = self.get_data(host, path, port)
-#
-#        return BeautifulSoup(data)
+        descr = self.map_url_to_descr.get(url, None)
+        if descr is not None and descr != "":
+            return descr
+        if url not in DescriptionCache.ignore_set:
+            print(f"cache_lookup: {url}")
+            descr =  gettitle.get_meta_descr(url)
+            if descr is not None:
+                self.map_url_to_descr[url] = descr
+                self.map_url_to_descr_changed = True
+                self.write_description_cache()
+        else:
+            descr = ""
+        return descr
 
 
 class DuckStuff:
     #the host
-    url = 'duckduckgo.com'
+    url = 'https://duckduckgo.com'
+
 
     def __init__(self):
         self.soup_builder = BSoup()
-
+        self.desc_cache = DescriptionCache()
 
     def get_all(self):
-        json_data = self.soup_builder.get_json(DuckStuff.url, "/bang.js")
+        json_data = self.soup_builder.get_json(DuckStuff.url + "/bang.js")
 
-        all_bangs = dict()
-        set_of_bangs = dict()
+
+        all_bangs = {}
+        set_of_bangs = {}
         num_entries = 0
+
+        cache_lookup_ok = 0
+        cache_lookup_failed = 0
 
         for entry in json_data:
             #print("Category {} SubCategory {}".format(entry.get("c"), entry.get("sc")))
@@ -82,18 +74,32 @@ class DuckStuff:
             if not cat is None and not sub_cat is None:
                 cat_obj = all_bangs.get(cat)
                 if cat_obj is None:
-                    all_bangs[cat] = dict()
+                    all_bangs[cat] = {}
                     cat_obj = all_bangs.get(cat)
 
                 sub_cat_obj = cat_obj.get(sub_cat)
                 if sub_cat_obj is None:
-                    cat_obj[sub_cat] = list()
+                    cat_obj[sub_cat] = []
                     sub_cat_obj = cat_obj.get(sub_cat)
 
-            entry = (entry.get("t"), entry.get("s"), entry.get("d"))
+            url = entry.get("d")
+
+            description = self.desc_cache.cache_lookup( url ) #, self.soup_builder )
+            if description is None or description == "":
+                cache_lookup_failed += 1
+            else:
+                cache_lookup_ok += 1
+
+            entry = (entry.get("t"), entry.get("s"), url, description)
+            print(f"Cache lookup succeeded: {cache_lookup_ok} failed: {cache_lookup_failed}")
+
+
             sub_cat_obj.append(entry)
             num_entries = num_entries + 1
             set_of_bangs[entry[0]] = 1
+
+
+        print(f"Total: Cache lookup succeeded: {cache_lookup_ok} failed: {cache_lookup_failed}")
 
 
         if Global.trace_on:
@@ -104,7 +110,7 @@ class DuckStuff:
 
 #    def get_categories(self):
 #
-#        ms = self.soup_builder.get_soup(DuckStuff.url, "/bang")
+#        ms = self.soup_builder.get_soup(DuckStuff.url + "/bang")
 #
 #        ret_cats = []
 #
@@ -112,7 +118,7 @@ class DuckStuff:
 #            src_path = tag.get('src')
 #
 #            if not src_path is None:
-#                data = self.soup_builder.get_data(DuckStuff.url, src_path)
+#                data = self.soup_builder.get_data(DuckStuff.url + src_path)
 #                data_str = data.decode("utf-8")
 #
 #                if data_str.find("BangCategories={") != -1:
@@ -128,6 +134,9 @@ class DuckStuff:
 #
 
     def show_cats(self, output_file_name):
+
+        self.desc_cache.read_description_cache()
+
         all_bangs, num_entries, unique_bangs = self.get_all()
 
         #pprint(all_bangs)
@@ -174,9 +183,9 @@ class DuckStuff:
                         entry_links = entry_links + ","
                     entry_links = entry_links + "&nbsp;"
                     is_first = False
-                    entry_links = entry_links +  "<a href=\"#{}\">{}</a>".format(link_num, catentry)
+                    entry_links = entry_links +  f"<a href=\"#{link_num}\">{catentry}</a>"
                     link_num = link_num + 1
-                out_file.write("<tr><td>{}</td><td>{}</td>\n".format(cat, entry_links))
+                out_file.write(f"<tr><td>{cat}</td><td>{entry_links}</td>\n")
             out_file.write("</table>\n")
 
             link_num = 1
@@ -189,10 +198,10 @@ class DuckStuff:
 
 
                 for catentry in all_bangs_cat:
-                    out_file.write("<hr/><p/><a id=\"{}\"/>\n".format(link_num))
+                    out_file.write(f"<hr/><p/><a id=\"{link_num}\"/>\n")
                     link_num += 1
 
-                    out_file.write("<h3>{} / {}</h3><p></p>\n".format(cat, catentry))
+                    out_file.write(f"<h3>{cat} / {catentry}</h3><p></p>\n")
 
                     pos = 0
                     out_file.write("<table width=\"100%\"><tr>\n")
@@ -220,7 +229,8 @@ class DuckStuff:
 
 
 #---
-
+#Global.trace_on = True
+#Global.debug_on = True
 DuckStuff().show_cats("all_cats.html")
 
 #for link in BeautifulSoup(data, parse_only=SoupStrainer('a')):
