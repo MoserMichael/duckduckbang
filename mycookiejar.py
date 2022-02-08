@@ -1297,7 +1297,7 @@ class CookieJar:
         """Return a list of cookies to be returned to server."""
         cookies = []
         for domain in self._cookies.keys():
-            print(f"dbg: _cookies_for_request cookie domain: {domain}")
+            #print(f"dbg: _cookies_for_request cookie domain: {domain}")
             cookies.extend(self._cookies_for_domain(domain, request))
         return cookies
 
@@ -1366,7 +1366,7 @@ class CookieJar:
         The Cookie2 header is also added unless policy.hide_cookie2 is true.
 
         """
-        print(f"dbg: add_cookie_header request: {repr(request)}")
+        #print(f"dbg: add_cookie_header request: {repr(request)}")
 
         _debug("add_cookie_header")
         self._cookies_lock.acquire()

@@ -36,7 +36,6 @@ class DescriptionCache:
         if descr is not None and descr != "":
             return descr
         if url not in DescriptionCache.ignore_set:
-            print(f"cache_lookup: {url}")
             descr =  gettitle.get_meta_descr(url)
             if descr is not None:
                 self.map_url_to_descr[url] = descr
@@ -66,6 +65,7 @@ class DuckStuff:
 
         cache_lookup_ok = 0
         cache_lookup_failed = 0
+        failed_lookups = []
 
         for entry in json_data:
             #print("Category {} SubCategory {}".format(entry.get("c"), entry.get("sc")))
@@ -86,13 +86,18 @@ class DuckStuff:
 
             description = self.desc_cache.cache_lookup( url ) #, self.soup_builder )
             if description is None or description == "":
+                print("failed lookup: {url}")
                 cache_lookup_failed += 1
+                failed_lookups.append( url )
             else:
                 cache_lookup_ok += 1
 
             entry = (entry.get("t"), entry.get("s"), url, description)
             print(f"Cache lookup succeeded: {cache_lookup_ok} failed: {cache_lookup_failed}")
-
+            if len(failed_lookups) != 0:
+                with open("failed_lookups.txt", "w") as failed_lookups:
+                    print("failed lookups:\n", "\n".join(failed_lookups) )
+                    failed_lookups.write("\n".join(failed_lookups))
 
             sub_cat_obj.append(entry)
             num_entries = num_entries + 1
