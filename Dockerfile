@@ -6,7 +6,7 @@ RUN apk add bash python3 git expect
 
 WORKDIR /
 
-COPY build-cats.py /
+COPY build_cats.py /
 COPY build/build-in-docker.sh /
 COPY build/ex /
 

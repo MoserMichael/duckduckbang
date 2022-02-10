@@ -26,7 +26,7 @@ These specialized search engines will also tend to respect your privacy, more th
 
 # Script that builds the page
 
-The [build-cats.py](https://github.com/MoserMichael/duckduckbang/blob/master/build-cats.py) script that generates the search page works as follows: 
+The [build_cats.py](https://github.com/MoserMichael/duckduckbang/blob/master/build_cats.py) script that generates the search page works as follows: 
 
 1. It loads the following url [https://duckduckgo.com/bang.js](https://duckduckgo.com/bang.js) this gives a json file that contains an entry for each bang! search operator, and the classification of the operator in the official [bang page](https://duckduckgo.com/bang).
 2. Builds the category/subcategory breakup that is used to display the [bang page](https://duckduckgo.com/bang).  

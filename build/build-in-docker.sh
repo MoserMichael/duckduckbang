@@ -4,7 +4,7 @@ set -ex
 
 cd / 
 
-python3  /build-cats.py
+python3  /build_cats.py
 
 stat /all_cats.html 
 

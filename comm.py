@@ -17,6 +17,7 @@ import html5lib
 class Global:
     trace_on = False
     debug_on = False
+    timeout_sec = None
 
 class MyCookiePolicy(cookiejar.DefaultCookiePolicy):
     def set_ok(self, cookie, request):
@@ -79,16 +80,16 @@ class BSoup:
         return "utf-8"
 
     def get_data_imp(self, url, depth):
-        def get_location_hdr(hdrs):
+        def get_hdr(hdrs, hdr_name):
             for name, value in hdrs.items():
-                if name.lower() == "location":
+                if name.lower() == hdr_name: #"location":
                     return value.strip()
             return None
 
         if Global.trace_on:
             print(f"url: {url} depth: {depth}")
 
-        if depth > 10:
+        if depth > 20:
             raise ValueError(f"too many redirections {url}")
 
         parsed_url = urlparse(url, scheme='https', allow_fragments=True)
@@ -106,7 +107,11 @@ class BSoup:
         conn = self.map_host_to_conn.get(host)
 
         if conn is None:
-            conn = client.HTTPSConnection(host, context=self.context)
+            if Global.timeout_sec is None:
+                conn = client.HTTPSConnection(host, context=self.context)
+            else:
+                conn = client.HTTPSConnection(host, context=self.context, timeout=Global.timeout_sec)
+
             self.map_host_to_conn[host] = conn
 
         if Global.debug_on:
@@ -115,7 +120,7 @@ class BSoup:
         req = request.Request('https://'+url)
         self.cookiejar.add_cookie_header( req )
 
-        # fake some user agent and a referer
+        # fake some user agent - put all header just like in firefox on osx.
         req_headers = {
           'User-Agent': BSoup.user_agent,
            #'referer': BSoup.referer,
@@ -132,12 +137,14 @@ class BSoup:
 
         if req.has_header("Cookie"):
             cookie_val =  req.get_header("Cookie")
-            print("SET_COOKIE: {cookie_val}")
+            if Global.debug_on:
+                print(f"SET_COOKIE: {cookie_val}")
             req_headers["Cookie"] = cookie_val
 
         if req.has_header("Cookie2"):
             cookie_val =  req.get_header("Cookie2")
-            print("SET_COOKIE2: {cookie_val}")
+            if Global.debug_on:
+                print(f"SET_COOKIE2: {cookie_val}")
             req_headers["Cookie2"] = cookie_val
 
         conn.request("GET", path, headers=req_headers)
@@ -147,28 +154,35 @@ class BSoup:
         self.cookiejar.extract_cookies(resp, req)
 
         detected_charset = BSoup._get_charset(resp)
-
+        
+        # takes care of transfer encoding chunked. thanks!
         data = resp.read()
 
-        headers = dict(resp.getheaders())        
-        if "Content-Encoding" in headers:
-            content_encoding = headers["Content-Encoding"]
-            if content_encoding == "gzip":
+        headers = dict(resp.getheaders())
+
+        content_encoding_hdr = get_hdr(headers,'content-encoding')
+        if content_encoding_hdr is not None:
+            if content_encoding_hdr.lower() == "gzip":
                 data = gzip.decompress(data)
-            if content_encoding == "br":
+            elif content_encoding_hdr.lower() == "br":
                 data = brotli.decompress(data)
-            if content_encoding == "deflate":
+            elif content_encoding_hdr.lower() == "deflate":
                 data = zlib.decompress(data)
+            else:
+                print(f"Warning: unknown content encoding {content_encoding_hdr} for url: {url} !!!")
+
+
+        content_language_hdr = get_hdr(headers, "content-language")
 
         if Global.trace_on:
             print(f"resp: {resp} status: {resp.status} charset: {detected_charset} headers: {dict(resp.getheaders())}")
 
-        location_hdr = get_location_hdr(headers)
+        location_hdr = get_hdr(headers,'location')
 
         if location_hdr is not None:
 
             # some servers return encoded location header. brrr.
-            location_hdr = urllib.parse.unquote(location_hdr, encoding='utf-8', errors='replace')
+            #location_hdr = urllib.parse.unquote(location_hdr, encoding='utf-8', errors='replace')
 
             #print(f"redirect to: {headers['Location']}")
             if not location_hdr.startswith("/"):
@@ -181,11 +195,11 @@ class BSoup:
         if Global.debug_on:
             print(f"host={host} path={path} data:\n{data}\n")
 
-        return data, detected_charset
+        return data, detected_charset, content_language_hdr
 
 
     def get_json(self, url):
-        data, _ = self.get_data(url)
+        data, _, _ = self.get_data(url)
 
         json_rep = json.loads(data)
 
@@ -208,7 +222,7 @@ class BSoup:
 
     def get_soup(self, url):
 
-        data, detected_charset = self.get_data(url)
+        data, detected_charset, _ = self.get_data(url)
         data_file = io.StringIO(data.decode(detected_charset.lower()))
 
         return html5lib.parse(data_file, treebuilder="etree") #lxml")

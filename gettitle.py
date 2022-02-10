@@ -4,6 +4,7 @@ import argparse
 import traceback
 import sys
 from comm import *
+import getselen
 
 #Relevant tags to search for:
 #
@@ -15,11 +16,12 @@ from comm import *
 
 
 def get_meta_descr_impl2(url, soup_builder):
-    
+
     descriptions = []
     titles = []
     title_tags = []
     keywords = []
+    detected_language = ""  
 
     def get_content(meta):
         for key, value in meta.attrib.items():
@@ -36,12 +38,12 @@ def get_meta_descr_impl2(url, soup_builder):
 
     def check_tag(tag, name):
         if name is not None:
-            if is_in_list_nocmp(name, ("description", "twitter:description", "og:description")):
+            if is_in_list_nocmp(name, ("description", "twitter:description", "og:description", "DC.Description" )):
                 content = get_content(tag)
                 if content is not None:
                     descriptions.append(content)
 
-            elif is_in_list_nocmp(name, ("title", "twitter:title", "og:title", "og:site_name")):
+            elif is_in_list_nocmp(name, ("title", "twitter:title", "og:title", "og:site_name", "DC.Title")):
                 content = get_content(tag)
                 if content is not None:
                     titles.append(content)
@@ -55,12 +57,18 @@ def get_meta_descr_impl2(url, soup_builder):
 
     for meta in soup.iter():
         if isinstance(meta.tag,str):
-            if meta.tag.endswith("}title"):
+            if meta.tag.endswith("}html"):
+                prop = meta.get("lang")
+                if prop is not None:
+                    detected_language = prop.strip().lower()
+
+
+            elif meta.tag.endswith("}title"):
                 title_text = meta.text.strip()
                 if title_text != "":
                     title_tags.append( title_text )
 
-            if meta.tag.endswith("}meta"):
+            elif meta.tag.endswith("}meta"):
                 name = meta.get("name")
                 if name is not None:
                     check_tag(meta, name)
@@ -70,14 +78,14 @@ def get_meta_descr_impl2(url, soup_builder):
                     check_tag(meta, prop)
 
     if len(titles) > 0:
-        the_title = max(titles,key=len)
+        the_title = max(titles,key=len).strip()
     else:
         the_title = ""
 
     descr = the_title
 
     if len(title_tags) != 0:
-        title = max(title_tags,key=len)
+        title = max(title_tags,key=len).strip()
         if title != "" and title != the_title:
             if descr != "":
                 descr += "\n"
@@ -86,7 +94,7 @@ def get_meta_descr_impl2(url, soup_builder):
         title = ""
 
     if len(descriptions) > 0:
-        cont = max(descriptions,key=len)
+        cont = max(descriptions,key=len).strip()
     else:
         cont = ""
 
@@ -98,34 +106,46 @@ def get_meta_descr_impl2(url, soup_builder):
     if len(keywords) > 0:
         if descr != "":
             descr += "\n"
-        descr += "keywords: " + max(keywords,key=len)
+        descr += "keywords: " + max(keywords,key=len).strip()
 
-    print(f"url: {url} descr: {descr}")
-    return descr
+    print(f"url: {url}\nlanguage: {detected_language}\ndescr: {descr}")
+    return descr, detected_language
 
-def get_meta_descr_impl(url, soup_builder):
+def get_meta_descr_impl(url, soup_builders):
 
-    if not url.startswith("www."):
+    for soup_builder in soup_builders:
+        if not url.startswith("www."):
+            try:
+                ret, lang = get_meta_descr_impl2("www." + url, soup_builder)
+                if ret != "":
+                    return ret, lang
+            except Exception as ex:
+                if Global.trace_on:
+                    print(f"(first try) failed to resolve url: www.{url} error: {ex}")
+                    traceback.print_exception(*sys.exc_info())
+
         try:
-            ret = get_meta_descr_impl2("www." + url, soup_builder)
+            ret, lang = get_meta_descr_impl2(url, soup_builder)
             if ret != "":
-                return ret
+                return ret, lang
         except Exception as ex:
             if Global.trace_on:
-                print(f"(first try) failed to resolve url: www.{url} error: {ex}")
+                print(f"(second try) failed to resolve url: {url} error: {ex}")
                 traceback.print_exception(*sys.exc_info())
 
-    try:
-        return get_meta_descr_impl2(url, soup_builder)
-    except Exception as ex:
-        if Global.trace_on:
-            print(f"(second try) failed to resolve url: {url} error: {ex}")
-            traceback.print_exception(*sys.exc_info())
+    return "", None
 
-    return ""
+def get_meta_descr(url, http_client=True, use_selen=False):
+    soup_builder = []
 
-def get_meta_descr(url):
-    soup_builder = BSoup()
+    if http_client:
+        soup_builder.append( BSoup() )
+    if use_selen:
+        soup_builder.append( getselen.SeleniumSoup() )
+
+    if len(soup_builder) == 0:
+        raise ValueError("no http access method has been enabled")
+
     return get_meta_descr_impl(url, soup_builder)
 
 def _parse_cmd_line():
@@ -137,7 +157,7 @@ Show a textual description for a requested query, see command line options for m
         description=usage, formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
 
-    group = parse.add_argument_group("view github data on current users repositories")
+    group = parse.add_argument_group("actions")
 
     group.add_argument(
         "--url",
@@ -145,6 +165,33 @@ Show a textual description for a requested query, see command line options for m
         type=str,
         dest="url",
         help="get info from meta tags of text fetched for url",
+    )
+    
+    group.add_argument(
+        "--timeout",
+        "-t",
+        type=int,
+        default=None,
+        dest="timeout",
+        help="timeout in seconds for https client",
+    )
+
+    group.add_argument(
+        "--http-client",
+        "-c",
+        default=True,
+        action="store_false",
+        dest="http_client",
+        help="disable http client (default: http clien enabled)"
+    )
+
+    group.add_argument(
+        "--selenium",
+        "-s",
+        default=False,
+        action="store_true",
+        dest="selenium",
+        help="enable selenium download"
     )
 
     group.add_argument(
@@ -164,8 +211,7 @@ Show a textual description for a requested query, see command line options for m
         dest="debug",
         help="show content of downloaded page"
     )
-
-
+    
     return parse.parse_args()
 
 def _run_cmd():
@@ -177,8 +223,11 @@ def _run_cmd():
     if cmd.debug:
         Global.debug_on = True
 
+    if cmd.timeout is not None:
+        Global.timeout_sec = cmd.timeout
+
     if cmd.url is not None:
-        get_meta_descr(cmd.url)
+        get_meta_descr(cmd.url, cmd.http_client, cmd.selenium)
 
 if __name__ == '__main__':
     _run_cmd()
