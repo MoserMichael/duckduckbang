@@ -39,7 +39,7 @@ class DescriptionCache:
     def write_description_cache(self):
         if self.map_url_to_descr_changed:
             with open(DescriptionCache.description_cache_file, 'w') as cache_file:
-                json.dump( self.map_url_to_descr, cache_file )
+                json.dump( self.map_url_to_descr, cache_file, indent=2 )
             self.map_url_to_descr_changed = False
 
     def cache_lookup(self, url):
@@ -58,7 +58,7 @@ class DescriptionCache:
             if error_desc is not None:
                 print(f"Error: {error_desc}")
             else:
-                print(f"url: {url}\ndescr: {descr}\nlanguage: {language}"
+                print(f"url: {url}\ndescr: {descr}\nlanguage: {language}")
 
         is_in_map = url in self.map_url_to_descr
 
