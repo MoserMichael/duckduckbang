@@ -3,7 +3,7 @@
 import argparse
 import traceback
 import sys
-from comm import *
+import comm
 import getselen
 
 #Relevant tags to search for:
@@ -21,7 +21,7 @@ def get_meta_descr_impl2(url, soup_builder):
     titles = []
     title_tags = []
     keywords = []
-    detected_language = ""  
+    detected_language = ""
 
     def get_content(meta):
         for key, value in meta.attrib.items():
@@ -108,7 +108,6 @@ def get_meta_descr_impl2(url, soup_builder):
             descr += "\n"
         descr += "keywords: " + max(keywords,key=len).strip()
 
-    print(f"url: {url}\nlanguage: {detected_language}\ndescr: {descr}")
     return descr, detected_language
 
 def get_meta_descr_impl(url, soup_builders):
@@ -120,7 +119,7 @@ def get_meta_descr_impl(url, soup_builders):
                 if ret != "":
                     return ret, lang
             except Exception as ex:
-                if Global.trace_on:
+                if comm.Global.trace_on:
                     print(f"(first try) failed to resolve url: www.{url} error: {ex}")
                     traceback.print_exception(*sys.exc_info())
 
@@ -129,7 +128,7 @@ def get_meta_descr_impl(url, soup_builders):
             if ret != "":
                 return ret, lang
         except Exception as ex:
-            if Global.trace_on:
+            if comm.Global.trace_on:
                 print(f"(second try) failed to resolve url: {url} error: {ex}")
                 traceback.print_exception(*sys.exc_info())
 
@@ -139,7 +138,7 @@ def get_meta_descr(url, http_client=True, use_selen=False):
     soup_builder = []
 
     if http_client:
-        soup_builder.append( BSoup() )
+        soup_builder.append( comm.BSoup() )
     if use_selen:
         soup_builder.append( getselen.SeleniumSoup() )
 
@@ -166,7 +165,7 @@ Show a textual description for a requested query, see command line options for m
         dest="url",
         help="get info from meta tags of text fetched for url",
     )
-    
+
     group.add_argument(
         "--timeout",
         "-t",
@@ -211,23 +210,25 @@ Show a textual description for a requested query, see command line options for m
         dest="debug",
         help="show content of downloaded page"
     )
-    
+
     return parse.parse_args()
 
 def _run_cmd():
     cmd = _parse_cmd_line()
 
     if cmd.verbose:
-        Global.trace_on = True
+        comm.Global.trace_on = True
 
     if cmd.debug:
-        Global.debug_on = True
+        comm.Global.debug_on = True
 
     if cmd.timeout is not None:
-        Global.timeout_sec = cmd.timeout
+        comm.Global.timeout_sec = cmd.timeout
 
     if cmd.url is not None:
-        get_meta_descr(cmd.url, cmd.http_client, cmd.selenium)
+        descr, detected_language = get_meta_descr(cmd.url, cmd.http_client, cmd.selenium)
+        print(f"url: {cmd.url}\nlanguage: {detected_language}\ndescr: {descr}")
+
 
 if __name__ == '__main__':
     _run_cmd()

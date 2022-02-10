@@ -2,8 +2,8 @@ import http.client as client
 from urllib.parse import urlparse
 import urllib.request as request
 import urllib
-#import http.cookiejar as cookiejar
-import mycookiejar as cookiejar
+import http.cookiejar as cookiejar
+#import mycookiejar as cookiejar
 import ssl
 import json
 import gzip

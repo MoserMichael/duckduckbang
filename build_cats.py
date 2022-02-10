@@ -6,7 +6,7 @@ from pprint import pprint
 from datetime import datetime
 import re
 import gettitle
-from comm import *
+import comm
 
 # sys.setdefaultencoding() does not exist, here!
 #reload(sys)  # Reload does the trick!
@@ -51,7 +51,11 @@ class DescriptionCache:
         if url in DescriptionCache.ignore_set:
             return "", True
 
-        descr =  gettitle.get_meta_descr(url, self.enable_http_client, self.enable_selenium)
+        descr, language =  gettitle.get_meta_descr(url, self.enable_http_client, self.enable_selenium)
+
+        if comm.Global.trace_on:
+            print(f"url: {url}\ndescr: {descr}\nlanguage: {language}")
+
 
         is_in_map = url in self.map_url_to_descr
 
@@ -80,7 +84,7 @@ class DuckStuff:
     url = 'https://duckduckgo.com'
 
     def __init__(self, enable_http_client, enable_selenium):
-        self.soup_builder = BSoup()
+        self.soup_builder = comm.BSoup()
         self.desc_cache = DescriptionCache(enable_http_client, enable_selenium)
         self.desc_cache.read_description_cache()
         self.map_url_to_id = {}
@@ -145,7 +149,7 @@ class DuckStuff:
             num_entries = num_entries + 1
             set_of_bangs[entry[0]] = 1
 
-        if Global.trace_on:
+        if comm.Global.trace_on:
             pprint(all_bangs)
 
         return all_bangs, num_entries, len(set_of_bangs.keys()), json_data
@@ -310,7 +314,7 @@ function h(elem) {
 
                     out_file.write("</tr></table>")
 
-            out_file.write("\n<table width='100%'><tr><td>Generated on {}; number of entries {} unique bangs! {}</td></tr></table>\n<p><p><p>***eof***\n".format(datetime.now(), num_entries, unique_bangs))
+            out_file.write(f"\n<table width='100%'><tr><td>Generated on {datetime.now()}; number of entries {num_entries} unique bangs! {unique_bangs}</td></tr></table>\n<p><p><p>***eof***\n")
 
 
 def _parse_cmd_line():
@@ -343,7 +347,7 @@ Build the html for the duckduckbang meta search tool.
     )
 
     group.add_argument(
-        "--http-client",
+        "--no-http-client",
         "-l",
         default=True,
         action="store_false",
