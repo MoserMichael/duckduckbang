@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 import argparse
+import traceback
+import sys
 import pathlib
 import io
 import html5lib
+import psutil
 import comm
 
 def install_selenium_driver():
@@ -19,8 +22,16 @@ def install_selenium_driver():
 #    driver.close()
 
 
+def _kill_it(name):
+    for ps_info in psutil.process_iter(['name', 'status']):
+        if ps_info.name == name and ps_info.status == psutil.STATUS_RUNNING:
+            if comm.Global.trace_on:
+                print(f"killing pid {ps_info.pid}")
+            proc = psutil.Process(ps_info.pid)
+            proc.terminate()
 
-def last_effort_selenium_download(url, browser, selenium_driver = None):
+
+def last_effort_selenium_download(url, browser, selenium_driver = None, kill_browser_proc = True):
     from selenium import webdriver
 
     if comm.Global.trace_on:
@@ -40,17 +51,43 @@ def last_effort_selenium_download(url, browser, selenium_driver = None):
         driver = webdriver.Firefox(executable_path=selenium_driver)
 
     elif browser == "chrome":
+        # didn't check this out really. should work, if the driver is present.
         driver = webdriver.Chrome(selenium_driver) #options)
 
     else:
         raise ValueError(f"invalid value. browser: {browser}")
 
-    driver.get(url)
+    has_error = False
+    try:
+        driver.get(url)
+
+    except Exception as ex:
+        if comm.Global.trace_on:
+            print(f"Error while loading url: {url} error: {ex}")
+            traceback.print_exception(*sys.exc_info())
+
+        has_error = True
+        rval = f"load_error: {ex}"
+
     #driver.find_element_by_xpath("/html")
-    rval = driver.page_source
-    # quit closes the browser, close doesn't seem to do that
+    if not has_error:
+        rval = driver.page_source
+
+    if comm.Global.trace_on:
+        print(f"trace: {rval}")
+
+    driver.close()
     driver.quit()
 
+    if kill_browser_proc:
+        # currently there seems to be a bug in the firefox selenium driver.
+        # the firefox window is not closed, despite calling both close and quit.
+        # now killing the firefox process, as a last resort.
+        if browser == "firefox":
+            _kill_it("firefox")
+
+    if has_error:
+        raise ValueError(rval)
     return rval
 
 class SeleniumSoup:
@@ -133,8 +170,11 @@ def _run_cmd():
         comm.Global.debug_on = True
 
     if cmd.url is not None:
-        text = last_effort_selenium_download(cmd.url, cmd.browser)
-        print(text)
+        try:
+            text = last_effort_selenium_download(cmd.url, cmd.browser)
+            print(text)
+        except Exception as exc:
+            print(f"Error: {exc}")
 
 if __name__ == '__main__':
     _run_cmd()

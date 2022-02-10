@@ -5,6 +5,7 @@ ARG GITHUB_TOKEN=""
 RUN apk add bash python3 git expect py3-pip g++ libc-dev python3-dev
 RUN pip3 install html5lib
 RUN pip3 install Brotli
+RUN pip3 install psutil
 
 WORKDIR /
 

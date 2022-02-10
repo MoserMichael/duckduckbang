@@ -52,11 +52,13 @@ class DescriptionCache:
             if url in DescriptionCache.ignore_set:
                 return "", True
 
-        descr, language =  gettitle.get_meta_descr(url, self.enable_http_client, self.enable_selenium)
+        descr, language, error_desc =  gettitle.get_meta_descr(url, self.enable_http_client, self.enable_selenium)
 
         if comm.Global.trace_on:
-            print(f"url: {url}\ndescr: {descr}\nlanguage: {language}")
-
+            if error_desc is not None:
+                print(f"Error: {error_desc}")
+            else:
+                print(f"url: {url}\ndescr: {descr}\nlanguage: {language}"
 
         is_in_map = url in self.map_url_to_descr
 
@@ -64,12 +66,15 @@ class DescriptionCache:
         self.map_url_to_descr_changed = True
         self.write_description_cache()
 
-        if descr is not None and descr != "":
+        if descr is not None and descr != "" and error_desc is None:
             self.cache_load_ok += 1
         else:
             # don't count repeated failures.
             if not is_in_map:
                 self.cache_load_failed += 1
+
+        if self.enable_selenium and error_desc is not None:
+            return error_desc, False
 
         return descr, False
 
