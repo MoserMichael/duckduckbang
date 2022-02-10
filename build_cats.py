@@ -168,10 +168,10 @@ tool_tip_array=[
         ];
 
 function h(elem) {
-    elem.title = "kukukuku";
-    //if (elem.attr("title")) {
-    //   elem.title = tool_tip_array[ elem.id ]
-    //}
+    var isNumber = /^\d+$/.test(elem.title);
+    if (isNumber) {
+        elem.title = tool_tip_array[ elem.title ];
+    }
 }
 </script>
 """)
@@ -298,7 +298,7 @@ function h(elem) {
                         if pos % num_columns == 0:
                             out_file.write("</tr><tr>")
                         out_file.write("<td>")
-                        out_file.write(f"<span align=\"left\"><a id=\"{self.map_url_to_id[bang[2]]}\" onHover=\"javascript:h(self)\" href=\"javascript:onBang('{bang[0]}')\">{bang[1]}</a></span> <span style=\"float: right\">!<a id=\"{self.map_url_to_id[bang[2]]}\" onHover=\"javascript:h(self)\" href=\"javascript:onBang('{bang[0]}')\">{bang[0]}</a></span> &nbsp;")
+                        out_file.write(f"<span align=\"left\"><a title=\"{self.map_url_to_id[bang[2]]}\" onmouseenter=\"h(this)\" href=\"javascript:onBang('{bang[0]}')\">{bang[1]}</a></span> <span style=\"float: right\">!<a title=\"{self.map_url_to_id[bang[2]]}\" onmouseenter=\"h(this)\" href=\"javascript:onBang('{bang[0]}')\">{bang[0]}</a></span> &nbsp;")
                         out_file.write("</td>")
                         pos = pos + 1
 
