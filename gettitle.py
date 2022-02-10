@@ -172,7 +172,7 @@ Show a textual description for a requested query, see command line options for m
         type=int,
         default=None,
         dest="timeout",
-        help="timeout in seconds for https client",
+        help="timeout in seconds for https client (does not effect selenium)",
     )
 
     group.add_argument(

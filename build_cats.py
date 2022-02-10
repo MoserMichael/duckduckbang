@@ -48,8 +48,9 @@ class DescriptionCache:
         if descr is not None and descr != "":
             return descr, True
 
-        if url in DescriptionCache.ignore_set:
-            return "", True
+        if not self.enable_http_client:
+            if url in DescriptionCache.ignore_set:
+                return "", True
 
         descr, language =  gettitle.get_meta_descr(url, self.enable_http_client, self.enable_selenium)
 
@@ -89,6 +90,7 @@ class DuckStuff:
         self.desc_cache.read_description_cache()
         self.map_url_to_id = {}
         self.clean_tag = re.compile('<.*?>')
+        self.enable_http_client = enable_http_client
 
     def build_cache(self):
         json_data = self.soup_builder.get_json(DuckStuff.url + "/bang.js")
@@ -355,6 +357,15 @@ Build the html for the duckduckbang meta search tool.
         help="disable default python http client http.client (default: enabled)"
     )
 
+    group.add_argument(
+        "--timeout",
+        "-w",
+        type=int,
+        default=None,
+        dest="timeout",
+        help="timeout in seconds for https client (does not effect selenium)",
+    )
+
     group = parse.add_argument_group("build html pages")
 
     group.add_argument(
@@ -395,6 +406,9 @@ def _run_cmd():
     if cmd.build_cache:
         print("Building descriptions...")
         duck.build_cache()
+
+    if cmd.timeout is not None:
+        comm.Global.timeout_sec = cmd.timeout
 
     if cmd.build_html:
         print("Building html file...")
