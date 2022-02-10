@@ -132,7 +132,7 @@ def get_meta_descr_impl(url, soup_builders):
                 print(f"(second try) failed to resolve url: {url} error: {ex}")
                 traceback.print_exception(*sys.exc_info())
             return "", "", f"{ex}"
-
+        return "", "", ""
 
 def get_meta_descr(url, http_client=True, use_selen=False):
     soup_builder = []
