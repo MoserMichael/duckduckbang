@@ -34,6 +34,9 @@ def _kill_it(name):
 def last_effort_selenium_download(url, browser, selenium_driver = None, kill_browser_proc = True):
     from selenium import webdriver
 
+    if not url.startswith("http://") and not url.startswith("https://"):
+        url = "http://" + url
+
     if comm.Global.trace_on:
         print(f"Selenium_download url: {url} browser: {browser}.")
 
@@ -96,7 +99,7 @@ class SeleniumSoup:
         self.selenium_driver = selenium_driver
 
     def get_soup(self, url):
-        text  = last_effort_selenium_download("https://" + url, browser = self.browser, selenium_driver = self.selenium_driver)
+        text  = last_effort_selenium_download(url, browser = self.browser, selenium_driver = self.selenium_driver)
         data_file = io.StringIO(text)
         return html5lib.parse(data_file, treebuilder="etree") #lxml")
 

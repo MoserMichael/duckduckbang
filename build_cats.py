@@ -62,6 +62,10 @@ class DescriptionCache:
 
         is_in_map = url in self.map_url_to_descr
 
+        # not sure if a scanning error should be put into the db, it could be a transient error...
+#        if self.enable_selenium and error_desc is not None:
+#             descr = error_desc,
+
         self.map_url_to_descr[url] = descr
         self.map_url_to_descr_changed = True
         self.write_description_cache()
@@ -72,9 +76,6 @@ class DescriptionCache:
             # don't count repeated failures.
             if not is_in_map:
                 self.cache_load_failed += 1
-
-        if self.enable_selenium and error_desc is not None:
-            return error_desc, False
 
         return descr, False
 
