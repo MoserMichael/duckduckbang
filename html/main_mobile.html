@@ -3,8 +3,8 @@
   <head>
     <title>search tool based on duckduckgo !bang commands</title>
     <meta charset="utf-8">
-    <title>Catalog of duckduckgo search operators</title>
-    <link rel="stylesheet" href="template/github-markdown.css">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <meta name="title" content="Catalog of duckduckgo search operators"/>
     <meta name="og:title" content="Catalog of duckduckgo search operators"/>
@@ -14,6 +14,8 @@
     <meta name="og:keywords" content="Meta search, search tool, duckduckgo, !bang operators"/>
 
 
+    <title>title</title>
+    <link rel="stylesheet" href="template/github-markdown-mobile.css">
 
   </head>
 
@@ -43,7 +45,7 @@
         if (obj.cmd == 'top') {
             var d_frame = document.getElementById('second');
             d_frame.focus();
-            d_frame.contentWindow.location = "all_cats.html#top"; 
+            d_frame.contentWindow.location = "all_cats_mobile.html#top"; 
           }
 
         
@@ -65,7 +67,7 @@
         <iframe id="search_d" class="iframe_duck" src="search.html" style="" frameborder="0"></iframe>
     </div>
     <div class="second_row">
-      <iframe id="second" class="iframe-big"  src="all_cats.html"></iframe>
+      <iframe id="second" class="iframe-big"  src="all_cats_mobile.html"></iframe>
     </div>
 </div>
 
