@@ -94,7 +94,6 @@ class DuckStuff:
         self.soup_builder = comm.BSoup()
         self.desc_cache = DescriptionCache(enable_http_client, enable_selenium)
         self.desc_cache.read_description_cache()
-        self.map_url_to_id = {}
         self.clean_tag = re.compile('<.*?>')
         self.enable_http_client = enable_http_client
 
@@ -162,84 +161,9 @@ class DuckStuff:
 
         return all_bangs, num_entries, len(set_of_bangs.keys()), json_data
 
-    def build_toolip_help_list(self, json_data, out_file):
-        next_id = 0
+    @staticmethod
+    def write_hdr_pc(out_file):
         out_file.write("""
-<script>
-tool_tip_array=[
-""")
-        for entry in json_data:
-            url = entry.get("d")
-            id_value = self.map_url_to_id.get(url)
-            if id_value is None:
-                self.map_url_to_id[url] = next_id
-                next_id += 1
-                out_file.write(f"\"{self.get_title(url)}\",\n")
-
-        out_file.write("""
-        ];
-
-function h(elem) {
-    var isNumber = /^\d+$/.test(elem.title);
-    if (isNumber) {
-        elem.title = tool_tip_array[ elem.title ];
-    }
-}
-</script>
-""")
-
-    def get_title(self, url):
-        desc = self.desc_cache.cache_get(url)
-        if desc is None:
-            return url
-
-        if desc.find('"') != -1:
-            #print(f"Warning: description for {url} contains a quotation mark, desc: {desc}")
-            desc = desc.replace('"', "&quot;")
-
-        desc = desc.replace('\n', "\\n")
-
-        desc = re.sub(self.clean_tag, '', desc)
-
-        if desc.find(url) != -1:
-            return desc
-
-        return url + " - " + desc
-
-#    def get_categories(self):
-#
-#        ms = self.soup_builder.get_soup(DuckStuff.url + "/bang")
-#
-#        ret_cats = []
-#
-#        for tag in ms.findAll('script'):
-#            src_path = tag.get('src')
-#
-#            if not src_path is None:
-#                data = self.soup_builder.get_data(DuckStuff.url + src_path)
-#                data_str = data.decode("utf-8")
-#
-#                if data_str.find("BangCategories={") != -1:
-#                    rex = re.search(r"BangCategories={([^}]*)}", data_str)
-#                    if not rex is None:
-#                        cts = re.findall(r"[^:]*:\[[^\]]*\],?", rex.group(1))
-#                        for onectg in cts:
-#                            tg = re.search(r"[^:]*", onectg).group(0)
-#                            entries = re.findall(r"\"[^\"]*\"", onectg)
-#                            ret_cats.append((tg, entries))
-#
-#        return ret_cats
-#
-
-    def show_cats(self, output_file_name):
-
-        all_bangs, num_entries, unique_bangs, json_data = self.get_all()
-
-        #pprint(all_bangs)
-
-        with open(output_file_name, "w") as out_file:
-
-            out_file.write("""
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -261,7 +185,192 @@ function h(elem) {
 
 """)
 
+    @staticmethod
+    def write_hdr_mobile(out_file):
+        out_file.write("""
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="template/github-markdown-mobile.css">
+
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+  </head>
+  <script>
+
+  function onBang(bangText) {
+    //document.location = "https://duckduckgo.com/?q=!" + bangText;
+
+    window.parent.postMessage( '{ "cmd": "set-bang", "bang": "' + bangText + '"}', '*')
+  }
+  </script>
+
+<body class="markdown-body">
+<a id="top"/>
+
+""")
+
+
+    def build_toolip_help_list(self, json_data, out_file):
+        next_id = 0
+        self.map_url_to_id = {}
+        out_file.write("""
+<script>
+tool_tip_array=[
+""")
+        for entry in json_data:
+            url = entry.get("d")
+            id_value = self.map_url_to_id.get(url)
+            if id_value is None:
+                self.map_url_to_id[url] = next_id
+                next_id += 1
+                out_file.write(f"\"{self.get_title(url)}\",\n")
+
+        out_file.write(r"""
+        ];
+</script>
+""")
+
+    @staticmethod
+    def write_js_pc( out_file):
+
+        out_file.write("""
+<script>
+function h(elem) {
+    var isNumber = /^\d+$/.test(elem.title);
+    if (isNumber) {
+        elem.title = tool_tip_array[ elem.title ];
+    }
+}
+</script>
+""")
+
+    @staticmethod
+    def write_js_mobile(out_file):
+
+        out_file.write("""
+<script>
+function h(elem) {
+    elem.classList.toggle('down');
+    next_element_id = parseInt(elem.id) + 1
+    divelm = document.getElementById(next_element_id);
+    console.log("elm " + elem.id + " " + next_element_id + " inner" + divelm. innerHTML);
+    if (divelm.innerHTML == "") {
+        divelm.innerHTML = tool_tip_array[ elem.title ];
+    } else {
+        divelm.innerHTML = "";
+    }
+}
+</script>
+""")
+
+
+
+    def get_title(self, url):
+        desc = self.desc_cache.cache_get(url)
+        if desc is None:
+            return url
+
+        if desc.find('"') != -1:
+            #print(f"Warning: description for {url} contains a quotation mark, desc: {desc}")
+            desc = desc.replace('"', "&quot;")
+
+        desc = desc.replace('\n', "\\n")
+
+        desc = re.sub(self.clean_tag, '', desc)
+
+        if desc.find(url) != -1:
+            return desc
+
+        return url + " - " + desc
+
+
+    def show_cats(self, output_file_name, output_file_name_mobile):
+        self.show_cats_pc(output_file_name)
+        self.show_cats_mobile(output_file_name_mobile)
+
+    def show_cats_mobile(self, output_file_name):
+
+        all_bangs, num_entries, unique_bangs, json_data = self.get_all()
+
+        with open(output_file_name, "w") as out_file:
+            DuckStuff.write_hdr_mobile(out_file)
             self.build_toolip_help_list(json_data, out_file)
+            DuckStuff.write_js_mobile(out_file)
+
+            out_file.write("<table width='100%'><tr><th>Category</th><th>Sub categories</th></tr>\n")
+            link_num = 1
+
+            all_bangs_keys = list(all_bangs)
+            all_bangs_keys.sort()
+
+            for cat in all_bangs_keys:
+                entry_links = ""
+
+                is_first = True
+
+                all_bangs_cat = list(all_bangs[cat])
+                all_bangs_cat.sort()
+
+                for catentry in all_bangs_cat:
+                    if not is_first:
+                        entry_links = entry_links + ","
+                    entry_links = entry_links + "&nbsp;"
+                    is_first = False
+                    entry_links = entry_links +  f"<a href=\"#{link_num}\">{catentry}</a>"
+                    link_num = link_num + 1
+                out_file.write(f"<tr><td>{cat}</td><td>{entry_links}</td>\n")
+            out_file.write("</table>\n")
+
+            id_item = link_num+1
+            link_num = 1
+
+            for cat in all_bangs_keys:
+
+                all_bangs_cat = list(all_bangs[cat])
+                all_bangs_cat.sort()
+
+                for catentry in all_bangs_cat:
+                    out_file.write(f"<hr/><p/><a id=\"{link_num}\"/>\n")
+                    link_num += 1
+
+                    out_file.write(f"<h3>{cat} / {catentry}</h3><p></p>\n")
+
+                    pos = 0
+                    out_file.write("<table width='100%'>\n")
+
+                    cat_content = sorted(all_bangs[cat][catentry], key=lambda entry : entry[1])
+
+                    for bang in cat_content:
+                        out_file.write("<tr><td>")
+                        out_file.write(f"<div id=\"{id_item}\" title=\"{self.map_url_to_id[bang[2]]}\" onclick=\"h(this)\" class='arrow'></div>&nbsp;<span><a href=\"javascript:onBang('{bang[0]}')\">{bang[1]}</a></span> <span style=\"float: right\">!<a href=\"javascript:onBang('{bang[0]}')\">{bang[0]}</a></span> &nbsp;")
+                        id_item += 1
+                        out_file.write(f"<br><div id=\"{id_item}\"></div>")
+                        id_item += 1
+                        out_file.write("</td>")
+                        out_file.write("</tr>")
+                        pos = pos + 1
+
+                    out_file.write("</table>")
+
+            out_file.write(f"\n<table width='100%'><tr><td>Generated on {datetime.now()}; number of entries {num_entries} unique bangs! {unique_bangs}</td></tr></table>\n<p><p><p>***eof***\n")
+
+
+    def show_cats_pc(self, output_file_name):
+
+        all_bangs, num_entries, unique_bangs, json_data = self.get_all()
+
+        #pprint(all_bangs)
+
+        with open(output_file_name, "w") as out_file:
+
+            DuckStuff.write_hdr_pc(out_file)
+            self.build_toolip_help_list(json_data, out_file)
+            DuckStuff.write_js_pc(out_file)
+
             out_file.write("<table><tr><th>Category</th><th>Sub categories</th></tr>\n")
             link_num = 1
 
@@ -418,11 +527,11 @@ def _run_cmd():
 
     if cmd.build_html:
         print("Building html file...")
-        duck.show_cats("all_cats.html")
+        duck.show_cats("all_cats.html", "all_cats_mobile.html")
 
 if __name__ == '__main__':
     _run_cmd()
 
 #for link in BeautifulSoup(data, parse_only=SoupStrainer('a')):
 #    if link.has_attr('href'):
-#        print(link['href'])
+    #        print(link['href'])

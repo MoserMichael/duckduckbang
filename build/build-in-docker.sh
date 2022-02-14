@@ -29,10 +29,13 @@ git config --global user.name "MoserMichael"
 
 if [[ $CHANGED != "3" ]]; then
     cp ../all_cats.html html/all_cats.html
+    cp ../all_cats_mobile.html html/all_cats_mobile.html
+
 
     echo "*** pushing changed file ***"
  
     git add html/all_cats.html
+    git add html/all_cats_mobile.html
     git commit -m "automatic build $(date)"
     expect -f /ex
 else
