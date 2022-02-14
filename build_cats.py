@@ -301,7 +301,7 @@ function h(elem) {
             self.build_toolip_help_list(json_data, out_file)
             DuckStuff.write_js_mobile(out_file)
 
-            out_file.write("<table width='100%'><tr><th>Category</th><th>Sub categories</th></tr>\n")
+            out_file.write("<table><tr><th>Category</th><th>Sub categories</th></tr>\n")
             link_num = 1
 
             all_bangs_keys = list(all_bangs)
@@ -340,7 +340,7 @@ function h(elem) {
                     out_file.write(f"<h3>{cat} / {catentry}</h3><p></p>\n")
 
                     pos = 0
-                    out_file.write("<table width='100%'>\n")
+                    out_file.write("<table>\n")
 
                     cat_content = sorted(all_bangs[cat][catentry], key=lambda entry : entry[1])
 
