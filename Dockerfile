@@ -10,9 +10,8 @@ RUN pip3 install psutil
 WORKDIR /
 
 COPY build_cats.py /
-COPY comm.py /
-COPY getselen.py /
-COPY gettitle.py /
+ADD  scrapscrap /
+COPY scrapscrap /scrapscrap
 COPY build/build-in-docker.sh /
 COPY description_cache.json / 
 COPY build/ex /
