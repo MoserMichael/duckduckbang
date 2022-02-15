@@ -26,7 +26,10 @@
 
     function go() {
          var bangText = document.getElementById('textin').value;
-         window.parent.postMessage( '{ "cmd": "query", "query": "' + bangText + '"}', '*')
+         var openInNewTab = document.getElementById('opennew').checked;
+
+         window.parent.postMessage( '{ "cmd": "query", "query": "' + bangText + '", "open_tab": "' + openInNewTab + '" }', '*');
+
      }
 
     function onTop() {
@@ -58,7 +61,7 @@
     </form>
             </td>
             <td>
-    <a href="javascript:onTop()">[Top]</a>
+                <a href="javascript:onTop()">[Top]</a> &nbsp; <input type="checkbox" id="opennew" name="opennew"> <label for="opennew">New Tab for Search</lablel>
             </td>
         </tr>
 </table>

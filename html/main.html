@@ -30,6 +30,7 @@
 	eventer(messageEvent, function (e) {
 		
         var obj = JSON.parse(e.data);
+
         if (obj.cmd == 'set-bang') {
             var d_frame = document.getElementById('search_d'); 
             d_frame.focus();
@@ -37,8 +38,18 @@
         }   
 
         if (obj.cmd == 'query') {
-            document.location = 'https://duckduckgo.com/?q=' + obj.query;
-        }
+            var query_url = 'https://duckduckgo.com/?q=' + escape(obj.query);
+
+            if (obj.open_tab == 'true') {
+                var rval = window.open(query_url, '_blank');
+                if (rval) {
+                    rval.focus();
+                }
+            } else {
+                document.location = query_url;
+            }
+  
+       }
 
         if (obj.cmd == 'top') {
             var d_frame = document.getElementById('second');
