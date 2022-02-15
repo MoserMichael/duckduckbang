@@ -3,23 +3,77 @@ import argparse
 import traceback
 import sys
 import pathlib
+import platform
+import zipfile
+import tarfile
+import tempfile
 import io
 import html5lib
 import psutil
-import comm
-
-def install_selenium_driver():
-    return ""
+import scrapscrap.comm as comm
 
 
-#def last_effort_selenium_download(url, browser, selenium_driver = None):
-#    from selenium_firefox import Firefox
-#
-#    browser = Firefox()
-#    driver.get(url)
-#    driver.find_element_by_xpath("/html")
-#    print(driver.page_source)
-#    driver.close()
+class FirefoxSeleniumDriverDownload:
+    selenium_firefox_driver_release_url="https://api.github.com/repos/mozilla/geckodriver/releases/latest"
+
+    def __init__(self, output_dir):
+        self.output_dir = output_dir
+
+    def install(self):
+        comm_obj = comm.BSoup()
+
+        if comm.Global.trace_on:
+            print(f"Downloading json for latest firefox selenium version from {FirefoxSeleniumDriverDownload.selenium_firefox_driver_release_url}")
+
+        json_data = comm_obj.get_json( FirefoxSeleniumDriverDownload.selenium_firefox_driver_release_url )
+        assets = json_data.get('assets')
+        if assets is None:
+            raise ValueError(f"missing assets tag, unexpected format of json for {FirefoxSeleniumDriverDownload.selenium_firefox_driver_release_url}")
+
+        asset_name, asset_type = FirefoxSeleniumDriverDownload._get_asset_name()
+        for asset in assets:
+            download_url = asset.get("browser_download_url")
+            if download_url is not None and download_url.endswith(asset_name):
+                self._download(comm_obj, download_url, asset_type)
+                return
+
+        raise ValueError(f"can't get firefox selenium driver for platform {platform.system()} on {platform.machine()}")
+
+    @staticmethod
+    def _get_asset_name():
+        sys_type = platform.system().lower()
+        if sys_type == "darwin":
+            if platform.machine() == "x86_64":
+                return "macos.tar.gz", "tgz"
+            return "macos-aarch64.tar.gz"
+        if sys_type == "linux":
+            if platform.machine() == "x86_64":
+                return "linux64.tar.gz", "tgz"
+            return "linux32.tar.gz"
+        if sys_type == "windows":
+            if platform.machine() == "AMD64":
+                return "win64.zip", "zip"
+            return "win32.zip"
+        raise ValueError(f"no supported firefox selenium driver for platform {platform.system()} on {platform.machine()}")
+
+
+    def _download(self, comm_obj, url, asset_type):
+        with tempfile.NamedTemporaryFile(delete=True) as tmp_file:
+
+            if comm.Global.trace_on:
+                print(f"Downloading selenium driver from {url}")
+
+            data, _, _ = comm_obj.get_data(url)
+            tmp_file.write(data)
+            tmp_file.flush()
+
+            if asset_type == "zip":
+                with zipfile.ZipFile(tmp_file.name, 'r') as myzip:
+                    myzip.extract("geckodriver.exe", self.output_dir)
+            elif asset_type == "tgz":
+                with tarfile.open(tmp_file.name, 'r:gz') as myzip:
+                    myzip.extract("geckodriver", self.output_dir)
+
 
 
 def _kill_it(name):
@@ -29,6 +83,32 @@ def _kill_it(name):
                 print(f"killing pid {ps_info.pid}")
             proc = psutil.Process(ps_info.pid)
             proc.terminate()
+
+def _get_firefox_selenium_driver():
+    drv_file = pathlib.Path.home()
+
+    drv_file = drv_file / ".selenium_drv"
+
+    if not drv_file.is_dir():
+        drv_file.mkdir()
+
+    sys_type = platform.system().lower()
+    if sys_type == "windows":
+        drv_file = drv_file / "geckodriver.exe"
+    else:
+        drv_file = drv_file / "geckodriver"
+
+    if drv_file.is_file():
+        return drv_file
+
+    drv_dir = pathlib.Path.home()
+
+    drv_dir = drv_dir / ".selenium_drv"
+
+    downloader = FirefoxSeleniumDriverDownload(drv_dir)
+    downloader.install()
+
+    return drv_file
 
 
 def last_effort_selenium_download(url, browser, selenium_driver = None, kill_browser_proc = True):
@@ -42,12 +122,15 @@ def last_effort_selenium_download(url, browser, selenium_driver = None, kill_bro
 
     if browser is None or browser == "" or browser == "firefox":
         if selenium_driver is None:
-            # check if current dir has selenium driver
-            path = pathlib.Path("geckodriver")
-            if path.is_file():
-                selenium_driver = "./geckodriver"
-            else:
-                selenium_driver = install_selenium_driver()
+
+            selenium_driver = _get_firefox_selenium_driver()
+
+#            # check if current dir has selenium driver
+#            path = pathlib.Path("geckodriver")
+#            if path.is_file():
+#                selenium_driver = "./geckodriver"
+#            else:
+#                selenium_driver = _install_selenium_driver()
 
         if comm.Global.trace_on:
             print(f"gecko driver: {selenium_driver}")

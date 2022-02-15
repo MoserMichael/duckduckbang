@@ -5,8 +5,13 @@ import os
 from pprint import pprint
 from datetime import datetime
 import re
-import gettitle
-import comm
+#import dataclasses
+import scrapscrap
+
+
+#@dataclasses.dataclass
+#class CacheItem:
+#    description: str
 
 # sys.setdefaultencoding() does not exist, here!
 #reload(sys)  # Reload does the trick!
@@ -52,9 +57,9 @@ class DescriptionCache:
             if url in DescriptionCache.ignore_set:
                 return "", True
 
-        descr, language, error_desc =  gettitle.get_meta_descr(url, self.enable_http_client, self.enable_selenium)
+        descr, language, error_desc =  scrapscrap.gettitle.get_meta_descr(url, self.enable_http_client, self.enable_selenium)
 
-        if comm.Global.trace_on:
+        if scrapscrap.Global.trace_on:
             if error_desc is not None:
                 print(f"Error: {error_desc}")
             else:
@@ -91,7 +96,7 @@ class DuckStuff:
     url = 'https://duckduckgo.com'
 
     def __init__(self, enable_http_client, enable_selenium):
-        self.soup_builder = comm.BSoup()
+        self.soup_builder = scrapscrap.BSoup()
         self.desc_cache = DescriptionCache(enable_http_client, enable_selenium)
         self.desc_cache.read_description_cache()
         self.clean_tag = re.compile('<.*?>')
@@ -156,7 +161,7 @@ class DuckStuff:
             num_entries = num_entries + 1
             set_of_bangs[entry[0]] = 1
 
-        if comm.Global.trace_on:
+        if scrapscrap.Global.trace_on:
             pprint(all_bangs)
 
         return all_bangs, num_entries, len(set_of_bangs.keys()), json_data
@@ -523,7 +528,7 @@ def _run_cmd():
         duck.build_cache()
 
     if cmd.timeout is not None:
-        comm.Global.timeout_sec = cmd.timeout
+        scrapscrap.Global.timeout_sec = cmd.timeout
 
     if cmd.build_html:
         print("Building html file...")

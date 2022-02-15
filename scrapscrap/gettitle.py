@@ -3,8 +3,8 @@
 import argparse
 import traceback
 import sys
-import comm
-import getselen
+import scrapscrap.comm as comm
+import scrapscrap.getselen as getselen
 
 #Relevant tags to search for:
 #

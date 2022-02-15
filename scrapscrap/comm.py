@@ -102,7 +102,7 @@ class BSoup:
         #print(f"{url} {parsed_url} host: {type(host)} {host} path: {path}")
 
         if parsed_url.query:
-            path += parsed_url.query
+            path += '?' + parsed_url.query
 
         conn = self.map_host_to_conn.get(host)
 
