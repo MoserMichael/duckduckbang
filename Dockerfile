@@ -11,6 +11,7 @@ RUN pip3 install dataclasses-json
 WORKDIR /
 
 COPY build_cats.py /
+COPY dcache.py /
 ADD  scrapscrap /
 COPY scrapscrap /scrapscrap
 COPY build/build-in-docker.sh /
