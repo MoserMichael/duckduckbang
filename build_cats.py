@@ -5,13 +5,14 @@ import os
 from pprint import pprint
 from datetime import datetime
 import re
-#import dataclasses
+import dataclasses
+import dataclasses_json
 import scrapscrap
 
-
-#@dataclasses.dataclass
-#class CacheItem:
-#    description: str
+@dataclasses_json.dataclass_json
+@dataclasses.dataclass
+class CacheItem:
+    description: str
 
 # sys.setdefaultencoding() does not exist, here!
 #reload(sys)  # Reload does the trick!
@@ -51,11 +52,11 @@ class DescriptionCache:
         print(f"cache_lookup {url}")
         descr = self.map_url_to_descr.get(url, None)
         if descr is not None and descr != "":
-            return descr, True
+            return CacheItem.from_dict(descr), True
 
         if not self.enable_http_client:
             if url in DescriptionCache.ignore_set:
-                return "", True
+                return None, True
 
         descr, language, error_desc =  scrapscrap.gettitle.get_meta_descr(url, self.enable_http_client, self.enable_selenium)
 
@@ -82,12 +83,12 @@ class DescriptionCache:
             if not is_in_map:
                 self.cache_load_failed += 1
 
-        return descr, False
+        return CacheItem.from_dict(descr), False
 
     def cache_get(self, url):
         descr = self.map_url_to_descr.get(url, None)
         if descr is not None and descr != "":
-            return descr
+            return CacheItem.from_dict(descr)
         return None
 
 
@@ -101,6 +102,7 @@ class DuckStuff:
         self.desc_cache.read_description_cache()
         self.clean_tag = re.compile('<.*?>')
         self.enable_http_client = enable_http_client
+        self.map_url_to_id = {}
 
     def build_cache(self):
         json_data = self.soup_builder.get_json(DuckStuff.url + "/bang.js")
@@ -115,10 +117,11 @@ class DuckStuff:
             description, cache_hit = self.desc_cache.cache_lookup( url) #, self.soup_builder )
             after_lookup = datetime.now()
 
-            if description is None or description == "":
+            if description is None or description.description == "":
                 failed_lookups.append( url )
             else:
-                print(f"description: {description}")
+                print(f"description: {repr(description)}")
+
 
             time_diff = after_lookup - before_lookup
             self.desc_cache.show(prefix="", suffix=f"cache_hit: {cache_hit} current: {cur_item+1}/{total_items} lookup_time: {repr(time_diff)}")
@@ -275,9 +278,11 @@ function h(elem) {
 
 
     def get_title(self, url):
-        desc = self.desc_cache.cache_get(url)
-        if desc is None:
+        description = self.desc_cache.cache_get(url)
+        if description is None:
             return url
+
+        desc = description.description
 
         if desc.find('"') != -1:
             #print(f"Warning: description for {url} contains a quotation mark, desc: {desc}")
