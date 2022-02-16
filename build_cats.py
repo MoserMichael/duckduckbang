@@ -279,7 +279,7 @@ function h(elem) {
 
     def get_title(self, url):
         description = self.desc_cache.cache_get(url)
-        if description is None:
+        if description is None or description.description == "":
             return url
 
         desc = description.description
