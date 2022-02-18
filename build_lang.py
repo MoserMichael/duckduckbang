@@ -12,7 +12,7 @@ class LanguageIdentification:
         text = text.replace("\n"," ")
         predictions = self.model.predict(text, k=2) # returns top 2 matching languages
         print(f"result: {predictions} text: {text}")
-        if len(predictions) > 0
+        if len(predictions) > 0:
             return predictions[0]
         return None
 

@@ -15,7 +15,7 @@ COPY build_lang.py /
 COPY description_cache.json / 
 COPY build/ex /
 
-#RUN GITHUB_TOKEN=${GITHUB_TOKEN} ./build-lang-in-docker.sh
+RUN GITHUB_TOKEN=${GITHUB_TOKEN} ./build-lang-in-docker.sh
 
 
 
