@@ -1,0 +1,23 @@
+FROM alpine:3.12 
+
+ARG GITHUB_TOKEN=""
+
+RUN apk add bash python3 git expect py3-pip g++ libc-dev python3-dev linux-headers
+
+RUN pip3 install fasttext
+
+RUN wget https://dl.fbaipublicfiles.com/fasttext/supervised-models/lid.176.bin
+
+RUN pip3 install dataclasses-json
+
+COPY dcachebase.py /
+COPY build_lang.py /
+COPY description_cache.json / 
+COPY build/ex /
+
+#RUN GITHUB_TOKEN=${GITHUB_TOKEN} ./build-lang-in-docker.sh
+
+
+
+
+

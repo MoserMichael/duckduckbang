@@ -11,14 +11,17 @@ RUN pip3 install dataclasses-json
 WORKDIR /
 
 COPY build_cats.py /
+COPY dcachebase.py /
 COPY dcache.py /
 ADD  scrapscrap /
 COPY scrapscrap /scrapscrap
-COPY build/build-in-docker.sh /
-COPY description_cache.json / 
+
+COPY build/build-html-in-docker.sh /
 COPY build/ex /
 
-RUN GITHUB_TOKEN=${GITHUB_TOKEN} ./build-in-docker.sh
+COPY description_cache.json / 
+
+RUN GITHUB_TOKEN=${GITHUB_TOKEN} ./build-html-in-docker.sh
 
 
 

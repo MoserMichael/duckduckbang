@@ -1,25 +1,13 @@
-import os
-import json
-import dataclasses
-import dataclasses_json
+from dcachebase import CacheItem, DescriptionCacheBase
 import scrapscrap
 
-@dataclasses_json.dataclass_json
-@dataclasses.dataclass
-class CacheItem:
-    description: str
-
-class DescriptionCache:
-    description_cache_file = 'description_cache.json'
-    ignore_set = {"www.accuweather.com", "www.adidas.fr", "aitopics.org", "www.appannie.com", "www.appannie.com", "www.albumartexchange.com"}
+class DescriptionCache(DescriptionCacheBase):
+    ignore_set = {"www.accuweather.com", "www.adidas.fr", "aitopics.org", "www.appannie.com", "www.appannie.com", "www.albumartexchange.com", "www.shaw.ca" }
 
     def __init__(self, enable_http_client, enable_selenium):
-
+        super().__init__()
         self.enable_selenium = enable_selenium
         self.enable_http_client = enable_http_client
-
-        self.map_url_to_descr = {}
-        self.map_url_to_descr_changed = False
 
         self.cache_load_ok = 0
         self.cache_load_failed = 0
@@ -27,43 +15,38 @@ class DescriptionCache:
     def show(self, prefix="", suffix=""):
         print(f"{prefix} Total: new lookups succeeded: {self.cache_load_ok} new lookups failed: {self.cache_load_failed} number of {suffix}")
 
-
-    def read_description_cache(self):
-        if os.path.isfile(DescriptionCache.description_cache_file):
-            with open(DescriptionCache.description_cache_file, 'r') as cache_file:
-                self.map_url_to_descr = json.load(cache_file)
-
-    def write_description_cache(self):
-        if self.map_url_to_descr_changed:
-            with open(DescriptionCache.description_cache_file, 'w') as cache_file:
-                json.dump( self.map_url_to_descr, cache_file, indent=2 )
-            self.map_url_to_descr_changed = False
-
     def cache_lookup(self, url):
         print(f"cache_lookup {url}")
-        descr = self.map_url_to_descr.get(url, None)
-        if descr is not None and descr != "":
-            return CacheItem.from_dict(descr), True
 
-        if not self.enable_http_client:
+        rval = self.cache_get(url)
+        if rval is not None:
+            return rval, True
+
+        if self.enable_http_client:
             if url in DescriptionCache.ignore_set:
                 return None, True
 
-        descr, language, error_desc =  scrapscrap.gettitle.get_meta_descr(url, self.enable_http_client, self.enable_selenium)
+        descr, html_document_language, http_content_language_hdr, error_desc =  scrapscrap.gettitle.get_meta_descr(url, self.enable_http_client, self.enable_selenium)
 
         if scrapscrap.Global.trace_on:
             if error_desc is not None:
                 print(f"Error: {error_desc}")
             else:
-                print(f"url: {url}\ndescr: {descr}\nlanguage: {language}")
+                print(f"url: {url}\ndescr: {descr}\nhtml-language: {html_document_language}\nhttp-content_language-hdr: {http_content_language_hdr}")
 
         is_in_map = url in self.map_url_to_descr
 
         # not sure if a scanning error should be put into the db, it could be a transient error...
-#        if self.enable_selenium and error_desc is not None:
-#             descr = error_desc,
+        
+        if self.enable_selenium and error_desc is not None and error_desc != "":
+            error_desc_selenium = error_desc
+            error_desc = ""
+        else:
+            error_desc_selenium = ""
 
-        self.map_url_to_descr[url] = descr
+        cache_item = CacheItem(descr, error_desc, error_desc_selenium, '', http_content_language_hdr, html_document_language)
+
+        self.map_url_to_descr[url] = cache_item.to_dict()
         self.map_url_to_descr_changed = True
         self.write_description_cache()
 
@@ -74,10 +57,6 @@ class DescriptionCache:
             if not is_in_map:
                 self.cache_load_failed += 1
 
-        return CacheItem.from_dict(descr), False
+        return cache_item, False
 
-    def cache_get(self, url):
-        descr = self.map_url_to_descr.get(url, None)
-        if descr is not None and descr != "":
-            return CacheItem.from_dict(descr)
-        return None
+

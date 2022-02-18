@@ -222,10 +222,10 @@ class BSoup:
 
     def get_soup(self, url):
 
-        data, detected_charset, _ = self.get_data(url)
+        data, detected_charset, content_language_hdr = self.get_data(url)
         data_file = io.StringIO(data.decode(detected_charset.lower()))
 
-        return html5lib.parse(data_file, treebuilder="etree") #lxml")
+        return html5lib.parse(data_file, treebuilder="etree"), content_language_hdr
 
 #    def get_soup_cloudfare(self, url):
 #        data = self.get_data_cloudfare(url)

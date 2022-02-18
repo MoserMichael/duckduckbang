@@ -53,7 +53,7 @@ def get_meta_descr_impl2(url, soup_builder):
                 if content is not None:
                     keywords.append(content)
 
-    soup = soup_builder.get_soup(url)
+    soup, content_language_hdr = soup_builder.get_soup(url)
 
     for meta in soup.iter():
         if isinstance(meta.tag,str):
@@ -106,33 +106,43 @@ def get_meta_descr_impl2(url, soup_builder):
     if len(keywords) > 0:
         if descr != "":
             descr += "\n"
-        descr += "keywords: " + max(keywords,key=len).strip()
+        descr += max(keywords,key=len).strip()
 
-    return descr, detected_language
+    descr = sanitize_descr(descr)
+
+    return descr, detected_language, content_language_hdr
+
+def sanitize_descr(descr):
+     res = ""
+     for line in descr.split('\n'):
+         if res != "":
+            res += "\n"
+         res += line.strip()
+     return res
 
 def get_meta_descr_impl(url, soup_builders):
 
     for soup_builder in soup_builders:
         if not url.startswith("www."):
             try:
-                ret, lang = get_meta_descr_impl2("www." + url, soup_builder)
+                ret, lang, content_language_hdr = get_meta_descr_impl2("www." + url, soup_builder)
                 if ret != "":
-                    return ret, lang, None
+                    return ret, lang, content_language_hdr, None
             except Exception as ex:
                 if comm.Global.trace_on:
                     print(f"(first try) failed to resolve url: www.{url} error: {ex}")
                     traceback.print_exception(*sys.exc_info())
 
         try:
-            ret, lang = get_meta_descr_impl2(url, soup_builder)
+            ret, lang, content_language_hdr = get_meta_descr_impl2(url, soup_builder)
             if ret != "":
-                return ret, lang, None
+                return ret, lang, content_language_hdr, None
         except Exception as ex:
             if comm.Global.trace_on:
                 print(f"(second try) failed to resolve url: {url} error: {ex}")
                 traceback.print_exception(*sys.exc_info())
-            return "", "", f"{ex}"
-        return "", "", ""
+            return "", "", "", f"{ex}"
+        return "", "", "", ""
 
 def get_meta_descr(url, http_client=True, use_selen=False):
     soup_builder = []
@@ -226,11 +236,11 @@ def _run_cmd():
         comm.Global.timeout_sec = cmd.timeout
 
     if cmd.url is not None:
-        descr, detected_language, error_text = get_meta_descr(cmd.url, cmd.http_client, cmd.selenium)
+        descr, detected_language, content_language_hdr, error_text = get_meta_descr(cmd.url, cmd.http_client, cmd.selenium)
         if error_text is not None:
             print(f"Error: {error_text}")
         else:
-            print(f"url: {cmd.url}\nlanguage: {detected_language}\ndescr: {descr}")
+            print(f"url: {cmd.url}\nhtml-language: {detected_language}\nhttp-content-language-hdr: {content_language_hdr}\ndescr: {descr}")
 
 
 if __name__ == '__main__':

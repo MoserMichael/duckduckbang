@@ -184,7 +184,7 @@ class SeleniumSoup:
     def get_soup(self, url):
         text  = last_effort_selenium_download(url, browser = self.browser, selenium_driver = self.selenium_driver)
         data_file = io.StringIO(text)
-        return html5lib.parse(data_file, treebuilder="etree") #lxml")
+        return html5lib.parse(data_file, treebuilder="etree"), ''
 
 
 def _parse_cmd_line():
