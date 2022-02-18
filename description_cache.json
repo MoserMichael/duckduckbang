@@ -75638,5 +75638,53 @@
     "language_description": "",
     "http_content_language": null,
     "html_document_language": ""
+  },
+  "www.albumartexchange.com": {
+    "description": "",
+    "description_error": "",
+    "description_error_selenium": "load_error: Message: Reached error page: about:neterror?e=netTimeout&u=http%3A//www.albumartexchange.com/&c=UTF-8&d=The%20server%20at%20www.albumartexchange.com%20is%20taking%20too%20long%20to%20respond.\nStacktrace:\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:183:5\nUnknownError@chrome://remote/content/shared/webdriver/Errors.jsm:510:5\ncheckReadyState@chrome://remote/content/marionette/navigate.js:64:24\nonNavigation@chrome://remote/content/marionette/navigate.js:312:39\nemit@resource://gre/modules/EventEmitter.jsm:160:20\nreceiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.jsm:44:25\n",
+    "language_description": "",
+    "http_content_language": "",
+    "html_document_language": ""
+  },
+  "www.accuweather.com": {
+    "description": "Local, National, & Global Daily Weather Forecast | AccuWeather\nAccuWeather has local and international weather forecasts from the most accurate weather forecasting technology featuring up to the minute weather reports",
+    "description_error": null,
+    "description_error_selenium": "",
+    "language_description": "",
+    "http_content_language": "",
+    "html_document_language": "en-us"
+  },
+  "www.adidas.fr": {
+    "description": "adidas Site Officiel France | Tenues de sport\nChaussures adidas, tenue de sport et collections: Originals, Running, Football & Training sont sur le site officiel adidas. Retours gratuits pendant 60 jours!",
+    "description_error": null,
+    "description_error_selenium": "",
+    "language_description": "",
+    "http_content_language": "",
+    "html_document_language": "fr"
+  },
+  "aitopics.org": {
+    "description": "count: 395957\nInformation about AI from the News, Publications, and ConferencesAutomatic Classification  &ndash; Tagging and Summarization &ndash; Customizable Filtering and AnalysisIf you are looking for an answer to the question What is Artificial Intelligence? and you only have a minute, then here's the definition the Association for the Advancement of Artificial Intelligence offers on its home page: &quot;the scientific understanding of the mechanisms underlying thought and intelligent behavior and their embodiment in machines.&quot;However, if you are fortunate enough to have more than a minute, then please get ready to embark upon an exciting journey exploring AI (but beware, it could last a lifetime) &hellip;",
+    "description_error": null,
+    "description_error_selenium": "",
+    "language_description": "",
+    "http_content_language": "",
+    "html_document_language": ""
+  },
+  "www.appannie.com": {
+    "description": "App Analytics | Mobile Data Analytics Tools | data.ai, formerly App Annie",
+    "description_error": null,
+    "description_error_selenium": "",
+    "language_description": "",
+    "http_content_language": "",
+    "html_document_language": "en"
+  },
+  "www.shaw.ca": {
+    "description": "",
+    "description_error": "",
+    "description_error_selenium": "load_error: Message: TimedPromise timed out after 300000 ms\nStacktrace:\nWebDriverError@chrome://remote/content/shared/webdriver/Errors.jsm:183:5\nTimeoutError@chrome://remote/content/shared/webdriver/Errors.jsm:472:5\nbail@chrome://remote/content/marionette/sync.js:227:19\n",
+    "language_description": "",
+    "http_content_language": "",
+    "html_document_language": ""
   }
 }
