@@ -27,10 +27,11 @@ def run_identify_language():
         entry_obj = cache.cache_get(base_url)
         if entry_obj is not None and entry_obj.description != '':
             descr = identify.predict_lang(entry_obj.description)
-            if descr != entry_obj.language_description:
-                entry_obj.language_description = descr
-                cache.cache_set(base_url, entry_obj)
-                num_set += 1
+            #if descr != entry_obj.language_description
+            print(f"descr: {descr}")
+            entry_obj.language_description = descr
+            cache.cache_set(base_url, entry_obj)
+            num_set += 1
 
     if cache.write_description_cache():
         print(f"*** description cache changed, number of items set: {num_set}")
