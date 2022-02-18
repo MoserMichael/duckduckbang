@@ -13,7 +13,9 @@ class LanguageIdentification:
         predictions = self.model.predict(text, k=2) # returns top 2 matching languages
         print(f"result: {predictions} text: {text}")
         if len(predictions) > 0:
-            return predictions[0]
+            lang_pred = predictions[0]
+            if lang_pred is not None and len(lang_pred) > 0:
+                return lang_pred[0]
         return None
 
 def run_identify_language():
