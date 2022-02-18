@@ -29,7 +29,7 @@ def run_identify_language():
             descr = identify.predict_lang(entry_obj.description)
             if descr != entry_obj.language_description:
                 entry_obj.language_description = descr
-                cache.set_changed()
+                cache.cache_set(base_url, entry_obj)
                 num_set += 1
 
     if cache.write_description_cache():

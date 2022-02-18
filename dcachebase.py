@@ -10,7 +10,7 @@ class CacheItem:
     # description text derived from meta tags of document
     description: str
 
-    # error while retrieving description 
+    # error while retrieving description
     description_error: str
 
     # error description - if selenium lookup is enabled.
@@ -53,3 +53,8 @@ class DescriptionCacheBase:
         if descr is not None and descr != "":
             return CacheItem.from_dict(descr)
         return None
+
+    def cache_set(self, url, obj):
+        self.map_url_to_descr[ url ] = obj.to_dict()
+        self.map_url_to_descr_changed = True
+
