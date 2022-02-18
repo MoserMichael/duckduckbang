@@ -1,5 +1,5 @@
-import dcachebase
 import fasttext
+import dcachebase
 
 class LanguageIdentification:
 
@@ -32,8 +32,7 @@ def run_identify_language():
                 cache.set_changed()
                 num_set += 1
 
-    if num_set != 0:
-        if cache.write_description_cache():
+    if cache.write_description_cache():
         print(f"*** description cache changed, number of items set: {num_set}")
 
 run_identify_language()
