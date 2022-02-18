@@ -10,12 +10,15 @@ if [[ -z $GITHUB_TOKEN ]]; then
     exit 1
 fi
 
+python3 build_lang.py
+
+
 git clone https://github.com/MoserMichael/duckduckbang.git duck
 pushd duck
 
-python3 build_lang.py
+cp ../description_cache.json .
 
-stat description_cache.json
+git status
 
 DID_CHANGE=$(git diff description_cache.json)
 

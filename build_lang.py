@@ -21,14 +21,19 @@ def run_identify_language():
     identify = LanguageIdentification()
 
     cache.read_description_cache()
+    num_set = 0
 
     for base_url in cache.map_url_to_descr.keys():
         entry_obj = cache.cache_get(base_url)
-        if entry_obj is not None:
-            entry_obj.language_description = identify.predict_lang(entry_obj.description)
-            cache.set_changed()
+        if entry_obj is not None and entry_obj.description != '':
+            descr = identify.predict_lang(entry_obj.description)
+            if descr != entry_obj.language_description:
+                entry_obj.language_description = descr
+                cache.set_changed()
+                num_set += 1
 
-    if cache.write_description_cache():
-        print("*** description cache changed ***")
+    if num_set != 0:
+        if cache.write_description_cache():
+        print(f"*** description cache changed, number of items set: {num_set}")
 
 run_identify_language()
