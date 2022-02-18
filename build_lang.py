@@ -26,8 +26,9 @@ def run_identify_language():
         entry_obj = cache.cache_get(base_url)
         if entry_obj is not None:
             entry_obj.language_description = identify.predict_lang(entry_obj.description)
-        cache.set_changed()
+            cache.set_changed()
 
-    cache.write_description_cache()
+    if cache.write_description_cache():
+        print("*** description cache changed ***")
 
 run_identify_language()

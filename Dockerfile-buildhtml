@@ -21,9 +21,4 @@ COPY build/ex /
 
 COPY description_cache.json / 
 
-RUN GITHUB_TOKEN=${GITHUB_TOKEN} ./build-html-in-docker.sh
-
-
-
-
-
+CMD GITHUB_TOKEN=${GITHUB_TOKEN} ./build-html-in-docker.sh

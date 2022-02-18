@@ -42,6 +42,8 @@ class DescriptionCacheBase:
             with open(DescriptionCacheBase.description_cache_file, 'w') as cache_file:
                 json.dump( self.map_url_to_descr, cache_file, indent=2 )
             self.map_url_to_descr_changed = False
+            return True
+        return False
 
     def set_changed(self):
         self.map_url_to_descr_changed = True
