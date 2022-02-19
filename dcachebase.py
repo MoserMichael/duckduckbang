@@ -2,6 +2,7 @@ import json
 import os
 import dataclasses
 import dataclasses_json
+import typing
 
 @dataclasses_json.dataclass_json
 @dataclasses.dataclass
@@ -24,6 +25,8 @@ class CacheItem:
 
     # language attribue in body tag of html response (optional)
     html_document_language: str
+
+    translations: typing.Dict[str, str]
 
 class DescriptionCacheBase:
     description_cache_file = 'description_cache.json'
