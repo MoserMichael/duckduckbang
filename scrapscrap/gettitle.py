@@ -64,9 +64,10 @@ def get_meta_descr_impl2(url, soup_builder):
 
 
             elif meta.tag.endswith("}title"):
-                title_text = meta.text.strip()
-                if title_text != "":
-                    title_tags.append( title_text )
+                if meta.text is not None:
+                    title_text = meta.text.strip()
+                    if title_text != "":
+                        title_tags.append( title_text )
 
             elif meta.tag.endswith("}meta"):
                 name = meta.get("name")

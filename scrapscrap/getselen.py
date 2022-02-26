@@ -143,8 +143,11 @@ def last_effort_selenium_download(url, browser, selenium_driver = None, kill_bro
     else:
         raise ValueError(f"invalid value. browser: {browser}")
 
+
     has_error = False
     try:
+
+        driver.set_page_load_timeout(40)
         driver.get(url)
 
     except Exception as ex:

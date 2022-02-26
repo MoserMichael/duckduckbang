@@ -35,7 +35,7 @@ class DuckStuff:
             url = entry.get("d")
 
             before_lookup = datetime.now()
-            description, cache_hit = self.desc_cache.cache_lookup( url) #, self.soup_builder )
+            description, cache_hit = self.desc_cache.cache_lookup_load_if_missing(url) #, self.soup_builder )
             after_lookup = datetime.now()
 
             if description is None or description.description == "":

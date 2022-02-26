@@ -15,13 +15,16 @@ class DescriptionCache(DescriptionCacheBase):
     def show(self, prefix="", suffix=""):
         print(f"{prefix} Total: new lookups succeeded: {self.cache_load_ok} new lookups failed: {self.cache_load_failed} number of {suffix}")
 
-    def cache_lookup(self, url):
-        print(f"cache_lookup {url}")
+    def cache_lookup_load_if_missing(self, url):
+        print(f"cache_lookup_load_if_missing {url}")
 
         rval = self.cache_get(url)
-        if rval is not None and rval != "":
-            print(f"cache entry exists: {rval}")
-            return rval, True
+        if rval is not None:
+            txt = rval.description
+            if txt is not None and txt != "":
+                print(f"cache entry with description already exists: {rval}")
+                return rval, True
+
 
         if self.enable_http_client:
             if url in DescriptionCache.ignore_set:
