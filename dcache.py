@@ -19,7 +19,7 @@ class DescriptionCache(DescriptionCacheBase):
         print(f"cache_lookup {url}")
 
         rval = self.cache_get(url)
-        if rval is not None:
+        if rval is not None and rval != "":
             return rval, True
 
         if self.enable_http_client:

@@ -10,6 +10,12 @@ build-lang:
 build-html:
 		docker run --rm -e GITHUB_TOKEN -it $(shell docker build . -q -f Dockerfile-buildhtml -t build-html) 
 
+.PHONY: build-translate
+build-translate:
+		docker build . -f Dockerfile-translate -t build-translate
+
+
+
 
 		
 

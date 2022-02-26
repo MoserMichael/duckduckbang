@@ -1,8 +1,8 @@
-import json
 import os
+import typing
+import json
 import dataclasses
 import dataclasses_json
-import typing
 
 @dataclasses_json.dataclass_json
 @dataclasses.dataclass
@@ -30,10 +30,15 @@ class CacheItem:
 
 class DescriptionCacheBase:
     description_cache_file = 'description_cache.json'
+    description_cache_file_with_translation = 'description_cache_with_translation.json'
 
     def __init__(self):
         self.map_url_to_descr = {}
         self.map_url_to_descr_changed = False
+
+    @staticmethod
+    def set_file_name(name):
+        DescriptionCacheBase.description_cache_file = name
 
     def read_description_cache(self):
         if os.path.isfile(DescriptionCacheBase.description_cache_file):
@@ -60,4 +65,3 @@ class DescriptionCacheBase:
     def cache_set(self, url, obj):
         self.map_url_to_descr[ url ] = obj.to_dict()
         self.map_url_to_descr_changed = True
-
