@@ -58,8 +58,10 @@ class DescriptionCacheBase:
 
     def cache_get(self, url):
         descr = self.map_url_to_descr.get(url, None)
-        if descr is not None and descr != "":
-            return CacheItem.from_dict(descr)
+        if descr is not None:
+            txt = descr.get("description") 
+            if txt is not None and txt != "":
+                return CacheItem.from_dict(descr)
         return None
 
     def cache_set(self, url, obj):
