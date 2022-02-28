@@ -796,6 +796,13 @@ div.second_row {
   overflow: auto;
 }
 
+.markdown-body a table tbody {
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  overflow: auto;
+}
+
 
 .markdown-body table {
   display: block;
@@ -1041,6 +1048,7 @@ div.second_row {
 
 .arrow::before {
   position: absolute;
+  display: inline-block;
   content: '';
   width: 0;
   height: 0;
@@ -1067,4 +1075,6 @@ table {
   width: 100%;
 }
 
-
+td span {
+  padding-left: 25px;
+}
