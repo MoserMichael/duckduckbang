@@ -2,7 +2,11 @@
 
 This script builds the html pages for a little meta-search tool;
 
-The resulting meta-search tool [in action](https://mosermichael.github.io/duckduckbang/html/main.html) that makes use of the duckduckgo [bang!](https://duckduckgo.com/bang) search commands.
+The resulting meta-search tool [desktop tool in action](https://mosermichael.github.io/duckduckbang/html/main.html) 
+The [mobile version of the tool in action](https://mosermichael.github.io/duckduckbang/html/main_mobile.html) 
+
+The tool is a slightly better organized directory of the duckduckgo [bang!](https://duckduckgo.com/bang) search commands.
+
 
 You can select a duckduckgo  bang! search operator, the operator then appears in the seach input box, where you can add your query; A search query that includes the selected bang! operator is sent to https://duckduckgo - once you press enter press or the Go! button; duckducko then redirects the query to a search engine specified by the operator.
 
