@@ -4,7 +4,6 @@ import translators as ts
 import dcachebase
 
 
-
 class LanguageTranslation:
 
     translators_prec = [
@@ -61,7 +60,8 @@ class TranslateText:
         transl = LanguageTranslation()
 
         cache.read_description_cache()
-        cache.set_file_name( dcachebase.DescriptionCacheBase.description_cache_file_with_translation )
+        #cache.set_file_name( dcachebase.DescriptionCacheBase.description_cache_file_with_translation )
+
         for base_url in cache.map_url_to_descr.keys():
             entry_obj = cache.cache_get(base_url)
             if entry_obj is not None and entry_obj.description != '':
@@ -73,6 +73,9 @@ class TranslateText:
 
                 if src_lang != to_lang:
                     out_text = transl.process(src_lang, to_lang, entry_obj.description)
+                    if out_text is None:
+                        out_text = transl.process("auto", to_lang, entry_obj.description)
+
                 else:
                     out_text = entry_obj.description
 
