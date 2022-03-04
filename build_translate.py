@@ -91,7 +91,7 @@ class TranslateText:
         print(f"*** description cache changed, number of items set: {self.num_set} failed: {self.num_failed}")
 
 def run_all():
-    transl = TranslateText([ 'en', 'de', 'fr', 'ru', 'ch', 'jp', 'es' ])
+    transl = TranslateText([ 'en', 'de', 'fr', 'ru', 'es', 'ja', 'zh', 'uk' ])
     transl.run()
 
 run_all()
