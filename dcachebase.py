@@ -1,6 +1,7 @@
 import os
 import typing
 import json
+import globs
 import dataclasses
 import dataclasses_json
 
@@ -29,8 +30,6 @@ class CacheItem:
     translations: typing.Dict[str, str]
 
 class DescriptionCacheBase:
-    description_cache_file = 'description_cache.json'
-    description_cache_file_with_translation = 'description_cache_with_translation.json'
 
     def __init__(self):
         self.map_url_to_descr = {}
@@ -38,16 +37,16 @@ class DescriptionCacheBase:
 
     @staticmethod
     def set_file_name(name):
-        DescriptionCacheBase.description_cache_file = name
+        globs.Globals.description_cache_file = name
 
     def read_description_cache(self):
-        if os.path.isfile(DescriptionCacheBase.description_cache_file):
-            with open(DescriptionCacheBase.description_cache_file, 'r') as cache_file:
+        if os.path.isfile(globs.Globals.description_cache_file):
+            with open(globs.Globals.description_cache_file, 'r') as cache_file:
                 self.map_url_to_descr = json.load(cache_file)
 
     def write_description_cache(self):
         if self.map_url_to_descr_changed:
-            with open(DescriptionCacheBase.description_cache_file, 'w') as cache_file:
+            with open(globs.Globals.description_cache_file, 'w') as cache_file:
                 json.dump( self.map_url_to_descr, cache_file, indent=2 )
             self.map_url_to_descr_changed = False
             return True

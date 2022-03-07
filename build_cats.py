@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 import argparse
-import json
-import os
 from pprint import pprint
 from datetime import datetime
 import re
 from dcache import DescriptionCache
 import scrapscrap
+import globs
 
 # sys.setdefaultencoding() does not exist, here!
 #reload(sys)  # Reload does the trick!
@@ -14,16 +13,24 @@ import scrapscrap
 
 
 class DuckStuff:
+
+    MODE_SHOW_ALL_LANGUAGES=1
+    MODE_SHOW_TRANSLATION=2
+
     #the host
     url = 'https://duckduckgo.com'
 
-    def __init__(self, enable_http_client, enable_selenium):
+    def __init__(self, enable_http_client, enable_selenium, mode):
         self.soup_builder = scrapscrap.BSoup()
         self.desc_cache = DescriptionCache(enable_http_client, enable_selenium)
         self.desc_cache.read_description_cache()
         self.clean_tag = re.compile('<.*?>')
         self.enable_http_client = enable_http_client
         self.map_url_to_id = {}
+        self.out_file = None
+        self.mode = mode
+        self.text_set = {}
+        self.check_for_regx = None
 
     def build_cache(self):
         json_data = self.soup_builder.get_json(DuckStuff.url + "/bang.js")
@@ -51,7 +58,7 @@ class DuckStuff:
         self.desc_cache.show("Total:")
 
         if len(failed_lookups) != 0:
-            with open("failed_lookups.txt", "w") as log_file:
+            with open(globs.Globals.failed_lookups, "w") as log_file:
                 print("failed lookups:\n", "\n".join(failed_lookups) )
                 log_file.write("\n".join(failed_lookups))
 
@@ -222,38 +229,65 @@ function h(elem) {
     def show_cats(self, output_file_name, output_file_name_mobile):
         self.show_cats_pc(output_file_name)
         self.show_cats_mobile(output_file_name_mobile)
+        self.write_text()
+
+    def show_text(self, text):
+        if self.mode == DuckStuff.MODE_SHOW_ALL_LANGUAGES:
+            # check if this is not a regular expression.
+            if self.check_for_regx is None:
+                self.check_for_regex = re.compile(r'^(http[s]?)://.*$')
+            if self.check_for_regex.match(text) is None:
+                print(text)
+                self.text_set[text] = 1
+                self.out_file.write(text)
+
+
 
     def show_cats_mobile(self, output_file_name):
 
         all_bangs, num_entries, unique_bangs, json_data = self.get_all()
 
         with open(output_file_name, "w") as out_file:
+            self.out_file = out_file
             DuckStuff.write_hdr_mobile(out_file)
             self.build_toolip_help_list(json_data, out_file)
             DuckStuff.write_js_mobile(out_file)
 
-            out_file.write("<table><tr><th>Category</th><th>Sub categories</th></tr>\n")
+            out_file.write("<table><tr><th>")
+            self.show_text("Category")
+            out_file.write("</th><th>")
+            self.show_text("Sub categories")
+            out_file.write("</th></tr>\n")
+
             link_num = 1
 
             all_bangs_keys = list(all_bangs)
             all_bangs_keys.sort()
 
             for cat in all_bangs_keys:
-                entry_links = ""
 
                 is_first = True
 
                 all_bangs_cat = list(all_bangs[cat])
                 all_bangs_cat.sort()
 
+                out_file.write("<tr><td>")
+                self.show_text(f"{cat}")
+                out_file.write("</td><td>")
+
                 for catentry in all_bangs_cat:
                     if not is_first:
-                        entry_links = entry_links + ","
-                    entry_links = entry_links + "&nbsp;"
+                        out_file.write(",")
+
+                    out_file.write("&nbsp;")
                     is_first = False
-                    entry_links = entry_links +  f"<a href=\"#{link_num}\">{catentry}</a>"
+                    out_file.write(f"<a href=\"#{link_num}\">")
+                    self.show_text(f"{catentry}")
+                    out_file.write("</a>")
+
                     link_num = link_num + 1
-                out_file.write(f"<tr><td>{cat}</td><td>{entry_links}</td>\n")
+
+                out_file.write("</td>\n")
             out_file.write("</table>\n")
 
             id_item = link_num+1
@@ -268,7 +302,11 @@ function h(elem) {
                     out_file.write(f"<hr/><p/><a id=\"{link_num}\"/>\n")
                     link_num += 1
 
-                    out_file.write(f"<h3>{cat} / {catentry}</h3><p></p>\n")
+                    out_file.write("<hr>")
+                    self.show_text(f"{cat}")
+                    out_file.write(" / ")
+                    self.show_text(f"{catentry}")
+                    out_file.write("</h3><p></p>\n")
 
                     pos = 0
                     out_file.write("<table>\n")
@@ -277,7 +315,10 @@ function h(elem) {
 
                     for bang in cat_content:
                         out_file.write("<tr><td>")
-                        out_file.write(f"<div id=\"{id_item}\" title=\"{self.map_url_to_id[bang[2]]}\" onclick=\"h(this)\" class='arrow'></div>&nbsp;<span><a href=\"javascript:onBang('{bang[0]}')\">{bang[1]}</a></span> <span style=\"float: right\">!<a href=\"javascript:onBang('{bang[0]}')\">{bang[0]}</a></span> &nbsp;")
+                        out_file.write(f"<div id=\"{id_item}\" title=\"{self.map_url_to_id[bang[2]]}\" onclick=\"h(this)\" class='arrow'></div>&nbsp;<span><a href=\"javascript:onBang('{bang[0]}')\">")
+                        self.show_text(f"{bang[1]}")
+                        out_file.write(f"</a></span> <span style=\"float: right\">!<a href=\"javascript:onBang('{bang[0]}')\">{bang[0]}</a></span> &nbsp;")
+
                         id_item += 1
                         out_file.write(f"<br><div id=\"{id_item}\"></div>")
                         id_item += 1
@@ -287,7 +328,20 @@ function h(elem) {
 
                     out_file.write("</table>")
 
-            out_file.write(f"\n<table width='100%'><tr><td>Generated on {datetime.now()}; number of entries {num_entries} unique bangs! {unique_bangs}</td></tr></table>\n<p><p><p>***eof***\n")
+            out_file.write("\n<table width='100%'><tr><td>")
+            self.show_text("Generated on ")
+            out_file.write(f"{datetime.now()}; ")
+            self.show_text("number of entries ")
+            out_file.write(f"{num_entries} ")
+            self.show_text("unique bangs")
+            out_file.write(f"{unique_bangs}</td></tr></table>\n<p><p><p>***eof***\n")
+
+    def write_text(self):
+        if self.mode == DuckStuff.MODE_SHOW_ALL_LANGUAGES:
+            print("writing ui string...")
+            with open(globs.Globals.ui_text_strings, "w") as out_file:
+                for item in self.text_set.keys():
+                    out_file.write(f"{item}\n")
 
 
     def show_cats_pc(self, output_file_name):
@@ -447,7 +501,7 @@ Build the html for the duckduckbang meta search tool.
 def _run_cmd():
     cmd = _parse_cmd_line()
 
-    duck = DuckStuff(cmd.http_client, cmd.selenium)
+    duck = DuckStuff(cmd.http_client, cmd.selenium, DuckStuff.MODE_SHOW_ALL_LANGUAGES)
 
     if cmd.build_cache:
         print("Building descriptions...")
