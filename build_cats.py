@@ -341,10 +341,19 @@ function h(elem) {
                     cat_content = sorted(all_bangs[cat][catentry], key=lambda entry : entry[1])
 
                     for bang in cat_content:
+
+                        entry_url = bang[2]
+                        bang_name = bang[0]
+                        bang_title = bang[1]
+
+                        country_img_tag = self.get_country_tag(entry_url)
+                        if country_img_tag != "":
+                            country_img_tag += "&nbsp;"
+
                         out_file.write("<tr><td>")
-                        out_file.write(f"<div id=\"{id_item}\" title=\"{self.map_url_to_id[bang[2]]}\" onclick=\"h(this)\" class='arrow'></div>&nbsp;<span><a href=\"javascript:onBang('{bang[0]}')\">")
-                        self.text_renderer.show_text(f"{bang[1]}")
-                        out_file.write(f"</a></span> <span style=\"float: right\">!<a href=\"javascript:onBang('{bang[0]}')\">{bang[0]}</a></span> &nbsp;")
+                        out_file.write(f"<div id=\"{id_item}\" title=\"{self.map_url_to_id[entry_url]}\" onclick=\"h(this)\" class='arrow'></div>&nbsp;<span><a href=\"javascript:onBang('{bang_name}')\">{country_img_tag}")
+                        self.text_renderer.show_text(f"{bang_title}")
+                        out_file.write(f"</a></span> <span style=\"float: right\">!<a href=\"javascript:onBang('{bang_name}')\">{bang_name}</a></span> &nbsp;")
 
                         id_item += 1
                         out_file.write(f"<br><div id=\"{id_item}\"></div>")
