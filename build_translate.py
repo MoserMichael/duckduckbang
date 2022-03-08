@@ -1,38 +1,61 @@
 #!/usr/bin/env python3
 import argparse
 import sys
-import translators as ts
+import time
+import traceback
+#import translators as ts
+from google_translate_py import Translator
 import globs
 import dcachebase
 import uitextbase
 
 
+def get_traceback(ex):
+    lines = traceback.format_exception(type(ex), ex, ex.__traceback__)
+    return ''.join(lines)
 
 class LanguageTranslation:
 
-    translators_prec = [
-            ts.deepl, # doesn't work - seems 0they changed the api, and the package didn't
-            #ts.yandex,
-            ts.google,
-#            ts.bing,
-#            ts.sogou,
-#            ts.baidu,
-            ]
+#    translators_prec = [
+#            ts.deepl, # doesn't work - seems 0they changed the api, and the package didn't
+#            ts.google,
+#            ]
 
     def __init__(self):
-        pass
+        self.translator = Translator()
+#        self.translator = Translator(service_urls=[
+#              'translate.google.com',
+#              'translate.google.co.kr',
+#            ])
 
     def process(self, from_lang_name, to_lang_name, text):
 
-        for provider in LanguageTranslation.translators_prec:
-            try:
-                result = ts.translate_html(text, translator=provider, from_language=from_lang_name, to_language=to_lang_name)
+        try:
+            # avoid "too many requests"
+            time.sleep(2)
+            result = self.translator.translate(text, from_lang_name, to_lang_name)
+            print(f"From_lang: {from_lang_name}\nTo_lang: {to_lang_name}\nText: {text}\nResult: {result}")
+            return result
+        except Exception as ex:
+            print(f"failed from: {from_lang_name} to: {to_lang_name} with exception: {ex}")
+            print('------Start--------')
+            print(get_traceback(ex))
+            print('------End--------')
 
-                print(f"From_lang: {from_lang_name}\nTo_lang: {to_lang_name}\nprovider: {repr(provider)}\nText: {text}\nResult: {result}")
-
-                return result
-            except Exception as ex:
-                print(f"failed from: {from_lang_name} to: {to_lang_name} for: {provider} with exception: {ex}")
+#
+#        for provider in LanguageTranslation.translators_prec:
+#            try:
+#                #result = ts.translate_html(text, translator=provider, from_language=from_lang_name, to_language=to_lang_name)
+#
+#                print(f"From_lang: {from_lang_name}\nTo_lang: {to_lang_name}\nprovider: {repr(provider)}\nText: {text}\nResult: {result}")
+#
+#                return result
+#            except Exception as ex:
+#                print(f"failed from: {from_lang_name} to: {to_lang_name} for: {provider} with exception: {ex}")
+#                print('------Start--------')
+#                print(get_traceback(ex))
+#                print('------End--------')
+#
 
         return None
 
@@ -103,8 +126,14 @@ def translate_ui_text():
 
     num = 0
 
+    num_ok = 0
+    num_error = 0
+    num_skipped = 0
+
     with open(globs.Globals.ui_text_strings, 'r') as ui_file:
         lines = ui_file.readlines()
+
+        num_all_items = len(lines) * len(globs.Globals.supported_languages)
 
         for lang in globs.Globals.supported_languages:
             for line in lines:
@@ -112,17 +141,24 @@ def translate_ui_text():
 
                 descr = text_base.get_item(line, lang)
                 if descr is not None:
-                    print(f"skipping {line} {lang}")
-                    continue
-
-                if lang != "en":
-                    descr = transl.process("en", lang, line)
+                    #print(f"skipping {line} {lang}")
+                    num_skipped += 1
                 else:
-                    descr = line
+                    if lang != "en":
+                        descr = transl.process("en", lang, line)
+                    else:
+                        descr = line
 
-                if descr is not None and descr != "":
-                    text_base.set_item( line, lang, descr )
+                    if descr is not None and descr != "":
+                        text_base.set_item( line, lang, descr )
+                        num_ok += 1
+                    else:
+                        num_error += 1
+
                 num += 1
+                if num % 100 == 0:
+                    print(f"{num}/{num_all_items} translated: {num_ok} errors: {num_error} skipped: {num_skipped}")
+
 
                 # from time to time: update the json, might crash and loose all your work...
                 if num % 100 == 0:
