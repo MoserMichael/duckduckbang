@@ -5,6 +5,8 @@ from datetime import datetime
 import re
 from dcache import DescriptionCache
 import scrapscrap
+import main_page
+import textrender
 import globs
 
 # sys.setdefaultencoding() does not exist, here!
@@ -14,13 +16,10 @@ import globs
 
 class DuckStuff:
 
-    MODE_SHOW_ALL_LANGUAGES=1
-    MODE_SHOW_TRANSLATION=2
-
     #the host
     url = 'https://duckduckgo.com'
 
-    def __init__(self, enable_http_client, enable_selenium, mode):
+    def __init__(self, enable_http_client, enable_selenium, text_renderer):
         self.soup_builder = scrapscrap.BSoup()
         self.desc_cache = DescriptionCache(enable_http_client, enable_selenium)
         self.desc_cache.read_description_cache()
@@ -28,9 +27,8 @@ class DuckStuff:
         self.enable_http_client = enable_http_client
         self.map_url_to_id = {}
         self.out_file = None
-        self.mode = mode
-        self.text_set = {}
-        self.check_for_regx = None
+        self.text_renderer = text_renderer
+
 
     def build_cache(self):
         json_data = self.soup_builder.get_json(DuckStuff.url + "/bang.js")
@@ -203,6 +201,14 @@ function h(elem) {
 </script>
 """)
 
+    def get_country_tag(self, url):
+        description = self.desc_cache.cache_get(url)
+        if description is None:
+            return ""
+        country = self.desc_cache.get_country(description)
+        if country != "":
+            return f'<img src="images/{country}.png">'
+        return ""
 
 
     def get_title(self, url):
@@ -210,7 +216,12 @@ function h(elem) {
         if description is None or description.description == "":
             return url
 
-        desc = description.description
+        if self.text_renderer.is_show_all_languages():
+            desc = description.description
+        else:
+            desc = description.translations.get( self.text_renderer.translation_lang )
+            if desc is None:
+                desc = description.description
 
         if desc.find('"') != -1:
             #print(f"Warning: description for {url} contains a quotation mark, desc: {desc}")
@@ -226,37 +237,53 @@ function h(elem) {
         return url + " - " + desc
 
 
+    def show_translated_cats(self, output_file_name, output_file_name_mobile):
+        self.text_renderer.set_translation_mode()
+
+        for lan in globs.Globals.supported_languages:
+            if lan == "en":
+                continue
+
+            self.text_renderer.translation_lang = lan
+
+            # render static pages,
+            self.show_cats_static()
+
+            self.show_cats_pc(output_file_name)
+            self.show_cats_mobile(output_file_name_mobile)
+
     def show_cats(self, output_file_name, output_file_name_mobile):
+        # render static pages,
+        self.show_cats_static()
+
+        # render the search catalogs.
         self.show_cats_pc(output_file_name)
         self.show_cats_mobile(output_file_name_mobile)
-        self.write_text()
 
-    def show_text(self, text):
-        if self.mode == DuckStuff.MODE_SHOW_ALL_LANGUAGES:
-            # check if this is not a regular expression.
-            if self.check_for_regx is None:
-                self.check_for_regex = re.compile(r'^(http[s]?)://.*$')
-            if self.check_for_regex.match(text) is None:
-                print(text)
-                self.text_set[text] = 1
-                self.out_file.write(text)
-
+        # show ui text strings
+        self.text_renderer.write_text()
 
 
     def show_cats_mobile(self, output_file_name):
+
+        if self.text_renderer.translation_lang is not None and self.text_renderer.translation_lang != "":
+            output_file_name += "_" + self.text_renderer.translation_lang
+        output_file_name += ".html"
 
         all_bangs, num_entries, unique_bangs, json_data = self.get_all()
 
         with open(output_file_name, "w") as out_file:
             self.out_file = out_file
+            self.text_renderer.out_file = out_file
+
             DuckStuff.write_hdr_mobile(out_file)
             self.build_toolip_help_list(json_data, out_file)
             DuckStuff.write_js_mobile(out_file)
 
             out_file.write("<table><tr><th>")
-            self.show_text("Category")
+            self.text_renderer.show_text("Category")
             out_file.write("</th><th>")
-            self.show_text("Sub categories")
+            self.text_renderer.show_text("Sub categories")
             out_file.write("</th></tr>\n")
 
             link_num = 1
@@ -272,7 +299,7 @@ function h(elem) {
                 all_bangs_cat.sort()
 
                 out_file.write("<tr><td>")
-                self.show_text(f"{cat}")
+                self.text_renderer.show_text(f"{cat}")
                 out_file.write("</td><td>")
 
                 for catentry in all_bangs_cat:
@@ -282,7 +309,7 @@ function h(elem) {
                     out_file.write("&nbsp;")
                     is_first = False
                     out_file.write(f"<a href=\"#{link_num}\">")
-                    self.show_text(f"{catentry}")
+                    self.text_renderer.show_text(f"{catentry}")
                     out_file.write("</a>")
 
                     link_num = link_num + 1
@@ -303,9 +330,9 @@ function h(elem) {
                     link_num += 1
 
                     out_file.write("<hr>")
-                    self.show_text(f"{cat}")
+                    self.text_renderer.show_text(f"{cat}")
                     out_file.write(" / ")
-                    self.show_text(f"{catentry}")
+                    self.text_renderer.show_text(f"{catentry}")
                     out_file.write("</h3><p></p>\n")
 
                     pos = 0
@@ -316,7 +343,7 @@ function h(elem) {
                     for bang in cat_content:
                         out_file.write("<tr><td>")
                         out_file.write(f"<div id=\"{id_item}\" title=\"{self.map_url_to_id[bang[2]]}\" onclick=\"h(this)\" class='arrow'></div>&nbsp;<span><a href=\"javascript:onBang('{bang[0]}')\">")
-                        self.show_text(f"{bang[1]}")
+                        self.text_renderer.show_text(f"{bang[1]}")
                         out_file.write(f"</a></span> <span style=\"float: right\">!<a href=\"javascript:onBang('{bang[0]}')\">{bang[0]}</a></span> &nbsp;")
 
                         id_item += 1
@@ -329,26 +356,27 @@ function h(elem) {
                     out_file.write("</table>")
 
             out_file.write("\n<table width='100%'><tr><td>")
-            self.show_text("Generated on ")
+            self.text_renderer.show_text("Generated on ")
             out_file.write(f"{datetime.now()}; ")
-            self.show_text("number of entries ")
+            self.text_renderer.show_text("number of entries ")
             out_file.write(f"{num_entries} ")
-            self.show_text("unique bangs")
+            self.text_renderer.show_text("unique bangs")
             out_file.write(f"{unique_bangs}</td></tr></table>\n<p><p><p>***eof***\n")
 
-    def write_text(self):
-        if self.mode == DuckStuff.MODE_SHOW_ALL_LANGUAGES:
-            print("writing ui string...")
-            with open(globs.Globals.ui_text_strings, "w") as out_file:
-                for item in self.text_set.keys():
-                    out_file.write(f"{item}\n")
 
+    def show_cats_static(self):
+        render_static = main_page.RenderStatic(self.text_renderer)
+        render_static.render(self.text_renderer.translation_lang)
 
     def show_cats_pc(self, output_file_name):
 
         all_bangs, num_entries, unique_bangs, json_data = self.get_all()
 
         #pprint(all_bangs)
+
+        if self.text_renderer.translation_lang is not None and self.text_renderer.translation_lang != "":
+            output_file_name += "_" + self.text_renderer.translation_lang
+        output_file_name += ".html"
 
         with open(output_file_name, "w") as out_file:
 
@@ -404,7 +432,16 @@ function h(elem) {
                         if pos % num_columns == 0:
                             out_file.write("</tr><tr>")
                         out_file.write("<td>")
-                        out_file.write(f"<span align=\"left\"><a title=\"{self.map_url_to_id[bang[2]]}\" onmouseenter=\"h(this)\" href=\"javascript:onBang('{bang[0]}')\">{bang[1]}</a></span> <span style=\"float: right\">!<a title=\"{self.map_url_to_id[bang[2]]}\" onmouseenter=\"h(this)\" href=\"javascript:onBang('{bang[0]}')\">{bang[0]}</a></span> &nbsp;")
+
+                        entry_url = bang[2]
+                        bang_name = bang[0]
+                        bang_title = bang[1]
+
+                        country_img_tag = self.get_country_tag(entry_url)
+                        if country_img_tag != "":
+                            country_img_tag += "&nbsp;"
+
+                        out_file.write(f"<span align=\"left\"><a title=\"{self.map_url_to_id[entry_url]}\" onmouseenter=\"h(this)\" href=\"javascript:onBang('{bang_name}')\">{country_img_tag}{bang_title}</a></span> <span style=\"float: right\">!<a title=\"{self.map_url_to_id[entry_url]}\" onmouseenter=\"h(this)\" href=\"javascript:onBang('{bang_name}')\">{bang_name}</a></span> &nbsp;")
                         out_file.write("</td>")
                         pos = pos + 1
 
@@ -478,6 +515,16 @@ Build the html for the duckduckbang meta search tool.
     )
 
     group.add_argument(
+        "--translate",
+        "-r",
+        default=False,
+        action="store_true",
+        dest="build_translate_html",
+        help="building translation of html files, note this requires additional preparation steps. (default off)"
+    )
+
+
+    group.add_argument(
         "--verbose",
         "-v",
         default=False,
@@ -495,13 +542,12 @@ Build the html for the duckduckbang meta search tool.
         help="show content of downloaded page"
     )
 
-
     return parse.parse_args()
 
 def _run_cmd():
     cmd = _parse_cmd_line()
 
-    duck = DuckStuff(cmd.http_client, cmd.selenium, DuckStuff.MODE_SHOW_ALL_LANGUAGES)
+    duck = DuckStuff(cmd.http_client, cmd.selenium, textrender.TextRenderer() )
 
     if cmd.build_cache:
         print("Building descriptions...")
@@ -512,7 +558,10 @@ def _run_cmd():
 
     if cmd.build_html:
         print("Building html file...")
-        duck.show_cats("all_cats.html", "all_cats_mobile.html")
+        duck.show_cats("all_cats", "all_cats_mobile")
+
+    if cmd.build_translate_html:
+        duck.show_translated_cats("all_cats", "all_cats_mobile")
 
 if __name__ == '__main__':
     _run_cmd()

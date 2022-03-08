@@ -9,4 +9,4 @@ class Globals:
     supported_languages = [ 'en', 'de', 'fr', 'ru', 'es', 'ja', 'zh', 'uk' ]
     failed_lookups = "failed_lookups.txt"
 
-
+    flag_list = "flag_list.txt"
