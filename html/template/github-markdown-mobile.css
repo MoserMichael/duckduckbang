@@ -817,7 +817,7 @@ div.second_row {
 
 .markdown-body table td,
 .markdown-body table th {
-  padding: 6px 13px;
+  padding: 6px 2px;
   border: 1px solid #dfe2e5;
 }
 
@@ -1043,7 +1043,7 @@ div.second_row {
 }
 
 .arrow {
-  margin: 1em;
+  margin: 3px;
 }
 
 .arrow::before {
