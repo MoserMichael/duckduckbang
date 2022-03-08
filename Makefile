@@ -14,6 +14,10 @@ build-html:
 build-translate:
 		docker build . -f Dockerfile-translate -t build-translate
 
+.PHONY: build-geoip
+build-geoip:
+		docker build . -f Dockerfile-geoip -t build-geoip
+
 
 
 

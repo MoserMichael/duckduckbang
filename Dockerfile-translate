@@ -1,0 +1,28 @@
+
+# no cowsay in alpine, so use ubuntu ...
+#FROM docker.io/ubuntu:latest
+#
+#ARG GITHUB_TOKEN=""
+#
+#RUN apt-get update
+#RUN apt-get install -y python3
+#RUN apt-get install -y python3-pip
+
+FROM alpine:3.12 
+
+ARG GITHUB_TOKEN=""
+
+RUN apk add bash python3 git expect py3-pip g++ libc-dev python3-dev linux-headers
+
+RUN pip3 install dataclasses-json
+
+#RUN apt-get install -y snapd
+#RUN pip3 install argostranslate
+
+#RUN pip3 install translators
+
+#RUN pip3 install googletrans
+
+RUN pip3 install google-translate.py
+
+
