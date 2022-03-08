@@ -81828,7 +81828,8 @@
     "de": "HTTP-Status-Katzen",
     "fr": "Statut http chats",
     "ru": "HTTP Status Cats.",
-    "es": "CATS DE ESTADO HTTP"
+    "es": "CATS DE ESTADO HTTP",
+    "ja": "HTTP\u30b9\u30c6\u30fc\u30bf\u30b9\u732b"
   },
   "Hackster": {
     "en": "Hackster",
@@ -82987,14 +82988,16 @@
     "de": "Fnd",
     "fr": "fnd",
     "ru": "FND.",
-    "es": "fnd"
+    "es": "fnd",
+    "ja": "fnd"
   },
   "free-theme-download.com": {
     "en": "free-theme-download.com",
     "de": "free-theme-download.com.",
     "fr": "free-theme-download.com",
     "ru": "Free-theme-download.com.",
-    "es": "Free-theme-download.com"
+    "es": "Free-theme-download.com",
+    "ja": "free-theme-download.com"
   },
   "Add-ons Firefox": {
     "en": "Add-ons Firefox",
@@ -84457,1736 +84460,1984 @@
     "de": "Fuget Gallery.",
     "fr": "Galerie de fuget",
     "ru": "\u0424\u0435\u0433\u0435\u0442 \u0413\u0430\u043b\u0435\u0440\u0435\u044f",
-    "es": "Galer\u00eda de fuget"
+    "es": "Galer\u00eda de fuget",
+    "ja": "FuGet\u30ae\u30e3\u30e9\u30ea\u30fc"
   },
   "Unity Script Reference": {
     "en": "Unity Script Reference",
     "de": "Einheitsskriptreferenz.",
     "fr": "R\u00e9f\u00e9rence de script d'unit\u00e9",
     "ru": "\u0421\u0441\u044b\u043b\u043a\u0430 \u0441\u0446\u0435\u043d\u0430\u0440\u0438\u044f Unity",
-    "es": "Referencia de gui\u00f3n de Unity"
+    "es": "Referencia de gui\u00f3n de Unity",
+    "ja": "Unity\u30b9\u30af\u30ea\u30d7\u30c8\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9"
   },
   "Unity3D Scripting API": {
     "en": "Unity3D Scripting API",
     "de": "Unity3d Scripting-API.",
     "fr": "API de script UNITY3D",
     "ru": "Unity3D Scripting API.",
-    "es": "Unity3D Scripting API"
+    "es": "Unity3D Scripting API",
+    "ja": "Unity3D\u30b9\u30af\u30ea\u30d7\u30c6\u30a3\u30f3\u30b0API"
   },
   "D Programming Language": {
     "en": "D Programming Language",
     "de": "D Programmiersprache.",
     "fr": "D Langage de programmation",
     "ru": "D \u042f\u0437\u044b\u043a \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f",
-    "es": "D Idioma de programaci\u00f3n"
+    "es": "D Idioma de programaci\u00f3n",
+    "ja": "D\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\u8a00\u8a9e"
   },
   "Dub Package Registry": {
     "en": "Dub Package Registry",
     "de": "DUB-Paketregister.",
     "fr": "Registre de paquet DUB",
     "ru": "\u0420\u0435\u0435\u0441\u0442\u0440 \u043f\u0430\u043a\u0435\u0442\u0430 DUB",
-    "es": "Registro de paquetes DUB"
+    "es": "Registro de paquetes DUB",
+    "ja": "\u5439\u304d\u66ff\u3048\u30d1\u30c3\u30b1\u30fc\u30b8\u30ec\u30b8\u30b9\u30c8\u30ea"
   },
   "The D Programming Language's Unofficial Docs": {
     "en": "The D Programming Language's Unofficial Docs",
     "de": "Die inoffiziellen Dokumente der Programmiersprache",
     "fr": "Les Documents non officiels de la langue de programmation D",
     "ru": "\u041d\u0435\u043e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u044b\u0435 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b \u044f\u0437\u044b\u043a\u0430 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f D",
-    "es": "Los documentos no oficiales del lenguaje de programaci\u00f3n D"
+    "es": "Los documentos no oficiales del lenguaje de programaci\u00f3n D",
+    "ja": "D\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\u8a00\u8a9e\u306e\u975e\u516c\u5f0f\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "vibe.d Documentation": {
     "en": "vibe.d Documentation",
     "de": "vibe.d-Dokumentation.",
     "fr": "Documentation Vibe.D",
     "ru": "vibe.d \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "VIBE.D DOCUMENTACI\u00d3N"
+    "es": "VIBE.D DOCUMENTACI\u00d3N",
+    "ja": "vibe.d\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Erlang Docs": {
     "en": "Erlang Docs",
     "de": "Erlang docs.",
     "fr": "Erlang docs",
     "ru": "Erlang docs.",
-    "es": "Erlang Docs"
+    "es": "Erlang Docs",
+    "ja": "Erlang\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Erlang Module Documentation": {
     "en": "Erlang Module Documentation",
     "de": "Erlang-Modul-Dokumentation.",
     "fr": "Documentation du module Erlang",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f \u043c\u043e\u0434\u0443\u043b\u044f ERLANG",
-    "es": "Documentaci\u00f3n del m\u00f3dulo de Erlang"
+    "es": "Documentaci\u00f3n del m\u00f3dulo de Erlang",
+    "ja": "Erlang\u30e2\u30b8\u30e5\u30fc\u30eb\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Hex Docs": {
     "en": "Hex Docs",
     "de": "Hex docs.",
     "fr": "Hex docs",
     "ru": "Hex Docs",
-    "es": "Documentos hexagonales"
+    "es": "Documentos hexagonales",
+    "ja": "\u516d\u89d2\u5f62\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Hex.pm": {
     "en": "Hex.pm",
     "de": "Hex.pm.",
     "fr": "Hex.pm",
     "ru": "Hex.pm.",
-    "es": "Hex.pm"
+    "es": "Hex.pm",
+    "ja": "Hex.pm"
   },
   "Go Package Reference": {
     "en": "Go Package Reference",
     "de": "GO PACKE-Referenz",
     "fr": "Faire r\u00e9f\u00e9rence \u00e0 l'emballage",
     "ru": "GO \u0421\u0441\u044b\u043b\u043a\u0430 \u043d\u0430 \u043f\u0430\u043a\u0435\u0442",
-    "es": "Referencia del paquete Go"
+    "es": "Referencia del paquete Go",
+    "ja": "\u30d1\u30c3\u30b1\u30fc\u30b8\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9\u306b\u79fb\u52d5"
   },
   "Go Programming Language": {
     "en": "Go Programming Language",
     "de": "Programmiersprache gehen",
     "fr": "GO Langue de programmation",
     "ru": "\u041f\u0435\u0440\u0435\u0439\u0442\u0438 \u043a \u044f\u0437\u044b\u043a\u0443 \u043f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f",
-    "es": "Idioma de programaci\u00f3n"
+    "es": "Idioma de programaci\u00f3n",
+    "ja": "\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\u8a00\u8a9e\u306b\u884c\u304f"
   },
   "Go Search": {
     "en": "Go Search",
     "de": "Suchen",
     "fr": "Aller chercher",
     "ru": "\u041f\u043e\u0439\u0442\u0438 \u043f\u043e\u0438\u0441\u043a",
-    "es": "Ir a buscar"
+    "es": "Ir a buscar",
+    "ja": "\u691c\u7d22\u306b\u884c\u304f"
   },
   "GoDoc": {
     "en": "GoDoc",
     "de": "Godoc.",
     "fr": "Godoc",
     "ru": "Godoc.",
-    "es": "Godoc"
+    "es": "Godoc",
+    "ja": "GoDoc"
   },
   "GoPkgDoc": {
     "en": "GoPkgDoc",
     "de": "Gopkgdoc.",
     "fr": "Gopkgdoc",
     "ru": "Gopkgdoc.",
-    "es": "Gopkgdoc"
+    "es": "Gopkgdoc",
+    "ja": "GoPkgDoc"
   },
   "Golang Cafe": {
     "en": "Golang Cafe",
     "de": "Golang Cafe.",
     "fr": "Golang caf\u00e9",
     "ru": "\u0413\u043e\u043b\u0430\u043d\u0441\u043a\u043e\u0435 \u043a\u0430\u0444\u0435",
-    "es": "Golang Cafe"
+    "es": "Golang Cafe",
+    "ja": "\u30b4\u30e9\u30f3\u30ab\u30d5\u30a7"
   },
   "golang.org": {
     "en": "golang.org",
     "de": "golang.org.",
     "fr": "golang.org",
     "ru": "Golang.org.",
-    "es": "golang.org"
+    "es": "golang.org",
+    "ja": "golang.org"
   },
   "libs.garden Go": {
     "en": "libs.garden Go",
     "de": "libs.garden Go.",
     "fr": "libs.garden va",
     "ru": "Libs.garden Go",
-    "es": "libs.garden va"
+    "es": "libs.garden va",
+    "ja": "libs.garden Go"
   },
   "Hackage": {
     "en": "Hackage",
     "de": "Hackage",
     "fr": "Hacjou",
     "ru": "\u0421\u0445\u0432\u0430\u0442",
-    "es": "Hackaje"
+    "es": "Hackaje",
+    "ja": "\u30cf\u30c3\u30ad\u30f3\u30b0"
   },
   "Haskell Wiki": {
     "en": "Haskell Wiki",
     "de": "Haskell Wiki.",
     "fr": "Haskell wiki",
     "ru": "Haskell Wiki",
-    "es": "Wiki haskell"
+    "es": "Wiki haskell",
+    "ja": "Haskell Wiki"
   },
   "Hayoo": {
     "en": "Hayoo",
     "de": "Hayoo",
     "fr": "Hayoo",
     "ru": "\u0410\u0439",
-    "es": "Henoo"
+    "es": "Henoo",
+    "ja": "\u30cf\u30e8"
   },
   "Hoogle": {
     "en": "Hoogle",
     "de": "Hoogle",
     "fr": "Hoogle",
     "ru": "\u0414\u043e\u0431\u044b\u0447\u0430",
-    "es": "Hoogle"
+    "es": "Hoogle",
+    "ja": "Hoogle"
   },
   "Hoogle at Stackage": {
     "en": "Hoogle at Stackage",
     "de": "Hoogle bei Stapelage.",
     "fr": "Hocager \u00e0 l'empilage",
     "ru": "Hoogle \u043d\u0430 Stackage.",
-    "es": "Hoogle en stackage"
+    "es": "Hoogle en stackage",
+    "ja": "Stackage\u3067Hoogle"
   },
   "haskell.org/hoogle": {
     "en": "haskell.org/hoogle",
     "de": "haskell.org/hoogle.",
     "fr": "haskell.org/hoogle",
     "ru": "haskell.org/hoogle.",
-    "es": "haskell.org/hoogle"
+    "es": "haskell.org/hoogle",
+    "ja": "haskell.org/hoogle"
   },
   "hoogle": {
     "en": "hoogle",
     "de": "hoogle",
     "fr": "hoogle",
     "ru": "\u0434\u043e\u0431\u044b\u0447\u0430",
-    "es": "hoogle"
+    "es": "hoogle",
+    "ja": "\u30d5\u30fc\u30b0\u30eb"
   },
   "CSS": {
     "en": "CSS",
     "de": "CSS.",
     "fr": "CSS",
     "ru": "CSS.",
-    "es": "CSS"
+    "es": "CSS",
+    "ja": "CSS"
   },
   "Can I use...": {
     "en": "Can I use...",
     "de": "Kann ich benutzen...",
     "fr": "Puis-je utiliser...",
     "ru": "\u041c\u043e\u0433\u0443 \u043b\u0438 \u044f \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c...",
-    "es": "Puedo usar..."
+    "es": "Puedo usar...",
+    "ja": "\u4f7f\u3063\u3066\u3082\u3044\u3044\u3067\u3059\u304b..."
   },
   "HTML5 Doctor": {
     "en": "HTML5 Doctor",
     "de": "HTML5 Doktor.",
     "fr": "HTML5 Docteur",
     "ru": "HTML5 \u0434\u043e\u043a\u0442\u043e\u0440",
-    "es": "Doctor html5"
+    "es": "Doctor html5",
+    "ja": "HTML5 Doctor"
   },
   "Html2Txt": {
     "en": "Html2Txt",
     "de": "Html2txt.",
     "fr": "HTML2TXT",
     "ru": "HTML2TXT.",
-    "es": "Html2txt"
+    "es": "Html2txt",
+    "ja": "Html2Txt"
   },
   "Mozilla Developer Network": {
     "en": "Mozilla Developer Network",
     "de": "Mozilla Developer Network.",
     "fr": "R\u00e9seau de d\u00e9veloppeurs Mozilla",
     "ru": "Mozilla Developer Network",
-    "es": "Red de desarrolladores de Mozilla"
+    "es": "Red de desarrolladores de Mozilla",
+    "ja": "Mozilla Developer Network"
   },
   "Pste.eu": {
     "en": "Pste.eu",
     "de": "Pste.eu.",
     "fr": "Pste.eu",
     "ru": "PSTE.EU.",
-    "es": "Pste.eu"
+    "es": "Pste.eu",
+    "ja": "Pste.eu"
   },
   "SELFHTML": {
     "en": "SELFHTML",
     "de": "SelfHtml.",
     "fr": "Selfhtml",
     "ru": "Selfhtml.",
-    "es": "Autohtml"
+    "es": "Autohtml",
+    "ja": "SELFHTML"
   },
   "SELFHTML wiki": {
     "en": "SELFHTML wiki",
     "de": "SelfHtml Wiki.",
     "fr": "Wiki selfhtml",
     "ru": "Selfhtml Wiki",
-    "es": "Wiki autohtml"
+    "es": "Wiki autohtml",
+    "ja": "SELFHTML wiki"
   },
   "Validator.nu": {
     "en": "Validator.nu",
     "de": "Validator.nu.",
     "fr": "Validator.nu",
     "ru": "\u0412\u0430\u043b\u0438\u0434\u0430\u0442\u043e\u0440",
-    "es": "Validator.nu"
+    "es": "Validator.nu",
+    "ja": "Validator.nu"
   },
   "W3 Schools Tag": {
     "en": "W3 Schools Tag",
     "de": "W3schools-Tag.",
     "fr": "W3schools tag",
     "ru": "W3Schools Tag",
-    "es": "Etiqueta w3schools"
+    "es": "Etiqueta w3schools",
+    "ja": "W3\u30b9\u30af\u30fc\u30eb\u30bf\u30b0"
   },
   "W3Schools Tag Attributes": {
     "en": "W3Schools Tag Attributes",
     "de": "W3schools-Tag-Attribute.",
     "fr": "Attributs de balises W3schools",
     "ru": "\u0410\u0442\u0440\u0438\u0431\u0443\u0442\u044b \u0442\u0435\u0433\u0430 W3Schools",
-    "es": "Atributos de etiqueta W3Schools"
+    "es": "Atributos de etiqueta W3Schools",
+    "ja": "W3Schools\u30bf\u30b0\u5c5e\u6027"
   },
   "WebReference": {
     "en": "WebReference",
     "de": "WeBreference",
     "fr": "WebRefence",
     "ru": "WebReference",
-    "es": "Referencia web"
+    "es": "Referencia web",
+    "ja": "WebReference"
   },
   "htmlbook.ru": {
     "en": "htmlbook.ru",
     "de": "htmlbook.ru.",
     "fr": "htmlbook.ru",
     "ru": "htmlbook.ru.",
-    "es": "htmlbook.ru"
+    "es": "htmlbook.ru",
+    "ja": "htmlbook.ru"
   },
   "userstyles.org": {
     "en": "userstyles.org",
     "de": "Usertyles.org.",
     "fr": "usersyles.org",
     "ru": "userstyles.org.",
-    "es": "UserStyles.org"
+    "es": "UserStyles.org",
+    "ja": "userstyles.org"
   },
   "w3schools.com": {
     "en": "w3schools.com",
     "de": "w3schools.com.",
     "fr": "w3schools.com",
     "ru": "w3schools.com.",
-    "es": "w3schools.com"
+    "es": "w3schools.com",
+    "ja": "w3schools.com"
   },
   "webcomponents.org": {
     "en": "webcomponents.org",
     "de": "webcomponents.org.",
     "fr": "WebComponents.org",
     "ru": "WebComponents.org.",
-    "es": "webcomponents.org"
+    "es": "webcomponents.org",
+    "ja": "webcomponents.org"
   },
   "FindJar.com": {
     "en": "FindJar.com",
     "de": "Findjar.com",
     "fr": "Findjar.com",
     "ru": "Findjar.com.",
-    "es": "Findjar.com"
+    "es": "Findjar.com",
+    "ja": "FindJar.com"
   },
   "Howtodoinjava": {
     "en": "Howtodoinjava",
     "de": "Howtodoinjava.",
     "fr": "Howtodooinjava",
     "ru": "\u0425\u0430\u0443\u0442\u0430\u043d\u0438\u044f",
-    "es": "Howtodoinjava"
+    "es": "Howtodoinjava",
+    "ja": "Howtodoinjava"
   },
   "Java 11 documentation": {
     "en": "Java 11 documentation",
     "de": "Java 11-Dokumentation.",
     "fr": "Java 11 Documentation",
     "ru": "Java 11 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n Java 11"
+    "es": "Documentaci\u00f3n Java 11",
+    "ja": "Java11\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Java 8 Documentation": {
     "en": "Java 8 Documentation",
     "de": "Java 8-Dokumentation.",
     "fr": "Java 8 Documentation",
     "ru": "Java 8 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n Java 8"
+    "es": "Documentaci\u00f3n Java 8",
+    "ja": "Java8\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Java Community Process": {
     "en": "Java Community Process",
     "de": "Java Community-Prozess.",
     "fr": "Processus communautaire Java",
     "ru": "\u041f\u0440\u043e\u0446\u0435\u0441\u0441 \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0430 Java",
-    "es": "Proceso comunitario de Java"
+    "es": "Proceso comunitario de Java",
+    "ja": "Java\u30b3\u30df\u30e5\u30cb\u30c6\u30a3\u30d7\u30ed\u30bb\u30b9"
   },
   "Java Docs": {
     "en": "Java Docs",
     "de": "Java Docs.",
     "fr": "Java Docs",
     "ru": "Java Docs.",
-    "es": "Java Docs"
+    "es": "Java Docs",
+    "ja": "JavaDocs"
   },
   "Java LibHunt": {
     "en": "Java LibHunt",
     "de": "Java Libhose.",
     "fr": "Java libhunt",
     "ru": "Java libhunt.",
-    "es": "Java Libhunt"
+    "es": "Java Libhunt",
+    "ja": "Java LibHunt"
   },
   "Java Oracle documenation": {
     "en": "Java Oracle documenation",
     "de": "Java Oracle-Dokumentation.",
     "fr": "Java Oracle Documentation",
     "ru": "Java Oracle \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n de Oracle Java"
+    "es": "Documentaci\u00f3n de Oracle Java",
+    "ja": "JavaOracle\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Java Tutorial (Oracle)": {
     "en": "Java Tutorial (Oracle)",
     "de": "Java Tutorial (Oracle)",
     "fr": "Tutoriel Java (Oracle)",
     "ru": "\u0423\u0447\u0435\u0431\u043d\u0438\u043a Java (Oracle)",
-    "es": "Tutorial Java (Oracle)"
+    "es": "Tutorial Java (Oracle)",
+    "ja": "Java\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb\uff08Oracle\uff09"
   },
   "Java questions on Stack Overflow": {
     "en": "Java questions on Stack Overflow",
     "de": "Java-Fragen zum Stapel\u00fcberlauf",
     "fr": "Les questions Java sur la pile d\u00e9bordement",
     "ru": "\u0412\u043e\u043f\u0440\u043e\u0441\u044b Java \u043d\u0430 \u043f\u0435\u0440\u0435\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0438 \u0441\u0442\u0435\u043a\u0430",
-    "es": "Preguntas de Java sobre el desbordamiento de la pila"
+    "es": "Preguntas de Java sobre el desbordamiento de la pila",
+    "ja": "StackOverflow\u306b\u95a2\u3059\u308bJava\u306e\u8cea\u554f"
   },
   "Javalibs": {
     "en": "Javalibs",
     "de": "Javalibs.",
     "fr": "Javalibs",
     "ru": "Javalibs.",
-    "es": "Javalibs"
+    "es": "Javalibs",
+    "ja": "Javalibs"
   },
   "OpenProcessing": {
     "en": "OpenProcessing",
     "de": "OpenProcessing.",
     "fr": "Processeur",
     "ru": "OpenBrocessing",
-    "es": "Coprocesamiento abierto"
+    "es": "Coprocesamiento abierto",
+    "ja": "OpenProcessing"
   },
   "Oracle Help Center": {
     "en": "Oracle Help Center",
     "de": "Oracle-Hilfezentrum.",
     "fr": "Oracle Help Center",
     "ru": "\u041e\u0440\u0430\u043a\u0443\u043b \u0441\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u044b\u0439 \u0446\u0435\u043d\u0442\u0440",
-    "es": "Centro de ayuda de Oracle"
+    "es": "Centro de ayuda de Oracle",
+    "ja": "Oracle\u30d8\u30eb\u30d7\u30bb\u30f3\u30bf\u30fc"
   },
   "Oracle Java Docs": {
     "en": "Oracle Java Docs",
     "de": "Oracle Java Docs.",
     "fr": "Oracle Java Docs",
     "ru": "Oracle Java Docs.",
-    "es": "Oracle Java Docs"
+    "es": "Oracle Java Docs",
+    "ja": "Oracle Java Docs"
   },
   "jQuery Docs": {
     "en": "jQuery Docs",
     "de": "jquery docs.",
     "fr": "jQuery docs",
     "ru": "jquery docs.",
-    "es": "jquery docs"
+    "es": "jquery docs",
+    "ja": "jQuery\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Angular JS (1.0) documentation": {
     "en": "Angular JS (1.0) documentation",
     "de": "Angular JS (1.0) Dokumentation",
     "fr": "Documentation JS (1.0) angulaire",
     "ru": "\u0423\u0433\u043b\u043e\u0432\u0430\u044f JS (1.0) \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n angular JS (1.0)"
+    "es": "Documentaci\u00f3n angular JS (1.0)",
+    "ja": "Angular JS\uff081.0\uff09\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Angular.io": {
     "en": "Angular.io",
     "de": "Eckular.io.",
     "fr": "Angulaire.io",
     "ru": "Angular.io.",
-    "es": "Angular."
+    "es": "Angular.",
+    "ja": "Angular.io"
   },
   "AngularJS": {
     "en": "AngularJS",
     "de": "Angularjs.",
     "fr": "Angularjs",
     "ru": "Angularjs.",
-    "es": "Angularjs"
+    "es": "Angularjs",
+    "ja": "AngularJS"
   },
   "AtmosphereJS": {
     "en": "AtmosphereJS",
     "de": "Atmosph\u00e4rejs.",
     "fr": "Atmosph\u00e8rejs",
     "ru": "\u0410\u0442\u043c\u043e\u0441\u0444\u0435\u0440\u044b",
-    "es": "Atm\u00f3sf\u00f3siciones"
+    "es": "Atm\u00f3sf\u00f3siciones",
+    "ja": "AtmosphereJS"
   },
   "DefinitelyTyped": {
     "en": "DefinitelyTyped",
     "de": "Definitived.",
     "fr": "D\u00e9finitivement",
     "ru": "\u041e\u043f\u0440\u0435\u0434\u0435\u043b\u0435\u043d\u043d\u043e",
-    "es": "Definitivamente mecanografiado"
+    "es": "Definitivamente mecanografiado",
+    "ja": "DefinitelyTyped"
   },
   "ESDoc": {
     "en": "ESDoc",
     "de": "ESDOC.",
     "fr": "ESDOC",
     "ru": "Esdoc.",
-    "es": "ESDOC"
+    "es": "ESDOC",
+    "ja": "ESDoc"
   },
   "ESLint": {
     "en": "ESLint",
     "de": "Eslint",
     "fr": "Escroc",
     "ru": "Eslint.",
-    "es": "Eslint"
+    "es": "Eslint",
+    "ja": "ESLint"
   },
   "GitHub JavaScript Code Search": {
     "en": "GitHub JavaScript Code Search",
     "de": "Github JavaScript-Code-Suche",
     "fr": "Recherche de code JavaScript GitHub",
     "ru": "GitHub JavaScript \u043a\u043e\u0434 \u043f\u043e\u0438\u0441\u043a\u0430",
-    "es": "B\u00fasqueda de c\u00f3digos GitHub Javascript"
+    "es": "B\u00fasqueda de c\u00f3digos GitHub Javascript",
+    "ja": "GitHubJavaScript\u30b3\u30fc\u30c9\u691c\u7d22"
   },
   "GreaseSpot Wiki": {
     "en": "GreaseSpot Wiki",
     "de": "GreatEspot Wiki.",
     "fr": "Wiki au gr\u00e8ve",
     "ru": "Greasespot Wiki",
-    "es": "Greasespot Wiki"
+    "es": "Greasespot Wiki",
+    "ja": "GreaseSpot Wiki"
   },
   "JQuery UI": {
     "en": "JQuery UI",
     "de": "Jquery ui.",
     "fr": "Jquery ui",
     "ru": "Jquery ui",
-    "es": "JQuery ui"
+    "es": "JQuery ui",
+    "ja": "JQuery UI"
   },
   "JS.coach": {
     "en": "JS.coach",
     "de": "Js.coach.",
     "fr": "Js.coach",
     "ru": "Js.Coach.",
-    "es": "Js.coach"
+    "es": "Js.coach",
+    "ja": "JS.coach"
   },
   "JSHint": {
     "en": "JSHint",
     "de": "Just",
     "fr": "Jshint",
     "ru": "Jshint.",
-    "es": "Jshint"
+    "es": "Jshint",
+    "ja": "JSHint"
   },
   "Javascript Info": {
     "en": "Javascript Info",
     "de": "JavaScript-Informationen.",
     "fr": "Info javascript",
     "ru": "JavaScript info.",
-    "es": "Informaci\u00f3n de JavaScript"
+    "es": "Informaci\u00f3n de JavaScript",
+    "ja": "Javascript\u60c5\u5831"
   },
   "MDN API": {
     "en": "MDN API",
     "de": "MDN-API.",
     "fr": "API MDN",
     "ru": "MDN API",
-    "es": "MDN API"
+    "es": "MDN API",
+    "ja": "MDN API"
   },
   "NPM Direct": {
     "en": "NPM Direct",
     "de": "NPM Direct.",
     "fr": "Npm direct",
     "ru": "NPM Direct.",
-    "es": "Npm directo"
+    "es": "Npm directo",
+    "ja": "NPM\u30c0\u30a4\u30ec\u30af\u30c8"
   },
   "Node.js Documentation": {
     "en": "Node.js Documentation",
     "de": "Node.js-Dokumentation.",
     "fr": "Node.js Documentation",
     "ru": "Node.js \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n de nodo.js"
+    "es": "Documentaci\u00f3n de nodo.js",
+    "ja": "Node.js\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Pikapkg": {
     "en": "Pikapkg",
     "de": "Pikapkg",
     "fr": "Pikapkg",
     "ru": "\u041f\u0438\u043a\u0430\u043f\u043a\u0433",
-    "es": "Pikapkg"
+    "es": "Pikapkg",
+    "ja": "Pikapkg"
   },
   "Ramda Javascript library": {
     "en": "Ramda Javascript library",
     "de": "Ramda JavaScript-Bibliothek.",
     "fr": "Biblioth\u00e8que JavaScript Ramda",
     "ru": "Ramda JavaScript \u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430",
-    "es": "Biblioteca Ramda JavaScript"
+    "es": "Biblioteca Ramda JavaScript",
+    "ja": "RamdaJavascript\u30e9\u30a4\u30d6\u30e9\u30ea"
   },
   "React Parts Libraries": {
     "en": "React Parts Libraries",
     "de": "Teilebibliotheken reagieren.",
     "fr": "R\u00e9agir des biblioth\u00e8ques de pi\u00e8ces",
     "ru": "\u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0438 \u0440\u0435\u0430\u0433\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u044f \u043d\u0430 \u0447\u0430\u0441\u0442\u0438",
-    "es": "Bibliotecas de reaccionar partes"
+    "es": "Bibliotecas de reaccionar partes",
+    "ja": "React\u30d1\u30fc\u30c4\u30e9\u30a4\u30d6\u30e9\u30ea"
   },
   "Stack Overflow JavaScript": {
     "en": "Stack Overflow JavaScript",
     "de": "Stapel\u00fcberlauf Javascript",
     "fr": "Pile d\u00e9bordement JavaScript",
     "ru": "\u0421\u0442\u0435\u043a \u043f\u0435\u0440\u0435\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f JavaScript",
-    "es": "Pila desbordante javascript"
+    "es": "Pila desbordante javascript",
+    "ja": "\u30b9\u30bf\u30c3\u30af\u30aa\u30fc\u30d0\u30fc\u30d5\u30ed\u30fcJavaScript"
   },
   "WebExtension Docs": {
     "en": "WebExtension Docs",
     "de": "WebExtension docs.",
     "fr": "Documents de webextension",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b Webextension",
-    "es": "Doctores de webextension"
+    "es": "Doctores de webextension",
+    "ja": "WebExtension\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "atmosphereJS": {
     "en": "atmosphereJS",
     "de": "Atmosph\u00e4rejs.",
     "fr": "Atmosph\u00e8rejs",
     "ru": "\u0430\u0442\u043c\u043e\u0441\u0444\u0435\u0440\u044b",
-    "es": "Atm\u00f3sf\u00f3siciones"
+    "es": "Atm\u00f3sf\u00f3siciones",
+    "ja": "\u96f0\u56f2\u6c17JS"
   },
   "bower": {
     "en": "bower",
     "de": "Laube",
     "fr": "tonnelle",
     "ru": "\u0431\u0435\u0448\u0435\u043d\u044b\u0439",
-    "es": "cenador"
+    "es": "cenador",
+    "ja": "\u30d0\u30a6\u30a2\u30fc"
   },
   "cdnjs": {
     "en": "cdnjs",
     "de": "cdnjs.",
     "fr": "CDNJS",
     "ru": "CDNJS.",
-    "es": "cdnjs"
+    "es": "cdnjs",
+    "ja": "cdnjs"
   },
   "jQuery UI": {
     "en": "jQuery UI",
     "de": "jquery ui.",
     "fr": "jquery ui",
     "ru": "jquery ui.",
-    "es": "jQuery ui"
+    "es": "jQuery ui",
+    "ja": "jQuery UI"
   },
   "jquery": {
     "en": "jquery",
     "de": "jahre",
     "fr": "jquyery",
     "ru": "jquery",
-    "es": "jQuery"
+    "es": "jQuery",
+    "ja": "jquery"
   },
   "jquerymobile.com": {
     "en": "jquerymobile.com",
     "de": "jquerymobile.com.",
     "fr": "jquerymobile.com",
     "ru": "jquerymobile.com.",
-    "es": "jquerymobile.com"
+    "es": "jquerymobile.com",
+    "ja": "jquerymobile.com"
   },
   "jsDelivr": {
     "en": "jsDelivr",
     "de": "jsdelivr.",
     "fr": "jsdelivr",
     "ru": "jsdelivr.",
-    "es": "jsdelivr"
+    "es": "jsdelivr",
+    "ja": "jsDelivr"
   },
   "learn.javascript.ru": {
     "en": "learn.javascript.ru",
     "de": "lernen.javascript.ru.",
     "fr": "apprendre.javascript.ru",
     "ru": "\u0423\u0437\u043d\u0430\u0439\u0442\u0435.javascript.ru.",
-    "es": "aprender.javascript.ru"
+    "es": "aprender.javascript.ru",
+    "ja": "learn.javascript.ru"
   },
   "lodash documentation": {
     "en": "lodash documentation",
     "de": "Lodash-Dokumentation.",
     "fr": "Documentation Lodash",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f Lodash",
-    "es": "Documentaci\u00f3n de Lodash"
+    "es": "Documentaci\u00f3n de Lodash",
+    "ja": "lodash\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "node.js Package Search Utility": {
     "en": "node.js Package Search Utility",
     "de": "Node.js Paketsuche Dienstprogramm",
     "fr": "utilitaire de recherche de package n\u0153ud.js",
     "ru": "\u0423\u0442\u0438\u043b\u0438\u0442\u0430 \u043f\u043e\u0438\u0441\u043a\u0430 \u043f\u0430\u043a\u0435\u0442\u0430 Node.js",
-    "es": "Nede.js Paquete de la utilidad de b\u00fasqueda"
+    "es": "Nede.js Paquete de la utilidad de b\u00fasqueda",
+    "ja": "node.js\u30d1\u30c3\u30b1\u30fc\u30b8\u691c\u7d22\u30e6\u30fc\u30c6\u30a3\u30ea\u30c6\u30a3"
   },
   "npm": {
     "en": "npm",
     "de": "npm",
     "fr": "npm",
     "ru": "NPM",
-    "es": "npm"
+    "es": "npm",
+    "ja": "npm"
   },
   "npms": {
     "en": "npms",
     "de": "npms",
     "fr": "npms",
     "ru": "NPMS.",
-    "es": "npms"
+    "es": "npms",
+    "ja": "npms"
   },
   "p5.js Reference": {
     "en": "p5.js Reference",
     "de": "p5.js Referenz",
     "fr": "R\u00e9f\u00e9rence P5.JS",
     "ru": "\u0421\u0441\u044b\u043b\u043a\u0430 P5.JS",
-    "es": "Referencia p5.js"
+    "es": "Referencia p5.js",
+    "ja": "p5.j\u200b\u200bs\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9"
   },
   "LaTeX - Wikibooks": {
     "en": "LaTeX - Wikibooks",
     "de": "Latex - Wikibooks.",
     "fr": "Latex - Wikibooks",
     "ru": "\u041b\u0430\u0442\u0435\u043a\u0441 - \u0412\u0438\u043a\u0438\u0431\u0443\u043a\u0441",
-    "es": "L\u00e1tex - wikibooks"
+    "es": "L\u00e1tex - wikibooks",
+    "ja": "LaTeX-\u30a6\u30a3\u30ad\u30d6\u30c3\u30af\u30b9"
   },
   "Texdoc": {
     "en": "Texdoc",
     "de": "Texdoc.",
     "fr": "Texdoc",
     "ru": "Texdoc.",
-    "es": "Texdoc"
+    "es": "Texdoc",
+    "ja": "Texdoc"
   },
   "tex.stackexchange": {
     "en": "tex.stackexchange",
     "de": "tex.steckexchange.",
     "fr": "tex.stackexchange",
     "ru": "Tex.Stackexchange.",
-    "es": "tex.stackexchange"
+    "es": "tex.stackexchange",
+    "ja": "tex.stackexchange"
   },
   "Cliki": {
     "en": "Cliki",
     "de": "Klike",
     "fr": "Cliki",
     "ru": "Cliki",
-    "es": "Cliki"
+    "es": "Cliki",
+    "ja": "\u30af\u30ea\u30ad"
   },
   "CommonLisp HyperSpec": {
     "en": "CommonLisp HyperSpec",
     "de": "Gemeinsame Lisp-Hyperspec.",
     "fr": "Hyperspec de Lisp commun",
     "ru": "Common Lisp HyperSPEC.",
-    "es": "Hacherspec de Lisp com\u00fan"
+    "es": "Hacherspec de Lisp com\u00fan",
+    "ja": "CommonLisp HyperSpec"
   },
   "Quickdocs": {
     "en": "Quickdocs",
     "de": "QuickDocs.",
     "fr": "Quickdocs",
     "ru": "QuickDocs",
-    "es": "Quickdocs"
+    "es": "Quickdocs",
+    "ja": "Quickdocs"
   },
   "picolisp.com": {
     "en": "picolisp.com",
     "de": "Picolisp.com",
     "fr": "picolisp.com",
     "ru": "Picolisp.com.",
-    "es": "picolisp.com"
+    "es": "picolisp.com",
+    "ja": "picolisp.com"
   },
   "Corona": {
     "en": "Corona",
     "de": "Corona",
     "fr": "Couronne",
     "ru": "\u041a\u043e\u0440\u043e\u043d\u0430",
-    "es": "Corona"
+    "es": "Corona",
+    "ja": "\u30b3\u30ed\u30ca"
   },
   "GMod wiki": {
     "en": "GMod wiki",
     "de": "GMOD Wiki.",
     "fr": "Gmod wiki",
     "ru": "GMOD Wiki",
-    "es": "Gmod wiki"
+    "es": "Gmod wiki",
+    "ja": "GMod wiki"
   },
   "Love2D Wiki": {
     "en": "Love2D Wiki",
     "de": "Liebe2d Wiki.",
     "fr": "Wiki love2d",
     "ru": "Love2d wiki",
-    "es": "Amor2d wiki"
+    "es": "Amor2d wiki",
+    "ja": "Love2D Wiki"
   },
   "Lua 5.1 Documentation": {
     "en": "Lua 5.1 Documentation",
     "de": "LUA 5.1 Dokumentation.",
     "fr": "Lua 5.1 Documentation",
     "ru": "Lua 5.1 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "LUA 5.1 Documentaci\u00f3n"
+    "es": "LUA 5.1 Documentaci\u00f3n",
+    "ja": "Lua5.1\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Lua 5.2 Documentation": {
     "en": "Lua 5.2 Documentation",
     "de": "LUA 5.2 Dokumentation.",
     "fr": "Lua 5.2 Documentation",
     "ru": "Lua 5.2 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "LUA 5.2 Documentaci\u00f3n"
+    "es": "LUA 5.2 Documentaci\u00f3n",
+    "ja": "Lua5.2\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Lua 5.3 Documentation": {
     "en": "Lua 5.3 Documentation",
     "de": "LUA 5.3 Dokumentation.",
     "fr": "Lua 5.3 Documentation",
     "ru": "LUA 5.3 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "LUA 5.3 Documentaci\u00f3n"
+    "es": "LUA 5.3 Documentaci\u00f3n",
+    "ja": "Lua5.3\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "LuaForge": {
     "en": "LuaForge",
     "de": "Luafrorge.",
     "fr": "LuaForge",
     "ru": "\u041b\u0443\u0430\u0444\u043e\u0440\u0434\u0436",
-    "es": "Luaforge"
+    "es": "Luaforge",
+    "ja": "LuaForge"
   },
   "LuaRocks": {
     "en": "LuaRocks",
     "de": "Luarocks.",
     "fr": "Luarocks",
     "ru": "\u041b\u0443\u0430\u0440\u043e\u043a\u0438",
-    "es": "Luarocks"
+    "es": "Luarocks",
+    "ja": "LuaRocks"
   },
   "L\u00d6VE": {
     "en": "L\u00d6VE",
     "de": "LIEBE",
     "fr": "AMOUR",
     "ru": "\u041b\u042e\u0411\u041e\u0412\u042c",
-    "es": "AMOR"
+    "es": "AMOR",
+    "ja": "\u611b"
   },
   "ROBLOX Developer": {
     "en": "ROBLOX Developer",
     "de": "ROBLOX-Entwickler.",
     "fr": "D\u00e9veloppeur Roblox",
     "ru": "ROBLOX \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a",
-    "es": "Desarrollador de Roblox"
+    "es": "Desarrollador de Roblox",
+    "ja": "ROBLOX\u958b\u767a\u8005"
   },
   "ROBLOX Wiki": {
     "en": "ROBLOX Wiki",
     "de": "ROBLOX Wiki.",
     "fr": "Wiki roblox",
     "ru": "Roblox Wiki",
-    "es": "Roblox wiki"
+    "es": "Roblox wiki",
+    "ja": "ROBLOX Wiki"
   },
   "Wikipedia Templates": {
     "en": "Wikipedia Templates",
     "de": "Wikipedia-Vorlagen",
     "fr": "Mod\u00e8les Wikipedia",
     "ru": "\u0428\u0430\u0431\u043b\u043e\u043d\u044b \u0412\u0438\u043a\u0438\u043f\u0435\u0434\u0438\u0438",
-    "es": "Plantillas de Wikipedia"
+    "es": "Plantillas de Wikipedia",
+    "ja": "\u30a6\u30a3\u30ad\u30da\u30c7\u30a3\u30a2\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8"
   },
   "luvit.io": {
     "en": "luvit.io",
     "de": "luvit.io.",
     "fr": "luvit.io",
     "ru": "luvit.io.",
-    "es": "luvit.io"
+    "es": "luvit.io",
+    "ja": "luvit.io"
   },
   "APLcart": {
     "en": "APLcart",
     "de": "Aplcart",
     "fr": "Aplcart",
     "ru": "Aplcart.",
-    "es": "Aplector"
+    "es": "Aplector",
+    "ja": "APLcart"
   },
   "Appcelerator API Docs": {
     "en": "Appcelerator API Docs",
     "de": "Appcelerator API Docs.",
     "fr": "Appelerator API Docs",
     "ru": "Appcelerator API \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b",
-    "es": "Appcelerator API DOCS"
+    "es": "Appcelerator API DOCS",
+    "ja": "AppceleratorAPI\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "ArchLinux Packages": {
     "en": "ArchLinux Packages",
     "de": "Archelux-Pakete",
     "fr": "Forfaits Archlinux",
     "ru": "Archlinux Packages",
-    "es": "Paquetes archlinux"
+    "es": "Paquetes archlinux",
+    "ja": "ArchLinux\u30d1\u30c3\u30b1\u30fc\u30b8"
   },
   "ArchLinux User Repository": {
     "en": "ArchLinux User Repository",
     "de": "Archelux-Benutzer-Repository.",
     "fr": "Repository utilisateur d'Archlinux",
     "ru": "Archlinux \u041f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u0441\u043a\u0438\u0439 \u0440\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0438\u0439",
-    "es": "Repositorio de usuarios de Archlinux"
+    "es": "Repositorio de usuarios de Archlinux",
+    "ja": "ArchLinux\u30e6\u30fc\u30b6\u30fc\u30ea\u30dd\u30b8\u30c8\u30ea"
   },
   "Archlinux Forums": {
     "en": "Archlinux Forums",
     "de": "Archinux-Foren.",
     "fr": "Forums Archlinux",
     "ru": "Archlinux Forums",
-    "es": "Foros de Archlinux"
+    "es": "Foros de Archlinux",
+    "ja": "Archlinux\u30d5\u30a9\u30fc\u30e9\u30e0"
   },
   "B4X": {
     "en": "B4X",
     "de": "B4x",
     "fr": "B4x",
     "ru": "B4x.",
-    "es": "B4x"
+    "es": "B4x",
+    "ja": "B4X"
   },
   "Bohemia Interactive Community Wiki": {
     "en": "Bohemia Interactive Community Wiki",
     "de": "B\u00f6hmen interaktive Gemeinschaft Wiki",
     "fr": "Wiki communautaire interactive de Boh\u00eame",
     "ru": "\u0411\u043e\u0433\u0435\u043c\u0438\u044f \u0418\u043d\u0442\u0435\u0440\u0430\u043a\u0442\u0438\u0432\u043d\u043e\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u043e Wiki",
-    "es": "Wiki de la comunidad interactiva de Bohemia"
+    "es": "Wiki de la comunidad interactiva de Bohemia",
+    "ja": "\u30dc\u30d8\u30df\u30a2\u30a4\u30f3\u30bf\u30e9\u30af\u30c6\u30a3\u30d6\u30b3\u30df\u30e5\u30cb\u30c6\u30a3\u30a6\u30a3\u30ad"
   },
   "CMake 3.0 Documentation": {
     "en": "CMake 3.0 Documentation",
     "de": "CMAKE 3.0-Dokumentation.",
     "fr": "Documentation CMAKE 3.0",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f Cmake 3.0",
-    "es": "Cmake 3.0 Documentaci\u00f3n"
+    "es": "Cmake 3.0 Documentaci\u00f3n",
+    "ja": "CMake3.0\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "CanIUse": {
     "en": "CanIUse",
     "de": "Kann ich benutzen",
     "fr": "Puis-je utiliser",
     "ru": "\u041c\u043e\u0433\u0443 \u043b\u0438 \u044f \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c",
-    "es": "Puedo usar"
+    "es": "Puedo usar",
+    "ja": "\u4f7f\u3063\u3066\u3082\u3044\u3044\u3067\u3059\u304b"
   },
   "Cargo": {
     "en": "Cargo",
     "de": "Ladung",
     "fr": "Cargaison",
     "ru": "\u0413\u0440\u0443\u0437\u043e\u0432\u0438\u043a",
-    "es": "Carga"
+    "es": "Carga",
+    "ja": "\u8ca8\u7269"
   },
   "Clojure Docs": {
     "en": "Clojure Docs",
     "de": "Clojure docs.",
     "fr": "CLOJURE DOCS",
     "ru": "Clojure Docs",
-    "es": "DOC DE CLOJURE"
+    "es": "DOC DE CLOJURE",
+    "ja": "Clojure\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Coq": {
     "en": "Coq",
     "de": "Checken",
     "fr": "Coq",
     "ru": "\u041a\u043e\u043a\u0441",
-    "es": "Coq"
+    "es": "Coq",
+    "ja": "Coq"
   },
   "Delphi Basics": {
     "en": "Delphi Basics",
     "de": "Delphi-Grundlagen.",
     "fr": "Principes de base Delphes",
     "ru": "\u041e\u0441\u043d\u043e\u0432\u044b Delphi",
-    "es": "Conceptos b\u00e1sicos de Delphi"
+    "es": "Conceptos b\u00e1sicos de Delphi",
+    "ja": "Delphi\u306e\u57fa\u672c"
   },
   "DocBook 5: The Definitive Guide": {
     "en": "DocBook 5: The Definitive Guide",
     "de": "Docbook 5: Der endg\u00fcltige Guide",
     "fr": "DOCBOOK 5: le guide d\u00e9finitif",
     "ru": "Docbook 5: \u043e\u043a\u043e\u043d\u0447\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0435 \u0440\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e",
-    "es": "DocBook 5: La Gu\u00eda definitiva."
+    "es": "DocBook 5: La Gu\u00eda definitiva.",
+    "ja": "DocBook 5\uff1a\u6c7a\u5b9a\u7684\u306a\u30ac\u30a4\u30c9"
   },
   "Docs.rs": {
     "en": "Docs.rs",
     "de": "Docs.rs.",
     "fr": "Docs.rs",
     "ru": "Docs.rs.",
-    "es": "Docs.rs"
+    "es": "Docs.rs",
+    "ja": "Docs.rs"
   },
   "Drupal": {
     "en": "Drupal",
     "de": "Druphal.",
     "fr": "Druple",
     "ru": "\u041f\u043e\u0434\u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u0438\u0435",
-    "es": "Drupal"
+    "es": "Drupal",
+    "ja": "Drupal"
   },
   "Elixir Documentation": {
     "en": "Elixir Documentation",
     "de": "Elixierdokumentation.",
     "fr": "Documentation Elixir",
     "ru": "\u042d\u043b\u0438\u043a\u0441\u0438\u0440 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n de Elixir"
+    "es": "Documentaci\u00f3n de Elixir",
+    "ja": "Elixir\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Elm Search": {
     "en": "Elm Search",
     "de": "ELM-Suche.",
     "fr": "Elm recherche",
     "ru": "Elm search.",
-    "es": "B\u00fasqueda ELM"
+    "es": "B\u00fasqueda ELM",
+    "ja": "\u30a8\u30eb\u30e0\u691c\u7d22"
   },
   "Esolang": {
     "en": "Esolang",
     "de": "Esolang.",
     "fr": "Esolang",
     "ru": "Esolang",
-    "es": "Esolang"
+    "es": "Esolang",
+    "ja": "\u30a8\u30bd\u30e9\u30f3"
   },
   "Esolangs": {
     "en": "Esolangs",
     "de": "Esolangs",
     "fr": "Esolangs",
     "ru": "\u042d\u0437\u043e\u043b\u0430\u043d\u0433\u0441",
-    "es": "Esolangs"
+    "es": "Esolangs",
+    "ja": "\u30a8\u30bd\u30e9\u30f3"
   },
   "Fortran Wiki": {
     "en": "Fortran Wiki",
     "de": "Fortran Wiki.",
     "fr": "Wiki fortran",
     "ru": "\u0424\u043e\u0440\u0442\u0440\u0430\u043d \u0412\u0438\u043a\u0438.",
-    "es": "Wiki fortran"
+    "es": "Wiki fortran",
+    "ja": "Fortran Wiki"
   },
   "Forum pcsoft": {
     "en": "Forum pcsoft",
     "de": "Forum PCSoft.",
     "fr": "Forum PCsoft",
     "ru": "\u0424\u043e\u0440\u0443\u043c PCSoft.",
-    "es": "Foro pcsoft"
+    "es": "Foro pcsoft",
+    "ja": "\u30d5\u30a9\u30fc\u30e9\u30e0pcsoft"
   },
   "Freepascal": {
     "en": "Freepascal",
     "de": "Freepascal",
     "fr": "Freedscal",
     "ru": "FreePascal",
-    "es": "Freepascal"
+    "es": "Freepascal",
+    "ja": "Freepascal"
   },
   "Harris Geospatial": {
     "en": "Harris Geospatial",
     "de": "Harris Geospatial.",
     "fr": "Harris g\u00e9ospatial",
     "ru": "Harris Geospatial",
-    "es": "Harris geoespacial"
+    "es": "Harris geoespacial",
+    "ja": "\u30cf\u30ea\u30b9\u5730\u7406\u7a7a\u9593"
   },
   "Idris Dcoumentation": {
     "en": "Idris Dcoumentation",
     "de": "IDRIS-Dokumentation.",
     "fr": "Documentation Idris",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f IDRIS.",
-    "es": "Documentaci\u00f3n IDRIS"
+    "es": "Documentaci\u00f3n IDRIS",
+    "ja": "Idris Dcoumentation"
   },
   "Julia language documentation": {
     "en": "Julia language documentation",
     "de": "Julia-Sprachdokumentation.",
     "fr": "Julia Langue Documentation",
     "ru": "\u042f\u0437\u044b\u043a\u043e\u0432\u0430\u044f \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f \u042e\u043b\u0438\u0438",
-    "es": "Documentaci\u00f3n del idioma julia"
+    "es": "Documentaci\u00f3n del idioma julia",
+    "ja": "Julia\u8a00\u8a9e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Komputeko": {
     "en": "Komputeko",
     "de": "Komputeko.",
     "fr": "Komputeko",
     "ru": "\u041a\u043e\u043c\u043f\u0430\u0442\u044c",
-    "es": "Komputeko"
+    "es": "Komputeko",
+    "ja": "\u30b3\u30f3\u30d7\u30c6\u30b3"
   },
   "Kotlin Links": {
     "en": "Kotlin Links",
     "de": "Kotlin-Links",
     "fr": "Kotlin Liens",
     "ru": "\u041a\u043e\u0442\u043b\u0438\u043d \u0421\u0441\u044b\u043b\u043a\u0438",
-    "es": "Enlaces de Kotlin"
+    "es": "Enlaces de Kotlin",
+    "ja": "Kotlin\u30ea\u30f3\u30af"
   },
   "Learn X in Y": {
     "en": "Learn X in Y",
     "de": "X in y lernen",
     "fr": "Apprendre x dans y",
     "ru": "\u0423\u0437\u043d\u0430\u0442\u044c \u0445 \u0432 \u0443",
-    "es": "Aprender x en y"
+    "es": "Aprender x en y",
+    "ja": "Y\u3067X\u3092\u5b66\u3076"
   },
   "MS Office VBA Refference": {
     "en": "MS Office VBA Refference",
     "de": "MS Office VBA Referenz",
     "fr": "R\u00e9f\u00e9rence MS Office VBA",
     "ru": "MS Office VBA \u0421\u0441\u044b\u043b\u043a\u0430",
-    "es": "MS Office VBA Referencia"
+    "es": "MS Office VBA Referencia",
+    "ja": "MS OfficeVBA\u53c2\u7167"
   },
   "Mozilla Developer Network CSS": {
     "en": "Mozilla Developer Network CSS",
     "de": "Mozilla Developer Network CSS",
     "fr": "R\u00e9seau de d\u00e9veloppeurs Mozilla CSS",
     "ru": "Mozilla Developer Network CSS",
-    "es": "Red de desarrolladores de Mozilla CSS"
+    "es": "Red de desarrolladores de Mozilla CSS",
+    "ja": "Mozilla Developer Network CSS"
   },
   "OCaml Lib Ref": {
     "en": "OCaml Lib Ref",
     "de": "Ocaml lib ref.",
     "fr": "OCAML LIB REF",
     "ru": "Ocaml lib ref.",
-    "es": "OCAML LIB REF"
+    "es": "OCAML LIB REF",
+    "ja": "OCaml Lib Ref"
   },
   "OCamlOScope": {
     "en": "OCamlOScope",
     "de": "Okamloskop.",
     "fr": "Ocamloscope",
     "ru": "\u041e\u043a\u0430\u043c\u043b\u043e\u0441\u043a\u043e\u043f",
-    "es": "Ocamloscopio"
+    "es": "Ocamloscopio",
+    "ja": "OCamlOScope"
   },
   "OPAM": {
     "en": "OPAM",
     "de": "Opam",
     "fr": "Opam",
     "ru": "Opam.",
-    "es": "Opan"
+    "es": "Opan",
+    "ja": "OPAM"
   },
   "Oracle Docs": {
     "en": "Oracle Docs",
     "de": "Oracle Docs.",
     "fr": "Oracle Docs",
     "ru": "Oracle Docs.",
-    "es": "Oracle Docs"
+    "es": "Oracle Docs",
+    "ja": "Oracle Docs"
   },
   "Org Manual": {
     "en": "Org Manual",
     "de": "Org-Handbuch",
     "fr": "Manuel d'org",
     "ru": "\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e ORG",
-    "es": "Org Manual"
+    "es": "Org Manual",
+    "ja": "\u7d44\u7e54\u30de\u30cb\u30e5\u30a2\u30eb"
   },
   "PowerShell Gallery": {
     "en": "PowerShell Gallery",
     "de": "Powershell Gallery.",
     "fr": "Galerie PowerShell",
     "ru": "\u0413\u0430\u043b\u0435\u0440\u0435\u044f PowerShell",
-    "es": "Galer\u00eda PowerShell"
+    "es": "Galer\u00eda PowerShell",
+    "ja": "PowerShell\u30ae\u30e3\u30e9\u30ea\u30fc"
   },
   "PowerShell Module Browser": {
     "en": "PowerShell Module Browser",
     "de": "Powershell-Modulbrowser",
     "fr": "Navigateur de module PowerShell",
     "ru": "\u041c\u043e\u0434\u0443\u043b\u044c\u043d\u044b\u0439 \u0431\u0440\u0430\u0443\u0437\u0435\u0440 PowerShell",
-    "es": "PowerShell Module Browser"
+    "es": "PowerShell Module Browser",
+    "ja": "PowerShell\u30e2\u30b8\u30e5\u30fc\u30eb\u30d6\u30e9\u30a6\u30b6\u30fc"
   },
   "Pursuit": {
     "en": "Pursuit",
     "de": "Verfolgen",
     "fr": "Poursuite",
     "ru": "\u041f\u0440\u0435\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u043d\u0438\u0435",
-    "es": "B\u00fasqueda"
+    "es": "B\u00fasqueda",
+    "ja": "\u8ffd\u8de1"
   },
   "Racket": {
     "en": "Racket",
     "de": "Schl\u00e4ger",
     "fr": "Raquette",
     "ru": "\u0420\u0430\u043a\u0435\u0442\u043a\u0430",
-    "es": "Raqueta"
+    "es": "Raqueta",
+    "ja": "\u30e9\u30b1\u30c3\u30c8"
   },
   "Rust Clippy Lints": {
     "en": "Rust Clippy Lints",
     "de": "Rust Clippy FLINTS.",
     "fr": "Peluches clippeuses rouill\u00e9es",
     "ru": "Rust Clippy Lints",
-    "es": "Limpias de moho clippy"
+    "es": "Limpias de moho clippy",
+    "ja": "Rust Clippy Lints"
   },
   "Rust Compiler Error Index": {
     "en": "Rust Compiler Error Index",
     "de": "Rost-Compiler-Fehlerindex",
     "fr": "Index d'erreur de compilateur de rouille",
     "ru": "\u0418\u043d\u0434\u0435\u043a\u0441 \u043e\u0448\u0438\u0431\u043e\u043a \u043a\u043e\u043c\u043f\u0438\u043b\u044f\u0442\u043e\u0440\u0430 \u0440\u0436\u0430\u0432\u0447\u0438\u043d\u044b",
-    "es": "\u00cdndice de error del compilador de \u00f3xido"
+    "es": "\u00cdndice de error del compilador de \u00f3xido",
+    "ja": "Rust\u30b3\u30f3\u30d1\u30a4\u30e9\u30a8\u30e9\u30fc\u30a4\u30f3\u30c7\u30c3\u30af\u30b9"
   },
   "Rust Nightly Standard Library Documentation": {
     "en": "Rust Nightly Standard Library Documentation",
     "de": "N\u00e4chtliche Standardbibliotheksdokumentation",
     "fr": "Documentation de la biblioth\u00e8que standard de rouille",
     "ru": "\u0420\u0436\u0430\u0432\u0448\u0430\u044f \u043d\u043e\u0447\u043d\u0430\u044f \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u0430\u044f \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u0447\u043d\u0430\u044f \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n de la biblioteca est\u00e1ndar nocturna de \u00f3xido"
+    "es": "Documentaci\u00f3n de la biblioteca est\u00e1ndar nocturna de \u00f3xido",
+    "ja": "RustNightly\u6a19\u6e96\u30e9\u30a4\u30d6\u30e9\u30ea\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Rust standard library API reference": {
     "en": "Rust standard library API reference",
     "de": "Rost-Standard-Bibliothek-API-Referenz",
     "fr": "R\u00e9f\u00e9rence de l'API de biblioth\u00e8que standard de rouille",
     "ru": "Rust Standard \u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430 API \u0421\u0441\u044b\u043b\u043a\u0430",
-    "es": "Referencia de API de la biblioteca est\u00e1ndar de Rust"
+    "es": "Referencia de API de la biblioteca est\u00e1ndar de Rust",
+    "ja": "Rust\u6a19\u6e96\u30e9\u30a4\u30d6\u30e9\u30eaAPI\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9"
   },
   "SAS": {
     "en": "SAS",
     "de": "Sas",
     "fr": "Sas",
     "ru": "\u0421\u0430\u0441\u0441",
-    "es": "Sas"
+    "es": "Sas",
+    "ja": "SAS"
   },
   "SS64": {
     "en": "SS64",
     "de": "SS64.",
     "fr": "SS64",
     "ru": "SS64.",
-    "es": "SS64"
+    "es": "SS64",
+    "ja": "SS64"
   },
   "SWI-Prolog": {
     "en": "SWI-Prolog",
     "de": "Swi-Prolog.",
     "fr": "Swi-prolog",
     "ru": "Swi-Prolog.",
-    "es": "Swi-prool"
+    "es": "Swi-prool",
+    "ja": "SWI-Prolog"
   },
   "Scratch Wiki": {
     "en": "Scratch Wiki",
     "de": "Scratch Wiki.",
     "fr": "Gratter le wiki",
     "ru": "\u0426\u0430\u0440\u0430\u043f\u0438\u043d\u0430 \u0432\u0438\u043a\u0438",
-    "es": "Scratch Wiki"
+    "es": "Scratch Wiki",
+    "ja": "\u30b9\u30af\u30e9\u30c3\u30c1Wiki"
   },
   "Second Life Wiki": {
     "en": "Second Life Wiki",
     "de": "Second Life Wiki.",
     "fr": "Second Life Wiki",
     "ru": "\u0412\u0442\u043e\u0440\u0430\u044f \u0436\u0438\u0437\u043d\u044c \u0432\u0438\u043a\u0438",
-    "es": "Second Life Wiki"
+    "es": "Second Life Wiki",
+    "ja": "Second Life Wiki"
   },
   "SuperCollider": {
     "en": "SuperCollider",
     "de": "Supercollider",
     "fr": "Super collisionneur",
     "ru": "\u0421\u0443\u043f\u0435\u0440\u043a\u043e\u043b\u043b\u0438\u0434\u0435\u0440",
-    "es": "S\u00faper colisionador"
+    "es": "S\u00faper colisionador",
+    "ja": "SuperCollider"
   },
   "Swift by Sundell": {
     "en": "Swift by Sundell",
     "de": "Swift von Sundell",
     "fr": "Swift by Sundell",
     "ru": "Swift \u043e\u0442 Sundell.",
-    "es": "Swift por Sundell"
+    "es": "Swift por Sundell",
+    "ja": "Sundell\u306b\u3088\u308bSwift"
   },
   "TCLers Wiki": {
     "en": "TCLers Wiki",
     "de": "Tcler Wiki.",
     "fr": "Tclers wiki",
     "ru": "TCLers Wiki",
-    "es": "Tclers wiki"
+    "es": "Tclers wiki",
+    "ja": "TCLers Wiki"
   },
   "The Rust community's crate host": {
     "en": "The Rust community's crate host",
     "de": "Der Crate-Host der Rostgemeinschaft",
     "fr": "L'h\u00f4te de la caisse de la communaut\u00e9 de rouille",
     "ru": "\u042f\u0449\u0438\u043a Crate Chanter Community",
-    "es": "El anfitri\u00f3n del caj\u00f3n de la comunidad de Rust"
+    "es": "El anfitri\u00f3n del caj\u00f3n de la comunidad de Rust",
+    "ja": "Rust\u30b3\u30df\u30e5\u30cb\u30c6\u30a3\u306e\u30af\u30ec\u30fc\u30c8\u30db\u30b9\u30c8"
   },
   "TypeScript Lang": {
     "en": "TypeScript Lang",
     "de": "Typecript lang",
     "fr": "Typescript Lang",
     "ru": "Tymdercript Lang",
-    "es": "TypeScript Lang"
+    "es": "TypeScript Lang",
+    "ja": "TypeScript Lang"
   },
   "Ubuntu Developer": {
     "en": "Ubuntu Developer",
     "de": "Ubuntu-Entwickler.",
     "fr": "D\u00e9veloppeur Ubuntu",
     "ru": "\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a Ubuntu",
-    "es": "Desarrollador de ubuntu"
+    "es": "Desarrollador de ubuntu",
+    "ja": "Ubuntu\u958b\u767a\u8005"
   },
   "can i use": {
     "en": "can i use",
     "de": "kann ich benutzen",
     "fr": "puis-je utiliser",
     "ru": "\u043c\u043e\u0433\u0443 \u043b\u0438 \u044f \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c",
-    "es": "Puedo usar"
+    "es": "Puedo usar",
+    "ja": "\u4f7f\u3063\u3066\u3082\u3044\u3044\u3067\u3059\u304b"
   },
   "charcode.es": {
     "en": "charcode.es",
     "de": "charcode.es.",
     "fr": "charcode.es",
     "ru": "carcode.es.",
-    "es": "Charcode.es"
+    "es": "Charcode.es",
+    "ja": "charcode.es"
   },
   "elixirforum.com": {
     "en": "elixirforum.com",
     "de": "elixirforum.com",
     "fr": "elixirforum.com",
     "ru": "ElixirForum.com.",
-    "es": "elixirforum.com"
+    "es": "elixirforum.com",
+    "ja": "elixirforum.com"
   },
   "forum.keyboardmaestro.com": {
     "en": "forum.keyboardmaestro.com",
     "de": "forum.key boardmaestro.com.",
     "fr": "forum.keyboardmaestro.com",
     "ru": "forum.keyboardmaestro.com.",
-    "es": "forum.keyboardmaestro.com"
+    "es": "forum.keyboardmaestro.com",
+    "ja": "forum.keyboardmaestro.com"
   },
   "kotlinlang.org": {
     "en": "kotlinlang.org",
     "de": "kotlinlang.org.",
     "fr": "kotlinlang.org",
     "ru": "kotlinlang.org.",
-    "es": "kotlinlang.org"
+    "es": "kotlinlang.org",
+    "ja": "kotlinlang.org"
   },
   "kx": {
     "en": "kx",
     "de": "kX.",
     "fr": "kx",
     "ru": "kx.",
-    "es": "kx"
+    "es": "kx",
+    "ja": "kx"
   },
   "kx Reference": {
     "en": "kx Reference",
     "de": "kx Referenz",
     "fr": "KX r\u00e9f\u00e9rence",
     "ru": "kx \u0441\u0441\u044b\u043b\u043a\u0430",
-    "es": "KX Referencia"
+    "es": "KX Referencia",
+    "ja": "kx\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9"
   },
   "pub.dev": {
     "en": "pub.dev",
     "de": "pub.dev.",
     "fr": "pub.dev",
     "ru": "\u043f\u0430\u0431.dev.",
-    "es": "pub.dev"
+    "es": "pub.dev",
+    "ja": "pub.dev"
   },
   "sccode.org": {
     "en": "sccode.org",
     "de": "sccode.org.",
     "fr": "sccode.org",
     "ru": "sccode.org.",
-    "es": "sccode.org"
+    "es": "sccode.org",
+    "ja": "sccode.org"
   },
   "stackoverflow.com": {
     "en": "stackoverflow.com",
     "de": "stackoverflow.com.",
     "fr": "Stackoverflow.com",
     "ru": "stackoverflow.com.",
-    "es": "stackoverflow.com"
+    "es": "stackoverflow.com",
+    "ja": "stackoverflow.com"
   },
   "x86 Opcode & Instruction Reference": {
     "en": "x86 Opcode & Instruction Reference",
     "de": "X86 Opcode & Instruction Referenz",
     "fr": "X86 OPCODE & INSTRUCTION R\u00e9f\u00e9rence",
     "ru": "X86 OPCode & Reforment",
-    "es": "X86 Opcode y referencia de instrucciones"
+    "es": "X86 Opcode y referencia de instrucciones",
+    "ja": "x86\u30aa\u30da\u30b3\u30fc\u30c9\u304a\u3088\u3073\u547d\u4ee4\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9"
   },
   "CPAN": {
     "en": "CPAN",
     "de": "CPAN",
     "fr": "Cpan",
     "ru": "\u041a\u0430\u0431\u0438\u043d\u0435\u0442",
-    "es": "Cinta"
+    "es": "Cinta",
+    "ja": "CPAN"
   },
   "CPAN Dependencies Checker": {
     "en": "CPAN Dependencies Checker",
     "de": "CPAN-Abh\u00e4ngigkeiten Checker.",
     "fr": "V\u00e9rificateur de d\u00e9pendances CPAN",
     "ru": "CPAN \u0417\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u043a\u0438",
-    "es": "Comprobador de dependencias de CPAN"
+    "es": "Comprobador de dependencias de CPAN",
+    "ja": "CPAN\u4f9d\u5b58\u95a2\u4fc2\u30c1\u30a7\u30c3\u30ab\u30fc"
   },
   "MetaCPAN": {
     "en": "MetaCPAN",
     "de": "METACPAN.",
     "fr": "M\u00e9tacin",
     "ru": "\u041c\u0435\u0442\u0430\u043a\u043f\u0430\u043d",
-    "es": "Metacador"
+    "es": "Metacador",
+    "ja": "MetaCPAN"
   },
   "Perl 6 Modules": {
     "en": "Perl 6 Modules",
     "de": "Perl 6 Module.",
     "fr": "Perl 6 modules",
     "ru": "Perl 6 \u043c\u043e\u0434\u0443\u043b\u0435\u0439",
-    "es": "M\u00f3dulos perl 6"
+    "es": "M\u00f3dulos perl 6",
+    "ja": "Perl6\u30e2\u30b8\u30e5\u30fc\u30eb"
   },
   "PerlMonks.org": {
     "en": "PerlMonks.org",
     "de": "Perlmonks.org.",
     "fr": "Perlmonks.org",
     "ru": "Perlmonks.org.",
-    "es": "Perlmonks.org"
+    "es": "Perlmonks.org",
+    "ja": "PerlMonks.org"
   },
   "Perldoc Browser": {
     "en": "Perldoc Browser",
     "de": "Perldoc-Browser",
     "fr": "Navigateur Perldoc",
     "ru": "\u0411\u0440\u0430\u0443\u0437\u0435\u0440 Perldoc",
-    "es": "Navegador perldoc"
+    "es": "Navegador perldoc",
+    "ja": "Perldoc\u30d6\u30e9\u30a6\u30b6"
   },
   "p3rl.org": {
     "en": "p3rl.org",
     "de": "p3rl.org.",
     "fr": "p3rl.org",
     "ru": "P3RL.ORG.",
-    "es": "p3rl.org"
+    "es": "p3rl.org",
+    "ja": "p3rl.org"
   },
   "CakePHP API": {
     "en": "CakePHP API",
     "de": "CakePHP-API",
     "fr": "Api CakePHP",
     "ru": "API CakePhp",
-    "es": "API CAKEPHP"
+    "es": "API CAKEPHP",
+    "ja": "CakePHP API"
   },
   "CakePHP Cakebook 3.x": {
     "en": "CakePHP Cakebook 3.x",
     "de": "CakePhp-Kuchenbuch 3.x.",
     "fr": "CakePHP CakeBook 3.x",
     "ru": "CakePhp Cakebook 3.x.",
-    "es": "CakePhp CakeBook 3.x"
+    "es": "CakePhp CakeBook 3.x",
+    "ja": "CakePHP Cakebook 3.x"
   },
   "Joomla! API": {
     "en": "Joomla! API",
     "de": "Joomla!API",
     "fr": "Joomla!API",
     "ru": "Joomla!API.",
-    "es": "\u00a1Joomla!Api"
+    "es": "\u00a1Joomla!Api",
+    "ja": "Joomla\uff01 API"
   },
   "Laracasts": {
     "en": "Laracasts",
     "de": "Laracasts",
     "fr": "Laracasts",
     "ru": "\u041b\u0430\u0440\u0430\u043a\u0430\u0441\u0442\u044b",
-    "es": "Laracastas"
+    "es": "Laracastas",
+    "ja": "\u30e9\u30e9\u30ad\u30e3\u30b9\u30c8"
   },
   "Laravel": {
     "en": "Laravel",
     "de": "Laravel",
     "fr": "Laraving",
     "ru": "\u041b\u0430\u0441\u043a\u0430",
-    "es": "Laravel"
+    "es": "Laravel",
+    "ja": "Laravel"
   },
   "Magento": {
     "en": "Magento",
     "de": "Magento.",
     "fr": "Magento",
     "ru": "\u041c\u0435\u0440\u043e\u043f\u0440\u0438\u044f\u0442\u0438\u0435",
-    "es": "Magento"
+    "es": "Magento",
+    "ja": "Magento"
   },
   "PECL :: The PHP Extension Community Library": {
     "en": "PECL :: The PHP Extension Community Library",
     "de": "PECL :: Die PHP-Erweiterungsgemeinschaftsbibliothek",
     "fr": "Pecl :: La biblioth\u00e8que communautaire de la vulgarisation PHP",
     "ru": "PECL :: \u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430 \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0430 \u0440\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u0438\u044f PHP",
-    "es": "PECL :: The PHP Extension Community Library"
+    "es": "PECL :: The PHP Extension Community Library",
+    "ja": "PECL :: PHP\u62e1\u5f35\u30b3\u30df\u30e5\u30cb\u30c6\u30a3\u30e9\u30a4\u30d6\u30e9\u30ea"
   },
   "PHP Tutorial": {
     "en": "PHP Tutorial",
     "de": "PHP-Tutorial.",
     "fr": "Tutoriel PHP",
     "ru": "PHP \u0423\u0447\u0435\u0431\u043d\u0438\u043a",
-    "es": "Tutorial PHP"
+    "es": "Tutorial PHP",
+    "ja": "PHP\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb"
   },
   "PHP.net": {
     "en": "PHP.net",
     "de": "Php.net.",
     "fr": "Php.net",
     "ru": "Php.net.net.",
-    "es": "Php.net"
+    "es": "Php.net",
+    "ja": "PHP.net"
   },
   "Packagist": {
     "en": "Packagist",
     "de": "Verpacker",
     "fr": "Packagiste",
     "ru": "\u041f\u0430\u043a\u0430\u0433\u0438\u0441\u0442",
-    "es": "Empaquetista"
+    "es": "Empaquetista",
+    "ja": "Packagist"
   },
   "Phalcon Docs": {
     "en": "Phalcon Docs",
     "de": "Phalcon Docs.",
     "fr": "Documents Phalcon",
     "ru": "Phalcon docs.",
-    "es": "Falcon docs"
+    "es": "Falcon docs",
+    "ja": "Phalcon Docs"
   },
   "Smarty": {
     "en": "Smarty",
     "de": "Smarty.",
     "fr": "Chic",
     "ru": "\u0423\u043c\u0441\u0442\u0432\u0435\u043d\u043d\u043e",
-    "es": "Sabelotodo"
+    "es": "Sabelotodo",
+    "ja": "Smarty"
   },
   "Symfony Framework": {
     "en": "Symfony Framework",
     "de": "Symfony Framework.",
     "fr": "Cadre symfony",
     "ru": "Symfony Framework",
-    "es": "Marco de Symfony"
+    "es": "Marco de Symfony",
+    "ja": "symfony\u30d5\u30ec\u30fc\u30e0\u30ef\u30fc\u30af"
   },
   "Yii Framework": {
     "en": "Yii Framework",
     "de": "Yii Framework.",
     "fr": "Yii cadre",
     "ru": "Yii Framework",
-    "es": "Marco yii"
+    "es": "Marco yii",
+    "ja": "Yii\u30d5\u30ec\u30fc\u30e0\u30ef\u30fc\u30af"
   },
   "zend framework": {
     "en": "zend framework",
     "de": "Zend Framework.",
     "fr": "Zend Cadre",
     "ru": "Zend Framework",
-    "es": "Marco Zend"
+    "es": "Marco Zend",
+    "ja": "zend\u30d5\u30ec\u30fc\u30e0\u30ef\u30fc\u30af"
   },
   "Beautifulsoup": {
     "en": "Beautifulsoup",
     "de": "Wundersch\u00f6n",
     "fr": "Beauxoup",
     "ru": "BeautifulSoup",
-    "es": "Beautifulsoup"
+    "es": "Beautifulsoup",
+    "ja": "Beautifulsoup"
   },
   "Can I Use Python 3?": {
     "en": "Can I Use Python 3?",
     "de": "Kann ich Python 3 verwenden?",
     "fr": "Puis-je utiliser Python 3?",
     "ru": "\u041c\u043e\u0433\u0443 \u043b\u0438 \u044f \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c Python 3?",
-    "es": "\u00bfPuedo usar Python 3?"
+    "es": "\u00bfPuedo usar Python 3?",
+    "ja": "Python 3\u3092\u4f7f\u7528\u3067\u304d\u307e\u3059\u304b\uff1f"
   },
   "Django Packages": {
     "en": "Django Packages",
     "de": "Django-Pakete.",
     "fr": "Forfaits Django",
     "ru": "\u041f\u0430\u043a\u0435\u0442\u044b Django",
-    "es": "Paquetes Django"
+    "es": "Paquetes Django",
+    "ja": "Django\u30d1\u30c3\u30b1\u30fc\u30b8"
   },
   "Django REST Framework": {
     "en": "Django REST Framework",
     "de": "Django Rest Framework.",
     "fr": "Cadre de repos Django",
     "ru": "Django Rest Framework",
-    "es": "Marco de descanso de Django"
+    "es": "Marco de descanso de Django",
+    "ja": "DjangoREST\u30d5\u30ec\u30fc\u30e0\u30ef\u30fc\u30af"
   },
   "Django documentation": {
     "en": "Django documentation",
     "de": "Django-Dokumentation.",
     "fr": "Documentation Django",
     "ru": "Django \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "DOCUMENTACI\u00d3N DE DJANGO"
+    "es": "DOCUMENTACI\u00d3N DE DJANGO",
+    "ja": "Django\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Docs Python 2": {
     "en": "Docs Python 2",
     "de": "Docs Python 2.",
     "fr": "Docs Python 2",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b Python 2.",
-    "es": "Docs Python 2"
+    "es": "Docs Python 2",
+    "ja": "\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8Python2"
   },
   "Keras Documentation": {
     "en": "Keras Documentation",
     "de": "Keras-Dokumentation.",
     "fr": "Documentation Keras",
     "ru": "\u041a\u0435\u0440\u0430\u0441 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n de Keras"
+    "es": "Documentaci\u00f3n de Keras",
+    "ja": "Keras\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Natural Language ToolKit": {
     "en": "Natural Language ToolKit",
     "de": "Nat\u00fcrliche Sprache Toolkit.",
     "fr": "Toolkit de langues naturelles",
     "ru": "\u0418\u043d\u0441\u0442\u0440\u0443\u043c\u0435\u043d\u0442\u0430\u0440\u0438\u0439 \u043d\u0430\u0442\u0443\u0440\u0430\u043b\u044c\u043d\u043e\u0433\u043e \u044f\u0437\u044b\u043a\u0430",
-    "es": "Kit de herramientas de lenguaje natural"
+    "es": "Kit de herramientas de lenguaje natural",
+    "ja": "\u81ea\u7136\u8a00\u8a9e\u30c4\u30fc\u30eb\u30ad\u30c3\u30c8"
   },
   "Nuke Dev Guide": {
     "en": "Nuke Dev Guide",
     "de": "Nuke Dev Guide.",
     "fr": "Nuke Dev Guide",
     "ru": "\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e DEV NUKE",
-    "es": "Gu\u00eda de Dev Nuke"
+    "es": "Gu\u00eda de Dev Nuke",
+    "ja": "Nuke\u958b\u767a\u30ac\u30a4\u30c9"
   },
   "Obspy documentation": {
     "en": "Obspy documentation",
     "de": "Offige Dokumentation",
     "fr": "Obscurit\u00e9",
     "ru": "\u0423\u0434\u043e\u0431\u043d\u0430\u044f \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n obstuosa"
+    "es": "Documentaci\u00f3n obstuosa",
+    "ja": "Obspy\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Obspy documentation of development version": {
     "en": "Obspy documentation of development version",
     "de": "Beachsensdokumentation der Entwicklungsversion",
     "fr": "Documentation obspur\u00e9e de la version de d\u00e9veloppement",
     "ru": "\u0423\u0434\u043e\u0431\u043d\u0430\u044f \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f \u0432\u0435\u0440\u0441\u0438\u0438 \u0440\u0430\u0437\u0432\u0438\u0442\u0438\u044f",
-    "es": "Documentaci\u00f3n obstuta de la versi\u00f3n de desarrollo."
+    "es": "Documentaci\u00f3n obstuta de la versi\u00f3n de desarrollo.",
+    "ja": "\u958b\u767a\u30d0\u30fc\u30b8\u30e7\u30f3\u306eObspy\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Pandas": {
     "en": "Pandas",
     "de": "Pandas",
     "fr": "Pandas",
     "ru": "\u041f\u0430\u043d\u0434\u0430",
-    "es": "Pandas"
+    "es": "Pandas",
+    "ja": "\u30d1\u30f3\u30c0"
   },
   "Php2Python": {
     "en": "Php2Python",
     "de": "PHP2PYTHON.",
     "fr": "Php2python",
     "ru": "Php2python.",
-    "es": "Php2python"
+    "es": "Php2python",
+    "ja": "Php2Python"
   },
   "PyLint Messages": {
     "en": "PyLint Messages",
     "de": "Pylint-Nachrichten",
     "fr": "Pylint Messages",
     "ru": "\u041f\u0438\u043b\u0438\u043d\u0442\u043d\u044b\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f",
-    "es": "Mensajes de pylint"
+    "es": "Mensajes de pylint",
+    "ja": "PyLint\u30e1\u30c3\u30bb\u30fc\u30b8"
   },
   "PyPI": {
     "en": "PyPI",
     "de": "Pypi",
     "fr": "PYPI",
     "ru": "\u041f\u0435\u0439\u043f\u0438\u043d\u0430",
-    "es": "Pypi"
+    "es": "Pypi",
+    "ja": "PyPI"
   },
   "PyQt": {
     "en": "PyQt",
     "de": "Pyqt",
     "fr": "Pyqt",
     "ru": "Pyqt.",
-    "es": "Pyqt"
+    "es": "Pyqt",
+    "ja": "PyQt"
   },
   "PySide": {
     "en": "PySide",
     "de": "Pyside",
     "fr": "Pyside",
     "ru": "\u041f\u0438\u0441\u0438\u0434",
-    "es": "Piside"
+    "es": "Piside",
+    "ja": "PySide"
   },
   "Pyside2 Docs": {
     "en": "Pyside2 Docs",
     "de": "Pyside2 docs.",
     "fr": "Pyside2 Docs",
     "ru": "Pyside2 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b",
-    "es": "PYSIDE2 DOCS"
+    "es": "PYSIDE2 DOCS",
+    "ja": "Pyside2\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Python": {
     "en": "Python",
     "de": "Python",
     "fr": "Python",
     "ru": "\u041f\u0438\u0442\u043e\u043d",
-    "es": "Pit\u00f3n"
+    "es": "Pit\u00f3n",
+    "ja": "Python"
   },
   "Python 2.7.10 Documentation": {
     "en": "Python 2.7.10 Documentation",
     "de": "Python 2.7.10 Dokumentation.",
     "fr": "Python 2.7.10 Documentation",
     "ru": "Python 2.7.10 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Python 2.7.10 Documentaci\u00f3n"
+    "es": "Python 2.7.10 Documentaci\u00f3n",
+    "ja": "Python2.7.10\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Python 3": {
     "en": "Python 3",
     "de": "Python 3.",
     "fr": "Python 3",
     "ru": "Python 3.",
-    "es": "Python 3"
+    "es": "Python 3",
+    "ja": "Python 3"
   },
   "Python 3 Docs": {
     "en": "Python 3 Docs",
     "de": "Python 3 docs.",
     "fr": "Python 3 docs",
     "ru": "Python 3 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430",
-    "es": "Python 3 docs"
+    "es": "Python 3 docs",
+    "ja": "Python3\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Python 3.6 Documentation": {
     "en": "Python 3.6 Documentation",
     "de": "Python 3.6 Dokumentation.",
     "fr": "Documentation Python 3.6",
     "ru": "Python 3.6 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Python 3.6 Documentaci\u00f3n"
+    "es": "Python 3.6 Documentaci\u00f3n",
+    "ja": "Python3.6\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Python Bug Tracker": {
     "en": "Python Bug Tracker",
     "de": "Python Bug Tracker.",
     "fr": "Python Bug Tracker",
     "ru": "Python Bug Tracker.",
-    "es": "Pynthon Bug Tracker"
+    "es": "Pynthon Bug Tracker",
+    "ja": "Python\u30d0\u30b0\u30c8\u30e9\u30c3\u30ab\u30fc"
   },
   "Python Documentation": {
     "en": "Python Documentation",
     "de": "Python-Dokumentation.",
     "fr": "Documentation Python",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f Python",
-    "es": "Documentaci\u00f3n de Python"
+    "es": "Documentaci\u00f3n de Python",
+    "ja": "Python\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Python PEP": {
     "en": "Python PEP",
     "de": "Pythonpep",
     "fr": "Python pep",
     "ru": "Python Pep.",
-    "es": "Pit pep"
+    "es": "Pit pep",
+    "ja": "Python PEP"
   },
   "Python dev doc": {
     "en": "Python dev doc",
     "de": "Python Dev Doc.",
     "fr": "Python Dev Doc",
     "ru": "Python dev doc.",
-    "es": "Python Dev Doc"
+    "es": "Python Dev Doc",
+    "ja": "Python\u958b\u767a\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Python2.6 Docs": {
     "en": "Python2.6 Docs",
     "de": "Python2.6 docs.",
     "fr": "Python2.6 Docs",
     "ru": "Python2.6 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b",
-    "es": "Python2.6 Docs"
+    "es": "Python2.6 Docs",
+    "ja": "Python2.6\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Python2.7 Docs": {
     "en": "Python2.7 Docs",
     "de": "Python2.7 docs.",
     "fr": "Python2.7 Docs",
     "ru": "Python2.7 Docs.",
-    "es": "Python2.7 Docs"
+    "es": "Python2.7 Docs",
+    "ja": "Python2.7\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Python3 Documentation": {
     "en": "Python3 Documentation",
     "de": "Python3-Dokumentation.",
     "fr": "Documentation Python3",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f Python3",
-    "es": "Documentaci\u00f3n de Python3"
+    "es": "Documentaci\u00f3n de Python3",
+    "ja": "Python3\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Python3 Documentation (French)": {
     "en": "Python3 Documentation (French)",
     "de": "Python3-Dokumentation (Franz\u00f6sisch)",
     "fr": "Python3 Documentation (fran\u00e7ais)",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f Python3 (\u0424\u0440\u0430\u043d\u0446\u0443\u0437\u0441\u043a\u0438\u0439)",
-    "es": "Documentaci\u00f3n de Python3 (franc\u00e9s)"
+    "es": "Documentaci\u00f3n de Python3 (franc\u00e9s)",
+    "ja": "Python3\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\uff08\u30d5\u30e9\u30f3\u30b9\u8a9e\uff09"
   },
   "Python3.0 Docs": {
     "en": "Python3.0 Docs",
     "de": "Python3.0 docs.",
     "fr": "Python3.0 Docs",
     "ru": "Python3.0 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b",
-    "es": "Python3.0 Docs"
+    "es": "Python3.0 Docs",
+    "ja": "Python3.0\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Python3.1 Docs": {
     "en": "Python3.1 Docs",
     "de": "Python3.1 docs.",
     "fr": "Python3.1 Docs",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b Python3.1",
-    "es": "Python3.1 docs"
+    "es": "Python3.1 docs",
+    "ja": "Python3.1\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Python3.2 Docs": {
     "en": "Python3.2 Docs",
     "de": "Python3.2 docs.",
     "fr": "Python3.2 Docs",
     "ru": "Python3.2 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b",
-    "es": "Python3.2 Docs"
+    "es": "Python3.2 Docs",
+    "ja": "Python3.2\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "SQL Alchemy Docs": {
     "en": "SQL Alchemy Docs",
     "de": "Sqlalchemy docs.",
     "fr": "Sqlalchemy Docs",
     "ru": "SQLALCHEMY DOCS.",
-    "es": "SQLALCHEMY DOCS"
+    "es": "SQLALCHEMY DOCS",
+    "ja": "SQL Alchemy Docs"
   },
   "SciPy": {
     "en": "SciPy",
     "de": "Skipy",
     "fr": "Scipe",
     "ru": "\u041a\u0430\u043d\u0438\u043a\u0443\u043b",
-    "es": "Scipy"
+    "es": "Scipy",
+    "ja": "SciPy"
   },
   "Stack Overflow Python": {
     "en": "Stack Overflow Python",
     "de": "Stapel\u00fcberlauf Python",
     "fr": "Pile d\u00e9bordement python",
     "ru": "\u041f\u0435\u0440\u0435\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u0441\u0442\u0435\u043a\u0430 Python",
-    "es": "Pila de desbordamiento Python"
+    "es": "Pila de desbordamiento Python",
+    "ja": "Stack Overflow Python"
   },
   "TensorFlow": {
     "en": "TensorFlow",
     "de": "Tensorflow.",
     "fr": "Tensorflow",
     "ru": "Tensorflow",
-    "es": "Tensorflow"
+    "es": "Tensorflow",
+    "ja": "TensorFlow"
   },
   "Tensorflow": {
     "en": "Tensorflow",
     "de": "Tensorflow.",
     "fr": "Tensorflow",
     "ru": "Tensorflow",
-    "es": "Tensorflow"
+    "es": "Tensorflow",
+    "ja": "Tensorflow"
   },
   "matplotlib": {
     "en": "matplotlib",
     "de": "matplotlib.",
     "fr": "matplotlib",
     "ru": "matplotlib.",
-    "es": "matlotlib"
+    "es": "matlotlib",
+    "ja": "matplotlib"
   },
   "numpy": {
     "en": "numpy",
     "de": "numpy.",
     "fr": "chic",
     "ru": "\u0432\u043e\u043f\u043b\u043e\u0449\u0435\u043d\u0438\u0435",
-    "es": "entumecido"
+    "es": "entumecido",
+    "ja": "numpy"
   },
   "pip": {
     "en": "pip",
     "de": "Pip",
     "fr": "p\u00e9pin",
     "ru": "\u043f\u0438\u043f\u0441",
-    "es": "pepita"
+    "es": "pepita",
+    "ja": "\u30d4\u30c3\u30d7"
   },
   "pypi.org": {
     "en": "pypi.org",
     "de": "pypi.org.",
     "fr": "pypi.org",
     "ru": "Pypi.org.",
-    "es": "pypi.org"
+    "es": "pypi.org",
+    "ja": "pypi.org"
   },
   "pyvideo.org": {
     "en": "pyvideo.org",
     "de": "pyvideo.org.",
     "fr": "pyvideo.org",
     "ru": "Pyvideo.org.",
-    "es": "Pyvideo.org"
+    "es": "Pyvideo.org",
+    "ja": "pyvideo.org"
   },
   "scikit-image": {
     "en": "scikit-image",
     "de": "Scikit-Image.",
     "fr": "imb\u00e9cile",
     "ru": "Scikit-Image.",
-    "es": "Scikit-image"
+    "es": "Scikit-image",
+    "ja": "scikit-image"
   },
   "seaborn": {
     "en": "seaborn",
     "de": "Meeresb\u00f6rger",
     "fr": "marb\u00e9nique",
     "ru": "\u043c\u043e\u0440\u0441\u043a\u043e\u0439",
-    "es": "dense\u00f1al"
+    "es": "dense\u00f1al",
+    "ja": "\u6d77\u751f\u307e\u308c"
   },
   "R Documentation": {
     "en": "R Documentation",
     "de": "R Dokumentation.",
     "fr": "R documentation",
     "ru": "R \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "R documentaci\u00f3n"
+    "es": "R documentaci\u00f3n",
+    "ja": "R\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "R questions on Stack Overflow": {
     "en": "R questions on Stack Overflow",
     "de": "R Fragen zum Stapel\u00fcberlauf",
     "fr": "R questions sur la pile d\u00e9bordement",
     "ru": "R \u0412\u043e\u043f\u0440\u043e\u0441\u044b \u043f\u043e \u043f\u0435\u0440\u0435\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044e \u0441\u0442\u0435\u043a\u0430",
-    "es": "R Preguntas sobre el desbordamiento de la pila"
+    "es": "R Preguntas sobre el desbordamiento de la pila",
+    "ja": "StackOverflow\u306b\u95a2\u3059\u308bR\u306e\u8cea\u554f"
   },
   "RDocumentation": {
     "en": "RDocumentation",
     "de": "RDocumentation.",
     "fr": "Rdocumentation",
     "ru": "RDocumentation.",
-    "es": "Rdocumentaci\u00f3n"
+    "es": "Rdocumentaci\u00f3n",
+    "ja": "RDocumentation"
   },
   "RSeek": {
     "en": "RSeek",
@@ -86200,238 +86451,272 @@
     "de": "Stapel\u00fcberlauf - r",
     "fr": "Overflow de pile - R",
     "ru": "\u041f\u0435\u0440\u0435\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u0441\u0442\u0435\u043a\u0430 - R",
-    "es": "Desbordamiento de pila - r"
+    "es": "Desbordamiento de pila - r",
+    "ja": "\u30b9\u30bf\u30c3\u30af\u30aa\u30fc\u30d0\u30fc\u30d5\u30ed\u30fc-R"
   },
   "cran.r-project.org": {
     "en": "cran.r-project.org",
     "de": "cran.r-project.org.",
     "fr": "cran.r-project.org",
     "ru": "cran.r-project.org.",
-    "es": "cran.r-project.org"
+    "es": "cran.r-project.org",
+    "ja": "cran.r-project.org"
   },
   "rdrr.io": {
     "en": "rdrr.io",
     "de": "rdrr.io.",
     "fr": "rdrrr.io",
     "ru": "RDRR.IO.",
-    "es": "rdrr.io"
+    "es": "rdrr.io",
+    "ja": "rdrr.io"
   },
   "racket-lang.org": {
     "en": "racket-lang.org",
     "de": "Racket-lang.org.",
     "fr": "raquette-lang.org.org",
     "ru": "RackeT-Lang.org.",
-    "es": "racket-lang.org"
+    "es": "racket-lang.org",
+    "ja": "Racket-lang.org"
   },
   "APIDock - Rails": {
     "en": "APIDock - Rails",
     "de": "Apidock - Rails.",
     "fr": "Apidock - rails",
     "ru": "Apidock - \u0440\u0435\u043b\u044c\u0441\u044b",
-    "es": "Apidock - rieles"
+    "es": "Apidock - rieles",
+    "ja": "APIDock-\u30ec\u30fc\u30eb"
   },
   "APIdock": {
     "en": "APIdock",
     "de": "Apidock",
     "fr": "Apidock",
     "ru": "\u0410\u043f\u0438\u0434\u043e\u043a\u0430",
-    "es": "Apidro\u00f1o"
+    "es": "Apidro\u00f1o",
+    "ja": "APIdock"
   },
   "Awesome Ruby": {
     "en": "Awesome Ruby",
     "de": "Tolle Rubin",
     "fr": "G\u00e9nial ruby",
     "ru": "\u0423\u0434\u0438\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0440\u0443\u0431\u0438\u043d",
-    "es": "Incre\u00edble rub\u00ed"
+    "es": "Incre\u00edble rub\u00ed",
+    "ja": "\u7d20\u6674\u3089\u3057\u3044\u30eb\u30d3\u30fc"
   },
   "Rails API": {
     "en": "Rails API",
     "de": "Rails API.",
     "fr": "API RAILS",
     "ru": "Rails API",
-    "es": "Carriles API"
+    "es": "Carriles API",
+    "ja": "Rails API"
   },
   "Rails-Dock": {
     "en": "Rails-Dock",
     "de": "Rails-Dock",
     "fr": "Rails-quai",
     "ru": "\u0420\u0435\u043b\u044c\u0441\u044b-\u0434\u043e\u043a\u0438",
-    "es": "Rails-Dock"
+    "es": "Rails-Dock",
+    "ja": "\u30ec\u30fc\u30eb-\u30c9\u30c3\u30af"
   },
   "RuboCop": {
     "en": "RuboCop",
     "de": "Rubokop",
     "fr": "Rubocop",
     "ru": "\u0420\u0443\u0431\u043a\u043e\u043f",
-    "es": "Rubocop"
+    "es": "Rubocop",
+    "ja": "RuboCop"
   },
   "Ruby Toolbox": {
     "en": "Ruby Toolbox",
     "de": "Ruby Toolbox.",
     "fr": "Bo\u00eete \u00e0 outils Ruby",
     "ru": "Ruby Toolbox",
-    "es": "Caja de herramientas de ruby"
+    "es": "Caja de herramientas de ruby",
+    "ja": "Ruby\u30c4\u30fc\u30eb\u30dc\u30c3\u30af\u30b9"
   },
   "Ruby on Rails Guides": {
     "en": "Ruby on Rails Guides",
     "de": "Rubin auf Rails Guides",
     "fr": "Rubis sur les guides de rails",
     "ru": "\u0420\u0443\u0431\u0438\u043d \u043d\u0430 \u043d\u0430\u043f\u0440\u0430\u0432\u043b\u044f\u044e\u0449\u0438\u0445 \u0440\u0435\u043b\u044c\u0441\u043e\u0432",
-    "es": "Ruby en las gu\u00edas de rieles"
+    "es": "Ruby en las gu\u00edas de rieles",
+    "ja": "Ruby onRails\u30ac\u30a4\u30c9"
   },
   "Ruby-Doc.org": {
     "en": "Ruby-Doc.org",
     "de": "Ruby-doc.org.",
     "fr": "Ruby-doc.org",
     "ru": "Ruby-doc.org.",
-    "es": "Ruby-doc.org"
+    "es": "Ruby-doc.org",
+    "ja": "Ruby-Doc.org"
   },
   "Ruby-lang.org": {
     "en": "Ruby-lang.org",
     "de": "Ruby-lang.org.",
     "fr": "Ruby-lang.org",
     "ru": "Ruby-lang.org.",
-    "es": "Ruby-lang.org"
+    "es": "Ruby-lang.org",
+    "ja": "Ruby-lang.org"
   },
   "RubyDoc.info": {
     "en": "RubyDoc.info",
     "de": "Rubydoc.info.",
     "fr": "Rubydoc.info",
     "ru": "Rubydoc.info.",
-    "es": "Rubydoc.info"
+    "es": "Rubydoc.info",
+    "ja": "RubyDoc.info"
   },
   "RubyDocs": {
     "en": "RubyDocs",
     "de": "Rubydocs.",
     "fr": "Rubydocs",
     "ru": "Rubydocs.",
-    "es": "Rubydocs"
+    "es": "Rubydocs",
+    "ja": "RubyDocs"
   },
   "RubyGems": {
     "en": "RubyGems",
     "de": "Rubygems.",
     "fr": "Rubygems",
     "ru": "\u0420\u0443\u0431\u0438\u0433\u0433\u0435\u043c\u0441",
-    "es": "Rubygems"
+    "es": "Rubygems",
+    "ja": "RubyGems"
   },
   "The Ruby Toolbox": {
     "en": "The Ruby Toolbox",
     "de": "Die Rubin-Toolbox.",
     "fr": "La bo\u00eete \u00e0 outils Ruby",
     "ru": "Ruby Toolbox",
-    "es": "La caja de herramientas de rub\u00ed"
+    "es": "La caja de herramientas de rub\u00ed",
+    "ja": "Ruby\u30c4\u30fc\u30eb\u30dc\u30c3\u30af\u30b9"
   },
   "Scala API": {
     "en": "Scala API",
     "de": "Scala API.",
     "fr": "API SCALA",
     "ru": "Scala API",
-    "es": "API SCALA"
+    "es": "API SCALA",
+    "ja": "Scala API"
   },
   "Scala Center": {
     "en": "Scala Center",
     "de": "Scala Center",
     "fr": "Scala Center",
     "ru": "\u0421\u043a\u0430\u043b\u0430 \u0426\u0435\u043d\u0442\u0440",
-    "es": "Centro de Scala"
+    "es": "Centro de Scala",
+    "ja": "\u30b9\u30ab\u30e9\u30bb\u30f3\u30bf\u30fc"
   },
   "Scala Library Index": {
     "en": "Scala Library Index",
     "de": "Scala Library Index.",
     "fr": "Index de biblioth\u00e8que scala",
     "ru": "\u0421\u043a\u0430\u043b\u0430 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u0447\u043d\u044b\u0439 \u0438\u043d\u0434\u0435\u043a\u0441",
-    "es": "\u00cdndice de Biblioteca Scala"
+    "es": "\u00cdndice de Biblioteca Scala",
+    "ja": "Scala\u30e9\u30a4\u30d6\u30e9\u30ea\u30a4\u30f3\u30c7\u30c3\u30af\u30b9"
   },
   "Scala doc": {
     "en": "Scala doc",
     "de": "Scala doc.",
     "fr": "Scala Doc",
     "ru": "Scala Doc.",
-    "es": "SCALA DOC"
+    "es": "SCALA DOC",
+    "ja": "Scala doc"
   },
   "scala-lang.org": {
     "en": "scala-lang.org",
     "de": "scala-lang.org.",
     "fr": "scala-lang.org",
     "ru": "Scala-lang.org.",
-    "es": "scala-lang.org"
+    "es": "scala-lang.org",
+    "ja": "scala-lang.org"
   },
   "Chicken Scheme": {
     "en": "Chicken Scheme",
     "de": "H\u00fchnerschema",
     "fr": "R\u00e9gime de poulet",
     "ru": "\u041a\u0443\u0440\u0438\u043d\u0430\u044f \u0441\u0445\u0435\u043c\u0430",
-    "es": "Esquema de pollo"
+    "es": "Esquema de pollo",
+    "ja": "\u30c1\u30ad\u30f3\u30b9\u30ad\u30fc\u30e0"
   },
   "Chicken Scheme Chickadee": {
     "en": "Chicken Scheme Chickadee",
     "de": "H\u00fchnerschema-Chickadee.",
     "fr": "Poulet Chickadee",
     "ru": "\u041a\u0443\u0440\u0438\u043d\u0430\u044f \u0441\u0445\u0435\u043c\u0430 Chickadee",
-    "es": "Plan de pollo Chickadee"
+    "es": "Plan de pollo Chickadee",
+    "ja": "\u30c1\u30ad\u30f3\u30b9\u30ad\u30fc\u30e0\u30c1\u30ab\u30c7\u30a3\u30fc"
   },
   "Chicken Scheme Wiki": {
     "en": "Chicken Scheme Wiki",
     "de": "H\u00fchnerschema Wiki.",
     "fr": "Planche de poulet wiki",
     "ru": "\u041a\u0443\u0440\u0438\u043d\u0430\u044f \u0441\u0445\u0435\u043c\u0430 Wiki.",
-    "es": "Esquema de pollo wiki"
+    "es": "Esquema de pollo wiki",
+    "ja": "\u30c1\u30ad\u30f3\u30b9\u30ad\u30fc\u30e0\u30a6\u30a3\u30ad"
   },
   "Scheme Request for Implementation": {
     "en": "Scheme Request for Implementation",
     "de": "Schemaanforderung zur Implementierung",
     "fr": "Demande de mise en \u0153uvre du r\u00e9gime",
     "ru": "\u0417\u0430\u043f\u0440\u043e\u0441 \u0441\u0445\u0435\u043c\u044b \u0434\u043b\u044f \u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u0438",
-    "es": "Solicitud de esquema de implementaci\u00f3n."
+    "es": "Solicitud de esquema de implementaci\u00f3n.",
+    "ja": "\u30b9\u30ad\u30fc\u30e0\u306e\u5b9f\u88c5\u8981\u6c42"
   },
   "Valadoc": {
     "en": "Valadoc",
     "de": "Valadoc.",
     "fr": "Valadoc",
     "ru": "\u0412\u0430\u043b\u0430\u0434\u043e\u043a\u0441",
-    "es": "Valadoc"
+    "es": "Valadoc",
+    "ja": "\u30f4\u30a1\u30e9\u30c9\u30c3\u30af"
   },
   "API Platform": {
     "en": "API Platform",
     "de": "API-Plattform",
     "fr": "Plate-forme API",
     "ru": "\u041f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0430 API",
-    "es": "Plataforma API"
+    "es": "Plataforma API",
+    "ja": "API\u30d7\u30e9\u30c3\u30c8\u30d5\u30a9\u30fc\u30e0"
   },
   "Angular": {
     "en": "Angular",
     "de": "Eckig",
     "fr": "Angulaire",
     "ru": "\u0423\u0433\u043b\u043e\u0432\u043e\u0439",
-    "es": "Angular"
+    "es": "Angular",
+    "ja": "Angular"
   },
   "Angular.io v2": {
     "en": "Angular.io v2",
     "de": "Eckular.io v2.",
     "fr": "Angulaire.io v2",
     "ru": "Angular.io v2.",
-    "es": "Angular.io v2"
+    "es": "Angular.io v2",
+    "ja": "Angular.io v2"
   },
   "Angular.io v5": {
     "en": "Angular.io v5",
     "de": "Eckular.io v5.",
     "fr": "Angulaire.io v5",
     "ru": "Angular.io v5.",
-    "es": "Angular.io v5"
+    "es": "Angular.io v5",
+    "ja": "Angular.io v5"
   },
   "Angular.io v6": {
     "en": "Angular.io v6",
     "de": "Eckular.io v6.",
     "fr": "Angulaire.io v6",
     "ru": "Angular.io v6.",
-    "es": "Angular.io v6"
+    "es": "Angular.io v6",
+    "ja": "Angular.io v6"
   },
   "Angular.io v7": {
     "en": "Angular.io v7",
     "de": "Eckular.io v7.",
     "fr": "Angulaire.io v7",
     "ru": "Angular.io v7.",
-    "es": "Angular.io v7"
+    "es": "Angular.io v7",
+    "ja": "Angular.io v7"
   },
   "Angular.io v8": {
     "en": "Angular.io v8",
@@ -86445,56 +86730,64 @@
     "de": "Apache-Tapisserie",
     "fr": "Tapisserie Apache",
     "ru": "Apache Tobestry",
-    "es": "Tapiz de apache"
+    "es": "Tapiz de apache",
+    "ja": "ApacheTapestry"
   },
   "Arcgis Developers": {
     "en": "Arcgis Developers",
     "de": "ArcGIS-Entwickler",
     "fr": "D\u00e9veloppeurs ArcGIS",
     "ru": "\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u0438 ArcGIS.",
-    "es": "Desarrolladores de ArcGIS"
+    "es": "Desarrolladores de ArcGIS",
+    "ja": "Arcgis\u958b\u767a\u8005"
   },
   "BlackBerry Developer": {
     "en": "BlackBerry Developer",
     "de": "Blackberry-Entwickler.",
     "fr": "D\u00e9veloppeur BlackBerry",
     "ru": "\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a BlackBerry",
-    "es": "Desarrollador de blackberry"
+    "es": "Desarrollador de blackberry",
+    "ja": "BlackBerry Developer"
   },
   "Blender Current API": {
     "en": "Blender Current API",
     "de": "Mixer Aktuelle API.",
     "fr": "M\u00e9langeur API actuel",
     "ru": "Blender Teak API.",
-    "es": "Blender actual API"
+    "es": "Blender actual API",
+    "ja": "Blender Current API"
   },
   "Boostrap": {
     "en": "Boostrap",
     "de": "Bootstrap.",
     "fr": "Amorcer",
     "ru": "\u0417\u0430\u0433\u0440\u0443\u0437\u043a\u0430",
-    "es": "Oreja"
+    "es": "Oreja",
+    "ja": "Boostrap"
   },
   "Bourbon": {
     "en": "Bourbon",
     "de": "Bourbon",
     "fr": "Bourbon",
     "ru": "\u0411\u0443\u0440\u0431\u043e\u043d",
-    "es": "Borb\u00f3n"
+    "es": "Borb\u00f3n",
+    "ja": "\u30d0\u30fc\u30dc\u30f3"
   },
   "CMSSW Software Cross-Reference": {
     "en": "CMSSW Software Cross-Reference",
     "de": "CMSW-Software-Cross-Referenz",
     "fr": "Logiciel CMSSW R\u00e9f\u00e9rence crois\u00e9e",
     "ru": "CMSSW \u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u043d\u043e\u0435 \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u0435 \u041f\u0435\u0440\u0435\u043a\u0440\u0435\u0441\u0442\u043d\u043e\u0435 \u0441\u0441\u044b\u043b\u043a\u0430",
-    "es": "Software CMSSW Referencia cruzada"
+    "es": "Software CMSSW Referencia cruzada",
+    "ja": "CMSSW\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2\u306e\u76f8\u4e92\u53c2\u7167"
   },
   "CTAN.org": {
     "en": "CTAN.org",
     "de": "Ctan.org.",
     "fr": "Ctan.org",
     "ru": "Ctan.org.",
-    "es": "Ctan.org"
+    "es": "Ctan.org",
+    "ja": "CTAN.org"
   },
   "CakePHP 2": {
     "en": "CakePHP 2",
@@ -86508,14 +86801,16 @@
     "de": "Cakephp 2 book.",
     "fr": "CakePHP 2 livre",
     "ru": "CakePhp 2 \u043a\u043d\u0438\u0433\u0430",
-    "es": "CakePhp 2 libro"
+    "es": "CakePhp 2 libro",
+    "ja": "Cakephp2\u672c"
   },
   "Cdn js": {
     "en": "Cdn js",
     "de": "Cdn js.",
     "fr": "CDN JS",
     "ru": "CDN JS.",
-    "es": "Cdn js"
+    "es": "Cdn js",
+    "ja": "Cdn js"
   },
   "CodeIgniter": {
     "en": "CodeIgniter",
@@ -86536,105 +86831,120 @@
     "de": "Kompass",
     "fr": "Boussole",
     "ru": "\u041a\u043e\u043c\u043f\u0430\u0441",
-    "es": "Br\u00fajula"
+    "es": "Br\u00fajula",
+    "ja": "\u65b9\u4f4d\u78c1\u91dd"
   },
   "Cygwin": {
     "en": "Cygwin",
     "de": "Zygwin.",
     "fr": "Cygwin",
     "ru": "Cygwin.",
-    "es": "Cygwin"
+    "es": "Cygwin",
+    "ja": "Cygwin"
   },
   "Delaware Library Search": {
     "en": "Delaware Library Search",
     "de": "Delaware-Bibliothekssuche.",
     "fr": "Recherche de biblioth\u00e8que de Delaware",
     "ru": "\u041f\u043e\u0438\u0441\u043a \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a DeLaware",
-    "es": "B\u00fasqueda de la biblioteca de Delaware"
+    "es": "B\u00fasqueda de la biblioteca de Delaware",
+    "ja": "\u30c7\u30e9\u30a6\u30a7\u30a2\u56f3\u66f8\u9928\u691c\u7d22"
   },
   "Discord.JS Docs": {
     "en": "Discord.JS Docs",
     "de": "Discord.js docs.",
     "fr": "Discord.js docs",
     "ru": "Discord.js \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b",
-    "es": "Discord.js docs"
+    "es": "Discord.js docs",
+    "ja": "Discord.JS\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Dockerhub docs": {
     "en": "Dockerhub docs",
     "de": "Dockerhub docs.",
     "fr": "Documents DockerHub",
     "ru": "DockerHub Docs.",
-    "es": "DOCTERHUB DOCS"
+    "es": "DOCTERHUB DOCS",
+    "ja": "Dockerhub\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Drupal API": {
     "en": "Drupal API",
     "de": "Drupal API.",
     "fr": "API drupal",
     "ru": "Drupal API",
-    "es": "API DRUPAL"
+    "es": "API DRUPAL",
+    "ja": "Drupal API"
   },
   "Ember": {
     "en": "Ember",
     "de": "Glut",
     "fr": "Embarras",
     "ru": "\u042d\u043c\u0431\u0435\u0440",
-    "es": "Ascua"
+    "es": "Ascua",
+    "ja": "\u6b8b\u308a\u706b"
   },
   "Expo Documentation": {
     "en": "Expo Documentation",
     "de": "EXPO-Dokumentation.",
     "fr": "Documentation Expo",
     "ru": "\u042d\u043a\u0441\u043f\u043e \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n de la Expo"
+    "es": "Documentaci\u00f3n de la Expo",
+    "ja": "Expo\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "File info": {
     "en": "File info",
     "de": "Dateiinformation",
     "fr": "Info de fichier",
     "ru": "\u0418\u043d\u0444\u043e\u0440\u043c\u0430\u0446\u0438\u044f \u043e \u0444\u0430\u0439\u043b\u0435",
-    "es": "Informaci\u00f3n del archivo"
+    "es": "Informaci\u00f3n del archivo",
+    "ja": "\u30d5\u30a1\u30a4\u30eb\u60c5\u5831"
   },
   "Flask WebFramework": {
     "en": "Flask WebFramework",
     "de": "FLASH Web Framework.",
     "fr": "Filk webcad\u00e8me",
     "ru": "Flask Web Framework",
-    "es": "Marco web de matraz"
+    "es": "Marco web de matraz",
+    "ja": "FlaskWebFramework"
   },
   "Flutter": {
     "en": "Flutter",
     "de": "Flattern",
     "fr": "Battement",
     "ru": "\u0422\u0440\u0435\u043f\u0435\u0442\u0430\u043d\u0438\u0435",
-    "es": "Aleteo"
+    "es": "Aleteo",
+    "ja": "\u30d5\u30e9\u30c3\u30bf\u30fc"
   },
   "GNOME Developer Center": {
     "en": "GNOME Developer Center",
     "de": "Gnome Developer Center.",
     "fr": "Centre de d\u00e9veloppeur Gnome",
     "ru": "Gnome Developer Center",
-    "es": "Centro de desarrolladores de GNOME"
+    "es": "Centro de desarrolladores de GNOME",
+    "ja": "GNOME\u958b\u767a\u8005\u30bb\u30f3\u30bf\u30fc"
   },
   "Godot Engine Q&A": {
     "en": "Godot Engine Q&A",
     "de": "Godot Engine Q & A",
     "fr": "Q & A de Godot Engine",
     "ru": "Godot Engine Q & A",
-    "es": "Motor Godot Preguntas y respuestas"
+    "es": "Motor Godot Preguntas y respuestas",
+    "ja": "Godot\u30a8\u30f3\u30b8\u30f3\u306eQ\uff06A"
   },
   "Grails Plugins": {
     "en": "Grails Plugins",
     "de": "Grillern Plugins.",
     "fr": "Plugins de graps",
     "ru": "\u0413\u0440\u0430\u0430\u043b\u044c\u0441 \u043f\u043b\u0430\u0433\u0438\u043d\u044b",
-    "es": "Complementos de grieles"
+    "es": "Complementos de grieles",
+    "ja": "Grails\u30d7\u30e9\u30b0\u30a4\u30f3"
   },
   "Graylog Marketplace": {
     "en": "Graylog Marketplace",
     "de": "Graylog Marketplace.",
     "fr": "Graylog Marketplace",
     "ru": "Graylog Marketplace",
-    "es": "Graylog Marketplace"
+    "es": "Graylog Marketplace",
+    "ja": "\u30b0\u30ec\u30a4\u30ed\u30b0\u30de\u30fc\u30b1\u30c3\u30c8\u30d7\u30ec\u30a4\u30b9"
   },
   "Hybris Wiki": {
     "en": "Hybris Wiki",
@@ -86655,7 +86965,8 @@
     "de": "Jinja",
     "fr": "Jinja",
     "ru": "Jinja.",
-    "es": "Jinja"
+    "es": "Jinja",
+    "ja": "\u30b8\u30f3\u30b8\u30e3"
   },
   "Kirby": {
     "en": "Kirby",
@@ -86669,28 +86980,32 @@
     "de": "KIVY API-Referenz.",
     "fr": "Kivy API R\u00e9f\u00e9rence",
     "ru": "Civy API \u0421\u0441\u044b\u043b\u043a\u0430",
-    "es": "Referencia de Kivy API"
+    "es": "Referencia de Kivy API",
+    "ja": "KivyAPI\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9"
   },
   "Kivy API docs": {
     "en": "Kivy API docs",
     "de": "Kivy api docs.",
     "fr": "Kivy API Docs",
     "ru": "Kivy API \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b",
-    "es": "Kivy api docs"
+    "es": "Kivy api docs",
+    "ja": "KivyAPI\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Kubernetes": {
     "en": "Kubernetes",
     "de": "Kubernetes",
     "fr": "Kubettes",
     "ru": "\u041a\u0443\u0431\u0435\u0440\u043d\u0435\u0442\u044b",
-    "es": "Kubernetes"
+    "es": "Kubernetes",
+    "ja": "Kubernetes"
   },
   "LaunchPad": {
     "en": "LaunchPad",
     "de": "Launchpad",
     "fr": "Rampe de lancement",
     "ru": "\u0417\u0430\u043f\u0443\u0441\u043a\u043d\u0430\u044f \u043f\u0430\u043d\u0435\u043b\u044c",
-    "es": "Plataforma de lanzamiento"
+    "es": "Plataforma de lanzamiento",
+    "ja": "\u767a\u5c04\u53f0"
   },
   "LibGDX API": {
     "en": "LibGDX API",
@@ -86704,77 +87019,88 @@
     "de": "Bibliotheken - der Open Source Discovery Service",
     "fr": "Biblioth\u00e8ques - Le service de d\u00e9couverte open source",
     "ru": "\u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0438 - \u041e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u043d\u0438\u0435 \u043e\u0442\u043a\u0440\u044b\u0442\u044b\u0445 \u0438\u0441\u0442\u043e\u0447\u043d\u0438\u043a\u043e\u0432",
-    "es": "Bibliotecas - El servicio de descubrimiento de c\u00f3digo abierto"
+    "es": "Bibliotecas - El servicio de descubrimiento de c\u00f3digo abierto",
+    "ja": "\u30e9\u30a4\u30d6\u30e9\u30ea-\u30aa\u30fc\u30d7\u30f3\u30bd\u30fc\u30b9\u30c7\u30a3\u30b9\u30ab\u30d0\u30ea\u30fc\u30b5\u30fc\u30d3\u30b9"
   },
   "Liferay": {
     "en": "Liferay",
     "de": "Liferay",
     "fr": "Liferay",
     "ru": "\u041f\u043e\u0436\u0438\u0432\u0430\u043d\u0438\u0439",
-    "es": "Liferay"
+    "es": "Liferay",
+    "ja": "Liferay"
   },
   "LoopbackJS Documentations site": {
     "en": "LoopbackJS Documentations site",
     "de": "Loopbackjs-Dokumentations-Site.",
     "fr": "Loopbackjs Documentations Site",
     "ru": "Loopbackjs \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f \u0441\u0430\u0439\u0442\u0430",
-    "es": "Sitio de documentaciones de LoopBackjs"
+    "es": "Sitio de documentaciones de LoopBackjs",
+    "ja": "LoopbackJS\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8\u30b5\u30a4\u30c8"
   },
   "L\u00d6VE Wiki": {
     "en": "L\u00d6VE Wiki",
     "de": "L\u00f6ve Wiki.",
     "fr": "L\u00f6ve Wiki",
     "ru": "\u041b\u0451\u0432\u0435 \u0412\u0438\u043a\u0438",
-    "es": "L\u00f6ve wiki"
+    "es": "L\u00f6ve wiki",
+    "ja": "L\u00d6VEWiki"
   },
   "L\u00d6VE2D": {
     "en": "L\u00d6VE2D",
     "de": "L\u00f6ve2d.",
     "fr": "L\u00f6ve2d",
     "ru": "L\u00f6ve2d.",
-    "es": "L\u00f6ve2d"
+    "es": "L\u00f6ve2d",
+    "ja": "L\u00d6VE2D"
   },
   "MODX": {
     "en": "MODX",
     "de": "Modx",
     "fr": "Modx",
     "ru": "\u041c\u043e\u0434\u043a\u0441",
-    "es": "Modx"
+    "es": "Modx",
+    "ja": "MODX"
   },
   "MVNRepository": {
     "en": "MVNRepository",
     "de": "MVNRepository.",
     "fr": "Mvnrepository",
     "ru": "\u041c.\u0412.\u041d\u0435\u0440\u043e\u043f\u043e\u0437\u0438\u043e\u043b\u043e\u0433\u0438\u0438",
-    "es": "Mvnrepositivo"
+    "es": "Mvnrepositivo",
+    "ja": "MVN\u30ea\u30dd\u30b8\u30c8\u30ea"
   },
   "Magento StackExchange": {
     "en": "Magento StackExchange",
     "de": "Magento stackexchange.",
     "fr": "Magento stackexchange",
     "ru": "Magento Stackexchange.",
-    "es": "Magento Stackexchange"
+    "es": "Magento Stackexchange",
+    "ja": "Magento StackExchange"
   },
   "MarkMail": {
     "en": "MarkMail",
     "de": "Markmail.",
     "fr": "Markmail",
     "ru": "Markmail.",
-    "es": "Markmail"
+    "es": "Markmail",
+    "ja": "MarkMail"
   },
   "Material UI": {
     "en": "Material UI",
     "de": "Material-UI.",
     "fr": "UI mat\u00e9riau",
     "ru": "\u041c\u0430\u0442\u0435\u0440\u0438\u0430\u043b Ui",
-    "es": "Ui material"
+    "es": "Ui material",
+    "ja": "\u30de\u30c6\u30ea\u30a2\u30ebUI"
   },
   "Maven Central Repository": {
     "en": "Maven Central Repository",
     "de": "MAVEN Central Repository.",
     "fr": "Maven Central Repository",
     "ru": "Maven Central Repository",
-    "es": "Repositorio central de maven"
+    "es": "Repositorio central de maven",
+    "ja": "Maven\u4e2d\u592e\u30ea\u30dd\u30b8\u30c8\u30ea"
   },
   "MediaWiki": {
     "en": "MediaWiki",
@@ -86802,28 +87128,32 @@
     "de": "Nginx wiki.",
     "fr": "Nginx Wiki",
     "ru": "Nginx Wiki",
-    "es": "Nginx wiki"
+    "es": "Nginx wiki",
+    "ja": "Nginx wiki"
   },
   "OS X Developer Library": {
     "en": "OS X Developer Library",
     "de": "OS X Developer Library",
     "fr": "Biblioth\u00e8que de d\u00e9veloppeurs OS X",
     "ru": "OS X \u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a \u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430",
-    "es": "Biblioteca de desarrolladores OS X"
+    "es": "Biblioteca de desarrolladores OS X",
+    "ja": "OSX\u958b\u767a\u8005\u30e9\u30a4\u30d6\u30e9\u30ea"
   },
   "OSStatus": {
     "en": "OSStatus",
     "de": "OsStatus.",
     "fr": "Ostatus",
     "ru": "\u041e\u0421\u0421\u0422\u0410\u0422\u0423\u0421",
-    "es": "Ostatus"
+    "es": "Ostatus",
+    "ja": "OSStatus"
   },
   "OpenCV": {
     "en": "OpenCV",
     "de": "Opencv",
     "fr": "Oppencv",
     "ru": "Openc.",
-    "es": "Openv"
+    "es": "Openv",
+    "ja": "OpenCV"
   },
   "OpenFrameworks": {
     "en": "OpenFrameworks",
@@ -86837,119 +87167,136 @@
     "de": "OpenGL.",
     "fr": "Opengl",
     "ru": "Opengl.",
-    "es": "Open"
+    "es": "Open",
+    "ja": "OpenGL"
   },
   "OpenGL Wiki": {
     "en": "OpenGL Wiki",
     "de": "OpenGL Wiki.",
     "fr": "Wiki OpenGL",
     "ru": "OpenGL Wiki",
-    "es": "Opengl wiki"
+    "es": "Opengl wiki",
+    "ja": "OpenGL Wiki"
   },
   "PCL Documentation": {
     "en": "PCL Documentation",
     "de": "PCL-Dokumentation.",
     "fr": "Documentation PCL",
     "ru": "PCL \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n de PCL"
+    "es": "Documentaci\u00f3n de PCL",
+    "ja": "PCL\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Perseus Digital Library": {
     "en": "Perseus Digital Library",
     "de": "Perseus Digitalbibliothek",
     "fr": "Biblioth\u00e8que num\u00e9rique Perseus",
     "ru": "Perseus Digital Library",
-    "es": "Biblioteca Digital PERSEUS"
+    "es": "Biblioteca Digital PERSEUS",
+    "ja": "\u30da\u30eb\u30bb\u30a6\u30b9\u96fb\u5b50\u56f3\u66f8\u9928"
   },
   "Personal Package Archives for Ubuntu": {
     "en": "Personal Package Archives for Ubuntu",
     "de": "Pers\u00f6nliche Paketarchive f\u00fcr Ubuntu",
     "fr": "Archives de forfaits personnels pour Ubuntu",
     "ru": "\u041f\u0435\u0440\u0441\u043e\u043d\u0430\u043b\u044c\u043d\u044b\u0439 \u043f\u0430\u043a\u0435\u0442 \u0430\u0440\u0445\u0438\u0432\u043e\u0432 \u0434\u043b\u044f Ubuntu",
-    "es": "Archivos de paquete personal para Ubuntu"
+    "es": "Archivos de paquete personal para Ubuntu",
+    "ja": "Ubuntu\u306e\u30d1\u30fc\u30bd\u30ca\u30eb\u30d1\u30c3\u30b1\u30fc\u30b8\u30a2\u30fc\u30ab\u30a4\u30d6"
   },
   "Phaser 3 API Documentation": {
     "en": "Phaser 3 API Documentation",
     "de": "Phaser 3 API-Dokumentation",
     "fr": "Documentation Phaser 3 API",
     "ru": "Phaser 3 API \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n API de Phaser 3"
+    "es": "Documentaci\u00f3n API de Phaser 3",
+    "ja": "Phaser 3API\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Plone": {
     "en": "Plone",
     "de": "Plone",
     "fr": "Plone",
     "ru": "\u041f\u043b\u0435\u043d",
-    "es": "Plone"
+    "es": "Plone",
+    "ja": "Plone"
   },
   "PowerUI": {
     "en": "PowerUI",
     "de": "Powerui.",
     "fr": "Powerui",
     "ru": "Powerui.",
-    "es": "Powerui"
+    "es": "Powerui",
+    "ja": "PowerUI"
   },
   "Qt Documentation": {
     "en": "Qt Documentation",
     "de": "Qt Dokumentation.",
     "fr": "Documentation QT",
     "ru": "Qt \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n QT"
+    "es": "Documentaci\u00f3n QT",
+    "ja": "Qt\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "ROOT": {
     "en": "ROOT",
     "de": "WURZEL",
     "fr": "RACINE",
     "ru": "\u041a\u041e\u0420\u0415\u041d\u042c",
-    "es": "RA\u00cdZ"
+    "es": "RA\u00cdZ",
+    "ja": "\u6839"
   },
   "ROS Wiki": {
     "en": "ROS Wiki",
     "de": "Ros Wiki.",
     "fr": "Ros wiki",
     "ru": "\u0420\u043e\u0441 \u0432\u0438\u043a\u0438",
-    "es": "Ros wiki"
+    "es": "Ros wiki",
+    "ja": "ROS Wiki"
   },
   "RPM.pbone.net": {
     "en": "RPM.pbone.net",
     "de": "Rpm.pbone.net.",
     "fr": "Rpm.pbone.net",
     "ru": "RPM.PBONE.NET.",
-    "es": "Rpm.pbone.net"
+    "es": "Rpm.pbone.net",
+    "ja": "RPM.pbone.net"
   },
   "RTI Connext-DDS 5.2.3 User Manual": {
     "en": "RTI Connext-DDS 5.2.3 User Manual",
     "de": "RTI Connext-DDS 5.2.3 Benutzerhandbuch",
     "fr": "RTI Connext-DDS 5.2.3 Manuel d'utilisation",
     "ru": "RTI Connexex-DDS 5.2.3 \u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f",
-    "es": "RTI CONNEXT-DDS 5.2.3 Manual del usuario"
+    "es": "RTI CONNEXT-DDS 5.2.3 Manual del usuario",
+    "ja": "RTI Connext-DDS5.2.3\u30e6\u30fc\u30b6\u30fc\u30de\u30cb\u30e5\u30a2\u30eb"
   },
   "RTI DDS 5.1 C++ API Search": {
     "en": "RTI DDS 5.1 C++ API Search",
     "de": "RTI DDS 5.1 C ++ API SUCHE",
     "fr": "RTI DDS 5.1 C ++ Recherche d'API",
     "ru": "RTI DDS 5.1 C ++ API \u041f\u043e\u0438\u0441\u043a",
-    "es": "RTI DDS 5.1 C ++ B\u00fasqueda de API"
+    "es": "RTI DDS 5.1 C ++ B\u00fasqueda de API",
+    "ja": "RTI DDS 5.1 C ++ API\u691c\u7d22"
   },
   "RTI DDS 5.1 Java API Search": {
     "en": "RTI DDS 5.1 Java API Search",
     "de": "RTI DDS 5.1 Java API-Suche",
     "fr": "RTI DDS 5.1 Java API Recherche",
     "ru": "RTI DDS 5.1 Java API \u041f\u043e\u0438\u0441\u043a",
-    "es": "RTI DDS 5.1 Java API"
+    "es": "RTI DDS 5.1 Java API",
+    "ja": "RTI DDS 5.1 JavaAPI\u691c\u7d22"
   },
   "RTI Knowledge Base": {
     "en": "RTI Knowledge Base",
     "de": "RTI Knowledge Base.",
     "fr": "Base de connaissances RTI",
     "ru": "RTI \u0431\u0430\u0437\u0430 \u0437\u043d\u0430\u043d\u0438\u0439",
-    "es": "Base de conocimiento de RTI"
+    "es": "Base de conocimiento de RTI",
+    "ja": "RTI\u30ca\u30ec\u30c3\u30b8\u30d9\u30fc\u30b9"
   },
   "Redhat Bugzilla": {
     "en": "Redhat Bugzilla",
     "de": "Redhat Bugzilla.",
     "fr": "Redhat Bugzilla",
     "ru": "Redhat Bugzilla",
-    "es": "Redhat Bugzilla"
+    "es": "Redhat Bugzilla",
+    "ja": "Redhat Bugzilla"
   },
   "Redis Command Reference": {
     "en": "Redis Command Reference",
@@ -86963,7 +87310,8 @@
     "de": "Redmine.",
     "fr": "Redmine",
     "ru": "\u0420\u0435\u0434\u043c\u0438\u043d",
-    "es": "Redmine"
+    "es": "Redmine",
+    "ja": "Redmine"
   },
   "Regular Expression Library": {
     "en": "Regular Expression Library",
@@ -86977,21 +87325,24 @@
     "de": "Roboter",
     "fr": "Robotos",
     "ru": "\u0420\u043e\u0431\u043e\u0442\u043e\u0441",
-    "es": "Robotos"
+    "es": "Robotos",
+    "ja": "RobotOS"
   },
   "SDL2 Wiki": {
     "en": "SDL2 Wiki",
     "de": "SDL2 Wiki.",
     "fr": "Wiki SDL2",
     "ru": "SDL2 Wiki",
-    "es": "SDL2 WIKI"
+    "es": "SDL2 WIKI",
+    "ja": "SDL2 Wiki"
   },
   "SQLite": {
     "en": "SQLite",
     "de": "Sqlite.",
     "fr": "Sqlite",
     "ru": "Sqlite.",
-    "es": "Sqlite"
+    "es": "Sqlite",
+    "ja": "SQLite"
   },
   "Search-Hadoop": {
     "en": "Search-Hadoop",
@@ -87019,63 +87370,72 @@
     "de": "Slackbuilds.",
     "fr": "Slackbuilds",
     "ru": "SlackBuilds.",
-    "es": "SlackBuilds"
+    "es": "SlackBuilds",
+    "ja": "Slackbuilds"
   },
   "Susy": {
     "en": "Susy",
     "de": "S\u00fc\u00dflich",
     "fr": "Susceptible",
     "ru": "\u0423\u0441\u0430\u0436\u0438\u0432\u0430\u043d\u0438\u0435",
-    "es": "Sustento"
+    "es": "Sustento",
+    "ja": "\u30b9\u30fc\u30b8\u30fc"
   },
   "The Chakra Project Packages": {
     "en": "The Chakra Project Packages",
     "de": "Die Chakra-Projektpakete",
     "fr": "Les forfaits du projet Chakra",
     "ru": "\u041f\u0430\u043a\u0435\u0442\u044b \u043f\u0440\u043e\u0435\u043a\u0442\u0430 \u0447\u0430\u043a\u0440\u0430",
-    "es": "Los paquetes de proyectos de chakra."
+    "es": "Los paquetes de proyectos de chakra.",
+    "ja": "\u30c1\u30e3\u30af\u30e9\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30d1\u30c3\u30b1\u30fc\u30b8"
   },
   "The Maven Repository": {
     "en": "The Maven Repository",
     "de": "Das Maven-Repository.",
     "fr": "Le r\u00e9f\u00e9rentiel Maven",
     "ru": "\u0420\u0435\u043f\u043e\u0437\u0438\u0442\u043e\u0440\u0438\u0439 Maven",
-    "es": "El repositorio de Maven"
+    "es": "El repositorio de Maven",
+    "ja": "Maven\u30ea\u30dd\u30b8\u30c8\u30ea"
   },
   "Twig": {
     "en": "Twig",
     "de": "Zweig",
     "fr": "Brindille",
     "ru": "\u0412\u0435\u0442\u043e\u0447\u043a\u0430",
-    "es": "Ramita"
+    "es": "Ramita",
+    "ja": "\u5c0f\u679d"
   },
   "Unity3D Scripting Reference": {
     "en": "Unity3D Scripting Reference",
     "de": "Unity3D-Skriptreferenz.",
     "fr": "R\u00e9f\u00e9rence de script UNITY3D",
     "ru": "\u0421\u043f\u0438\u0441\u043e\u043a \u0441\u0446\u0435\u043d\u0430\u0440\u0438\u0435\u0432 Unity3D",
-    "es": "Unity3D Referencia de scripting"
+    "es": "Unity3D Referencia de scripting",
+    "ja": "Unity3D\u30b9\u30af\u30ea\u30d7\u30c6\u30a3\u30f3\u30b0\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9"
   },
   "Valve Developer Wiki": {
     "en": "Valve Developer Wiki",
     "de": "Ventilentwickler Wiki.",
     "fr": "D\u00e9veloppeur de valve wiki",
     "ru": "\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a \u043a\u043b\u0430\u043f\u0430\u043d\u0430 Wiki.",
-    "es": "Valve Developer Wiki"
+    "es": "Valve Developer Wiki",
+    "ja": "Valve Developer Wiki"
   },
   "Vue Docs": {
     "en": "Vue Docs",
     "de": "Vue docs.",
     "fr": "Coffre-fort",
     "ru": "Vue Docs",
-    "es": "Vue docs"
+    "es": "Vue docs",
+    "ja": "Vue Docs"
   },
   "WeChat MiniProgram Developer Document": {
     "en": "WeChat MiniProgram Developer Document",
     "de": "WECHAT-Miniprogramm-Entwickler-Dokument",
     "fr": "Document de d\u00e9veloppeur miniprogramme WECHAT",
     "ru": "Wechat Miniprogram Developer \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442",
-    "es": "Documento de desarrollador de miniprogramas Wechat"
+    "es": "Documento de desarrollador de miniprogramas Wechat",
+    "ja": "WeChatMiniProgram\u958b\u767a\u8005\u5411\u3051\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "WebKit Bugzilla": {
     "en": "WebKit Bugzilla",
@@ -87089,56 +87449,64 @@
     "de": "Wiki libsdl2.",
     "fr": "Wiki libsdl2",
     "ru": "Wiki libsdl2.",
-    "es": "Wiki libsdl2"
+    "es": "Wiki libsdl2",
+    "ja": "Wiki LibSDL2"
   },
   "WorldCat.org": {
     "en": "WorldCat.org",
     "de": "WorldCat.org.",
     "fr": "Worldcat.org",
     "ru": "WorldCat.org.",
-    "es": "Worldcat.org"
+    "es": "Worldcat.org",
+    "ja": "WorldCat.org"
   },
   "Xamarin Forums": {
     "en": "Xamarin Forums",
     "de": "Xamarin-Foren.",
     "fr": "Forums Xamarin",
     "ru": "\u0424\u043e\u0440\u0443\u043c\u044b Xamarin",
-    "es": "Foros de Xamarin"
+    "es": "Foros de Xamarin",
+    "ja": "Xamarin\u30d5\u30a9\u30fc\u30e9\u30e0"
   },
   "Xojo Forum": {
     "en": "Xojo Forum",
     "de": "Xojo-Forum.",
     "fr": "XOJO FORUM",
     "ru": "\u0424\u043e\u0440\u0443\u043c Xojo",
-    "es": "Foro de XOJO"
+    "es": "Foro de XOJO",
+    "ja": "Xojo\u30d5\u30a9\u30fc\u30e9\u30e0"
   },
   "Zurb Foundation": {
     "en": "Zurb Foundation",
     "de": "Zurb Foundation.",
     "fr": "Fondation de Zurb",
     "ru": "\u0424\u043e\u043d\u0434 Zurb",
-    "es": "Fundaci\u00f3n Zurb"
+    "es": "Fundaci\u00f3n Zurb",
+    "ja": "\u30ba\u30eb\u30d6\u8ca1\u56e3"
   },
   "Zurb Foundation Forum": {
     "en": "Zurb Foundation Forum",
     "de": "Zurb Foundation Forum.",
     "fr": "Zurb Foundation Forum",
     "ru": "\u0424\u043e\u043d\u0434 \u0424\u043e\u043d\u0434\u0430 Zurb",
-    "es": "Foro de la Fundaci\u00f3n Zurb"
+    "es": "Foro de la Fundaci\u00f3n Zurb",
+    "ja": "ZurbFoundation\u30d5\u30a9\u30fc\u30e9\u30e0"
   },
   "androidxref": {
     "en": "androidxref",
     "de": "Androidxref.",
     "fr": "androidxref",
     "ru": "androidxref.",
-    "es": "androidxref"
+    "es": "androidxref",
+    "ja": "androidxref"
   },
   "docs.GL for OpenGL 4": {
     "en": "docs.GL for OpenGL 4",
     "de": "docs.gl for OpenGL 4",
     "fr": "docs.gl pour OpenGL 4",
     "ru": "docs.gl \u0434\u043b\u044f OpenGL 4",
-    "es": "docs.gl para OpenGL 4"
+    "es": "docs.gl para OpenGL 4",
+    "ja": "OpenGL4\u306edocs.GL"
   },
   "docs.pylonproject.org": {
     "en": "docs.pylonproject.org",
@@ -87152,42 +87520,48 @@
     "de": "druphal.",
     "fr": "druple",
     "ru": "\u043f\u043e\u0434\u0440\u0430\u0437\u0434\u0435\u043b\u0435\u043d\u0438\u0435",
-    "es": "drupal"
+    "es": "drupal",
+    "ja": "drupal"
   },
   "drupalcode.org": {
     "en": "drupalcode.org",
     "de": "drupalcode.org.",
     "fr": "drupalcode.org",
     "ru": "drupalcode.org.",
-    "es": "drupalcode.org"
+    "es": "drupalcode.org",
+    "ja": "drupalcode.org"
   },
   "freedesktop.org": {
     "en": "freedesktop.org",
     "de": "freedesktop.org.",
     "fr": "lib\u00e9esktop.org",
     "ru": "Freedesktop.org.",
-    "es": "freeteesktop.org"
+    "es": "freeteesktop.org",
+    "ja": "freedesktop.org"
   },
   "gradle plugins": {
     "en": "gradle plugins",
     "de": "Gradle-Plugins.",
     "fr": "plugins de grade",
     "ru": "\u043f\u043b\u0430\u0433\u0438\u043d\u044b \u0413\u0440\u0435\u0439\u043b\u0438",
-    "es": "complementos de grados de grados"
+    "es": "complementos de grados de grados",
+    "ja": "gradle\u30d7\u30e9\u30b0\u30a4\u30f3"
   },
   "iOS Developer Library": {
     "en": "iOS Developer Library",
     "de": "iOS-Entwicklerbibliothek.",
     "fr": "biblioth\u00e8que de d\u00e9veloppeurs iOS",
     "ru": "\u0411\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u0430 iOS",
-    "es": "Biblioteca de desarrolladores de iOS"
+    "es": "Biblioteca de desarrolladores de iOS",
+    "ja": "iOS\u958b\u767a\u8005\u30e9\u30a4\u30d6\u30e9\u30ea"
   },
   "jMonkeyEngine WIki": {
     "en": "jMonkeyEngine WIki",
     "de": "Jmamkeyengine Wiki.",
     "fr": "JONKEYEGINE WIKI",
     "ru": "Jmmonkeeengine Wiki",
-    "es": "jmonkeyengine wiki"
+    "es": "jmonkeyengine wiki",
+    "ja": "jMonkeyEngine WIki"
   },
   "learn.getgrav.org": {
     "en": "learn.getgrav.org",
@@ -87201,35 +87575,40 @@
     "de": "libgit2 Dokumentation.",
     "fr": "Documentation Libgit2",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f libgit2.",
-    "es": "Documentaci\u00f3n libgit2"
+    "es": "Documentaci\u00f3n libgit2",
+    "ja": "libgit2\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "node.js docs": {
     "en": "node.js docs",
     "de": "node.js docs.",
     "fr": "n\u0153ud.js docs",
     "ru": "Node.js \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b",
-    "es": "nodo.js docs"
+    "es": "nodo.js docs",
+    "ja": "node.js\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "ohloh": {
     "en": "ohloh",
     "de": "ohloh.",
     "fr": "ohloh",
     "ru": "\u043e\u043f\u043e\u043b",
-    "es": "Ohloh"
+    "es": "Ohloh",
+    "ja": "\u30aa\u30fc\u30ed"
   },
   "schema.org": {
     "en": "schema.org",
     "de": "schema.org.",
     "fr": "schema.org",
     "ru": "stchema.org.",
-    "es": "Schema.org"
+    "es": "Schema.org",
+    "ja": "schema.org"
   },
   "searchco.de": {
     "en": "searchco.de",
     "de": "sucheco.de.",
     "fr": "Searcho.de",
     "ru": "searchco.de.",
-    "es": "Searchco.de"
+    "es": "Searchco.de",
+    "ja": "searchco.de"
   },
   "wxWidgets Documentation": {
     "en": "wxWidgets Documentation",
@@ -87257,14 +87636,16 @@
     "de": "Grottopress",
     "fr": "Grottopresse",
     "ru": "\u0413\u0440\u043e\u0442\u0442\u043e\u043f\u0440\u0435\u0441\u0441",
-    "es": "Grottopresca"
+    "es": "Grottopresca",
+    "ja": "GrottoPress"
   },
   "Pagely": {
     "en": "Pagely",
     "de": "Pagely.",
     "fr": "Convenable",
     "ru": "\u041f\u043e\u0442\u0440\u044f\u0441\u0430\u044e\u0449\u0435",
-    "es": "P\u00e1gicamente"
+    "es": "P\u00e1gicamente",
+    "ja": "Pagely"
   },
   "QueryPosts": {
     "en": "QueryPosts",
@@ -87278,7 +87659,8 @@
     "de": "WP-Plugin-Verzeichnis",
     "fr": "R\u00e9pertoire du plug-in WP",
     "ru": "\u041a\u0430\u0442\u0430\u043b\u043e\u0433 \u043f\u043b\u0430\u0433\u0438\u043d\u043e\u0432 WP",
-    "es": "Directorio de plugin WP"
+    "es": "Directorio de plugin WP",
+    "ja": "WP\u30d7\u30e9\u30b0\u30a4\u30f3\u30c7\u30a3\u30ec\u30af\u30c8\u30ea"
   },
   "WordPress Codex": {
     "en": "WordPress Codex",
@@ -87292,14 +87674,16 @@
     "de": "WordPress Steckexchange.",
     "fr": "Wordpress stackexchange",
     "ru": "WordPress Stackexchange",
-    "es": "WordPress StackExchange"
+    "es": "WordPress StackExchange",
+    "ja": "WordPress StackExchange"
   },
   "Babylon.js documentation": {
     "en": "Babylon.js documentation",
     "de": "Babylon.js-Dokumentation.",
     "fr": "Documentation Babylon.js",
     "ru": "Babylon.js \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n Babylon.js"
+    "es": "Documentaci\u00f3n Babylon.js",
+    "ja": "Babylon.js\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "&what;": {
     "en": "&what;",
@@ -87313,49 +87697,56 @@
     "de": "3dBrew.",
     "fr": "3DBrew",
     "ru": "3dBrew.",
-    "es": "Gbow"
+    "es": "Gbow",
+    "ja": "3DBrew"
   },
   "42 Intra": {
     "en": "42 Intra",
     "de": "42 intra.",
     "fr": "42 intra",
     "ru": "42 \u0432\u043d\u0443\u0442\u0440\u0438",
-    "es": "42 intra"
+    "es": "42 intra",
+    "ja": "42\u30a4\u30f3\u30c8\u30e9"
   },
   "ASCIIwwdc": {
     "en": "ASCIIwwdc",
     "de": "ASCIIWWDC.",
     "fr": "Asciiwwdc",
     "ru": "ASCIIWWDC.",
-    "es": "Asciiwwdc"
+    "es": "Asciiwwdc",
+    "ja": "ASCIIwwdc"
   },
   "AWS CloudFormation Documentation": {
     "en": "AWS CloudFormation Documentation",
     "de": "AWS Cloudformation-Dokumentation.",
     "fr": "Documentation AWS Cloudformation",
     "ru": "AWS Cloudbration \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n de CloudFormation AWS"
+    "es": "Documentaci\u00f3n de CloudFormation AWS",
+    "ja": "AWSCloudFormation\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Advanced Custom Fields (WordPress)": {
     "en": "Advanced Custom Fields (WordPress)",
     "de": "Erweiterte benutzerdefinierte Felder (WordPress)",
     "fr": "Champs personnalis\u00e9s avanc\u00e9s (WordPress)",
     "ru": "\u0420\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u043d\u044b\u0435 \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u0441\u043a\u0438\u0435 \u043f\u043e\u043b\u044f (WordPress)",
-    "es": "Campos personalizados avanzados (WordPress)"
+    "es": "Campos personalizados avanzados (WordPress)",
+    "ja": "\u9ad8\u5ea6\u306a\u30ab\u30b9\u30bf\u30e0\u30d5\u30a3\u30fc\u30eb\u30c9\uff08WordPress\uff09"
   },
   "Alfred": {
     "en": "Alfred",
     "de": "Alfred",
     "fr": "Alfred",
     "ru": "\u0410\u043b\u044c\u0444\u0440\u0435\u0434",
-    "es": "Alfredo"
+    "es": "Alfredo",
+    "ja": "\u30a2\u30eb\u30d5\u30ec\u30c3\u30c9"
   },
   "Algomation": {
     "en": "Algomation",
     "de": "Algomation.",
     "fr": "Algomation",
     "ru": "\u0410\u043b\u0433\u043e\u043c\u0430\u0446\u0438\u044f",
-    "es": "Algomiaci\u00f3n"
+    "es": "Algomiaci\u00f3n",
+    "ja": "\u30a2\u30eb\u30b4\u30ea\u30ba\u30e0"
   },
   "Algorithmia": {
     "en": "Algorithmia",
@@ -87369,63 +87760,72 @@
     "de": "Android Arsenal.",
     "fr": "Android Arsenal",
     "ru": "Android \u0430\u0440\u0441\u0435\u043d\u0430\u043b",
-    "es": "Arsenal Android"
+    "es": "Arsenal Android",
+    "ja": "Android\u30a2\u30fc\u30bb\u30ca\u30eb"
   },
   "Android Code Review (Gerrit)": {
     "en": "Android Code Review (Gerrit)",
     "de": "Android-Code-\u00dcberpr\u00fcfung (Gerrit)",
     "fr": "Avis de code Android (Gerrit)",
     "ru": "\u041e\u0431\u0437\u043e\u0440 \u043a\u043e\u0434\u0430 Android (Gerrit)",
-    "es": "Revisi\u00f3n de c\u00f3digo Android (Gerrit)"
+    "es": "Revisi\u00f3n de c\u00f3digo Android (Gerrit)",
+    "ja": "Android\u30b3\u30fc\u30c9\u30ec\u30d3\u30e5\u30fc\uff08Gerrit\uff09"
   },
   "Android Developers": {
     "en": "Android Developers",
     "de": "Android-Entwickler",
     "fr": "D\u00e9veloppeurs Android",
     "ru": "\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u0438 Android",
-    "es": "Desarrolladores de Android"
+    "es": "Desarrolladores de Android",
+    "ja": "Android\u958b\u767a\u8005"
   },
   "Angular 4 API": {
     "en": "Angular 4 API",
     "de": "Winkel 4 API.",
     "fr": "API angulaire 4",
     "ru": "\u0423\u0433\u043b\u043e\u0432\u0430\u044f 4 API",
-    "es": "API angular 4"
+    "es": "API angular 4",
+    "ja": "Angular 4 API"
   },
   "Apache Cordova Plugins Registry": {
     "en": "Apache Cordova Plugins Registry",
     "de": "Apache Cordova-Plugins-Registry",
     "fr": "Registre des plugins Apache Cordova",
     "ru": "\u0420\u0435\u0435\u0441\u0442\u0440 \u043f\u043b\u0430\u0433\u0438\u043d\u043e\u0432 Apache Cordova",
-    "es": "Registro de plugins de Apache C\u00f3rdova"
+    "es": "Registro de plugins de Apache C\u00f3rdova",
+    "ja": "ApacheCordova\u30d7\u30e9\u30b0\u30a4\u30f3\u30ec\u30b8\u30b9\u30c8\u30ea"
   },
   "App Engine Docs": {
     "en": "App Engine Docs",
     "de": "App Engine Docs.",
     "fr": "Documents de moteur d'application",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439 \u0434\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044f",
-    "es": "Motor de aplicaciones documentos"
+    "es": "Motor de aplicaciones documentos",
+    "ja": "AppEngine\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Apple Developer Center": {
     "en": "Apple Developer Center",
     "de": "Apple Developer Center.",
     "fr": "Centre de d\u00e9veloppeur Apple",
     "ru": "\u0426\u0435\u043d\u0442\u0440 \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u0430 Apple",
-    "es": "Centro de Apple Developer"
+    "es": "Centro de Apple Developer",
+    "ja": "\u30a2\u30c3\u30d7\u30eb\u30c7\u30d9\u30ed\u30c3\u30d1\u30bb\u30f3\u30bf\u30fc"
   },
   "Apple dev form": {
     "en": "Apple dev form",
     "de": "Apple Dev-Formular.",
     "fr": "Apple Dev formulaire",
     "ru": "Apple Dev Form",
-    "es": "Formulario de Apple dev"
+    "es": "Formulario de Apple dev",
+    "ja": "Apple\u958b\u767a\u30d5\u30a9\u30fc\u30e0"
   },
   "ArcGIS Resource Center": {
     "en": "ArcGIS Resource Center",
     "de": "Arcgis Resource Center.",
     "fr": "Centre de ressources ArcGIS",
     "ru": "ArcGIS Resource Center",
-    "es": "Centro de recursos de Arcgis"
+    "es": "Centro de recursos de Arcgis",
+    "ja": "ArcGIS Resource Center"
   },
   "Arduino Stack Exchange": {
     "en": "Arduino Stack Exchange",
@@ -87439,77 +87839,88 @@
     "de": "Armade-Projekt.",
     "fr": "Projet d'armadeus",
     "ru": "\u041f\u0440\u043e\u0435\u043a\u0442 Armadeus",
-    "es": "Proyecto de Armadeus"
+    "es": "Proyecto de Armadeus",
+    "ja": "\u30a2\u30eb\u30de\u30c7\u30a6\u30b9\u30d7\u30ed\u30b8\u30a7\u30af\u30c8"
   },
   "Atom Packages": {
     "en": "Atom Packages",
     "de": "Atompakete",
     "fr": "Paquets d'atome",
     "ru": "\u0410\u0442\u043e\u043c\u043d\u044b\u0435 \u043f\u0430\u043a\u0435\u0442\u044b",
-    "es": "Paquetes Atom"
+    "es": "Paquetes Atom",
+    "ja": "Atom\u30d1\u30c3\u30b1\u30fc\u30b8"
   },
   "AutoHotkey": {
     "en": "AutoHotkey",
     "de": "Autohotkey.",
     "fr": "Autohotkey",
     "ru": "Autohotkey.",
-    "es": "Autohotkey"
+    "es": "Autohotkey",
+    "ja": "AutoHotkey"
   },
   "AutoIt Forums": {
     "en": "AutoIt Forums",
     "de": "Autoit-Foren",
     "fr": "Forums AutoIt",
     "ru": "AutoIt Forums",
-    "es": "Foros de autoit"
+    "es": "Foros de autoit",
+    "ja": "AutoIt\u30d5\u30a9\u30fc\u30e9\u30e0"
   },
   "Autosar": {
     "en": "Autosar",
     "de": "Autosar.",
     "fr": "Autosar",
     "ru": "\u0410\u0432\u0442\u043e\u0437\u0430\u0440",
-    "es": "Autosar"
+    "es": "Autosar",
+    "ja": "Autosar"
   },
   "Awesome Ruby (LibHun)": {
     "en": "Awesome Ruby (LibHun)",
     "de": "Ehrf\u00fcrchtiger Rubin (Libbur)",
     "fr": "G\u00e9nial ruby (libhun)",
     "ru": "\u0423\u0434\u0438\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0440\u0443\u0431\u0438\u043d (Libhun)",
-    "es": "Awesome Ruby (Libhun)"
+    "es": "Awesome Ruby (Libhun)",
+    "ja": "\u7d20\u6674\u3089\u3057\u3044Ruby\uff08LibHun\uff09"
   },
   "Azure Quickstart Templates": {
     "en": "Azure Quickstart Templates",
     "de": "Azure Quickstart-Vorlagen",
     "fr": "Mod\u00e8les Azure QuickStart",
     "ru": "\u0428\u0430\u0431\u043b\u043e\u043d\u044b Azure QuickStart",
-    "es": "Plantillas Azure QuickStart"
+    "es": "Plantillas Azure QuickStart",
+    "ja": "Azure\u30af\u30a4\u30c3\u30af\u30b9\u30bf\u30fc\u30c8\u30c6\u30f3\u30d7\u30ec\u30fc\u30c8"
   },
   "Baeldung": {
     "en": "Baeldung",
     "de": "Baelelde",
     "fr": "Baeldung",
     "ru": "Baeldung",
-    "es": "Ba\u00e9lillo"
+    "es": "Ba\u00e9lillo",
+    "ja": "Baeldung"
   },
   "Bash": {
     "en": "Bash",
     "de": "Bash",
     "fr": "Frapper",
     "ru": "\u0411\u0430\u0448\u043c\u0430\u043a",
-    "es": "Intento"
+    "es": "Intento",
+    "ja": "\u30d0\u30c3\u30b7\u30e5"
   },
   "Best Current Practices": {
     "en": "Best Current Practices",
     "de": "Beste aktuelle Praktiken",
     "fr": "Meilleures pratiques actuelles",
     "ru": "\u041b\u0443\u0447\u0448\u0438\u0435 \u0442\u0435\u043a\u0443\u0449\u0438\u0435 \u043f\u0440\u0430\u043a\u0442\u0438\u043a\u0438",
-    "es": "Mejores pr\u00e1cticas actuales"
+    "es": "Mejores pr\u00e1cticas actuales",
+    "ja": "\u73fe\u5728\u306e\u30d9\u30b9\u30c8\u30d7\u30e9\u30af\u30c6\u30a3\u30b9"
   },
   "BitDegree Learn": {
     "en": "BitDegree Learn",
     "de": "Bitdegree lernen",
     "fr": "Bitdegree apprendre",
     "ru": "BitDegree Learn",
-    "es": "Bitdegree aprender"
+    "es": "Bitdegree aprender",
+    "ja": "BitDegree Learn"
   },
   "BitDegree Online Courses": {
     "en": "BitDegree Online Courses",
@@ -87523,35 +87934,40 @@
     "de": "Bit Bucket",
     "fr": "Bitbucket",
     "ru": "\u0411\u0438\u0442\u0431\u0443\u043a\u0435\u0442",
-    "es": "Bitbucket"
+    "es": "Bitbucket",
+    "ja": "Bitbucket"
   },
   "Bitbucket Code Search": {
     "en": "Bitbucket Code Search",
     "de": "Bitbucket-Code-Suche.",
     "fr": "Recherche de code BitBucket",
     "ru": "\u041f\u043e\u0438\u0441\u043a \u043a\u043e\u0434\u0430 BitBucket",
-    "es": "B\u00fasqueda de c\u00f3digos BITBUCKET"
+    "es": "B\u00fasqueda de c\u00f3digos BITBUCKET",
+    "ja": "Bitbucket\u30b3\u30fc\u30c9\u691c\u7d22"
   },
   "Bitbucket User": {
     "en": "Bitbucket User",
     "de": "Bitbucket-Benutzer",
     "fr": "Utilisateur bitbucket",
     "ru": "\u041f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c Bitbucket",
-    "es": "Usuario de bitbucket"
+    "es": "Usuario de bitbucket",
+    "ja": "Bitbucket\u30e6\u30fc\u30b6\u30fc"
   },
   "Bitcoin Wiki": {
     "en": "Bitcoin Wiki",
     "de": "Bitcoin Wiki.",
     "fr": "Bitcoin wiki",
     "ru": "Bitcoin Wiki",
-    "es": "Bitcoin wiki"
+    "es": "Bitcoin wiki",
+    "ja": "\u30d3\u30c3\u30c8\u30b3\u30a4\u30f3\u30a6\u30a3\u30ad"
   },
   "Blender API": {
     "en": "Blender API",
     "de": "Mixer-API.",
     "fr": "API de Blender",
     "ru": "Blender API.",
-    "es": "Api blender"
+    "es": "Api blender",
+    "ja": "Blender API"
   },
   "BlockCypher": {
     "en": "BlockCypher",
@@ -87565,49 +87981,56 @@
     "de": "Boto 3 docs.",
     "fr": "Boto 3 docs",
     "ru": "Boto 3 Docs",
-    "es": "Boto 3 docs"
+    "es": "Boto 3 docs",
+    "ja": "\u30dc\u30c83\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Bountysource": {
     "en": "Bountysource",
     "de": "BountySource.",
     "fr": "Bountysource",
     "ru": "Bountysource.",
-    "es": "Bountysource"
+    "es": "Bountysource",
+    "ja": "\u30d0\u30a6\u30f3\u30c6\u30a3\u30bd\u30fc\u30b9"
   },
   "Bugzilla": {
     "en": "Bugzilla",
     "de": "Bugzilla.",
     "fr": "Bugzilla",
     "ru": "Bugzilla",
-    "es": "Bugzilla"
+    "es": "Bugzilla",
+    "ja": "Bugzilla"
   },
   "C# MSDN": {
     "en": "C# MSDN",
     "de": "C # msdn.",
     "fr": "C # msdn",
     "ru": "C # MSDN",
-    "es": "C # msdn"
+    "es": "C # msdn",
+    "ja": "C\uff03MSDN"
   },
   "CMake documentation": {
     "en": "CMake documentation",
     "de": "CMAKE-Dokumentation.",
     "fr": "Documentation CLAKE",
     "ru": "CMAKE Documentation.",
-    "es": "Cmake Documentation"
+    "es": "Cmake Documentation",
+    "ja": "CMake\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Chmod Calculator": {
     "en": "Chmod Calculator",
     "de": "Chmod-Rechner",
     "fr": "Calculatrice Chmod",
     "ru": "Chmod Calculator.",
-    "es": "Calculadora de chmod"
+    "es": "Calculadora de chmod",
+    "ja": "Chmod\u96fb\u5353"
   },
   "Chromium bugs": {
     "en": "Chromium bugs",
     "de": "Chrom-Bugs.",
     "fr": "Chrome bugs",
     "ru": "\u0425\u0440\u043e\u043c\u043e\u0432\u044b\u0435 \u043e\u0448\u0438\u0431\u043a\u0438",
-    "es": "Insectos de cromo"
+    "es": "Insectos de cromo",
+    "ja": "\u30af\u30ed\u30e0\u306e\u30d0\u30b0"
   },
   "Cloogle": {
     "en": "Cloogle",
@@ -87621,35 +88044,40 @@
     "de": "Cockroachdb docs.",
     "fr": "Cockroachdb Docs",
     "ru": "Docs Docs",
-    "es": "Cockroachdb docs"
+    "es": "Cockroachdb docs",
+    "ja": "CockroachDB\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Code Project": {
     "en": "Code Project",
     "de": "Codeprojekt",
     "fr": "Projet de code",
     "ru": "\u041a\u043e\u0434 \u043f\u0440\u043e\u0435\u043a\u0442\u0430",
-    "es": "Proyecto de c\u00f3digo"
+    "es": "Proyecto de c\u00f3digo",
+    "ja": "\u30b3\u30fc\u30c9\u30d7\u30ed\u30b8\u30a7\u30af\u30c8"
   },
   "Code.gov": {
     "en": "Code.gov",
     "de": "Code.gov.",
     "fr": "Code.gov",
     "ru": "\u041a\u043e\u0434.\u0413\u043e\u0432",
-    "es": "Code.gov"
+    "es": "Code.gov",
+    "ja": "Code.gov"
   },
   "CodeBottle": {
     "en": "CodeBottle",
     "de": "Codebottle",
     "fr": "Codebottle",
     "ru": "CodeBottle.",
-    "es": "Codebottle"
+    "es": "Codebottle",
+    "ja": "CodeBottle"
   },
   "CodeSpeedy": {
     "en": "CodeSpeedy",
     "de": "CodePeedy.",
     "fr": "CodeSpeedy",
     "ru": "Codespeedy",
-    "es": "CODESPEXY"
+    "es": "CODESPEXY",
+    "ja": "CodeSpeedy"
   },
   "CodeWars": {
     "en": "CodeWars",
@@ -87663,35 +88091,40 @@
     "de": "Codebottle",
     "fr": "Codebottle",
     "ru": "CodeBottle.",
-    "es": "Codebottle"
+    "es": "Codebottle",
+    "ja": "\u30b3\u30fc\u30c9\u30dc\u30c8\u30eb"
   },
   "Codedgar": {
     "en": "Codedgar",
     "de": "Codedgar.",
     "fr": "Codedgar",
     "ru": "\u041a\u043e\u0434\u043e\u0432\u044b\u0439 \u043e\u0433\u043e\u0440\u0442",
-    "es": "Codido"
+    "es": "Codido",
+    "ja": "Codedgar"
   },
   "Codeforces": {
     "en": "Codeforces",
     "de": "CodeF\u00fcrces",
     "fr": "Codeforces",
     "ru": "\u041a\u043e\u0434\u043e\u0432\u044b",
-    "es": "CODEFORMAS"
+    "es": "CODEFORMAS",
+    "ja": "\u30b3\u30fc\u30c9\u30d5\u30a9\u30fc\u30b9"
   },
   "Common Weakness Enumeration": {
     "en": "Common Weakness Enumeration",
     "de": "Gemeinsame Schwachigkeitsz\u00e4hlung.",
     "fr": "Enum\u00e9ration de faiblesse commune",
     "ru": "\u041e\u0431\u0449\u0435\u0435 \u043f\u0435\u0440\u0435\u0447\u0438\u0441\u043b\u0435\u043d\u0438\u0435 \u0441\u043b\u0430\u0431\u043e\u0441\u0442\u0438",
-    "es": "Enumeraci\u00f3n de debilidad com\u00fan"
+    "es": "Enumeraci\u00f3n de debilidad com\u00fan",
+    "ja": "\u4e00\u822c\u7684\u306a\u5f31\u70b9\u306e\u5217\u6319"
   },
   "Computer Hope": {
     "en": "Computer Hope",
     "de": "Computer hoffe",
     "fr": "Espoir d'ordinateur",
     "ru": "\u041a\u043e\u043c\u043f\u044c\u044e\u0442\u0435\u0440\u043d\u0430\u044f \u043d\u0430\u0434\u0435\u0436\u0434\u0430",
-    "es": "Esperanza de la computadora"
+    "es": "Esperanza de la computadora",
+    "ja": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc\u306e\u5e0c\u671b"
   },
   "Creation Kit": {
     "en": "Creation Kit",
@@ -87705,63 +88138,72 @@
     "de": "Kreuz validiert",
     "fr": "Crois\u00e9 valid\u00e9",
     "ru": "\u041a\u0440\u0435\u0441\u0442 \u043f\u043e\u0434\u0442\u0432\u0435\u0440\u0436\u0434\u0435\u043d",
-    "es": "CROSS VALIDADO"
+    "es": "CROSS VALIDADO",
+    "ja": "\u76f8\u4e92\u691c\u8a3c\u6e08\u307f"
   },
   "Crypto Stack Exchange": {
     "en": "Crypto Stack Exchange",
     "de": "Crypto-Stapelaustausch",
     "fr": "Echange de pile de crypto",
     "ru": "\u041e\u0431\u043c\u0435\u043d Crypto Stack",
-    "es": "Intercambio de crypto stack"
+    "es": "Intercambio de crypto stack",
+    "ja": "\u6697\u53f7\u30b9\u30bf\u30c3\u30af\u4ea4\u63db"
   },
   "Cryptography.cc": {
     "en": "Cryptography.cc",
     "de": "Cryptography.cc.",
     "fr": "Cryptographie.cc",
     "ru": "Cryptography.cc.cc.cc",
-    "es": "Criptograf\u00eda.cc"
+    "es": "Criptograf\u00eda.cc",
+    "ja": "Cryptography.cc"
   },
   "Crystal Shards": {
     "en": "Crystal Shards",
     "de": "Kristallscheren",
     "fr": "\u00c9clats de cristal",
     "ru": "\u0425\u0440\u0443\u0441\u0442\u0430\u043b\u044c\u043d\u044b\u0435 \u043e\u0441\u043a\u043e\u043b\u043a\u0438",
-    "es": "Fragmentos de cristal"
+    "es": "Fragmentos de cristal",
+    "ja": "\u30af\u30ea\u30b9\u30bf\u30eb\u30b7\u30e3\u30fc\u30c9"
   },
   "Current ruby docs": {
     "en": "Current ruby docs",
     "de": "Aktuelle Ruby Docs.",
     "fr": "Documents rubis actuels",
     "ru": "\u0422\u0435\u043a\u0443\u0449\u0438\u0435 Ruby Docs.",
-    "es": "Docs actuales de rub\u00ed"
+    "es": "Docs actuales de rub\u00ed",
+    "ja": "\u73fe\u5728\u306e\u30eb\u30d3\u30fc\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Cycling '74": {
     "en": "Cycling '74",
     "de": "Radfahren '74.",
     "fr": "Cyclisme '74",
     "ru": "\u0412\u0435\u043b\u043e\u0441\u043f\u043e\u0440\u0442 '74.",
-    "es": "Ciclismo '74"
+    "es": "Ciclismo '74",
+    "ja": "\u30b5\u30a4\u30af\u30ea\u30f3\u30b0'74"
   },
   "Cygwin Package Search": {
     "en": "Cygwin Package Search",
     "de": "Cygwin-Paketsuche.",
     "fr": "Recherche de package Cygwin",
     "ru": "\u041f\u043e\u0438\u0441\u043a \u043f\u0430\u043a\u0435\u0442\u0430 Cygwin",
-    "es": "B\u00fasqueda de paquetes de cygwin"
+    "es": "B\u00fasqueda de paquetes de cygwin",
+    "ja": "Cygwin\u30d1\u30c3\u30b1\u30fc\u30b8\u691c\u7d22"
   },
   "DBA StackExchange": {
     "en": "DBA StackExchange",
     "de": "Dba stackexchange.",
     "fr": "Dba stackexchange",
     "ru": "DBA Stackexchange",
-    "es": "Dba stackexchange"
+    "es": "Dba stackexchange",
+    "ja": "DBA StackExchange"
   },
   "DaniWeb": {
     "en": "DaniWeb",
     "de": "DaniWeb.",
     "fr": "Daniweb",
     "ru": "Daniweb.",
-    "es": "Daniweb"
+    "es": "Daniweb",
+    "ja": "DaniWeb"
   },
   "Dart Packages": {
     "en": "Dart Packages",
@@ -87775,28 +88217,32 @@
     "de": "Dartlang-Pakete.",
     "fr": "Forfaits Dartlang",
     "ru": "\u041f\u0430\u043a\u0435\u0442\u044b Dartlang",
-    "es": "Paquetes Dartlang"
+    "es": "Paquetes Dartlang",
+    "ja": "Dartlang\u30d1\u30c3\u30b1\u30fc\u30b8"
   },
   "Debian Policy Manual": {
     "en": "Debian Policy Manual",
     "de": "Debian Policy Manual",
     "fr": "Manuel de politique de Debian",
     "ru": "\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e \u043f\u043e\u043b\u0438\u0442\u0438\u043a\u0435 Debian",
-    "es": "Manual de pol\u00edtica de Debian"
+    "es": "Manual de pol\u00edtica de Debian",
+    "ja": "Debian\u30dd\u30ea\u30b7\u30fc\u30de\u30cb\u30e5\u30a2\u30eb"
   },
   "Dev Hints": {
     "en": "Dev Hints",
     "de": "Dev Hinweise",
     "fr": "Deviences",
     "ru": "\u0421\u043e\u0433\u043b\u0430\u0441\u043d\u044b",
-    "es": "Deves"
+    "es": "Deves",
+    "ja": "\u958b\u767a\u306e\u30d2\u30f3\u30c8"
   },
   "Dev.Opera": {
     "en": "Dev.Opera",
     "de": "Dev.opera.",
     "fr": "Dev.opera",
     "ru": "Dev.opera.",
-    "es": "Dev.opera"
+    "es": "Dev.opera",
+    "ja": "Dev.Opera"
   },
   "DevDocs": {
     "en": "DevDocs",
@@ -87810,14 +88256,16 @@
     "de": "Devftube",
     "fr": "Devtube",
     "ru": "\u0414\u0435\u0432\u0430",
-    "es": "Devtube"
+    "es": "Devtube",
+    "ja": "DevTube"
   },
   "Developpez.com": {
     "en": "Developpez.com",
     "de": "Entwicklpez.com",
     "fr": "D\u00e9veloppepez.com",
     "ru": "Developpez.com.",
-    "es": "Desarrollopez.com"
+    "es": "Desarrollopez.com",
+    "ja": "Developpez.com"
   },
   "Django Docs": {
     "en": "Django Docs",
@@ -87831,14 +88279,16 @@
     "de": "Django-Ticket",
     "fr": "Billet Django",
     "ru": "\u0411\u0438\u043b\u0435\u0442 \u0414\u0436\u0430\u043d\u0433\u043e",
-    "es": "Boleto de django"
+    "es": "Boleto de django",
+    "ja": "Django\u30c1\u30b1\u30c3\u30c8"
   },
   "Docksal": {
     "en": "Docksal",
     "de": "Docksal.",
     "fr": "Docksal",
     "ru": "\u0414\u043e\u043a\u0438",
-    "es": "Docksal"
+    "es": "Docksal",
+    "ja": "Docksal"
   },
   "Docs.rs - Documentation for Rust packages": {
     "en": "Docs.rs - Documentation for Rust packages",
@@ -87852,14 +88302,16 @@
     "de": "Libelle BSD-Handbuchseiten",
     "fr": "Dragonfly BSD Pages manuelles",
     "ru": "Pragonfly BSD \u0420\u0443\u0447\u043d\u044b\u0435 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b",
-    "es": "Dragonfly BSD Manual Pages"
+    "es": "Dragonfly BSD Manual Pages",
+    "ja": "DragonFlyBSD\u306e\u30de\u30cb\u30e5\u30a2\u30eb\u30da\u30fc\u30b8"
   },
   "Dream In Code": {
     "en": "Dream In Code",
     "de": "Traum im Code",
     "fr": "R\u00eave en code",
     "ru": "\u041c\u0435\u0447\u0442\u0430 \u0432 \u043a\u043e\u0434\u0435",
-    "es": "Sue\u00f1o en c\u00f3digo"
+    "es": "Sue\u00f1o en c\u00f3digo",
+    "ja": "\u30c9\u30ea\u30fc\u30e0\u30a4\u30f3\u30b3\u30fc\u30c9"
   },
   "E-Maculation": {
     "en": "E-Maculation",
@@ -87880,21 +88332,24 @@
     "de": "Eclipse Wiki (Eclipsepedia)",
     "fr": "Eclipse Wiki (Eclipsepedia)",
     "ru": "Eclipse Wiki (Eclipsepedia)",
-    "es": "Eclipse Wiki (Eclipsepedia)"
+    "es": "Eclipse Wiki (Eclipsepedia)",
+    "ja": "Eclipse Wiki\uff08Eclipsepedia\uff09"
   },
   "El Baul del Programador": {
     "en": "El Baul del Programador",
     "de": "El B\u00fcle del programador",
     "fr": "El Baul del Programador",
     "ru": "El Baul del Programador",
-    "es": "El Baul del Programador"
+    "es": "El Baul del Programador",
+    "ja": "\u30a8\u30eb\u30d0\u30a6\u30eb\u30c7\u30eb\u30d7\u30ed\u30b0\u30e9\u30de\u30fc"
   },
   "Elasticsearch Documentation": {
     "en": "Elasticsearch Documentation",
     "de": "ElasticSearch-Dokumentation.",
     "fr": "Documentation Elasticsearch",
     "ru": "Elasticsearch \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n de elasticsearch"
+    "es": "Documentaci\u00f3n de elasticsearch",
+    "ja": "Elasticsearch\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Electron": {
     "en": "Electron",
@@ -87908,63 +88363,72 @@
     "de": "Emacs-Stapelaustausch",
     "fr": "Echange de pile emacs",
     "ru": "Emacs Stack Exchange.",
-    "es": "Emacs Stack Intercambio"
+    "es": "Emacs Stack Intercambio",
+    "ja": "Emacs Stack Exchange"
   },
   "EmacsWiki.org": {
     "en": "EmacsWiki.org",
     "de": "Emacswiki.org.",
     "fr": "Emacswiki.org",
     "ru": "Emacswiki.org.",
-    "es": "Emacswiki.org"
+    "es": "Emacswiki.org",
+    "ja": "EmacsWiki.org"
   },
   "ExpressionEngine User Guide": {
     "en": "ExpressionEngine User Guide",
     "de": "ExpressionEngine-Benutzerhandbuch.",
     "fr": "Guide de l'utilisateur expressengine",
     "ru": "\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044f ExpressionEngine",
-    "es": "Gu\u00eda del usuario de ExpressionEngine"
+    "es": "Gu\u00eda del usuario de ExpressionEngine",
+    "ja": "ExpressionEngine\u30e6\u30fc\u30b6\u30fc\u30ac\u30a4\u30c9"
   },
   "Fabasoft app.ducx Help": {
     "en": "Fabasoft app.ducx Help",
     "de": "Fabasoft App.ducx-Hilfe",
     "fr": "Fabasoft App.Ducx Aide",
     "ru": "Habasoft App.ducx Help",
-    "es": "FABASOFT APP.DUCX AYUDA"
+    "es": "FABASOFT APP.DUCX AYUDA",
+    "ja": "Fabasoftapp.ducx\u30d8\u30eb\u30d7"
   },
   "Fedora Packages Search": {
     "en": "Fedora Packages Search",
     "de": "Fedora-Pakete suchen.",
     "fr": "Fedora Packages Recherche",
     "ru": "\u041f\u043e\u0438\u0441\u043a \u043f\u0430\u043a\u0435\u0442\u043e\u0432 Fedora \u041f\u043e\u0438\u0441\u043a",
-    "es": "B\u00fasqueda de paquetes de Fedora"
+    "es": "B\u00fasqueda de paquetes de Fedora",
+    "ja": "Fedora\u30d1\u30c3\u30b1\u30fc\u30b8\u691c\u7d22"
   },
   "FileMaker Community": {
     "en": "FileMaker Community",
     "de": "FileMaker-Gemeinschaft",
     "fr": "Communaut\u00e9 de filemaker",
     "ru": "\u0421\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u043e Filemaker",
-    "es": "Comunidad de FileMaker"
+    "es": "Comunidad de FileMaker",
+    "ja": "FileMaker\u30b3\u30df\u30e5\u30cb\u30c6\u30a3"
   },
   "FreeBSD Cross Reference": {
     "en": "FreeBSD Cross Reference",
     "de": "FreeBSD Cross Referenz.",
     "fr": "FreeBSD Cross R\u00e9f\u00e9rence",
     "ru": "Creebsd Cross Revouress.",
-    "es": "FreeBSD Referencia cruzada"
+    "es": "FreeBSD Referencia cruzada",
+    "ja": "FreeBSD\u30af\u30ed\u30b9\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9"
   },
   "Frink Web Interface": {
     "en": "Frink Web Interface",
     "de": "Frink-Webschnittstelle",
     "fr": "Interface Web FIKK",
     "ru": "\u0424\u0440\u0438\u0440\u043a\u0441\u043a\u0438\u0439 \u0432\u0435\u0431-\u0438\u043d\u0442\u0435\u0440\u0444\u0435\u0439\u0441",
-    "es": "Interfaz web de FRINK"
+    "es": "Interfaz web de FRINK",
+    "ja": "FrinkWeb\u30a4\u30f3\u30bf\u30fc\u30d5\u30a7\u30a4\u30b9"
   },
   "GDB Debugger": {
     "en": "GDB Debugger",
     "de": "GDB-Debugger",
     "fr": "D\u00e9bogueur de gdb",
     "ru": "GDB \u043e\u0442\u043b\u0430\u0434\u0447\u0438\u043a",
-    "es": "Depurador de GDB"
+    "es": "Depurador de GDB",
+    "ja": "GDB\u30c7\u30d0\u30c3\u30ac\u30fc"
   },
   "GNOME Wiki": {
     "en": "GNOME Wiki",
@@ -87978,91 +88442,104 @@
     "de": "GameDev Steckexchange.",
     "fr": "Gamedev stackexchange",
     "ru": "\u0413\u0435\u0439\u043c\u0435\u0435\u0432\u0430 Stackexchange.",
-    "es": "Gamedev StackExchange"
+    "es": "Gamedev StackExchange",
+    "ja": "Gamedev Stackexchange"
   },
   "GeekTimes": {
     "en": "GeekTimes",
     "de": "Geektime.",
     "fr": "Geektimes",
     "ru": "Jektimes.",
-    "es": "Geektimes"
+    "es": "Geektimes",
+    "ja": "GeekTimes"
   },
   "Geekbench Browser": {
     "en": "Geekbench Browser",
     "de": "Geekbench-Browser",
     "fr": "Navigateur Geekbench",
     "ru": "\u0411\u0440\u0430\u0443\u0437\u0435\u0440 Geekbench",
-    "es": "Navegador Geekbench"
+    "es": "Navegador Geekbench",
+    "ja": "Geekbench\u30d6\u30e9\u30a6\u30b6"
   },
   "Gentoo's Bugzilla": {
     "en": "Gentoo's Bugzilla",
     "de": "Gentoo's Bugzilla.",
     "fr": "Bugzilla de Gentoo",
     "ru": "Gentoo's Bugzilla",
-    "es": "Bugzilla de Gentoo"
+    "es": "Bugzilla de Gentoo",
+    "ja": "Gentoo\u306eBugzilla"
   },
   "Git": {
     "en": "Git",
     "de": "Git.",
     "fr": "Git",
     "ru": "\u041f\u043e\u0440\u0442\u0438\u0442\u044c",
-    "es": "Git"
+    "es": "Git",
+    "ja": "\u30ae\u30c3\u30c8"
   },
   "Git Documentation": {
     "en": "Git Documentation",
     "de": "Git-Dokumentation.",
     "fr": "Documentation GIT",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f Git.",
-    "es": "Documentaci\u00f3n GIT"
+    "es": "Documentaci\u00f3n GIT",
+    "ja": "Git\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "GitHub Code": {
     "en": "GitHub Code",
     "de": "Github-Code",
     "fr": "Code GitHub",
     "ru": "\u041a\u043e\u0434 github",
-    "es": "C\u00f3digo GitHub"
+    "es": "C\u00f3digo GitHub",
+    "ja": "GitHub\u30b3\u30fc\u30c9"
   },
   "GitHub Help": {
     "en": "GitHub Help",
     "de": "Github-Hilfe",
     "fr": "GitHub aide",
     "ru": "HitHub Help",
-    "es": "Ayuda de GitHub"
+    "es": "Ayuda de GitHub",
+    "ja": "GitHub\u30d8\u30eb\u30d7"
   },
   "GitHub Repo": {
     "en": "GitHub Repo",
     "de": "Github Repo.",
     "fr": "Github repo",
     "ru": "Github repo.",
-    "es": "Github repo"
+    "es": "Github repo",
+    "ja": "GitHub\u30ea\u30dd\u30b8\u30c8\u30ea"
   },
   "GitHub Topic": {
     "en": "GitHub Topic",
     "de": "Github-Thema.",
     "fr": "Sujet GitHub",
     "ru": "\u0422\u0435\u043c\u0430 GitHub",
-    "es": "Tema de GitHub"
+    "es": "Tema de GitHub",
+    "ja": "GitHub\u30c8\u30d4\u30c3\u30af"
   },
   "Github": {
     "en": "Github",
     "de": "Github",
     "fr": "Github",
     "ru": "\u0413\u0430\u0434\u043e\u0441\u0442\u044c",
-    "es": "Github"
+    "es": "Github",
+    "ja": "Github"
   },
   "Github (code search)": {
     "en": "Github (code search)",
     "de": "Github (Code-Suche)",
     "fr": "Github (recherche de code)",
     "ru": "Github (\u043f\u043e\u0438\u0441\u043a \u043a\u043e\u0434\u0430)",
-    "es": "Github (b\u00fasqueda de c\u00f3digo)"
+    "es": "Github (b\u00fasqueda de c\u00f3digo)",
+    "ja": "Github\uff08\u30b3\u30fc\u30c9\u691c\u7d22\uff09"
   },
   "Github - Trending": {
     "en": "Github - Trending",
     "de": "Github - Trending.",
     "fr": "GitHub - tendance",
     "ru": "GitHub - Trending",
-    "es": "Github - tendencias"
+    "es": "Github - tendencias",
+    "ja": "Github-\u30c8\u30ec\u30f3\u30c9"
   },
   "Github Gists": {
     "en": "Github Gists",
@@ -88076,49 +88553,56 @@
     "de": "Github Sterne",
     "fr": "Stars Github",
     "ru": "\u0413\u0438\u0442\u0443\u0431 \u0437\u0432\u0435\u0437\u0434\u044b",
-    "es": "Github stars"
+    "es": "Github stars",
+    "ja": "Github\u30b9\u30bf\u30fc"
   },
   "Github User": {
     "en": "Github User",
     "de": "Github-Benutzer",
     "fr": "Githanub",
     "ru": "Jithub user.",
-    "es": "Usuario de GitHub"
+    "es": "Usuario de GitHub",
+    "ja": "Github\u30e6\u30fc\u30b6\u30fc"
   },
   "Github User Pages": {
     "en": "Github User Pages",
     "de": "Github-Benutzerseiten",
     "fr": "Pages d'utilisateur GitHub",
     "ru": "GitHub \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u0441\u043a\u0438\u0435 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u044b",
-    "es": "GitHub P\u00e1ginas de usuario"
+    "es": "GitHub P\u00e1ginas de usuario",
+    "ja": "Github\u30e6\u30fc\u30b6\u30fc\u30da\u30fc\u30b8"
   },
   "Gitote": {
     "en": "Gitote",
     "de": "Gitote",
     "fr": "Gitotte",
     "ru": "\u0413\u0438\u0442\u043e\u0442\u0430",
-    "es": "Gitoteo"
+    "es": "Gitoteo",
+    "ja": "\u30ae\u30c8\u30c6"
   },
   "Glitch": {
     "en": "Glitch",
     "de": "Panne",
     "fr": "Probl\u00e8me",
     "ru": "\u0421\u0431\u043e\u0439",
-    "es": "Falla"
+    "es": "Falla",
+    "ja": "\u30b0\u30ea\u30c3\u30c1"
   },
   "Godot Docs": {
     "en": "Godot Docs",
     "de": "Godot Docs.",
     "fr": "Documents Godot",
     "ru": "Godot Docs.",
-    "es": "DOC DE GODOT"
+    "es": "DOC DE GODOT",
+    "ja": "Godot Docs"
   },
   "Godot Engine Documentation": {
     "en": "Godot Engine Documentation",
     "de": "Godot Engine-Dokumentation.",
     "fr": "Documentation du moteur Godot",
     "ru": "\u0413\u0435\u0434\u0438\u0442 \u0414\u0432\u0438\u0433\u0430\u0442\u0435\u043b\u044c \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n del motor de la godot"
+    "es": "Documentaci\u00f3n del motor de la godot",
+    "ja": "Godot\u30a8\u30f3\u30b8\u30f3\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Google Cloud Platform": {
     "en": "Google Cloud Platform",
@@ -88132,28 +88616,32 @@
     "de": "Google \u00fcber Stackoverflow.",
     "fr": "Google sur Stackoverflow",
     "ru": "Google \u043d\u0430\u0434 Stackoverflow",
-    "es": "Google sobre StackOverflow"
+    "es": "Google sobre StackOverflow",
+    "ja": "StackOverflow\u4e0a\u306eGoogle"
   },
   "Gradle": {
     "en": "Gradle",
     "de": "Gradle",
     "fr": "Gradil",
     "ru": "\u0420\u043e\u0441\u0446\u0435\u043b",
-    "es": "Grandilizarse"
+    "es": "Grandilizarse",
+    "ja": "Gradle"
   },
   "Grafikart": {
     "en": "Grafikart",
     "de": "Grafikart",
     "fr": "Grafikart",
     "ru": "\u0413\u0440\u0430\u0444\u0435\u0439\u043a\u0430\u0440\u0442",
-    "es": "Grafikart"
+    "es": "Grafikart",
+    "ja": "\u30b0\u30e9\u30d5\u30a3\u30ab\u30fc\u30c8"
   },
   "Groovy Documentation": {
     "en": "Groovy Documentation",
     "de": "Groovige Dokumentation",
     "fr": "Documentation groovy",
     "ru": "Groovy \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n Groovy"
+    "es": "Documentaci\u00f3n Groovy",
+    "ja": "Groovy\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "HTML Dog": {
     "en": "HTML Dog",
@@ -88167,7 +88655,8 @@
     "de": "HTTP-Statuscodes.",
     "fr": "Codes d'\u00e9tat HTTP",
     "ru": "\u041a\u043e\u0434\u044b \u0441\u043e\u0441\u0442\u043e\u044f\u043d\u0438\u044f HTTP.",
-    "es": "C\u00f3digos de estado HTTP"
+    "es": "C\u00f3digos de estado HTTP",
+    "ja": "HTTP\u30b9\u30c6\u30fc\u30bf\u30b9\u30b3\u30fc\u30c9"
   },
   "Hangzhou Dianzi University Online Judge": {
     "en": "Hangzhou Dianzi University Online Judge",
@@ -88181,42 +88670,48 @@
     "de": "Haxelib.",
     "fr": "Haxelib",
     "ru": "Haxelib.",
-    "es": "Haxelib"
+    "es": "Haxelib",
+    "ja": "Haxelib"
   },
   "Herber": {
     "en": "Herber",
     "de": "Herber",
     "fr": "Herber",
     "ru": "\u0420\u0430\u0432\u043d\u0438\u043d",
-    "es": "Herbar"
+    "es": "Herbar",
+    "ja": "\u30cf\u30fc\u30d0\u30fc"
   },
   "Heroku Devcenter": {
     "en": "Heroku Devcenter",
     "de": "Heroku Devcenter.",
     "fr": "Heroku Devcenter",
     "ru": "Heroku Devcenter",
-    "es": "Heroku devcenter"
+    "es": "Heroku devcenter",
+    "ja": "Heroku Devcenter"
   },
   "Houdini Documentation": {
     "en": "Houdini Documentation",
     "de": "Houdini-Dokumentation.",
     "fr": "Documentation Houdini",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f Houdini",
-    "es": "Documentaci\u00f3n de Houdini"
+    "es": "Documentaci\u00f3n de Houdini",
+    "ja": "Houdini\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "IBM Knowledge Center": {
     "en": "IBM Knowledge Center",
     "de": "IBM Knowledge Center",
     "fr": "Centre de connaissances IBM",
     "ru": "IBM \u0426\u0435\u043d\u0442\u0440 \u0437\u043d\u0430\u043d\u0438\u0439",
-    "es": "IBM Knowledge Center"
+    "es": "IBM Knowledge Center",
+    "ja": "IBM\u30ca\u30ec\u30c3\u30b8\u30bb\u30f3\u30bf\u30fc"
   },
   "IETF RFC": {
     "en": "IETF RFC",
     "de": "Ietf rfc.",
     "fr": "IETF RFC",
     "ru": "IETF RFC",
-    "es": "IETF RFC"
+    "es": "IETF RFC",
+    "ja": "IETF RFC"
   },
   "IP Lookup": {
     "en": "IP Lookup",
@@ -88230,105 +88725,120 @@
     "de": "ImageLayers.",
     "fr": "ImageLayers",
     "ru": "ImageElayers.",
-    "es": "Imagelas"
+    "es": "Imagelas",
+    "ja": "ImageLayers"
   },
   "InfoQ": {
     "en": "InfoQ",
     "de": "InfoQ",
     "fr": "InfoQ",
     "ru": "Unfq.",
-    "es": "Infoq"
+    "es": "Infoq",
+    "ja": "InfoQ"
   },
   "Intel Intrinsics Guide": {
     "en": "Intel Intrinsics Guide",
     "de": "Intel Intrinsics Guide.",
     "fr": "Guide Intel intrinsics",
     "ru": "Intel IntiSics Guide",
-    "es": "Gu\u00eda Intel Intrinsics"
+    "es": "Gu\u00eda Intel Intrinsics",
+    "ja": "\u30a4\u30f3\u30c6\u30eb\u7d44\u307f\u8fbc\u307f\u95a2\u6570\u30ac\u30a4\u30c9"
   },
   "Juejin": {
     "en": "Juejin",
     "de": "Juejin",
     "fr": "Juejin",
     "ru": "Juejin.",
-    "es": "Juejin"
+    "es": "Juejin",
+    "ja": "\u30b8\u30e5\u30a8\u30b8\u30f3"
   },
   "KDE Bugs": {
     "en": "KDE Bugs",
     "de": "Kde Bugs.",
     "fr": "Kde bugs",
     "ru": "KDE Bugs",
-    "es": "KDE BURS"
+    "es": "KDE BURS",
+    "ja": "KDE\u306e\u30d0\u30b0"
   },
   "KDE Community Wiki": {
     "en": "KDE Community Wiki",
     "de": "KDE Community Wiki.",
     "fr": "KDE Community Wiki",
     "ru": "\u041a\u0434\u0435 \u0441\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u0430 Wiki",
-    "es": "Wiki de la comunidad de KDE"
+    "es": "Wiki de la comunidad de KDE",
+    "ja": "KDE\u30b3\u30df\u30e5\u30cb\u30c6\u30a3Wiki"
   },
   "KDE Git Projects": {
     "en": "KDE Git Projects",
     "de": "KDE GIT-Projekte.",
     "fr": "KDE GIT Projets",
     "ru": "KDE Git Projects.",
-    "es": "Proyectos de KDE GIT"
+    "es": "Proyectos de KDE GIT",
+    "ja": "KDEGit\u30d7\u30ed\u30b8\u30a7\u30af\u30c8"
   },
   "KDE TechBase": {
     "en": "KDE TechBase",
     "de": "Kde techbase.",
     "fr": "Kde techbase",
     "ru": "KDE TechBase",
-    "es": "KDE TECHBASE"
+    "es": "KDE TECHBASE",
+    "ja": "KDE TechBase"
   },
   "Kamailio": {
     "en": "Kamailio",
     "de": "Kamailio.",
     "fr": "Kamailio",
     "ru": "Kamailio.",
-    "es": "Kamailio"
+    "es": "Kamailio",
+    "ja": "\u30ab\u30de\u30a4\u30ea\u30aa"
   },
   "Koha Bugzilla": {
     "en": "Koha Bugzilla",
     "de": "Koha Bugzilla.",
     "fr": "Koha bugzilla",
     "ru": "Koha Bugzilla",
-    "es": "Koha bugzilla"
+    "es": "Koha bugzilla",
+    "ja": "\u30b3\u30cf\u30d6\u30b8\u30e9"
   },
   "LLVM Compiler Infrastructure": {
     "en": "LLVM Compiler Infrastructure",
     "de": "LLVM-Compiler-Infrastruktur.",
     "fr": "Infrastructure de compilateur LLVM",
     "ru": "\u041e\u041e\u041e \u041a\u043e\u043c\u043f\u0438\u043b\u044f\u0442\u043e\u0440 \u0438\u043d\u0444\u0440\u0430\u0441\u0442\u0440\u0443\u043a\u0442\u0443\u0440\u044b",
-    "es": "Infraestructura del compilador LLVM"
+    "es": "Infraestructura del compilador LLVM",
+    "ja": "LLVM\u30b3\u30f3\u30d1\u30a4\u30e9\u30a4\u30f3\u30d5\u30e9\u30b9\u30c8\u30e9\u30af\u30c1\u30e3"
   },
   "Launchpad": {
     "en": "Launchpad",
     "de": "Launchpad",
     "fr": "Rampe de lancement",
     "ru": "\u0417\u0430\u043f\u0443\u0441\u043a\u043d\u0430\u044f \u043f\u0430\u043d\u0435\u043b\u044c",
-    "es": "Plataforma de lanzamiento"
+    "es": "Plataforma de lanzamiento",
+    "ja": "\u767a\u5c04\u53f0"
   },
   "Launchpad Bugs": {
     "en": "Launchpad Bugs",
     "de": "LaunchPad-Fehler.",
     "fr": "Launchpad Bugs",
     "ru": "BearchPad Bugs",
-    "es": "Bichos de launchpad"
+    "es": "Bichos de launchpad",
+    "ja": "Launchpad\u306e\u30d0\u30b0"
   },
   "Learn X in Y Minutes": {
     "en": "Learn X in Y Minutes",
     "de": "Lerne x in y Minuten",
     "fr": "Apprendre x en y des minutes",
     "ru": "\u0423\u0437\u043d\u0430\u0442\u044c \u0445 \u0432 \u043c\u0438\u043d\u0443\u0442\u0430\u0445",
-    "es": "Aprende x en y minutos"
+    "es": "Aprende x en y minutos",
+    "ja": "Y\u5206\u3067X\u3092\u5b66\u3076"
   },
   "Levi D. Smith Games": {
     "en": "Levi D. Smith Games",
     "de": "Levi D. Smith-Spiele",
     "fr": "Levi D. Smith Games",
     "ru": "\u041b\u0435\u0432\u0438 \u0414. \u0421\u043c\u0438\u0442 \u0438\u0433\u0440\u044b",
-    "es": "Levi D. Smith Games"
+    "es": "Levi D. Smith Games",
+    "ja": "\u30ec\u30f4\u30a3D.\u30b9\u30df\u30b9\u30b2\u30fc\u30e0"
   },
   "LibreOffice Help": {
     "en": "LibreOffice Help",
@@ -88342,28 +88852,32 @@
     "de": "LibreOffice-Quellcode.",
     "fr": "Code source de libreoffice",
     "ru": "LibreOffice \u0418\u0441\u0445\u043e\u0434\u043d\u044b\u0439 \u043a\u043e\u0434",
-    "es": "C\u00f3digo fuente de LibreOffice"
+    "es": "C\u00f3digo fuente de LibreOffice",
+    "ja": "LibreOffice\u30bd\u30fc\u30b9\u30b3\u30fc\u30c9"
   },
   "Libuv API Docs": {
     "en": "Libuv API Docs",
     "de": "Libuv api docs.",
     "fr": "Libuv API Docs",
     "ru": "Libuv API \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b",
-    "es": "LIBUV API DOCS"
+    "es": "LIBUV API DOCS",
+    "ja": "LibuvAPI\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Linux Cross Reference": {
     "en": "Linux Cross Reference",
     "de": "Linux-Querverweis",
     "fr": "R\u00e9f\u00e9rence transversale de Linux",
     "ru": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0430\u044f \u0441\u0441\u044b\u043b\u043a\u0430 Linux",
-    "es": "Referencia cruzada de Linux"
+    "es": "Referencia cruzada de Linux",
+    "ja": "Linux\u30af\u30ed\u30b9\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9"
   },
   "Linux.die.net man pages": {
     "en": "Linux.die.net man pages",
     "de": "Linux.die.net Man Pages.",
     "fr": "Linux.die.net Man pages",
     "ru": "Linux.die.net Man Pages",
-    "es": "P\u00e1ginas de hombre linux.die.net"
+    "es": "P\u00e1ginas de hombre linux.die.net",
+    "ja": "Linux.die.net\u306e\u30de\u30cb\u30e5\u30a2\u30eb\u30da\u30fc\u30b8"
   },
   "Lisp Docs": {
     "en": "Lisp Docs",
@@ -88377,7 +88891,8 @@
     "de": "Luna (avr)",
     "fr": "Luna (AVR)",
     "ru": "\u041b\u0443\u043d\u0430 (AVR)",
-    "es": "Luna (avr)"
+    "es": "Luna (avr)",
+    "ja": "\u30eb\u30ca\uff08AVR\uff09"
   },
   "Lynda.com": {
     "en": "Lynda.com",
@@ -88391,42 +88906,48 @@
     "de": "Marc Linux Kernel.",
     "fr": "Noyau Marc Linux",
     "ru": "Marc Linux Kernel.",
-    "es": "Kernel marc linux"
+    "es": "Kernel marc linux",
+    "ja": "MARCLinux\u30ab\u30fc\u30cd\u30eb"
   },
   "MS Malware Encyclopedia": {
     "en": "MS Malware Encyclopedia",
     "de": "MS Malware-Enzyklop\u00e4die.",
     "fr": "MS Malware Encyclop\u00e9die",
     "ru": "MS Salware Encyclopedia",
-    "es": "MS Malware Encyclopedia"
+    "es": "MS Malware Encyclopedia",
+    "ja": "MS\u30de\u30eb\u30a6\u30a7\u30a2\u767e\u79d1\u4e8b\u5178"
   },
   "Mariadb": {
     "en": "Mariadb",
     "de": "Mariadb",
     "fr": "Mariadb",
     "ru": "\u041c\u0430\u0440\u0438\u0430\u0434\u0431",
-    "es": "Mariad"
+    "es": "Mariad",
+    "ja": "Mariadb"
   },
   "MathJax": {
     "en": "MathJax",
     "de": "Mathjax.",
     "fr": "Mathjax",
     "ru": "Mathjax.",
-    "es": "Mathjax"
+    "es": "Mathjax",
+    "ja": "MathJax"
   },
   "Mecurial": {
     "en": "Mecurial",
     "de": "Mercurial",
     "ru": "Mercurial",
     "es": "Mercurial",
-    "fr": "M\u00e9curial"
+    "fr": "M\u00e9curial",
+    "ja": "Mecurial"
   },
   "Meta Programming Problems & Code Golf": {
     "en": "Meta Programming Problems & Code Golf",
     "de": "META-Programmierprobleme & Code Golf",
     "fr": "Probl\u00e8mes de programmation de Meta & Code Golf",
     "ru": "\u041f\u0440\u043e\u0431\u043b\u0435\u043c\u044b Meta Programming & Code Golf",
-    "es": "META PROBLEMAS DE PROGRAMACI\u00d3N Y C\u00d3DIGO GOLF"
+    "es": "META PROBLEMAS DE PROGRAMACI\u00d3N Y C\u00d3DIGO GOLF",
+    "ja": "\u30e1\u30bf\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\u306e\u554f\u984c\u3068\u30b3\u30fc\u30c9\u30b4\u30eb\u30d5"
   },
   "Microsoft TechNet SQL Server": {
     "en": "Microsoft TechNet SQL Server",
@@ -88440,28 +88961,32 @@
     "de": "MIME-Typen-Datenbank.",
     "fr": "Base de donn\u00e9es Types MIME",
     "ru": "\u0411\u0430\u0437\u0430 \u0434\u0430\u043d\u043d\u044b\u0445 \u0442\u0438\u043f\u043e\u0432 MIME.",
-    "es": "Base de datos de tipos MIME"
+    "es": "Base de datos de tipos MIME",
+    "ja": "MIME\u30bf\u30a4\u30d7\u30c7\u30fc\u30bf\u30d9\u30fc\u30b9"
   },
   "MirBSD Manpages": {
     "en": "MirBSD Manpages",
     "de": "Mirbsd Manpages.",
     "fr": "MARBSD MANGPAGES",
     "ru": "MIRBSD MANPAGES.",
-    "es": "MAPAJES MIRBSD"
+    "es": "MAPAJES MIRBSD",
+    "ja": "MirBSD\u306e\u30de\u30f3\u30da\u30fc\u30b8"
   },
   "ModDota": {
     "en": "ModDota",
     "de": "Moddota",
     "fr": "Moddota",
     "ru": "\u041c\u043e\u0434\u0434\u043e\u0442\u0430",
-    "es": "Moddota"
+    "es": "Moddota",
+    "ja": "ModDota"
   },
   "Mothereff.in Byte Counter": {
     "en": "Mothereff.in Byte Counter",
     "de": "MOTHEREFF.IN BYTE COUNT.",
     "fr": "Mothereff.in Counter Octet",
     "ru": "Commoneff.in Byte Counter",
-    "es": "Madreff.in bytes contador"
+    "es": "Madreff.in bytes contador",
+    "ja": "Mothereff.in\u30d0\u30a4\u30c8\u30ab\u30a6\u30f3\u30bf\u30fc"
   },
   "Mozilla DXR": {
     "en": "Mozilla DXR",
@@ -88475,14 +89000,16 @@
     "de": "Mozilla DXR-Code-Suche",
     "fr": "MOZILLA DXR Code Recherche",
     "ru": "Mozilla DXR \u043a\u043e\u0434 \u043f\u043e\u0438\u0441\u043a\u0430",
-    "es": "B\u00fasqueda de c\u00f3digos Mozilla DXR"
+    "es": "B\u00fasqueda de c\u00f3digos Mozilla DXR",
+    "ja": "MozillaDXR\u30b3\u30fc\u30c9\u691c\u7d22"
   },
   "Mozilla Searchfox": {
     "en": "Mozilla Searchfox",
     "de": "Mozilla Searchfox.",
     "fr": "Mozilla Searchfox",
     "ru": "Mozilla Searchfox.",
-    "es": "Mozilla searchfox"
+    "es": "Mozilla searchfox",
+    "ja": "Mozilla Searchfox"
   },
   "NESDev Wiki": {
     "en": "NESDev Wiki",
@@ -88496,63 +89023,72 @@
     "de": "NPM-Suche.",
     "fr": "NPM Recherche",
     "ru": "\u041f\u043e\u0438\u0441\u043a NPM",
-    "es": "B\u00fasqueda de NPM"
+    "es": "B\u00fasqueda de NPM",
+    "ja": "NPM\u691c\u7d22"
   },
   "Neo4j": {
     "en": "Neo4j",
     "de": "Neo4j.",
     "fr": "Neo4j",
     "ru": "Neo4J.",
-    "es": "Neo4j"
+    "es": "Neo4j",
+    "ja": "Neo4j"
   },
   "Netlib": {
     "en": "Netlib",
     "de": "Netlib",
     "fr": "Netlib",
     "ru": "Netlib",
-    "es": "Netlib"
+    "es": "Netlib",
+    "ja": "Netlib"
   },
   "Nettuts+": {
     "en": "Nettuts+",
     "de": "Nettuts +.",
     "fr": "Nettus +",
     "ru": "Nettutes +",
-    "es": "Nettuts +"
+    "es": "Nettuts +",
+    "ja": "Nettuts +"
   },
   "Null Byte": {
     "en": "Null Byte",
     "de": "Null Byte.",
     "fr": "Nul byte",
     "ru": "Null byte.",
-    "es": "Byte nulo"
+    "es": "Byte nulo",
+    "ja": "\u30cc\u30eb\u30d0\u30a4\u30c8"
   },
   "O'Reilly": {
     "en": "O'Reilly",
     "de": "O'Reilly.",
     "fr": "O'Reilly",
     "ru": "O'Reilly",
-    "es": "O'Reilly"
+    "es": "O'Reilly",
+    "ja": "\u30aa\u30e9\u30a4\u30ea\u30fc"
   },
   "OCamlOscope": {
     "en": "OCamlOscope",
     "de": "Okamloskop.",
     "fr": "Ocamloscope",
     "ru": "\u041e\u043a\u0430\u043c\u043b\u043e\u0441\u043a\u043e\u043f",
-    "es": "Ocamlooscopio"
+    "es": "Ocamlooscopio",
+    "ja": "OCamlOscope"
   },
   "OSDN": {
     "en": "OSDN",
     "de": "Osdn",
     "fr": "OSDN",
     "ru": "\u041e\u0421\u0414\u041d",
-    "es": "OSDN"
+    "es": "OSDN",
+    "ja": "\uff01"
   },
   "OSDev Wiki": {
     "en": "OSDev Wiki",
     "de": "Osdev Wiki.",
     "fr": "Wiki osdev",
     "ru": "\u041e\u0441\u0434\u0435\u0432 \u0412\u0438\u043a\u0438",
-    "es": "Osdev Wiki"
+    "es": "Osdev Wiki",
+    "ja": "OSDev Wiki"
   },
   "OSMC": {
     "en": "OSMC",
@@ -88566,14 +89102,16 @@
     "de": "Owasp.",
     "fr": "Owasp",
     "ru": "Owasp.",
-    "es": "Owasp"
+    "es": "Owasp",
+    "ja": "OWASP"
   },
   "Online RFC Reader": {
     "en": "Online RFC Reader",
     "de": "Online-RFC-Reader.",
     "fr": "Lecteur RFC en ligne",
     "ru": "\u041e\u043d\u043b\u0430\u0439\u043d RFC Reader",
-    "es": "Lector de RFC en l\u00ednea"
+    "es": "Lector de RFC en l\u00ednea",
+    "ja": "\u30aa\u30f3\u30e9\u30a4\u30f3RFC\u30ea\u30fc\u30c0\u30fc"
   },
   "OpenClassroom Cours": {
     "en": "OpenClassroom Cours",
@@ -88594,7 +89132,8 @@
     "de": "Pcsoft",
     "fr": "Pcsoft",
     "ru": "PCSoft",
-    "es": "Pcsoft"
+    "es": "Pcsoft",
+    "ja": "PCsoft"
   },
   "Package Control": {
     "en": "Package Control",
@@ -88608,14 +89147,16 @@
     "de": "Paypal-Entwickler",
     "fr": "D\u00e9veloppeur PayPal",
     "ru": "PayPal Developer",
-    "es": "Desarrollador de paypal"
+    "es": "Desarrollador de paypal",
+    "ja": "PayPal\u958b\u767a\u8005"
   },
   "Perch Forum": {
     "en": "Perch Forum",
     "de": "Perch Forum.",
     "fr": "Forum de perche",
     "ru": "\u041e\u043a\u0443\u043d\u044c \u0444\u043e\u0440\u0443\u043c\u0430",
-    "es": "Foro"
+    "es": "Foro",
+    "ja": "\u3068\u307e\u308a\u6728\u30d5\u30a9\u30fc\u30e9\u30e0"
   },
   "Plan\u00e8te Casio": {
     "en": "Plan\u00e8te Casio",
@@ -88643,7 +89184,8 @@
     "de": "PostgreSQL-Dokumentation.",
     "fr": "Documentation PostgreSQL",
     "ru": "PostgreSQL \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Documentaci\u00f3n PostgreSQL"
+    "es": "Documentaci\u00f3n PostgreSQL",
+    "ja": "PostgreSQL\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "PostgreSQL.org": {
     "en": "PostgreSQL.org",
@@ -88657,42 +89199,48 @@
     "de": "H\u00fcbsch-rfc.",
     "fr": "Jolie-rfc",
     "ru": "Pretty-RFC.",
-    "es": "Bonito rfc"
+    "es": "Bonito rfc",
+    "ja": "Pretty-RFC"
   },
   "PrimFX": {
     "en": "PrimFX",
     "de": "Primfx",
     "fr": "Primfexe",
     "ru": "Primfx.",
-    "es": "Prima"
+    "es": "Prima",
+    "ja": "PrimFX"
   },
   "ProgrammableWeb": {
     "en": "ProgrammableWeb",
     "de": "ProgrammableWeb.",
     "fr": "Programmableweb",
     "ru": "\u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u0443\u0435\u043c\u043e\u0435web.",
-    "es": "Programableweb"
+    "es": "Programableweb",
+    "ja": "ProgrammableWeb"
   },
   "Programming Puzzles & Code Golf Stack Exchange": {
     "en": "Programming Puzzles & Code Golf Stack Exchange",
     "de": "Programmierung Puzzles & Code Golf Stack Austausch",
     "fr": "Programmation Puzzles & Code Pile de golf Echange",
     "ru": "\u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0433\u043e\u043b\u043e\u0432\u043e\u043b\u043e\u043c\u043e\u043a \u0438 \u043a\u043e\u0434\u0430 Golf Stack Exchange",
-    "es": "Rompecabezas y c\u00f3digo de programaci\u00f3n Cambio de pila de golf"
+    "es": "Rompecabezas y c\u00f3digo de programaci\u00f3n Cambio de pila de golf",
+    "ja": "\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\u30d1\u30ba\u30eb\u3068\u30b3\u30fc\u30c9\u30b4\u30eb\u30d5\u30b9\u30bf\u30c3\u30af\u4ea4\u63db"
   },
   "Programming Simplified": {
     "en": "Programming Simplified",
     "de": "Vereinfachtes Programmieren",
     "fr": "Programmation simplifi\u00e9e",
     "ru": "\u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0443\u043f\u0440\u043e\u0449\u0435\u043d\u043e",
-    "es": "Programaci\u00f3n simplificada"
+    "es": "Programaci\u00f3n simplificada",
+    "ja": "\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0\u306e\u7c21\u7d20\u5316"
   },
   "Progress": {
     "en": "Progress",
     "de": "Progress",
     "fr": "Le progr\u00e8s",
     "ru": "\u041f\u0440\u043e\u0433\u0440\u0435\u0441\u0441",
-    "es": "Progreso"
+    "es": "Progreso",
+    "ja": "\u9032\u6357"
   },
   "Progress Community": {
     "en": "Progress Community",
@@ -88706,42 +89254,48 @@
     "de": "Reine Daten",
     "fr": "Donn\u00e9es pure",
     "ru": "\u0427\u0438\u0441\u0442\u044b\u0435 \u0434\u0430\u043d\u043d\u044b\u0435",
-    "es": "Datos puros"
+    "es": "Datos puros",
+    "ja": "\u7d14\u7c8b\u306a\u30c7\u30fc\u30bf"
   },
   "PyQt5": {
     "en": "PyQt5",
     "de": "Pyqt5.",
     "fr": "Pyqt5",
     "ru": "PYQT5.",
-    "es": "PYQT5"
+    "es": "PYQT5",
+    "ja": "PyQt5"
   },
   "Pygame": {
     "en": "Pygame",
     "de": "Pygame",
     "fr": "Pygame",
     "ru": "\u041f\u0438\u0433\u0430\u043c",
-    "es": "Pygame"
+    "es": "Pygame",
+    "ja": "Pygame"
   },
   "Python 3.5 Documentation": {
     "en": "Python 3.5 Documentation",
     "de": "Python 3.5 Dokumentation.",
     "fr": "Documentation Python 3.5",
     "ru": "Python 3.5 \u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "Python 3.5 Documentaci\u00f3n"
+    "es": "Python 3.5 Documentaci\u00f3n",
+    "ja": "Python3.5\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Qiita": {
     "en": "Qiita",
     "de": "Qiita.",
     "fr": "Qiita",
     "ru": "Qiita.",
-    "es": "Qiita"
+    "es": "Qiita",
+    "ja": "Qiita"
   },
   "Qlik Sense Help": {
     "en": "Qlik Sense Help",
     "de": "Qlik Sinn-Hilfe",
     "fr": "Qlik Sense Aide",
     "ru": "Qlik Sense Help",
-    "es": "Ayuda Qlik Sense"
+    "es": "Ayuda Qlik Sense",
+    "ja": "QlikSense\u30d8\u30eb\u30d7"
   },
   "Qt 5 Documentation": {
     "en": "Qt 5 Documentation",
@@ -88769,21 +89323,24 @@
     "de": "RAILSCASTS.",
     "fr": "Rails",
     "ru": "\u0416\u0435\u043b\u0435\u0437\u043d\u043e\u0434\u043e\u0440\u043e\u0436\u043d\u044b\u0435 \u043a\u0430\u043d\u0430\u043b\u044b",
-    "es": "Railscasts"
+    "es": "Railscasts",
+    "ja": "RailsCasts"
   },
   "Raspberry pi Stackexchange": {
     "en": "Raspberry pi Stackexchange",
     "de": "Himbeer pi stackexchange.",
     "fr": "Framboise pi stackexchange",
     "ru": "Raspberry Pi Stackexchange.",
-    "es": "Raspberry Pi StackExchange"
+    "es": "Raspberry Pi StackExchange",
+    "ja": "\u30e9\u30ba\u30d9\u30ea\u30fc\u30d1\u30a4Stackexchange"
   },
   "Ray Wenderlich": {
     "en": "Ray Wenderlich",
     "de": "Ray Wenderlich.",
     "fr": "Ray wenderlich",
     "ru": "\u0420\u044d\u0439 \u0412\u0435\u043d\u0434\u0435\u0440\u043b\u0438\u0447",
-    "es": "Ray Wenderlich"
+    "es": "Ray Wenderlich",
+    "ja": "\u30ec\u30a4\u30fb\u30f4\u30a7\u30f3\u30c0\u30fc\u30ea\u30c3\u30d2"
   },
   "Read The Docs": {
     "en": "Read The Docs",
@@ -88811,7 +89368,8 @@
     "de": "Rosetta-Code",
     "fr": "Code Rosetta",
     "ru": "\u041a\u043e\u0434 \u0420\u043e\u0437\u0435\u0442\u0442\u0430",
-    "es": "C\u00f3digo de rosetta"
+    "es": "C\u00f3digo de rosetta",
+    "ja": "\u30ed\u30bc\u30c3\u30bf\u30b3\u30fc\u30c9"
   },
   "RosettaCode.org": {
     "en": "RosettaCode.org",
@@ -88825,14 +89383,16 @@
     "de": "Rost rfc github.com.",
     "fr": "Rouille rfc github.com",
     "ru": "Rust RFC GitHub.com.",
-    "es": "Rust RFC GitHub.com"
+    "es": "Rust RFC GitHub.com",
+    "ja": "Rust RFC GitHub.com"
   },
   "Rust stdlib docs": {
     "en": "Rust stdlib docs",
     "de": "Rost stdlib docs.",
     "fr": "Rust Stdlib Docs",
     "ru": "Rust Stdlib Docs.",
-    "es": "\u00d3xido stdlib docs"
+    "es": "\u00d3xido stdlib docs",
+    "ja": "Ruststdlib\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "RustDocs": {
     "en": "RustDocs",
@@ -88853,7 +89413,8 @@
     "de": "SAP Launchpad.",
     "fr": "SAP LaunchPad",
     "ru": "SAP LaunchPad",
-    "es": "SAP LACHPAD"
+    "es": "SAP LACHPAD",
+    "ja": "SAPLaunchpad"
   },
   "SPIP": {
     "en": "SPIP",
@@ -88888,7 +89449,8 @@
     "de": "Salesforce-Stapelaustausch",
     "fr": "Exchange de pile Salesforce",
     "ru": "\u0421\u0410\u041b\u0415\u041c\u0415\u041d\u041d\u042b\u0419\u0424\u041e\u0420\u041c\u0410",
-    "es": "Exchange de pila de Salesforce"
+    "es": "Exchange de pila de Salesforce",
+    "ja": "Salesforce Stack Exchange"
   },
   "Scala Standard Library": {
     "en": "Scala Standard Library",
@@ -88909,14 +89471,16 @@
     "de": "Kratzforums suchen.",
     "fr": "Scratch Forums Recherche",
     "ru": "\u041f\u043e\u0438\u0441\u043a \u0444\u043e\u0440\u0443\u043c\u043e\u0432 \u0446\u0430\u0440\u0430\u043f\u0438\u043d",
-    "es": "B\u00fasqueda de foros de scratch"
+    "es": "B\u00fasqueda de foros de scratch",
+    "ja": "\u30b9\u30af\u30e9\u30c3\u30c1\u30d5\u30a9\u30fc\u30e9\u30e0\u691c\u7d22"
   },
   "Search for character(s) in Unicode": {
     "en": "Search for character(s) in Unicode",
     "de": "Suche nach Zeichen (en) in Unicode",
     "fr": "Recherche de caract\u00e8res (s) de caract\u00e8re (s) \u00e0 Unicode",
     "ru": "\u041f\u043e\u0438\u0441\u043a \u0445\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0430 (\u044b) \u0432 Unicode",
-    "es": "Buscar personajes en Unicode"
+    "es": "Buscar personajes en Unicode",
+    "ja": "Unicode\u3067\u6587\u5b57\u3092\u691c\u7d22\u3059\u308b"
   },
   "SearchLibs": {
     "en": "SearchLibs",
@@ -88930,35 +89494,40 @@
     "de": "Suchencode.",
     "fr": "Code de recherche",
     "ru": "SearchCode.",
-    "es": "C\u00f3digo de b\u00fasqueda"
+    "es": "C\u00f3digo de b\u00fasqueda",
+    "ja": "\u691c\u7d22\u30b3\u30fc\u30c9"
   },
   "Sikuli": {
     "en": "Sikuli",
     "de": "Sikuli",
     "fr": "Sikuli",
     "ru": "Sikuli",
-    "es": "Sikuli"
+    "es": "Sikuli",
+    "ja": "\u30b7\u30af\u30ea"
   },
   "Simplicit\u00e9.io": {
     "en": "Simplicit\u00e9.io",
     "de": "Simplicit\u00e9.io.",
     "fr": "Simplicit\u00e9.io",
     "ru": "Simplicit\u00e9.io.",
-    "es": "Simplicit\u00e9.io"
+    "es": "Simplicit\u00e9.io",
+    "ja": "Simplicit\u00e9.io"
   },
   "Sitepoint": {
     "en": "Sitepoint",
     "de": "Sitepoint.",
     "fr": "Point de site",
     "ru": "\u0422\u043e\u0447\u043a\u0430 \u0441\u0430\u0439\u0442\u0430",
-    "es": "Punto de sitio"
+    "es": "Punto de sitio",
+    "ja": "\u30b5\u30a4\u30c8\u30dd\u30a4\u30f3\u30c8"
   },
   "SonarCloud": {
     "en": "SonarCloud",
     "de": "Sonarcloud.",
     "fr": "Sonarcloud",
     "ru": "\u0421\u043e\u043d\u0430\u0440\u043a\u043b\u0430\u0443\u0434",
-    "es": "Sonarcloud"
+    "es": "Sonarcloud",
+    "ja": "SonarCloud"
   },
   "Sourcegraph": {
     "en": "Sourcegraph",
@@ -88972,7 +89541,8 @@
     "de": "Spanwheron",
     "fr": "Sph\u00e9rique",
     "ru": "\u0421\u043f\u0435\u0440\u0435\u043d",
-    "es": "Speron"
+    "es": "Speron",
+    "ja": "\u30b9\u30d5\u30a3\u30a2\u30aa\u30f3"
   },
   "SpringSource": {
     "en": "SpringSource",
@@ -88986,28 +89556,32 @@
     "de": "Stapelaustausch-Chat.",
     "fr": "Chat d'\u00e9change de pile",
     "ru": "Stack Exchange Chat.",
-    "es": "Chat de intercambio de pila"
+    "es": "Chat de intercambio de pila",
+    "ja": "StackExchange\u30c1\u30e3\u30c3\u30c8"
   },
   "Stack Overflow": {
     "en": "Stack Overflow",
     "de": "Paket\u00fcberfluss",
     "fr": "Pile d\u00e9bordement",
     "ru": "\u041f\u0435\u0440\u0435\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u0441\u0442\u0435\u043a\u0430",
-    "es": "Desbordamiento de pila"
+    "es": "Desbordamiento de pila",
+    "ja": "\u30b9\u30bf\u30c3\u30af\u30aa\u30fc\u30d0\u30fc\u30d5\u30ed\u30fc"
   },
   "Stack Overflow Bash Search": {
     "en": "Stack Overflow Bash Search",
     "de": "Stapel\u00fcberlauf Bash-Suche",
     "fr": "Stack Overflow Bash recherche",
     "ru": "\u0421\u0442\u0435\u043a \u043f\u0435\u0440\u0435\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u044f bash \u043f\u043e\u0438\u0441\u043a",
-    "es": "B\u00fasqueda de bash de desbordamiento de pila"
+    "es": "B\u00fasqueda de bash de desbordamiento de pila",
+    "ja": "\u30b9\u30bf\u30c3\u30af\u30aa\u30fc\u30d0\u30fc\u30d5\u30ed\u30fcBash\u691c\u7d22"
   },
   "Stack Overflow em Portugu\u00eas": {
     "en": "Stack Overflow em Portugu\u00eas",
     "de": "Stapel\u00fcberlauf em Portugu\u00eas",
     "fr": "Pile d\u00e9bordement em Portugu\u00eas",
     "ru": "Stack Overflow EM Portugu\u00eas",
-    "es": "Pila de desbordamiento em Portugu\u00eas"
+    "es": "Pila de desbordamiento em Portugu\u00eas",
+    "ja": "StackOverflowemPortugu\u00eas"
   },
   "Stack Overflow via DuckDuckGo": {
     "en": "Stack Overflow via DuckDuckGo",
@@ -89021,42 +89595,48 @@
     "de": "Stapel\u00fcberlauf \u00fcber Google",
     "fr": "Pile d\u00e9bordement via Google",
     "ru": "\u041f\u0435\u0440\u0435\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u0441\u0442\u0435\u043a\u0430 \u0447\u0435\u0440\u0435\u0437 Google",
-    "es": "Pila de desbordamiento a trav\u00e9s de Google"
+    "es": "Pila de desbordamiento a trav\u00e9s de Google",
+    "ja": "Google\u7d4c\u7531\u306e\u30b9\u30bf\u30c3\u30af\u30aa\u30fc\u30d0\u30fc\u30d5\u30ed\u30fc"
   },
   "Stackoverflow with DuckDuckGo": {
     "en": "Stackoverflow with DuckDuckGo",
     "de": "Stackoverflow mit Duckduckgo.",
     "fr": "Stackoverflow avec DuckDuckGo",
     "ru": "Stackoverflow \u0441 Duckduckgo",
-    "es": "StackOverflow con Duckduckgo"
+    "es": "StackOverflow con Duckduckgo",
+    "ja": "DuckDuckGo\u306b\u3088\u308bStackoverflow"
   },
   "Sublime Text Forum": {
     "en": "Sublime Text Forum",
     "de": "Sublime Textforum.",
     "fr": "Sublime Text Forum",
     "ru": "Sublime Text Forum.",
-    "es": "Foro de texto sublime"
+    "es": "Foro de texto sublime",
+    "ja": "\u5d07\u9ad8\u306a\u30c6\u30ad\u30b9\u30c8\u30d5\u30a9\u30fc\u30e9\u30e0"
   },
   "Sublime Text Unofficial Documentation": {
     "en": "Sublime Text Unofficial Documentation",
     "de": "Erhabene Text Inoffizielle Dokumentation",
     "fr": "Texte sublime Documentation non officielle",
     "ru": "\u041d\u0435\u043e\u0444\u0438\u0446\u0438\u0430\u043b\u044c\u043d\u0430\u044f \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f \u0432 \u0441\u0443\u0431\u043b\u0438\u043c\u0438",
-    "es": "Texto sublime documentaci\u00f3n no oficial."
+    "es": "Texto sublime documentaci\u00f3n no oficial.",
+    "ja": "\u5d07\u9ad8\u306a\u30c6\u30ad\u30b9\u30c8\u975e\u516c\u5f0f\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "SuperUser": {
     "en": "SuperUser",
     "de": "Superuser",
     "fr": "Superutilisateur",
     "ru": "\u0421\u0443\u043f\u0435\u0440\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u0441\u043a\u0438\u0439",
-    "es": "Superusuario"
+    "es": "Superusuario",
+    "ja": "\u30b9\u30fc\u30d1\u30fc\u30e6\u30fc\u30b6\u30fc"
   },
   "Swift Standard Library": {
     "en": "Swift Standard Library",
     "de": "Swift Standard-Bibliothek",
     "fr": "Swift Standard Biblioth\u00e8que",
     "ru": "SWIFT \u0421\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u0430\u044f \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0430",
-    "es": "Biblioteca est\u00e1ndar SWIFT"
+    "es": "Biblioteca est\u00e1ndar SWIFT",
+    "ja": "Swift\u6a19\u6e96\u30e9\u30a4\u30d6\u30e9\u30ea"
   },
   "Symbol Hound": {
     "en": "Symbol Hound",
@@ -89070,14 +89650,16 @@
     "de": "SymbolHound",
     "fr": "Symbole",
     "ru": "\u0421\u0438\u043c\u0432\u043e\u043bHound.",
-    "es": "Enrojecimiento de s\u00edmbolos"
+    "es": "Enrojecimiento de s\u00edmbolos",
+    "ja": "\u30b7\u30f3\u30dc\u30eb\u30cf\u30a6\u30f3\u30c9"
   },
   "TEI": {
     "en": "TEI",
     "de": "Tei",
     "fr": "Tei",
     "ru": "Tei.",
-    "es": "Tei"
+    "es": "Tei",
+    "ja": "TEI"
   },
   "Tensor Flow": {
     "en": "Tensor Flow",
@@ -89091,7 +89673,8 @@
     "de": "Terraform-Modulregister.",
     "fr": "Registre de module Terraform",
     "ru": "\u0420\u0435\u0435\u0441\u0442\u0440 \u043c\u043e\u0434\u0443\u043b\u044f Terraform",
-    "es": "Registro de m\u00f3dulos TERRAFORM"
+    "es": "Registro de m\u00f3dulos TERRAFORM",
+    "ja": "Terraform\u30e2\u30b8\u30e5\u30fc\u30eb\u30ec\u30b8\u30b9\u30c8\u30ea"
   },
   "Th!ink": {
     "en": "Th!ink",
@@ -89105,7 +89688,8 @@
     "de": "Das ietf.",
     "fr": "L'IETF",
     "ru": "IETF.",
-    "es": "El IETF"
+    "es": "El IETF",
+    "ja": "IETF"
   },
   "The Pragmatic Bookshelf": {
     "en": "The Pragmatic Bookshelf",
@@ -89119,7 +89703,8 @@
     "de": "Die Roststandard-Bibliotheksdokumentation",
     "fr": "La documentation de la biblioth\u00e8que standard de rouille",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f \u043f\u043e \u0441\u0442\u0430\u043d\u0434\u0430\u0440\u0442\u043d\u043e\u0439 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0435 \u0440\u0436\u0430\u0432\u0447\u0438\u043d\u044b",
-    "es": "La documentaci\u00f3n de la biblioteca est\u00e1ndar de \u00f3xido."
+    "es": "La documentaci\u00f3n de la biblioteca est\u00e1ndar de \u00f3xido.",
+    "ja": "Rust\u6a19\u6e96\u30e9\u30a4\u30d6\u30e9\u30ea\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "The Unix Tree": {
     "en": "The Unix Tree",
@@ -89140,7 +89725,8 @@
     "de": "Toster",
     "fr": "\u00c9branler",
     "ru": "\u041e\u043f\u043e\u043b\u0437\u043d\u0438\u0435",
-    "es": "Toster"
+    "es": "Toster",
+    "ja": "\u30c8\u30fc\u30b9\u30bf\u30fc"
   },
   "Travis CI": {
     "en": "Travis CI",
@@ -89154,7 +89740,8 @@
     "de": "Tutorials Point.",
     "fr": "Didacticiels Point",
     "ru": "\u0423\u0447\u0435\u0431\u043d\u0438\u043a\u0438 \u043f\u0443\u043d\u043a\u0442\u0430",
-    "es": "Punto de tutoriales"
+    "es": "Punto de tutoriales",
+    "ja": "\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb\u30dd\u30a4\u30f3\u30c8"
   },
   "Umbraco Documentation": {
     "en": "Umbraco Documentation",
@@ -89168,7 +89755,8 @@
     "de": "Unicode Charakterfinder",
     "fr": "Finder de caract\u00e8re Unicode",
     "ru": "Unicode \u043f\u0435\u0440\u0441\u043e\u043d\u0430\u0436 Finder",
-    "es": "Buscador de caracteres Unicode"
+    "es": "Buscador de caracteres Unicode",
+    "ja": "Unicode\u6587\u5b57\u30d5\u30a1\u30a4\u30f3\u30c0\u30fc"
   },
   "Unity": {
     "en": "Unity",
@@ -89189,28 +89777,32 @@
     "de": "Einheitshandbuch",
     "fr": "Manuel d'unit\u00e9",
     "ru": "\u0420\u0443\u043a\u043e\u0432\u043e\u0434\u0441\u0442\u0432\u043e \u043f\u043e \u0435\u0434\u0438\u043d\u0441\u0442\u0432\u0443",
-    "es": "Manual de unidad"
+    "es": "Manual de unidad",
+    "ja": "Unity\u30de\u30cb\u30e5\u30a2\u30eb"
   },
   "Unity Scripting Reference": {
     "en": "Unity Scripting Reference",
     "de": "Einheits-Skriptreferenz.",
     "fr": "R\u00e9f\u00e9rence de script d'unit\u00e9",
     "ru": "\u0421\u0441\u044b\u043b\u043a\u0430 \u043d\u0430 \u0441\u0446\u0435\u043d\u0430\u0440\u0438\u0438 Unity.",
-    "es": "Referencia de Scripting Unity"
+    "es": "Referencia de Scripting Unity",
+    "ja": "Unity\u30b9\u30af\u30ea\u30d7\u30c6\u30a3\u30f3\u30b0\u30ea\u30d5\u30a1\u30ec\u30f3\u30b9"
   },
   "Unreal Engine 4 Answerhub": {
     "en": "Unreal Engine 4 Answerhub",
     "de": "Unreal Motor 4 AnsageHub",
     "fr": "Unreal Engine 4 R\u00e9ponseHub",
     "ru": "Unreal Engine 4 VANDELSHUB",
-    "es": "Motor irreal 4 Respuestas"
+    "es": "Motor irreal 4 Respuestas",
+    "ja": "Unreal Engine 4 Answerhub"
   },
   "Valve Developer Community": {
     "en": "Valve Developer Community",
     "de": "Ventilentwicklergemeinschaft",
     "fr": "Communaut\u00e9 de d\u00e9veloppeurs de valve",
     "ru": "\u0421\u043e\u043e\u0431\u0449\u0435\u0441\u0442\u0432\u043e \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u0430 \u043a\u043b\u0430\u043f\u0430\u043d\u0430",
-    "es": "Comunidad de desarrolladores de v\u00e1lvulas"
+    "es": "Comunidad de desarrolladores de v\u00e1lvulas",
+    "ja": "\u30d0\u30eb\u30d6\u958b\u767a\u8005\u30b3\u30df\u30e5\u30cb\u30c6\u30a3"
   },
   "Vi @ stackExchange": {
     "en": "Vi @ stackExchange",
@@ -89224,14 +89816,16 @@
     "de": "Vim-Tipps Wiki.",
     "fr": "TIPS VIM WIKI",
     "ru": "Vim Tips Wiki",
-    "es": "VIM TIPS WIKI"
+    "es": "VIM TIPS WIKI",
+    "ja": "Vim\u306e\u30d2\u30f3\u30c8wiki"
   },
   "Vimdoc": {
     "en": "Vimdoc",
     "de": "Vimdoc",
     "fr": "Vimaut",
     "ru": "Vimdoc.",
-    "es": "Vimdoc"
+    "es": "Vimdoc",
+    "ja": "Vimdoc"
   },
   "Visual Studio Code Extensions": {
     "en": "Visual Studio Code Extensions",
@@ -89252,7 +89846,8 @@
     "de": "Vuetifyjs.",
     "fr": "Vuetyjs",
     "ru": "Vuetifyjs.",
-    "es": "Vuetifyjs"
+    "es": "Vuetifyjs",
+    "ja": "Vuetifyjs"
   },
   "Web Hosting Hub": {
     "en": "Web Hosting Hub",
@@ -89266,7 +89861,8 @@
     "de": "Windows Developer Feedback.",
     "fr": "Commentaires sur le d\u00e9veloppeur Windows",
     "ru": "\u041e\u0431\u0440\u0430\u0442\u043d\u0430\u044f \u0441\u0432\u044f\u0437\u044c \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u0430 Windows",
-    "es": "Comentarios de los desarrolladores de Windows"
+    "es": "Comentarios de los desarrolladores de Windows",
+    "ja": "Windows\u958b\u767a\u8005\u304b\u3089\u306e\u30d5\u30a3\u30fc\u30c9\u30d0\u30c3\u30af"
   },
   "WordPress Packagist": {
     "en": "WordPress Packagist",
@@ -89280,7 +89876,8 @@
     "de": "WordPress-VIP.",
     "fr": "Wordpress VIP",
     "ru": "WordPress VIP.",
-    "es": "Wordpress vip"
+    "es": "Wordpress vip",
+    "ja": "WordPress VIP"
   },
   "XDA Developers": {
     "en": "XDA Developers",
@@ -89294,7 +89891,8 @@
     "de": "XDA-Entwicklerforum.",
     "fr": "Forum des d\u00e9veloppeurs XDA",
     "ru": "\u0424\u043e\u0440\u0443\u043c \u0434\u043b\u044f \u0440\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u0447\u0438\u043a\u043e\u0432 XDA",
-    "es": "Foro de Desarrolladores XDA"
+    "es": "Foro de Desarrolladores XDA",
+    "ja": "XDA Developers Forum"
   },
   "XMPP Extensions": {
     "en": "XMPP Extensions",
@@ -89322,7 +89920,8 @@
     "de": "Yocto-Projekt Wiki.",
     "fr": "YocTo Project Wiki",
     "ru": "Yocto Project Wiki.",
-    "es": "Yocto proyecto wiki"
+    "es": "Yocto proyecto wiki",
+    "ja": "Yocto Project Wiki"
   },
   "YouTrack": {
     "en": "YouTrack",
@@ -89336,14 +89935,16 @@
     "de": "Zoom Wiki.",
     "fr": "Zdoom wiki",
     "ru": "Zdoom wiki",
-    "es": "ZDoom Wiki"
+    "es": "ZDoom Wiki",
+    "ja": "ZDoom Wiki"
   },
   "Zephyr Cross Reference": {
     "en": "Zephyr Cross Reference",
     "de": "Zephyr-Kreuzreferenz.",
     "fr": "Zephyr Cross R\u00e9f\u00e9rence",
     "ru": "Zephyr Cross \u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a",
-    "es": "Referencia cruzada de Zephyr"
+    "es": "Referencia cruzada de Zephyr",
+    "ja": "Zephyr\u76f8\u4e92\u53c2\u7167"
   },
   "ZesteDeSavoir": {
     "en": "ZesteDeSavoir",
@@ -89357,7 +89958,8 @@
     "de": "Bazel-Dokumentation.",
     "fr": "Documentation Bazel",
     "ru": "\u0411\u0430\u0437\u0435\u043b\u044c\u0441\u043a\u0430\u044f \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f",
-    "es": "documentaci\u00f3n de brazos"
+    "es": "documentaci\u00f3n de brazos",
+    "ja": "\u30d0\u30bc\u30eb\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "code.kx": {
     "en": "code.kx",
@@ -89371,28 +89973,32 @@
     "de": "coderview.stackExchange.com.",
     "fr": "codereview.stackexchange.com",
     "ru": "codereview.stackexchange.com.",
-    "es": "codalleview.stackexchange.com"
+    "es": "codalleview.stackexchange.com",
+    "ja": "codereview.stackexchange.com"
   },
   "crate.io": {
     "en": "crate.io",
     "de": "Krippe",
     "fr": "Crate.io",
     "ru": "\u043f\u043e\u0442\u0440\u044f\u0441\u0430\u044e\u0449\u0438\u0439",
-    "es": "crate.io"
+    "es": "crate.io",
+    "ja": "crate.io"
   },
   "csounds": {
     "en": "csounds",
     "de": "csounds.",
     "fr": "csoundus",
     "ru": "Csounds.",
-    "es": "csounds"
+    "es": "csounds",
+    "ja": "csounds"
   },
   "dartlang": {
     "en": "dartlang",
     "de": "Dartlang",
     "fr": "dartlang",
     "ru": "\u0414\u0430\u0440\u0442\u043b\u0430\u043d\u0433",
-    "es": "dartlang"
+    "es": "dartlang",
+    "ja": "\u30c0\u30fc\u30c8\u30e9\u30f3"
   },
   "ddh1": {
     "en": "ddh1",
@@ -89406,14 +90012,16 @@
     "de": "Fachboden",
     "fr": "cloison",
     "ru": "\u043f\u043e\u0434\u0441\u0432\u0435\u0447\u0438\u0432\u0430\u0442\u044c",
-    "es": "defectuoso"
+    "es": "defectuoso",
+    "ja": "defkey"
   },
   "dev.to": {
     "en": "dev.to",
     "de": "Dev.to.",
     "fr": "Dev.To",
     "ru": "dev.to.",
-    "es": "dev.to"
+    "es": "dev.to",
+    "ja": "dev.to"
   },
   "developpez.com": {
     "en": "developpez.com",
@@ -89434,7 +90042,8 @@
     "de": "docs.rs.",
     "fr": "docs.rs",
     "ru": "Docs.rs.",
-    "es": "docs.rs"
+    "es": "docs.rs",
+    "ja": "docs.rs"
   },
   "docs.rs (rust crate documentation)": {
     "en": "docs.rs (rust crate documentation)",
@@ -89455,7 +90064,8 @@
     "de": "Fast.ai-Foren.",
     "fr": "Fast.ai Forums",
     "ru": "fast.ai forums.",
-    "es": "Foros Fast.ai"
+    "es": "Foros Fast.ai",
+    "ja": "fast.ai\u30d5\u30a9\u30fc\u30e9\u30e0"
   },
   "freeCodeCamp Forum": {
     "en": "freeCodeCamp Forum",
@@ -89469,7 +90079,8 @@
     "de": "freedesktop.org bugs.",
     "fr": "freeesktop.org bugs",
     "ru": "Freedesktop.org Bugs.",
-    "es": "bugskesktop.org bugs"
+    "es": "bugskesktop.org bugs",
+    "ja": "freedesktop.org\u306e\u30d0\u30b0"
   },
   "geeksforgeeks": {
     "en": "geeksforgeeks",
@@ -89490,14 +90101,16 @@
     "de": "Howcode",
     "fr": "howcode",
     "ru": "Howcode",
-    "es": "t\u00f3digo"
+    "es": "t\u00f3digo",
+    "ja": "howCode"
   },
   "jMonkeyEngine Forum": {
     "en": "jMonkeyEngine Forum",
     "de": "JmonkeyEngine-Forum.",
     "fr": "JONKEYEGINE FORUM",
     "ru": "Jmmonkeyengine Forum.",
-    "es": "Foro JMONKEYENGINE"
+    "es": "Foro JMONKEYENGINE",
+    "ja": "jMonkeyEngine\u30d5\u30a9\u30fc\u30e9\u30e0"
   },
   "katacoda": {
     "en": "katacoda",
@@ -89511,7 +90124,8 @@
     "de": "kb.workfusion.com.",
     "fr": "kb.workfusion.com",
     "ru": "kb.workfusion.com.",
-    "es": "kb.workfusion.com"
+    "es": "kb.workfusion.com",
+    "ja": "kb.workfusion.com"
   },
   "learnxinyminutes.com": {
     "en": "learnxinyminutes.com",
@@ -89532,21 +90146,24 @@
     "de": "mann-k.org.",
     "fr": "man-k.org",
     "ru": "Man-k.org.",
-    "es": "man-k.org"
+    "es": "man-k.org",
+    "ja": "man-k.org"
   },
   "mdn.io": {
     "en": "mdn.io",
     "de": "mdn.io.",
     "fr": "mdn.io",
     "ru": "mdn.io.",
-    "es": "mdn.io"
+    "es": "mdn.io",
+    "ja": "mdn.io"
   },
   "murlengine": {
     "en": "murlengine",
     "de": "Murlengine",
     "fr": "murlengine",
     "ru": "\u043c\u0443\u0440\u043b\u0435\u043d\u0434\u0436\u0438\u043d",
-    "es": "murlengina"
+    "es": "murlengina",
+    "ja": "murlengine"
   },
   "pluralsight": {
     "en": "pluralsight",
@@ -89560,7 +90177,8 @@
     "de": "Programmierer.steckexchange.com.",
     "fr": "programmeurs.stackexchange.com",
     "ru": "Programmers.stackexchange.com.",
-    "es": "programmers.stackexchange.com"
+    "es": "programmers.stackexchange.com",
+    "ja": "\u30d7\u30ed\u30b0\u30e9\u30de\u30fc.stackexchange.com"
   },
   "repl.it": {
     "en": "repl.it",
@@ -89574,7 +90192,8 @@
     "de": "Scrapy Docs.",
     "fr": "DOCS SCRAPY",
     "ru": "\u0421\u0442\u0440\u0443\u043f\u043a\u0438\u0435 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b",
-    "es": "Documentos de scrapy"
+    "es": "Documentos de scrapy",
+    "ja": "\u30b9\u30af\u30ec\u30a4\u30d4\u30fc\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "search wechat miniprogram documents": {
     "en": "search wechat miniprogram documents",
@@ -89588,7 +90207,8 @@
     "de": "Securityheader.io.",
     "fr": "Securityheaders.io",
     "ru": "SecurityHeaders.io.",
-    "es": "SecurityHeaders.io"
+    "es": "SecurityHeaders.io",
+    "ja": "securityheaders.io"
   },
   "shadertoy.com": {
     "en": "shadertoy.com",
@@ -89616,7 +90236,8 @@
     "de": "syntaxdb.com",
     "fr": "syntaxdb.com",
     "ru": "syntaxdb.com.",
-    "es": "Syntaxdb.com"
+    "es": "Syntaxdb.com",
+    "ja": "Syntaxdb.com"
   },
   "teratail": {
     "en": "teratail",
@@ -89637,14 +90258,16 @@
     "de": "typo3.org.",
     "fr": "typo3.org",
     "ru": "Typo3.org.",
-    "es": "typo3.org"
+    "es": "typo3.org",
+    "ja": "typo3.org"
   },
   "unicode-table.com": {
     "en": "unicode-table.com",
     "de": "unicode-table.com",
     "fr": "Unicode-table.com",
     "ru": "Unicode-table.com.",
-    "es": "unicode-table.com"
+    "es": "unicode-table.com",
+    "ja": "unicode-table.com"
   },
   "vtluug wiki": {
     "en": "vtluug wiki",
@@ -89672,14 +90295,16 @@
     "de": "24zessive.",
     "fr": "24Sessions",
     "ru": "24sessions.",
-    "es": "24sessions"
+    "es": "24sessions",
+    "ja": "24\u30bb\u30c3\u30b7\u30e7\u30f3"
   },
   "AngelList": {
     "en": "AngelList",
     "de": "Angellist",
     "fr": "Ang\u00e9liste",
     "ru": "Angellist",
-    "es": "Enangellista"
+    "es": "Enangellista",
+    "ja": "\u30a8\u30f3\u30b8\u30a7\u30eb\u30ea\u30b9\u30c8"
   },
   "BetaList": {
     "en": "BetaList",
@@ -89693,21 +90318,24 @@
     "de": "ClickForce.",
     "fr": "Clickforce",
     "ru": "ClickForce.",
-    "es": "Clickforce"
+    "es": "Clickforce",
+    "ja": "ClickForce"
   },
   "Coding For Entrepreneurs": {
     "en": "Coding For Entrepreneurs",
     "de": "Kodierung f\u00fcr Unternehmer",
     "fr": "Codage pour les entrepreneurs",
     "ru": "\u041a\u043e\u0434\u0438\u0440\u043e\u0432\u0430\u043d\u0438\u0435 \u0434\u043b\u044f \u043f\u0440\u0435\u0434\u043f\u0440\u0438\u043d\u0438\u043c\u0430\u0442\u0435\u043b\u0435\u0439",
-    "es": "Codificaci\u00f3n de emprendedores"
+    "es": "Codificaci\u00f3n de emprendedores",
+    "ja": "\u8d77\u696d\u5bb6\u306e\u305f\u3081\u306e\u30b3\u30fc\u30c7\u30a3\u30f3\u30b0"
   },
   "Discourse Meta": {
     "en": "Discourse Meta",
     "de": "Diskurs Meta",
     "fr": "Discours m\u00e9ta",
     "ru": "\u0414\u0438\u0441\u043a\u0443\u0440\u0441 \u043c\u0435\u0442\u0430",
-    "es": "Discurso Meta"
+    "es": "Discurso Meta",
+    "ja": "\u8ac7\u8a71\u30e1\u30bf"
   },
   "Domaintools Whois": {
     "en": "Domaintools Whois",
@@ -89749,28 +90377,32 @@
     "de": "Ikwench",
     "fr": "Icobench",
     "ru": "Icobench.",
-    "es": "Icobench"
+    "es": "Icobench",
+    "ja": "ICObench"
   },
   "Keybase.io": {
     "en": "Keybase.io",
     "de": "Keybase.io.",
     "fr": "Keybase.io",
     "ru": "Keybase.io.",
-    "es": "Keybase.io"
+    "es": "Keybase.io",
+    "ja": "Keybase.io"
   },
   "Linuxinthebox": {
     "en": "Linuxinthebox",
     "de": "LinuxintheBox.",
     "fr": "Linuxinthebox",
     "ru": "LinuxInthebox.",
-    "es": "LinuxInTheBox"
+    "es": "LinuxInTheBox",
+    "ja": "Linuxinthebox"
   },
   "Mixergy": {
     "en": "Mixergy",
     "de": "Mischer",
     "ru": "\u041c\u0438\u043a\u0441\u0435\u0440\u0433\u0438\u044f",
     "fr": "Mixergie",
-    "es": "mixergia"
+    "es": "mixergia",
+    "ja": "Mixergy"
   },
   "Pitchbook": {
     "en": "Pitchbook",
@@ -89784,7 +90416,8 @@
     "de": "Stackshare",
     "fr": "Pile",
     "ru": "Stackshare.",
-    "es": "ApilarCompartir"
+    "es": "ApilarCompartir",
+    "ja": "StackShare"
   },
   "Startup Buffer": {
     "en": "Startup Buffer",
@@ -89805,21 +90438,24 @@
     "de": "Alexa",
     "fr": "alexa",
     "ru": "\u0410\u043b\u0435\u043a\u0441\u0430",
-    "es": "Alexa"
+    "es": "Alexa",
+    "ja": "\u30a2\u30ec\u30af\u30b5"
   },
   "ecomes.org": {
     "en": "ecomes.org",
     "de": "ecomes.org.",
     "fr": "ecomes.org",
     "ru": "ecomes.org.",
-    "es": "ecomes.org"
+    "es": "ecomes.org",
+    "ja": "ecomes.org"
   },
   "freelancer.com": {
     "en": "freelancer.com",
     "de": "Freelancer.com",
     "fr": "freelancer.com",
     "ru": "freelancer.com.",
-    "es": "freelancer.com"
+    "es": "freelancer.com",
+    "ja": "freelancer.com"
   },
   "lmms wiki": {
     "en": "lmms wiki",
@@ -89833,28 +90469,32 @@
     "de": "ABUUSIPDB.",
     "fr": "Abusipldb",
     "ru": "Inouseipdb.",
-    "es": "Abuso"
+    "es": "Abuso",
+    "ja": "AbuseIPDB"
   },
   "AdminWiki": {
     "en": "AdminWiki",
     "de": "Adminwiki.",
     "fr": "Adminwiki",
     "ru": "Adminwiki.",
-    "es": "Adminwiki"
+    "es": "Adminwiki",
+    "ja": "AdminWiki"
   },
   "Allerstorfer.at": {
     "en": "Allerstorfer.at",
     "de": "Allerstorfer.at.at.",
     "fr": "Allerstorfer.at",
     "ru": "Allerstorfer.at.",
-    "es": "AllerStorfer.at"
+    "es": "AllerStorfer.at",
+    "ja": "Allerstorfer.at"
   },
   "Ansible Docs": {
     "en": "Ansible Docs",
     "de": "Ansible Docs.",
     "fr": "Documents ansiques",
     "ru": "\u041e\u0448\u0438\u0431\u043a\u0438\u0435 \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u044b",
-    "es": "Documentos ansables"
+    "es": "Documentos ansables",
+    "ja": "Ansible\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Ansible Galaxy": {
     "en": "Ansible Galaxy",
@@ -89868,7 +90508,8 @@
     "de": "Ansible-Modul-Dokumentation.",
     "fr": "Documentation de module ansible",
     "ru": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u044f \u043d\u0435\u0431\u043b\u0430\u0433\u043e\u0434\u0430\u0440\u043d\u043e\u0433\u043e \u043c\u043e\u0434\u0443\u043b\u044f",
-    "es": "Documentaci\u00f3n de m\u00f3dulo ansible"
+    "es": "Documentaci\u00f3n de m\u00f3dulo ansible",
+    "ja": "Ansible\u30e2\u30b8\u30e5\u30fc\u30eb\u306e\u30c9\u30ad\u30e5\u30e1\u30f3\u30c8"
   },
   "Apache Docs": {
     "en": "Apache Docs",
@@ -89903,7 +90544,8 @@
     "de": "Atlas",
     "fr": "Atlas",
     "ru": "\u0410\u0442\u043b\u0430\u0441",
-    "es": "Atlas"
+    "es": "Atlas",
+    "ja": "\u30a2\u30c8\u30e9\u30b9"
   },
   "Awesome SysAdmin (LibHunt)": {
     "en": "Awesome SysAdmin (LibHunt)",
@@ -89931,7 +90573,8 @@
     "de": "Breie",
     "fr": "Brocages",
     "ru": "\u0411\u043e\u0435\u0432\u0438\u043a\u0438",
-    "es": "Broches"
+    "es": "Broches",
+    "ja": "BroPages"
   },
   "Btrfs wiki": {
     "en": "Btrfs wiki",
@@ -89945,21 +90588,24 @@
     "de": "CDNPlanet CDN Finder-Tool",
     "fr": "Outil CDNPLANET CDN Finder",
     "ru": "CDNPLANET CDN Finder Tool",
-    "es": "Herramienta CDNPLAnet CDN Finder"
+    "es": "Herramienta CDNPLAnet CDN Finder",
+    "ja": "CDNPlanetCDN\u30d5\u30a1\u30a4\u30f3\u30c0\u30fc\u30c4\u30fc\u30eb"
   },
   "CRUX": {
     "en": "CRUX",
     "de": "KERN",
     "fr": "N\u0152UD",
     "ru": "\u0421\u0443\u043c\u0430\u0441\u0448\u0435\u0434\u0448\u0438\u0439",
-    "es": "QUID"
+    "es": "QUID",
+    "ja": "CRUX"
   },
   "CVE Details": {
     "en": "CVE Details",
     "de": "Cve details.",
     "fr": "CVE D\u00e9tails",
     "ru": "CVE \u043f\u043e\u0434\u0440\u043e\u0431\u043d\u0435\u0435",
-    "es": "Detalles CVE"
+    "es": "Detalles CVE",
+    "ja": "CVE\u306e\u8a73\u7d30"
   },
   "Censys": {
     "en": "Censys",
@@ -89973,7 +90619,8 @@
     "de": "L\u00f6schen Linux * -Projekt",
     "fr": "Clear Linux * Projet",
     "ru": "\u041f\u0440\u043e\u0435\u043a\u0442 Clear Linux *",
-    "es": "Clear Linux * Proyecto"
+    "es": "Clear Linux * Proyecto",
+    "ja": "Linux *\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u3092\u30af\u30ea\u30a2\u3059\u308b"
   },
   "Codeweavers": {
     "en": "Codeweavers",
@@ -89987,7 +90634,8 @@
     "de": "Befehlszeile Fu.",
     "fr": "Ligne de commande fu",
     "ru": "\u041a\u043e\u043c\u0430\u043d\u0434\u043d\u0430\u044f \u0441\u0442\u0440\u043e\u043a\u0430 \u0424\u0443.",
-    "es": "L\u00ednea de comando fu"
+    "es": "L\u00ednea de comando fu",
+    "ja": "\u30b3\u30de\u30f3\u30c9\u30e9\u30a4\u30f3Fu"
   },
   "Crontab.guru": {
     "en": "Crontab.guru",
@@ -90001,14 +90649,16 @@
     "de": "Debian Screenshots.",
     "fr": "Screenshots Debian",
     "ru": "\u0421\u043a\u0440\u0438\u043d\u0448\u043e\u0442\u044b Debian",
-    "es": "Capturas de pantalla de Debian"
+    "es": "Capturas de pantalla de Debian",
+    "ja": "Debian\u30b9\u30af\u30ea\u30fc\u30f3\u30b7\u30e7\u30c3\u30c8"
   },
   "Digital Ocean Tutorials": {
     "en": "Digital Ocean Tutorials",
     "de": "Digitale Ozean-Tutorials.",
     "fr": "Tutoriels de l'oc\u00e9an num\u00e9rique",
     "ru": "\u0423\u0447\u0435\u0431\u043d\u0438\u043a\u0438 \u0446\u0438\u0444\u0440\u043e\u0432\u043e\u0433\u043e \u043e\u043a\u0435\u0430\u043d\u0430",
-    "es": "Tutoriales de Oc\u00e9ano Digital"
+    "es": "Tutoriales de Oc\u00e9ano Digital",
+    "ja": "\u30c7\u30b8\u30bf\u30eb\u30aa\u30fc\u30b7\u30e3\u30f3\u30c1\u30e5\u30fc\u30c8\u30ea\u30a2\u30eb"
   },
   "DigitalOcean": {
     "en": "DigitalOcean",
@@ -90029,7 +90679,8 @@
     "de": "Docker Store.",
     "fr": "Magasin de docker",
     "ru": "Docker Store",
-    "es": "Tienda docker"
+    "es": "Tienda docker",
+    "ja": "Docker\u30b9\u30c8\u30a2"
   },
   "ESET Knownledge Base": {
     "en": "ESET Knownledge Base",
