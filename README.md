@@ -15,7 +15,7 @@ There are quite a few versions of the page, all generated dynamically, you can v
 |Auto translation to Russian   | [link](https://mosermichael.github.io/duckduckbang/html/main_ru.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_ru.html)                |
 |Auto translation to Spanish   | [link](https://mosermichael.github.io/duckduckbang/html/main_es.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_es.html)                |
 |Auto translation to Ukrainian | [link](https://mosermichael.github.io/duckduckbang/html/main_uk.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_uk.html)                |
-|Auto translation to Japanese  | [link](https://mosermichael.github.io/duckduckbang/html/main_jp.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_jp.html)                |
+|Auto translation to Japanese  | [link](https://mosermichael.github.io/duckduckbang/html/main_ja.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_ja.html)                |
 
 
 You can select a duckduckgo  bang! search operator, the operator then appears in the seach input box, where you can add your query; A search query that includes the selected bang! operator is sent to https://duckduckgo - once you press enter press or the Go! button; duckducko then redirects the query to a search engine specified by the operator.
