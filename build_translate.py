@@ -3,8 +3,6 @@ import argparse
 import sys
 import time
 import traceback
-#import translators as ts
-from google_translate_py import Translator
 import globs
 import dcachebase
 import uitextbase
@@ -14,50 +12,62 @@ def get_traceback(ex):
     lines = traceback.format_exception(type(ex), ex, ex.__traceback__)
     return ''.join(lines)
 
+import translators as ts
+
 class LanguageTranslation:
 
-#    translators_prec = [
-#            ts.deepl, # doesn't work - seems 0they changed the api, and the package didn't
-#            ts.google,
-#            ]
+    translators_prec = [
+            #ts.deepl, # doesn't work - seems 0they changed the api, and the package didn't
+            ts.google,
+            ]
 
     def __init__(self):
-        self.translator = Translator()
-#        self.translator = Translator(service_urls=[
-#              'translate.google.com',
-#              'translate.google.co.kr',
-#            ])
+        pass
 
     def process(self, from_lang_name, to_lang_name, text):
+        for provider in LanguageTranslation.translators_prec:
+            try:
+                time.sleep(2)
+                result = ts.translate_html(text, translator=provider, from_language=from_lang_name, to_language=to_lang_name)
 
-        try:
-            # avoid "too many requests"
-            time.sleep(2)
-            result = self.translator.translate(text, from_lang_name, to_lang_name)
-            print(f"From_lang: {from_lang_name}\nTo_lang: {to_lang_name}\nText: {text}\nResult: {result}")
-            return result
-        except Exception as ex:
-            print(f"failed from: {from_lang_name} to: {to_lang_name} with exception: {ex}")
-            print('------Start--------')
-            print(get_traceback(ex))
-            print('------End--------')
+                print(f"From_lang: {from_lang_name}\nTo_lang: {to_lang_name}\nprovider: {repr(provider)}\nText: {text}\nResult: {result}")
 
-#
-#        for provider in LanguageTranslation.translators_prec:
-#            try:
-#                #result = ts.translate_html(text, translator=provider, from_language=from_lang_name, to_language=to_lang_name)
-#
-#                print(f"From_lang: {from_lang_name}\nTo_lang: {to_lang_name}\nprovider: {repr(provider)}\nText: {text}\nResult: {result}")
-#
-#                return result
-#            except Exception as ex:
-#                print(f"failed from: {from_lang_name} to: {to_lang_name} for: {provider} with exception: {ex}")
-#                print('------Start--------')
-#                print(get_traceback(ex))
-#                print('------End--------')
-#
+                return result
+            except Exception as ex:
+                print(f"failed from: {from_lang_name} to: {to_lang_name} for: {provider} with exception: {ex}")
+                print('------Start--------')
+                print(get_traceback(ex))
+                print('------End--------')
+
 
         return None
+
+#from google_translate_py import Translator
+#
+#class LanguageTranslation:
+#
+#    def __init__(self):
+#        self.translator = Translator()
+##        self.translator = Translator(service_urls=[
+##              'translate.google.com',
+##              'translate.google.co.kr',
+##            ])
+#
+#    def process(self, from_lang_name, to_lang_name, text):
+#
+#        try:
+#            # avoid "too many requests"
+#            time.sleep(2)
+#            result = self.translator.translate(text, from_lang_name, to_lang_name)
+#            print(f"From_lang: {from_lang_name}\nTo_lang: {to_lang_name}\nText: {text}\nResult: {result}")
+#            return result
+#        except Exception as ex:
+#            print(f"failed from: {from_lang_name} to: {to_lang_name} with exception: {ex}")
+#            print('------Start--------')
+#            print(get_traceback(ex))
+#            print('------End--------')
+#
+#        return None
 
 class TranslateHelpText:
     def __init__(self, list_of_target_langs):

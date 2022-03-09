@@ -1,11 +1,21 @@
 # Meta search tool builder
 
-This script builds the html pages for a little meta-search tool;
+This script builds the html pages for a little meta-search tool; The tool attempts to be a is a slightly better organized directory of the duckduckgo [bang!](https://duckduckgo.com/bang) search commands.
 
-The resulting meta-search tool [desktop tool in action](https://mosermichael.github.io/duckduckbang/html/main.html) 
-The [mobile version of the tool in action](https://mosermichael.github.io/duckduckbang/html/main_mobile.html) 
+There are quite a few versions of the page, all generated dynamically, you can view the results here:
 
-The tool is a slightly better organized directory of the duckduckgo [bang!](https://duckduckgo.com/bang) search commands.
+
+|                              | Desktop version | mobile version  |
+|------------------------------|:---------------:|:---------------:|
+|Using the Original text       | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile.html)                | 
+|Auto translation to Chinese   | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_zh.html)                |
+|Auto translation to English   | [link](https://mosermichael.github.io/duckduckbang/html/main_en.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_en.html)                |
+|Auto translation to French    | [link](https://mosermichael.github.io/duckduckbang/html/main_fr.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_fr.html)                |
+|Auto translation to German    | [link](https://mosermichael.github.io/duckduckbang/html/main_gr.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_gr.html)                |
+|Auto translation to Russian   | [link](https://mosermichael.github.io/duckduckbang/html/main_ru.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_ru.html)                |
+|Auto translation to Spanish   | [link](https://mosermichael.github.io/duckduckbang/html/main_es.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_es.html)                |
+|Auto translation to Ukrainian | [link](https://mosermichael.github.io/duckduckbang/html/main_uk.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_uk.html)                |
+|Auto translation to Japanese  | [link](https://mosermichael.github.io/duckduckbang/html/main_jp.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_jp.html)                |
 
 
 You can select a duckduckgo  bang! search operator, the operator then appears in the seach input box, where you can add your query; A search query that includes the selected bang! operator is sent to https://duckduckgo - once you press enter press or the Go! button; duckducko then redirects the query to a search engine specified by the operator.
