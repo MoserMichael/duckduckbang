@@ -1,5 +1,4 @@
 FROM alpine:3.12 
-
 ARG GITHUB_TOKEN=""
 
 RUN apk add bash python3 git expect py3-pip g++ libc-dev python3-dev linux-headers
@@ -7,11 +6,11 @@ RUN pip3 install html5lib
 RUN pip3 install Brotli
 RUN pip3 install psutil
 RUN pip3 install dataclasses-json
+RUN pip3 install Jinja2
 
 WORKDIR /
 
-COPY build_cats.py /
-COPY dcachebase.py /
+COPY *.py /
 COPY dcache.py /
 ADD  scrapscrap /
 COPY scrapscrap /scrapscrap
@@ -19,6 +18,8 @@ COPY scrapscrap /scrapscrap
 COPY build/build-html-in-docker.sh /
 COPY build/ex /
 
-COPY description_cache.json / 
+COPY *.json / 
+COPY *.template /
+COPY flag_list.txt /
 
 CMD GITHUB_TOKEN=${GITHUB_TOKEN} ./build-html-in-docker.sh

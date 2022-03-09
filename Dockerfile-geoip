@@ -6,7 +6,7 @@ RUN apk add bash python3 git expect py3-pip
 RUN pip3 install python-geoip
 RUN pip3 install python-geoip-geolite2
 RUN pip3 install maxminddb 
-RUN pip3 install maxminddb-geolite2K
+RUN pip3 install maxminddb-geolite2
 RUN pip3 install dataclasses-json
 
 
