@@ -28,6 +28,9 @@ CHANGED=$(diff -U 0 ../all_cats.html html/all_cats.html | grep -v "Generated on"
 git config --global user.email "a@gmail.com"
 git config --global user.name "MoserMichael"
 
+#tmp
+CHANGED=1
+
 if [[ $CHANGED != "3" ]]; then\
     cp ../*.html html/
 
