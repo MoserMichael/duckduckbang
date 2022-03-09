@@ -7,11 +7,11 @@ There are quite a few versions of the page, all generated dynamically, you can v
 
 |                              | Desktop version | mobile version  |
 |------------------------------|:---------------:|:---------------:|
-|Using the Original text       | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile.html)                | 
-|Auto translation to Chinese   | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_zh.html)                |
+|Using the Original text       | [link](https://mosermichael.github.io/duckduckbang/html/main.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile.html)                | 
+|Auto translation to Chinese   | [link](https://mosermichael.github.io/duckduckbang/html/main_zh.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_zh.html)                |
 |Auto translation to English   | [link](https://mosermichael.github.io/duckduckbang/html/main_en.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_en.html)                |
 |Auto translation to French    | [link](https://mosermichael.github.io/duckduckbang/html/main_fr.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_fr.html)                |
-|Auto translation to German    | [link](https://mosermichael.github.io/duckduckbang/html/main_gr.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_gr.html)                |
+|Auto translation to German    | [link](https://mosermichael.github.io/duckduckbang/html/main_de.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_gr.html)                |
 |Auto translation to Russian   | [link](https://mosermichael.github.io/duckduckbang/html/main_ru.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_ru.html)                |
 |Auto translation to Spanish   | [link](https://mosermichael.github.io/duckduckbang/html/main_es.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_es.html)                |
 |Auto translation to Ukrainian | [link](https://mosermichael.github.io/duckduckbang/html/main_uk.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_uk.html)                |
