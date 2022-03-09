@@ -103,19 +103,15 @@ class DescriptionCacheBase:
             pos = lan.find("_")
         if pos != -1:
             country = lan[pos+1:]
-            print(f"lan- {country}")
             if self.flag_list.has_flag(country):
                 return country
             country = lan[:pos]
-            print(f"-lan {country}")
         else:
             country = lan
-            print(f"lan {country}")
 
         if country == "":
             if cache_item.language_description.startswith("__label__"):
                 country = cache_item.language_description[ len("__label__") : ]
-                print(f"::lan {country}")
 
         if country != "":
             if self.flag_list.has_flag(country):

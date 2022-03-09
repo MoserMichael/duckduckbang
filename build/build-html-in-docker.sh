@@ -5,6 +5,7 @@ set -ex
 cd / 
 
 python3  build_cats.py -t
+python3  build_cats.py -r
 
 stat /all_cats.html 
 
@@ -27,15 +28,12 @@ CHANGED=$(diff -U 0 ../all_cats.html html/all_cats.html | grep -v "Generated on"
 git config --global user.email "a@gmail.com"
 git config --global user.name "MoserMichael"
 
-if [[ $CHANGED != "3" ]]; then
-    cp ../all_cats.html html/all_cats.html
-    cp ../all_cats_mobile.html html/all_cats_mobile.html
-
+if [[ $CHANGED != "3" ]]; then\
+    cp ../*.html html/
 
     echo "*** pushing changed file ***"
  
-    git add html/all_cats.html
-    git add html/all_cats_mobile.html
+    git add html/*.html
     git commit -m "automatic build $(date)"
     expect -f /ex
 else
