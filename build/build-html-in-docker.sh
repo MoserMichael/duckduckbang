@@ -32,11 +32,11 @@ git config --global user.name "MoserMichael"
 CHANGED=1
 
 if [[ $CHANGED != "3" ]]; then\
-    cp ../*.html html/
+    cp -v ../*.html html/
 
     echo "*** pushing changed file ***"
  
-    git add html/*.html
+    git add -v html/*.html
     git commit -m "automatic build $(date)"
     expect -f /ex
 else
