@@ -241,9 +241,6 @@ function h(elem) {
         self.text_renderer.set_translation_mode()
 
         for lan in globs.Globals.supported_languages:
-            if lan == "en":
-                continue
-
             self.text_renderer.translation_lang = lan
 
             # render static pages,
