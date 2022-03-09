@@ -385,6 +385,8 @@ function h(elem) {
         output_file_name += ".html"
 
         with open(output_file_name, "w") as out_file:
+            self.out_file = out_file
+            self.text_renderer.out_file = out_file
 
             DuckStuff.write_hdr_pc(out_file)
             self.build_toolip_help_list(json_data, out_file)
