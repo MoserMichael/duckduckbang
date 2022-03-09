@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>search tool based on duckduckgo !bang commands</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="title" content="Catalog of duckduckgo search operators"/>
+    <meta name="og:title" content="Catalog of duckduckgo search operators"/>
+    <meta name="description" content="Meta search tool that is based on duckduckgo !bang operators"/>
+    <meta name="og:description" content="Meta search tool that is based on duckduckgo !bang operators"/>
+    <meta name="keywords" content="Meta search, search tool, duckduckgo, !bang operators"/>
+    <meta name="og:keywords" content="Meta search, search tool, duckduckgo, !bang operators"/>
+
+
+    <title>title</title>
+    <link rel="stylesheet" href="template/github-markdown-mobile.css">
+
+  </head>
+
+
+<script type="text/javascript">
+	var eventMethod = window.addEventListener
+			? "addEventListener"
+			: "attachEvent";
+	var eventer = window[eventMethod];
+	var messageEvent = eventMethod === "attachEvent"
+		? "onmessage"
+		: "message";
+
+	eventer(messageEvent, function (e) {
+		
+        var obj = JSON.parse(e.data);
+        if (obj.cmd == 'set-bang') {
+            var d_frame = document.getElementById('search_d'); 
+            d_frame.focus();
+            d_frame.contentWindow.postMessage(obj.bang, '*')
+        }   
+
+        if (obj.cmd == 'query') {
+            document.location = 'https://duckduckgo.com/?q=' + obj.query;
+        }
+
+        if (obj.cmd == 'top') {
+            var d_frame = document.getElementById('second');
+            d_frame.focus();
+            d_frame.contentWindow.location = "all_cats_mobile_uk.html#top"; 
+          }
+
+        
+        if (obj.cmd == 'search-load') {
+            var d_frame = document.getElementById('first_row');
+            d_frame.style.height = obj.height + 'px';
+        }
+	
+
+	});
+
+
+</script>
+
+<body class="markdown-body">
+
+<div class="parent-div">
+    <div class="first_row" id="first_row">
+        <iframe id="search_d" class="iframe_duck" src="search_mobile_uk.html" style="" frameborder="0"></iframe>
+    </div>
+    <div class="second_row">
+      <iframe id="second" class="iframe-big"  src="all_cats_mobile_uk.html"></iframe>
+      
+    </div>
+</div>

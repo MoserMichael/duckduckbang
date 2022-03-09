@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>search tool based on duckduckgo !bang commands</title>
+    <meta charset="utf-8">
+    <title>Catalog of duckduckgo search operators</title>
+    <link rel="stylesheet" href="template/github-markdown.css">
+
+    <meta name="title" content="Catalog of duckduckgo search operators"/>
+    <meta name="og:title" content="Catalog of duckduckgo search operators"/>
+    <meta name="description" content="Meta search tool that is based on duckduckgo !bang operators"/>
+    <meta name="og:description" content="Meta search tool that is based on duckduckgo !bang operators"/>
+    <meta name="keywords" content="Meta search, search tool, duckduckgo, !bang operators"/>
+    <meta name="og:keywords" content="Meta search, search tool, duckduckgo, !bang operators"/>
+
+
+
+  </head>
+
+
+<script type="text/javascript">
+	var eventMethod = window.addEventListener
+			? "addEventListener"
+			: "attachEvent";
+	var eventer = window[eventMethod];
+	var messageEvent = eventMethod === "attachEvent"
+		? "onmessage"
+		: "message";
+
+	eventer(messageEvent, function (e) {
+		
+        var obj = JSON.parse(e.data);
+
+        if (obj.cmd == 'set-bang') {
+            var d_frame = document.getElementById('search_d'); 
+            d_frame.focus();
+            d_frame.contentWindow.postMessage(obj.bang, '*')
+        }   
+
+        if (obj.cmd == 'query') {
+            var query_url = 'https://duckduckgo.com/?q=' + escape(obj.query);
+
+            if (obj.open_tab == 'true') {
+                var rval = window.open(query_url, '_blank');
+                if (rval) {
+                    rval.focus();
+                }
+            } else {
+                document.location = query_url;
+            }
+  
+       }
+
+        if (obj.cmd == 'top') {
+            var d_frame = document.getElementById('second');
+            d_frame.focus();
+            d_frame.contentWindow.location = "all_cats_uk.html#top"; 
+          }
+
+        
+        if (obj.cmd == 'search-load') {
+            var d_frame = document.getElementById('first_row');
+            d_frame.style.height = obj.height + 'px';
+        }
+	
+
+	});
+
+
+</script>
+
+<body class="markdown-body">
+
+<div class="parent-div">
+    <div class="first_row" id="first_row">
+        <iframe id="search_d" class="iframe_duck" src="search_uk.html" style="" frameborder="0"></iframe>
+    </div>
+    <div class="second_row">
+       <iframe id="second" class="iframe-big"  src="all_cats_uk.html"></iframe>
+    </div>
+</div>

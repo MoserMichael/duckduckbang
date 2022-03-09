@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>metasearch based on duckduckgo !bang commands</title>
+    <link rel="stylesheet" href="template/github-markdown.css">
+  </head>
+
+<script type="text/javascript">
+	var eventMethod = window.addEventListener
+			? "addEventListener"
+			: "attachEvent";
+	var eventer = window[eventMethod];
+	var messageEvent = eventMethod === "attachEvent"
+		? "onmessage"
+		: "message";
+
+	eventer(messageEvent, function (e) {
+        var ed = document.getElementById('textin');
+        if (e.data != "") {
+            ed.value = "!" + e.data + " ";
+        }
+        ed.focus();
+
+	});
+
+    function go() {
+         var bangText = document.getElementById('textin').value;
+         var openInNewTab = document.getElementById('opennew').checked;
+
+         window.parent.postMessage( '{ "cmd": "query", "query": "' + bangText + '", "open_tab": "' + openInNewTab + '" }', '*');
+
+     }
+
+    function onTop() {
+         window.parent.postMessage( '{ "cmd": "top" }', '*')
+    }
+
+    function onLoad() {
+         //document.getElementById("body").style.margin =  "0px 0px 0px 0px";
+         window.parent.postMessage( '{ "cmd": "search-load", "height": "' + document.body.offsetHeight + '" }', '*')
+    }
+
+    /*
+    window.addEventListener('DOMContentLoaded', function(e) {
+        var tblObj = document.getElementById( 'stbl' );
+         window.parent.postMessage( '{ "cmd": "resize", "size": "' + tblObj.offsetHeight + '"; }', '*')
+     } );
+     */
+</script>
+
+
+<body class="markdown-body" id="body" style="margin-top: 0px; margin-left: 0px; margin-right: 0px; margin-left: 0px;" onLoad="onLoad()">
+
+    <table id="stbl" border="0" width="100%">
+        <tr>
+            <td>
+
+    <form onSubmit="go()">
+        <input id="textin" type-"text" autocomplete="true" spellcheck="true" size="50"></a> <input type="submit" value="Rechercher"/>
+    </form>
+            </td>
+            <td>
+                <a href="javascript:onTop()">[Top]</a> &nbsp; <input type="checkbox" id="opennew" name="opennew"> <label for="opennew">Search results in new browser tab</lablel>
+            </td>
+        </tr>
+</table>
