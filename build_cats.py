@@ -418,7 +418,7 @@ function h(elem) {
                     is_first = False
                     entry_links = entry_links +  f"<a href=\"#{link_num}\">{self.text_renderer.show_text_str(catentry)}</a>"
                     link_num = link_num + 1
-                out_file.write(f"<tr><td>{cat}</td><td>{entry_links}</td>\n")
+                out_file.write(f"<tr><td>{self.text_renderer.show_text_str(cat)}</td><td>{entry_links}</td>\n")
             out_file.write("</table>\n")
 
             link_num = 1
