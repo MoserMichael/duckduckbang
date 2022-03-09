@@ -390,7 +390,12 @@ function h(elem) {
             self.build_toolip_help_list(json_data, out_file)
             DuckStuff.write_js_pc(out_file)
 
-            out_file.write("<table><tr><th>Category</th><th>Sub categories</th></tr>\n")
+            out_file.write("<table><tr><th>")
+            self.text_renderer.show_text("Category")
+            out_file.write("</th><th>")
+            self.text_renderer.show_text("Sub categories")
+            out_file.write("</th></tr>\n")
+
             link_num = 1
 
             all_bangs_keys = list(all_bangs)
@@ -409,7 +414,7 @@ function h(elem) {
                         entry_links = entry_links + ","
                     entry_links = entry_links + "&nbsp;"
                     is_first = False
-                    entry_links = entry_links +  f"<a href=\"#{link_num}\">{catentry}</a>"
+                    entry_links = entry_links +  f"<a href=\"#{link_num}\">{self.text_renderer.show_text_str(catentry)}</a>"
                     link_num = link_num + 1
                 out_file.write(f"<tr><td>{cat}</td><td>{entry_links}</td>\n")
             out_file.write("</table>\n")
@@ -427,7 +432,7 @@ function h(elem) {
                     out_file.write(f"<hr/><p/><a id=\"{link_num}\"/>\n")
                     link_num += 1
 
-                    out_file.write(f"<h3>{cat} / {catentry}</h3><p></p>\n")
+                    out_file.write(f"<h3>{self.text_renderer.show_text_str(cat)} / {self.text_renderer.show_text_str(catentry)}</h3><p></p>\n")
 
                     pos = 0
                     out_file.write("<table width=\"100%\"><tr>\n")
@@ -447,7 +452,7 @@ function h(elem) {
                         if country_img_tag != "":
                             country_img_tag += "&nbsp;"
 
-                        out_file.write(f"<span align=\"left\"><a title=\"{self.map_url_to_id[entry_url]}\" onmouseenter=\"h(this)\" href=\"javascript:onBang('{bang_name}')\">{country_img_tag}{bang_title}</a></span> <span style=\"float: right\">!<a title=\"{self.map_url_to_id[entry_url]}\" onmouseenter=\"h(this)\" href=\"javascript:onBang('{bang_name}')\">{bang_name}</a></span> &nbsp;")
+                        out_file.write(f"<span align=\"left\"><a title=\"{self.map_url_to_id[entry_url]}\" onmouseenter=\"h(this)\" href=\"javascript:onBang('{bang_name}')\">{country_img_tag}{self.text_renderer.show_text_str(bang_title)}</a></span> <span style=\"float: right\">!<a title=\"{self.map_url_to_id[entry_url]}\" onmouseenter=\"h(this)\" href=\"javascript:onBang('{bang_name}')\">{bang_name}</a></span> &nbsp;")
                         out_file.write("</td>")
                         pos = pos + 1
 
@@ -459,7 +464,14 @@ function h(elem) {
 
                     out_file.write("</tr></table>")
 
-            out_file.write(f"\n<table width='100%'><tr><td>Generated on {datetime.now()}; number of entries {num_entries} unique bangs! {unique_bangs}</td></tr></table>\n<p><p><p>***eof***\n")
+            out_file.write("\n<table width='100%'><tr><td>")
+            self.text_renderer.show_text("Generated on ")
+            out_file.write(f"{datetime.now()}; ")
+            self.text_renderer.show_text("number of entries ")
+            out_file.write(f"{num_entries} ")
+            self.text_renderer.show_text("unique bangs")
+            out_file.write(f"{unique_bangs}</td></tr></table>\n<p><p><p>***eof***\n")
+
 
 
 def _parse_cmd_line():
