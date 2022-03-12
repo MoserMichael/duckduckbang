@@ -34,8 +34,6 @@ def run_identify_language():
             entry_obj.language_description = descr
             cache.cache_set(base_url, entry_obj)
             num_set += 1
-
-    if cache.write_description_cache():
-        print(f"*** description cache changed, number of items set: {num_set}")
+            cache.write_description_cache()
 
 run_identify_language()

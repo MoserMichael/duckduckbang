@@ -68,7 +68,7 @@ class LanguageTranslation:
 #            print('------End--------')
 #
 #        return None
-
+#
 class TranslateHelpText:
     def __init__(self, list_of_target_langs):
         self.list_of_target_langs = list_of_target_langs

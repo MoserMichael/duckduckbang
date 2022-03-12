@@ -61,6 +61,8 @@ Projects like this usually end up with a number of processing steps, and it's be
 - Note:
     - a special run is required, after we finished with amending the description_cache.json files
 
+----
+
 - Command: ./build_cats.py –cache –timeout  TIMEOUT_SEC
 - Input file: description_cache.json
 - Output file: description_cache.json
@@ -72,24 +74,35 @@ Projects like this usually end up with a number of processing steps, and it's be
 - Purpose: like previous command, just uses the firefox browser via selenium package.
     - Some hosts can’t be scanned by regular scanner (example: cloudlflare and other DDOS protection mechanisms involve several http redirects, where javascript code is run to determine the next step; therefore get html by automating the browser)
 
+----
 
 - Command: build_geoip.py
 - Input file: description_cache.json
 - Output file: description_cache.json
 - Purpose: set geoip_lan attribute based on geo-ip lookup of host name
 
+----
+
+- Command: build_lang.py
+- Input file: ui_text_string.txt
+- Output file: description_cache.json
+- Purpose: detects the language of the description, and sets the language_description attribute (needed for automatic translation, but maybe i would be better off with auto...)
+
+----
 
 - Command: build_translate.py –descr
 - Input file: description_cache.json
 - Output file: description_cache.json
 - Purpose: build auto translation of description into supported set of languages (build translations field in each host entry)
 
+----
 
 - Command: build_translate.py –uitext
 - Input file: ui_text_string.txt
 - Output file: ui_text_translated.json
 - Purpose: build auto translation of each user interface string that appears on the page (not site descriptions)
 
+----
 
 - Command: build_translate.py –translate
 - Input files: 
@@ -114,3 +127,4 @@ Now github actions are disabled after a while, when they don't see any action in
 
 Also I am using expect to automate pushing stuff into the repo by the build script (see build subdirectory in this project); sometimes that's a useful tool to know.
 
+Interesting that modern systems have this tendency to evolve into Rube Goldberg Devices; microservices are there by definition, data processing stuff is also there... All by virtue of being divided into small self-contained but interdependent parts...
