@@ -40,13 +40,66 @@ These specialized search engines will also tend to respect your privacy, more th
 
 # Script that builds the page
 
-The [build_cats.py](https://github.com/MoserMichael/duckduckbang/blob/master/build_cats.py) script that generates the search page works as follows: 
+Projects like this usually end up with a number of processing steps, and it's better to document these steps and the intermedeate files properly (learned that the hard way)
 
-1. It loads the following url [https://duckduckgo.com/bang.js](https://duckduckgo.com/bang.js) this gives a json file that contains an entry for each bang! search operator, and the classification of the operator in the official [bang page](https://duckduckgo.com/bang).
-2. Builds the category/subcategory breakup that is used to display the [bang page](https://duckduckgo.com/bang).  
-3. Formats an html page that contains all of the !bang operators into one page (maintain categories displayed in the official bang page)
+## Processing stages
 
-The tool utilizes [duckduck go bang! operators](https://duckduckgo.com/bang)
+- Command: ./build_cats.py –html
+- Purpose: build the English language html page
+- Input files:
+    -	Flag_list.txt :: flag file names
+    -	main.template search.template :: templates for html files of desktop version
+    -	main_mobile.template, search_mobile.template :: templates for html files of mobile version
+    -	description_cache.json :: (if present) use the description of each search engine host for tool tips
+- Output files:
+    -	description_cache.json :: initial version of the file is created upon first run)
+    -	ui_text_string.txt :: each line is a string that appears as a label in the page
+- Process:
+    1. It loads the following url [https://duckduckgo.com/bang.js](https://duckduckgo.com/bang.js) this gives a json file that contains an entry for each bang! search operator, and the classification of the operator in the official [bang page](https://duckduckgo.com/bang).
+    2. Builds the category/subcategory breakup that is used to display the [bang page](https://duckduckgo.com/bang).  
+    3. Formats an html page that contains all of the !bang operators into one page (maintain categories displayed in the official bang page)
+- Note:
+    - a special run is required, after we finished with amending the description_cache.json files
+
+- Command: ./build_cats.py –cache –timeout  TIMEOUT_SEC
+- Input file: description_cache.json
+- Output file: description_cache.json
+- Purpose: fetches the html page of each host, derives the description from meta tags that appear in the html of the page.(direct download of the page0
+- Output file:
+    -	description_cache.json :: sets the following fields; description, description_error, http_document_language, html_document_language
+
+- Command: build_cats.py –cache –selenium –no-http-client  –timeout  TIMEOUT_SEC
+- Purpose: like previous command, just uses the firefox browser via selenium package.
+    - Some hosts can’t be scanned by regular scanner (example: cloudlflare and other DDOS protection mechanisms involve several http redirects, where javascript code is run to determine the next step; therefore get html by automating the browser)
+
+
+- Command: build_geoip.py
+- Input file: description_cache.json
+- Output file: description_cache.json
+- Purpose: set geoip_lan attribute based on geo-ip lookup of host name
+
+
+- Command: build_translate.py –descr
+- Input file: description_cache.json
+- Output file: description_cache.json
+- Purpose: build auto translation of description into supported set of languages (build translations field in each host entry)
+
+
+- Command: build_translate.py –uitext
+- Input file: ui_text_string.txt
+- Output file: ui_text_translated.json
+- Purpose: build auto translation of each user interface string that appears on the page (not site descriptions)
+
+
+- Command: build_translate.py –translate
+- Input files: 
+    -	description_cache.json 
+    -	ui_text_translated
+    -	Flag_list.txt :: flag file names
+    -	main.template search.template :: templates for html files of desktop version
+    -	main_mobile.template, search_mobile.template :: templates for html files of mobile version
+- Purpose: builds translated version of html files, based on auto translation of site descriptions and user interface strings.
+
 
 # Today i learned
 
