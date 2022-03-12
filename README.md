@@ -8,14 +8,14 @@ There are quite a few versions of the page, all generated dynamically, you can v
 |                              | Desktop version | mobile version  |
 |------------------------------|:---------------:|:---------------:|
 |Using the Original text       | [link](https://mosermichael.github.io/duckduckbang/html/main.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile.html)                | 
-|Auto translation to Chinese   | [link](https://mosermichael.github.io/duckduckbang/html/main_zh.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_zh.html)                |
-|Auto translation to English   | [link](https://mosermichael.github.io/duckduckbang/html/main_en.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_en.html)                |
-|Auto translation to French    | [link](https://mosermichael.github.io/duckduckbang/html/main_fr.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_fr.html)                |
-|Auto translation to German    | [link](https://mosermichael.github.io/duckduckbang/html/main_de.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_gr.html)                |
-|Auto translation to Russian   | [link](https://mosermichael.github.io/duckduckbang/html/main_ru.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_ru.html)                |
-|Auto translation to Spanish   | [link](https://mosermichael.github.io/duckduckbang/html/main_es.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_es.html)                |
-|Auto translation to Ukrainian | [link](https://mosermichael.github.io/duckduckbang/html/main_uk.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_uk.html)                |
-|Auto translation to Japanese  | [link](https://mosermichael.github.io/duckduckbang/html/main_ja.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_ja.html)                |
+|Auto translation into Chinese   | [link](https://mosermichael.github.io/duckduckbang/html/main_zh.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_zh.html)                |
+|Auto translation into English   | [link](https://mosermichael.github.io/duckduckbang/html/main_en.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_en.html)                |
+|Auto translation into French    | [link](https://mosermichael.github.io/duckduckbang/html/main_fr.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_fr.html)                |
+|Auto translation into German    | [link](https://mosermichael.github.io/duckduckbang/html/main_de.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_gr.html)                |
+|Auto translation into Russian   | [link](https://mosermichael.github.io/duckduckbang/html/main_ru.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_ru.html)                |
+|Auto translation into Spanish   | [link](https://mosermichael.github.io/duckduckbang/html/main_es.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_es.html)                |
+|Auto translation into Ukrainian | [link](https://mosermichael.github.io/duckduckbang/html/main_uk.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_uk.html)                |
+|Auto translation into Japanese  | [link](https://mosermichael.github.io/duckduckbang/html/main_ja.html)                | [link](https://mosermichael.github.io/duckduckbang/html/main_mobile_ja.html)                |
 
 
 You can select a duckduckgo  bang! search operator, the operator then appears in the seach input box, where you can add your query; A search query that includes the selected bang! operator is sent to https://duckduckgo - once you press enter press or the Go! button; duckducko then redirects the query to a search engine specified by the operator.
@@ -120,7 +120,7 @@ Projects like this usually end up with a number of processing steps, and it's be
 
 ## data format
 
-### entry in description_cache.json
+### Entry in description_cache.json
 
 Each record represents obtained information on one host
 
@@ -147,7 +147,8 @@ Each record represents obtained information on one host
   }
 </pre>
 
-### format of ui_text_translated.json
+### Format of ui_text_translated.json
+
 
 Each record represents the translations of a single string that appears in the original web page.
 
