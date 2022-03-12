@@ -22,6 +22,10 @@ You can select a duckduckgo  bang! search operator, the operator then appears in
 
 A web search on duckduckgo that includes a bang! search command is redirected to a specialized search engine (the most famous bang operator is g! - a web search is redirected to google search if the term g! is added to the query text); now duckduckgo maintains a directory of these bang! search commands, each of these commands stands for a different search engine that takes over the web search.
 
+Here is a screenshot of the translation into Ukrainian in action: (of course automatic translation isn't without problems, but it is better than nothing...) 
+
+![Screenshot](auto-translate.png)
+
 The meta-search tool has the advantage of having all duckduckgo bang! search commands in one page, it uses the same catalog of operators as duckduckgo. I think having all bang! operators on one page makes it easier to use the feature.
 
 The page is kept up to date by a nightly build process (runs courtesy of [github workflows/actions](https://docs.github.com/en/free-pro-team@latest/actions/learn-github-actions) ) Any new bang! operator should therefore appear in the search tool.
