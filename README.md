@@ -44,7 +44,7 @@ Projects like this usually end up with a number of processing steps, and it's be
 
 ## Processing stages
 
-- Command: ./build_cats.py –html
+- Command: ./build_cats.py --html
 - Purpose: build the English language html page
 - Input files:
     -	Flag_list.txt :: flag file names
@@ -59,60 +59,107 @@ Projects like this usually end up with a number of processing steps, and it's be
     2. Builds the category/subcategory breakup that is used to display the [bang page](https://duckduckgo.com/bang).  
     3. Formats an html page that contains all of the !bang operators into one page (maintain categories displayed in the official bang page)
 - Note:
-    - a special run is required, after we finished with amending the description_cache.json files
+    - a special run is required, after we finished with downloading the descriptions in description_cache.json files (see ./build_cats --cache)
+
 
 ----
 
-- Command: ./build_cats.py –cache –timeout  TIMEOUT_SEC
+- Command: ./build_cats.py --cache --timeout  TIMEOUT_SEC
 - Input file: description_cache.json
 - Output file: description_cache.json
-- Purpose: fetches the html page of each host, derives the description from meta tags that appear in the html of the page.(direct download of the page0
+- Purpose: fetches the html page of each host, derives the description from meta tag and title tags that appear in the html of the page. (direct download of the page with python http.client library)
 - Output file:
     -	description_cache.json :: sets the following fields; description, description_error, http_document_language, html_document_language
 
-- Command: build_cats.py –cache –selenium –no-http-client  –timeout  TIMEOUT_SEC
+- Command: ./build_cats.py –cache –selenium –no-http-client  –timeout  TIMEOUT_SEC
 - Purpose: like previous command, just uses the firefox browser via selenium package.
     - Some hosts can’t be scanned by regular scanner (example: cloudlflare and other DDOS protection mechanisms involve several http redirects, where javascript code is run to determine the next step; therefore get html by automating the browser)
 
 ----
 
-- Command: build_geoip.py
+- Command: ./build_geoip.py
 - Input file: description_cache.json
 - Output file: description_cache.json
 - Purpose: set geoip_lan attribute based on geo-ip lookup of host name
 
 ----
 
-- Command: build_lang.py
+- Command: ./build_lang.py
 - Input file: ui_text_string.txt
 - Output file: description_cache.json
 - Purpose: detects the language of the description, and sets the language_description attribute (needed for automatic translation, but maybe i would be better off with auto...)
 
 ----
 
-- Command: build_translate.py –descr
+- Command: ./build_translate.py --descr
 - Input file: description_cache.json
 - Output file: description_cache.json
 - Purpose: build auto translation of description into supported set of languages (build translations field in each host entry)
 
 ----
 
-- Command: build_translate.py –uitext
+- Command: ./build_translate.py --uitext
 - Input file: ui_text_string.txt
 - Output file: ui_text_translated.json
 - Purpose: build auto translation of each user interface string that appears on the page (not site descriptions)
 
-----
+-----
 
-- Command: build_translate.py –translate
+- Command: ./build_cats.py ––translate
 - Input files: 
-    -	description_cache.json 
-    -	ui_text_translated
+    -	description_cache.json  :: description of hosts (after translation)
+    -	ui_text_translated.json :: strings that appear in the page (after translation)
     -	Flag_list.txt :: flag file names
     -	main.template search.template :: templates for html files of desktop version
     -	main_mobile.template, search_mobile.template :: templates for html files of mobile version
 - Purpose: builds translated version of html files, based on auto translation of site descriptions and user interface strings.
 
+## data format
+
+### entry in description_cache.json
+
+Each record represents obtained information on one host
+
+<pre>
+  "www.01net.com": {
+    "description": "01net - Actualit\u00e9 tech, tests produits, astuces & t\u00e9l\u00e9chargements\nActualit\u00e9s, tests produits, astuces, reportages et t\u00e9l\u00e9chargements. Vivez l'actualit\u00e9 tech d\u00e9crypt\u00e9e par les journalistes de 01net, m\u00e9dia sp\u00e9cialis\u00e9 dans les nouvelles technologies.",
+    "description_error": null,
+    "description_error_selenium": "",
+    "language_description": "__label__fr",
+    "http_content_language": null,
+    "html_document_language": "fr",
+    "translations": {
+      "en": "01net - Tech News, Product Tests, Tips & Downloads\nNews, Product Tests, Tips, Reports and Downloads.Live tech news decrypted by 01net journalists, media specialized in new technologies.",
+      "de": "01NET - Tech News, Produkttests, Tipps & Downloads\nNachrichten, Produkttests, Tipps, Berichte und Downloads.Live-Tech-News entschl\u00fcsselt von 01NET-Journalisten, Medien, die auf neue Technologien spezialisiert sind.",
+      "fr": "01net - Actualit\u00e9 tech, tests produits, astuces & t\u00e9l\u00e9chargements\nActualit\u00e9s, tests produits, astuces, reportages et t\u00e9l\u00e9chargements. Vivez l'actualit\u00e9 tech d\u00e9crypt\u00e9e par les journalistes de 01net, m\u00e9dia sp\u00e9cialis\u00e9 dans les nouvelles technologies.",
+      "ru": "01Net - Tech News, \u0422\u0435\u0441\u0442\u044b \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0430, \u0421\u043e\u0432\u0435\u0442\u044b \u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438\n\u041d\u043e\u0432\u043e\u0441\u0442\u0438, \u0442\u0435\u0441\u0442\u044b \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0430, \u0441\u043e\u0432\u0435\u0442\u044b, \u043e\u0442\u0447\u0435\u0442\u044b \u0438 \u0437\u0430\u0433\u0440\u0443\u0437\u043a\u0438.\u0416\u0438\u0432\u044b\u0435 \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u0438 \u043d\u043e\u0432\u043e\u0441\u0442\u0438 \u0434\u0435\u0448\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u044b \u0436\u0443\u0440\u043d\u0430\u043b\u0438\u0441\u0442\u0430\u043c\u0438 01Net, \u0421\u041c\u0418 \u0441\u043f\u0435\u0446\u0438\u0430\u043b\u0438\u0437\u0438\u0440\u0443\u044e\u0442\u0441\u044f \u0432 \u043d\u043e\u0432\u044b\u0445 \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u044f\u0445.",
+      "es": "01net - Noticias de tecnolog\u00eda, pruebas de productos, consejos y descargas\nNoticias, pruebas de productos, consejos, informes y descargas.Live Tech News descifrada por periodistas de 01net, medios especializados en nuevas tecnolog\u00edas.",
+      "ja": "01 Net  - \u6280\u8853\u30cb\u30e5\u30fc\u30b9\u3001\u88fd\u54c1\u30c6\u30b9\u30c8\u3001\u30d2\u30f3\u30c8\uff06\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\n\u30cb\u30e5\u30fc\u30b9\u3001\u88fd\u54c1\u30c6\u30b9\u30c8\u3001\u30d2\u30f3\u30c8\u3001\u30ec\u30dd\u30fc\u30c8\u3001\u30c0\u30a6\u30f3\u30ed\u30fc\u30c9\u3002Live Tech News\u304c01Net\u30b8\u30e3\u30fc\u30ca\u30ea\u30b9\u30c8\u3001\u65b0\u6280\u8853\u3092\u5c02\u9580\u3068\u3059\u308b\u30e1\u30c7\u30a3\u30a2\u306b\u3088\u3063\u3066\u5fa9\u53f7\u5316\u3055\u308c\u307e\u3057\u305f\u3002",
+      "zh": "01NET  - \u6280\u672f\u65b0\u95fb\uff0c\u4ea7\u54c1\u6d4b\u8bd5\uff0c\u63d0\u793a\u548c\u4e0b\u8f7d\n\u65b0\u95fb\uff0c\u4ea7\u54c1\u6d4b\u8bd5\uff0c\u63d0\u793a\uff0c\u62a5\u544a\u548c\u4e0b\u8f7d\u3002Live Tech News\u753101net\u8bb0\u8005\u89e3\u5bc6\uff0c\u5a92\u4f53\u4e13\u95e8\u4ece\u4e8b\u65b0\u6280\u672f\u3002",
+      "uk": "01Net - Tech News, \u0442\u0435\u0441\u0442\u0438 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0443, \u043f\u043e\u0440\u0430\u0434\u0438 \u0442\u0430 \u0437\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f\n\u041d\u043e\u0432\u0438\u043d\u0438, \u0442\u0435\u0441\u0442\u0438 \u043f\u0440\u043e\u0434\u0443\u043a\u0442\u0443, \u043f\u043e\u0440\u0430\u0434\u0438, \u0437\u0432\u0456\u0442\u0438 \u0442\u0430 \u0437\u0430\u0432\u0430\u043d\u0442\u0430\u0436\u0435\u043d\u043d\u044f.\u0416\u0438\u0432\u0456 \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0456\u0447\u043d\u0456 \u043d\u043e\u0432\u0438\u043d\u0438 \u0440\u043e\u0437\u0448\u0438\u0444\u0440\u043e\u0432\u0430\u043d\u0456 \u0436\u0443\u0440\u043d\u0430\u043b\u0456\u0441\u0442\u0430\u043c\u0438 01\u041dte, \u043c\u0435\u0434\u0456\u0430, \u0449\u043e \u0441\u043f\u0435\u0446\u0456\u0430\u043b\u0456\u0437\u0443\u044e\u0442\u044c\u0441\u044f \u043d\u0430 \u043d\u043e\u0432\u0438\u0445 \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0456\u044f\u0445.",
+      "it": "01net - Tech News, Product Test, Suggerimenti e download\nNotizie, test del prodotto, suggerimenti, report e download.Vive Tech News Decrituata da 01NET Giornalisti, Media specializzata in nuove tecnologie."
+    },
+    "geoip_lan": "us"
+  }
+</pre>
+
+### format of ui_text_translated.json
+
+Each record represents the translations of a single string that appears in the original web page.
+
+<pre>
+  "[Top]": {
+    "en": "[Top]",
+    "de": "[Oben]",
+    "fr": "[Haut]",
+    "ru": "[\u0412\u0435\u0440\u0445\u043d\u044f\u044f]",
+    "es": "[Cima]",
+    "ja": "[\u4e0a]",
+    "zh": "[\u6700\u4f73]",
+    "uk": "[\u0412\u0435\u0440\u0445]",
+    "it": "[Superiore]"
+  }
+</pre>
 
 # Today i learned
 
