@@ -26,9 +26,7 @@
 
     function go() {
          var bangText = document.getElementById('textin').value;
-
-         var data = { "cmd": "query", "query": bangText };
-         window.parent.postMessage( JSON.stringify(data), '*');
+         window.parent.postMessage( '{ "cmd": "query", "query": "' + bangText + '"}', '*')
      }
 
     function onTop() {
