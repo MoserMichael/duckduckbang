@@ -28,8 +28,8 @@
          var bangText = document.getElementById('textin').value;
          var openInNewTab = document.getElementById('opennew').checked;
 
-         window.parent.postMessage( '{ "cmd": "query", "query": "' + bangText + '", "open_tab": "' + openInNewTab + '" }', '*');
-
+         var data = { "cmd": "query", "query": bangText, "open_tab": "' + openInNewTab + '" };
+         window.parent.postMessage( JSON.stringify(data), '*');
      }
 
     function onTop() {
